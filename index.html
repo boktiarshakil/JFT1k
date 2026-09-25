@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFT Exam Hub | Simulation Portal</title>
+    <meta name="description" content="Central Hub for taking JFT-Basic Simulation Exams. Access 400+ practice tests." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <style>
+        /* Hub-specific layout overrides */
+        .hub-body {
+            background: #f0f2f5;
+            min-height: 100vh;
+            display: block;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hub-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* ── Hero Section ── */
+        .hub-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 16px;
+            padding: 60px 40px;
+            color: white;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hub-hero::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: rgba(58, 125, 58, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hub-hero-content {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+        }
+
+        .hub-hero h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .hub-hero p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn-hero {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--green-active);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2d612d;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* ── Controls ── */
+        .hub-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 18px;
+        }
+
+        #hub-search {
+            width: 100%;
+            padding: 14px 14px 14px 48px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: white;
+        }
+
+        #hub-search:focus {
+            border-color: var(--green-active);
+            box-shadow: 0 0 0 4px rgba(58, 125, 58, 0.1);
+        }
+
+        .stats-info {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* ── Exam Grid ── */
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .exam-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #eee;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .exam-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            border-color: var(--green-active);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .exam-tag {
+            background: #eaf5ea;
+            color: var(--green-active);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+            padding-top: 12px;
+            border-top: 1px dashed #eee;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: #999;
+            display: flex;
+            gap: 12px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .btn-card-start {
+            background: #f5f5f5;
+            color: #555;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+
+        .exam-card:hover .btn-card-start {
+            background: var(--green-active);
+            color: white;
+        }
+
+        /* ── Load More ── */
+        .load-more-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        #btn-load-more {
+            padding: 12px 40px;
+            background: white;
+            border: 2px solid #ddd;
+            color: #555;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        #btn-load-more:hover {
+            border-color: var(--green-active);
+            color: var(--green-active);
+        }
+
+        /* Empty State */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 12px;
+            color: #999;
+        }
+
+        .empty-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        /* Top Bar & Info Bar (Consistency) */
+        .hub-topbar {
+            background: var(--header-bg);
+            color: white;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .hub-infobar {
+            background: var(--info-bar-bg);
+            color: white;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hub-hero {
+                padding: 30px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-actions {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="hub-body">
+
+    <!-- Top Bar -->
+    <header class="hub-topbar">
+        <h1 style="font-size: 16px;">📝 JFT Exam Hub</h1>
+    </header>
+
+    <!-- Info Bar -->
+    <div class="hub-infobar">
+        Simulation Portal for JFT-Basic Japanese Language Test
+    </div>
+
+    <main class="hub-container">
+
+        <!-- Hero Section -->
+        <section class="hub-hero">
+            <div class="hub-hero-content">
+                <h1>Ready for JFT-Basic?</h1>
+                <p>Sharpen your skills with over 400 simulation exams. Real questions, real timing, real feedback.</p>
+                <div class="hero-actions">
+                    <button class="btn-hero btn-primary" onclick="startRandom()">⚡ Start Random Exam</button>
+                    <button id="btn-resume" class="btn-hero btn-secondary" onclick="resumeLast()" style="display: none;">↩ Resume Last (JFT-0)</button>
+                    <button class="btn-hero btn-secondary" onclick="location.href='history.html'">📊 My Progress</button>
+                </div>
+            </div>
+            <!-- Illustration or Icon could go here -->
+        </section>
+
+        <!-- Search and Stats -->
+        <div class="hub-controls">
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="hub-search" placeholder="Search exams by number, topic or keywords..." oninput="handleSearch()">
+            </div>
+            <div class="stats-info" id="stats-info">
+                Found 0 exams
+            </div>
+        </div>
+
+        <!-- Exam Grid -->
+        <div class="exam-grid" id="exam-grid">
+            <!-- Dynamic Cards -->
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more-container" id="load-more-container" style="display: none;">
+            <button id="btn-load-more" onclick="loadMore()">Load More Exams</button>
+        </div>
+
+    </main>
+
+    <script>
+        let allExams = [];
+        let filteredExams = [];
+        let displayedCount = 0;
+        const PAGE_SIZE = 12;
+
+        const grid = document.getElementById('exam-grid');
+        const searchInput = document.getElementById('hub-search');
+        const statsInfo = document.getElementById('stats-info');
+        const loadMoreBtn = document.getElementById('btn-load-more');
+        const loadMoreContainer = document.getElementById('load-more-container');
+        const btnResume = document.getElementById('btn-resume');
+
+        // ── Load Metadata ──
+        async function loadMetadata() {
+            try {
+                const res = await fetch('exams/metadata.json');
+                const data = await res.json();
+                allExams = data;
+                filteredExams = [...allExams];
+                renderGrid(true);
+                updateStats();
+                checkLastExam();
+            } catch (err) {
+                console.error("Failed to load metadata:", err);
+                grid.innerHTML = '<div class="empty-state">Failed to load exam data. Please try again later.</div>';
+            }
+        }
+
+        // ── Render ──
+        function renderGrid(reset = false) {
+            if (reset) {
+                grid.innerHTML = '';
+                displayedCount = 0;
+            }
+
+            const nextBatch = filteredExams.slice(displayedCount, displayedCount + PAGE_SIZE);
+            
+            if (filteredExams.length === 0) {
+                grid.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">📂</div>
+                        <h3>No exams found</h3>
+                        <p>Try searching for a different number or keyword.</p>
+                    </div>`;
+                loadMoreContainer.style.display = 'none';
+                return;
+            }
+
+            nextBatch.forEach(exam => {
+                const card = document.createElement('div');
+                card.className = 'exam-card';
+                card.onclick = () => window.location.href = `exam.html?exam=${exam.id}`;
+                
+                const num = exam.id.replace('jft', '');
+                
+                card.innerHTML = `
+                    <div class="card-header">
+                        <span class="exam-tag">JFT-${num}</span>
+                    </div>
+                    <h3 class="card-title">${exam.title}</h3>
+                    <p class="card-desc">${exam.description || 'Practice your JFT-Basic skills with this comprehensive simulation exam.'}</p>
+                    <div class="card-footer">
+                        <div class="card-meta">
+                            <div class="meta-item">⏱️ 60m</div>
+                            <div class="meta-item">📝 ${exam.questionCount || 50} Qs</div>
+                        </div>
+                        <button class="btn-card-start">Start →</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            displayedCount += nextBatch.length;
+            loadMoreContainer.style.display = displayedCount < filteredExams.length ? 'flex' : 'none';
+        }
+
+        function loadMore() {
+            renderGrid(false);
+        }
+
+        // ── Search Logic ──
+        function handleSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            if (!query) {
+                filteredExams = [...allExams];
+            } else {
+                filteredExams = allExams.filter(exam => {
+                    const id = exam.id.toLowerCase();
+                    const title = exam.title.toLowerCase();
+                    const desc = (exam.description || '').toLowerCase();
+                    const num = id.replace('jft', '');
+                    
+                    return id.includes(query) || 
+                           title.includes(query) || 
+                           desc.includes(query) || 
+                           num === query;
+                });
+            }
+            renderGrid(true);
+            updateStats();
+        }
+
+        function updateStats() {
+            statsInfo.textContent = `Showing ${filteredExams.length} of ${allExams.length} exams`;
+        }
+
+        // ── Actions ──
+        function startRandom() {
+            if (allExams.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * allExams.length);
+            window.location.href = `exam.html?exam=${allExams[randomIndex].id}`;
+        }
+
+        function checkLastExam() {
+            try {
+                const lastId = localStorage.getItem('last_jft_exam');
+                if (lastId) {
+                    const shortId = lastId.replace('jft', 'JFT-');
+                    btnResume.textContent = `↩ Resume Last (${shortId})`;
+                    btnResume.style.display = 'flex';
+                    btnResume.dataset.id = lastId;
+                }
+            } catch (e) {}
+        }
+
+        function resumeLast() {
+            const id = btnResume.dataset.id;
+            if (id) window.location.href = `exam.html?exam=${id}`;
+        }
+
+        // Initialize
+        loadMetadata();
+
+        // PWA / Service Worker (Item #13)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(() => {});
+        }
+
+        // Language switcher (Item #12)
+        const lang = localStorage.getItem('jft_lang') || 'en';
+        const hubTopbar = document.querySelector('.hub-topbar');
+        if (hubTopbar) {
+            const langBtn = document.createElement('button');
+            langBtn.style.cssText = 'margin-left:auto;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3);color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;cursor:pointer;font-family:inherit;';
+            langBtn.textContent = lang === 'en' ? '🇧🇩 বাংলা' : '🇬🇧 English';
+            langBtn.onclick = () => {
+                localStorage.setItem('jft_lang', lang === 'en' ? 'bn' : 'en');
+                location.reload();
+            };
+            hubTopbar.appendChild(langBtn);
+        }
+    </script>
+</body>
+
+</html>

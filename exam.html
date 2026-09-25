@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFT Exam — JFT Exam Hub</title>
+    <meta name="description" content="JFT-Basic simulation exam practice." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="exam-wrapper">
+
+        <!-- TOP BAR -->
+        <div class="exam-topbar">
+            <div class="topbar-left">
+                <div class="topbar-q-info">
+                    <span>Question: <b id="topbar-q-num">1</b></span>
+                    <span>Section: <b id="topbar-sec-name">Loading...</b></span>
+                </div>
+            </div>
+            <div class="topbar-timer-area">
+                <span class="timer-icon">⏱</span>
+                <div>
+                    <div class="timer-label">Section Time Remaining</div>
+                    <div class="timer-value" id="timer-display">60:00</div>
+                </div>
+            </div>
+            <button class="topbar-finish" id="btn-finish-section" onclick="handleFinishSection()">Finish Section</button>
+        </div>
+
+        <!-- INFO BAR -->
+        <div class="exam-infobar">
+            <span class="infobar-test">Test: <b id="infobar-test-name">Japan Foundation Test for Basic
+                    Japanese</b></span>
+            <span class="infobar-candidate">Candidate: <b>USER</b></span>
+        </div>
+
+        <!-- BODY -->
+        <div class="exam-body">
+            <!-- Study Mode Banner (Item #11) -->
+            <div id="study-mode-banner" class="study-mode-banner" style="display:none;">
+                📖 Study Mode — No timer, learn at your own pace
+            </div>
+
+            <!-- LEFT SIDEBAR -->
+            <div class="exam-sidebar" id="exam-sidebar">
+                <!-- Section tabs + Q number list rendered by JS -->
+            </div>
+
+            <!-- MAIN QUESTION AREA -->
+            <div class="exam-main" id="exam-main">
+                <!-- Questions rendered by JS -->
+            </div>
+
+        </div>
+
+        <!-- BOTTOM NAV BAR -->
+        <div class="exam-bottombar">
+            <div class="bottombar-left">
+                <button class="btn-icon" id="btn-settings" title="Settings">⚙️</button>
+                <button class="btn-icon" id="btn-list" title="Question list" onclick="toggleSidebar()">⊞</button>
+            </div>
+            <div class="bottombar-right" style="gap:4px; font-size:10px; color:#666; align-items:center;">
+                <span style="margin-right:8px;" title="Keyboard shortcuts">⌨️ 1-4: select | ←→: nav | F: flag | Enter: next</span>
+                <button class="btn-flag" id="btn-flag" onclick="toggleFlag()">🚩 Flag</button>
+                <button class="btn-back" id="btn-back" onclick="navigateQ(-1)">◀ Back</button>
+                <button class="btn-next-q" id="btn-next-q" onclick="navigateQ(1)">Next ▶</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Language Translation Modal -->
+    <div class="lang-modal-backdrop" id="lang-modal">
+        <div class="lang-modal">
+            <div class="lang-modal-header">
+                <span id="lang-modal-title">Your Language 1</span>
+                <button class="btn-modal-close" onclick="closeLangModal()">✕</button>
+            </div>
+            <div class="lang-modal-body" id="lang-modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <!-- PWA / Service Worker (Item #13) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      }
+    </script>
+
+    <!-- Settings Popup -->
+    <div class="settings-popup-backdrop" id="settings-popup-backdrop" onclick="closeSettingsPopup(event)">
+      <div class="settings-popup" onclick="event.stopPropagation()">
+        <div class="settings-popup-header">
+          <span class="settings-popup-title">⚙️ Settings</span>
+          <button class="settings-popup-close" onclick="closeSettingsPopup()">✕</button>
+        </div>
+        <div class="settings-popup-body">
+          <!-- Dark Mode Toggle -->
+          <button class="settings-item" onclick="toggleDarkModeFromPopup()">
+            <div class="settings-item-left">
+              <span class="settings-item-icon">🌙</span>
+              <div>
+                <div class="settings-item-label">Dark Mode</div>
+                <div class="settings-item-sub">Switch to dark theme</div>
+              </div>
+            </div>
+            <div class="toggle-switch" id="dark-mode-toggle"></div>
+          </button>
+
+          <!-- AI Explain Current Question -->
+          <button class="settings-item" id="ai-explain-setting-btn" onclick="explainCurrentQuestion()">
+            <div class="settings-item-left">
+              <span class="settings-item-icon">🤖</span>
+              <div>
+                <div class="settings-item-label">AI Explain</div>
+                <div class="settings-item-sub">Explain the current question</div>
+              </div>
+            </div>
+            <span style="font-size:18px">→</span>
+          </button>
+          <div class="ai-popup-result" id="ai-popup-result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Dark mode persistence
+      function applyDarkMode() {
+        const isDark = localStorage.getItem('jft_dark_mode') === '1';
+        document.body.classList.toggle('dark-mode', isDark);
+        const toggle = document.getElementById('dark-mode-toggle');
+        if (toggle) toggle.classList.toggle('on', isDark);
+      }
+      function toggleDarkModeFromPopup() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('jft_dark_mode', isDark ? '1' : '0');
+        const toggle = document.getElementById('dark-mode-toggle');
+        if (toggle) toggle.classList.toggle('on', isDark);
+      }
+      function openSettingsPopup() {
+        applyDarkMode();
+        document.getElementById('settings-popup-backdrop').classList.add('open');
+      }
+      function closeSettingsPopup(e) {
+        if (!e || e.target === document.getElementById('settings-popup-backdrop') || e.target.closest('.settings-popup-close')) {
+          document.getElementById('settings-popup-backdrop').classList.remove('open');
+        }
+      }
+      // AI explain current question in popup
+      function explainCurrentQuestion() {
+        var result = document.getElementById('ai-popup-result');
+        if (!examData || examFinished) {
+          result.className = 'ai-popup-result show';
+          result.innerHTML = '<div class="ai-popup-loading">No active question</div>';
+          setTimeout(function(){ result.className = 'ai-popup-result'; result.innerHTML = ''; }, 2000);
+          return;
+        }
+        result.className = 'ai-popup-result show';
+        result.innerHTML = '<div class="ai-popup-loading">Generating explanation...</div>';
+        var q = examData.sections[currentSectionIdx].questions[currentQIdx];
+        var qState = state[currentSectionIdx][currentQIdx];
+        var correctIdx = getAnswerIndex(q);
+        var userAnswer = qState.selected !== null ? getOptionText(q, qState.selected) : 'No answer';
+        var correctAnswer = getOptionText(q, correctIdx);
+        var prompt = 'আপনি একজন জাপানি ভাষার শিক্ষক। এই JFT-Basic প্রশ্নটি ব্যাখ্যা করুন। বাংলায় সংক্ষেপে বলুন কেন সঠিক উত্তরটি সঠিক। জাপানি শব্দের সাথে রোমাজি (Romaji) ব্যবহার করুন। ২-৩ লাইনের মধ্যে রাখুন।\n\nপ্রশ্ন: ' + (q.stem || q.instruction || '') + (q.audioTranscript ? '\n\nঅডিও ট্রান্সক্রিপ্ট:\n' + q.audioTranscript : '') + '\nঅপশন: ' + (q.options || q.imageOptions || []).join(', ') + '\nশিক্ষার্থীর উত্তর: ' + userAnswer + '\nসঠিক উত্তর: ' + correctAnswer + '\n\nব্যাখ্যা:';
+        var controller = new AbortController();
+        setTimeout(function(){ controller.abort(); }, 8000);
+        fetchFromAI(prompt, controller.signal).then(function(text) {
+          if (text && text.trim()) {
+            result.innerHTML = marked.parse(text);
+          } else {
+            result.innerHTML = '<div class="ai-popup-loading">No response</div>';
+            setTimeout(function(){ result.className = 'ai-popup-result'; result.innerHTML = ''; }, 2000);
+          }
+        }).catch(function(err) {
+          result.innerHTML = '<div class="ai-popup-loading">Could not load. <button onclick="explainCurrentQuestion()" style="background:#e94560;color:#fff;border:none;padding:4px 10px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:8px;">Retry</button></div>';
+        });
+      }
+      // Wire settings button
+      document.getElementById('btn-settings').onclick = openSettingsPopup;
+      // Init dark mode state on load
+      applyDarkMode();
+    </script>
+</body>
+
+</html>

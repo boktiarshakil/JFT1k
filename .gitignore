@@ -1,0 +1,43 @@
+# Credentials & Secrets (CRITICAL: Never commit service account keys or API secrets)
+*.json
+!manifest.json
+!netlify.toml
+!package.json
+!package-lock.json
+!exams/**/data.json
+!exams/**/metadata.json
+!exams/metadata.json
+nihongo-pathway-*.json
+service-account*.json
+credentials*.json
+*.pem
+*.key
+.env
+.env.*
+
+# Dependencies & Package Managers
+node_modules/
+.opencode/node_modules/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+.opencode/
+
+# Tool outputs & Scrapes
+graphify-out/
+view-source_*.html
+
+# OS metadata
+.DS_Store
+Thumbs.db

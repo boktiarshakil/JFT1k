@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Travel | Future Concierge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.4);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --card-radius: 24px;
+            --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .style-premium {
+            --bg-gradient: linear-gradient(135deg, #1e293b 0%, #000000 100%);
+            --accent: #f59e0b;
+            --accent-glow: rgba(245, 158, 11, 0.4);
+            --glass-bg: rgba(245, 158, 11, 0.03);
+            --glass-border: rgba(245, 158, 11, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* --- Device Frame --- */
+        .phone-mockup {
+            width: 380px;
+            height: 800px;
+            background: #000;
+            border-radius: 50px;
+            border: 8px solid #334155;
+            position: relative;
+            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .notch {
+            width: 150px;
+            height: 30px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            z-index: 100;
+        }
+
+        /* --- App Content --- */
+        .app-shell {
+            flex: 1;
+            padding: 60px 24px 24px;
+            overflow-y: auto;
+            scrollbar-width: none;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .greeting h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .greeting p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        /* --- Tweak Switcher --- */
+        .tweaks-bar {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            padding: 4px;
+            border-radius: 30px;
+            display: flex;
+            gap: 4px;
+            border: 1px solid var(--glass-border);
+            z-index: 200;
+        }
+
+        .tweak-btn {
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tweak-btn.active {
+            background: var(--accent);
+            box-shadow: 0 4px 10px var(--accent-glow);
+        }
+
+        /* --- Glass Cards --- */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 20px;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .flight-card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .flight-route {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .city h2 { font-size: 24px; font-weight: 800; }
+        .city p { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; }
+
+        .plane-icon {
+            color: var(--accent);
+            font-size: 20px;
+            position: relative;
+        }
+
+        .plane-line {
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent), transparent);
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+        }
+
+        /* --- Featured Destinations --- */
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+        }
+
+        .dest-scroll {
+            display: flex;
+            gap: 16px;
+            margin: 0 -24px;
+            padding: 0 24px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .dest-card {
+            min-width: 200px;
+            height: 280px;
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: var(--transition);
+        }
+
+        .dest-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            border-radius: 20px;
+        }
+
+        .dest-info {
+            position: relative;
+            z-index: 10;
+        }
+
+        .dest-info h3 { font-size: 18px; margin-bottom: 4px; }
+        .dest-info p { font-size: 12px; color: #cbd5e1; }
+
+        /* --- Action FAB --- */
+        .fab {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 20px;
+            position: absolute;
+            right: 24px;
+            bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px var(--accent-glow);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* --- Animations --- */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .avatar { animation: float 3s ease-in-out infinite; }
+
+        /* Fade in list items */
+        .app-shell > * {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .app-shell > *:nth-child(1) { animation-delay: 0.1s; }
+        .app-shell > *:nth-child(2) { animation-delay: 0.2s; }
+        .app-shell > *:nth-child(3) { animation-delay: 0.3s; }
+        .app-shell > *:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-mockup" id="phone">
+        <div class="notch"></div>
+        
+        <div class="app-shell">
+            <div class="header">
+                <div class="greeting">
+                    <p>Good Evening,</p>
+                    <h1>Alex Riviera</h1>
+                </div>
+                <div class="avatar">AR</div>
+            </div>
+
+            <div class="section-title">Next Flight</div>
+            
+            <div class="card flight-card">
+                <div class="flight-route">
+                    <div class="city">
+                        <h2>SFO</h2>
+                        <p>San Francisco</p>
+                    </div>
+                    <div class="plane-icon">
+                        ✈️
+                        <div class="plane-line"></div>
+                    </div>
+                    <div class="city" style="text-align: right;">
+                        <h2>HND</h2>
+                        <p>Tokyo Haneda</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-secondary);">
+                    <span>Gate B12 • 22:40</span>
+                    <span style="color: var(--accent); font-weight: bold;">On Time</span>
+                </div>
+            </div>
+
+            <div class="section-title">Explore Dreams</div>
+            
+            <div class="dest-scroll">
+                <div class="dest-card" style="background-image: url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80')">
+                    <div class="dest-info">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Ancient Serenity</p>
+                    </div>
+                </div>
+                <div class="dest-card" style="background-image: url('https://images.unsplash.com/photo-1506929197414-4321c7e7b371?auto=format&fit=crop&w=600&q=80')">
+                    <div class="dest-info">
+                        <h3>Maldives</h3>
+                        <p>Azure Escape</p>
+                    </div>
+                </div>
+                <div class="dest-card" style="background-image: url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=600&q=80')">
+                    <div class="dest-info">
+                        <h3>London, UK</h3>
+                        <p>Modern Heritage</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Concierge Insights</div>
+            <div class="card" style="display: flex; align-items: center; gap: 15px;">
+                <div style="font-size: 30px;">🌦️</div>
+                <div>
+                    <h4 style="font-size: 14px;">Rain in Tokyo</h4>
+                    <p style="font-size: 12px; color: var(--text-secondary);">Pack an umbrella for your landing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fab">✨</div>
+
+        <!-- Tweak Switcher -->
+        <div class="tweaks-bar">
+            <button class="tweak-btn active" onclick="setTheme('standard', this)">Standard</button>
+            <button class="tweak-btn" onclick="setTheme('premium', this)">Premium</button>
+        </div>
+    </div>
+
+    <script>
+        function setTheme(theme, btn) {
+            const body = document.body;
+            const buttons = document.querySelectorAll('.tweak-btn');
+            
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (theme === 'premium') {
+                body.classList.add('style-premium');
+            } else {
+                body.classList.remove('style-premium');
+            }
+        }
+    </script>
+</body>
+</html>

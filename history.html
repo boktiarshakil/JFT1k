@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Progress — JFT Exam Hub</title>
+    <meta name="description" content="Your JFT-Basic exam history and analytics.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .history-container { max-width: 800px; margin: 0 auto; padding: 24px 16px; }
+        .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .history-title { font-size: 24px; font-weight: 800; color: #1a1a2e; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: #fff; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .stat-num { font-size: 32px; font-weight: 800; color: #3a7d3a; }
+        .stat-label { font-size: 12px; color: #888; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-num.red { color: #e53e3e; }
+        .stat-num.blue { color: #4361ee; }
+        .section-legend { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #666; }
+        .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .exam-history-list { margin-bottom: 32px; }
+        .exam-history-card { background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; border: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: box-shadow 0.2s; }
+        .exam-history-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .exam-info { flex: 1; min-width: 0; }
+        .exam-id { font-size: 16px; font-weight: 700; color: #333; }
+        .exam-date { font-size: 12px; color: #888; margin-top: 2px; }
+        .exam-score-box { text-align: center; flex-shrink: 0; }
+        .exam-score { font-size: 28px; font-weight: 800; }
+        .exam-score.passed { color: #28a745; }
+        .exam-score.failed { color: #dc3545; }
+        .exam-pass-label { font-size: 10px; font-weight: 700; text-transform: uppercase; }
+        .exam-pass-label.passed { color: #28a745; }
+        .exam-pass-label.failed { color: #dc3545; }
+        .section-mini-bars { display: flex; gap: 3px; margin-top: 6px; }
+        .section-mini-bar { height: 6px; border-radius: 3px; min-width: 16px; }
+        .weak-areas { background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #eee; margin-bottom: 24px; }
+        .weak-title { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; }
+        .weak-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+        .weak-item:last-child { border-bottom: none; }
+        .weak-section { color: #555; }
+        .weak-pct { font-weight: 700; color: #e53e3e; }
+        .empty-state-big { text-align: center; padding: 60px 20px; color: #999; }
+        .empty-state-big .empty-icon { font-size: 48px; margin-bottom: 16px; }
+        .btn-clear-history { background: #dc3545; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 12px; font-weight: 600; cursor: pointer; }
+        .btn-clear-history:hover { background: #c82333; }
+        .review-pool-section { background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #eee; margin-bottom: 24px; }
+        .review-pool-title { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; }
+        .review-pool-count { background: #e94560; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+        .btn-review-pool { background: #4361ee; color: #fff; border: none; border-radius: 6px; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; }
+        .btn-review-pool:hover { background: #3651ce; }
+    </style>
+</head>
+<body class="hub-body">
+    <header class="hub-topbar">
+        <h1 style="font-size: 16px;">📊 My Progress</h1>
+    </header>
+    <div class="hub-infobar">
+        JFT-Basic Exam History & Analytics
+    </div>
+
+    <div class="history-container" id="history-container">
+        <div class="empty-state-big" id="empty-state">
+            <div class="empty-icon">📊</div>
+            <h3>No exam history yet</h3>
+            <p>Complete your first exam to see your progress here.</p>
+            <a href="index.html" style="color:#3a7d3a;margin-top:16px;display:inline-block;font-weight:600">← Back to Hub</a>
+        </div>
+
+        <div id="history-content" style="display:none;">
+            <div class="history-header">
+                <div>
+                    <div class="history-title">Your Progress</div>
+                    <div style="font-size:13px;color:#888;margin-top:4px;" id="history-subtitle"></div>
+                </div>
+                <button class="btn-clear-history" onclick="clearHistory()">🗑 Clear History</button>
+            </div>
+
+            <div class="stats-grid" id="stats-grid"></div>
+
+            <div class="weak-areas" id="weak-areas-section" style="display:none;">
+                <div class="weak-title">📉 Weakest Sections</div>
+                <div id="weak-areas-list"></div>
+            </div>
+
+            <div class="review-pool-section" id="review-pool-section" style="display:none;">
+                <div class="review-pool-title">
+                    🔄 Spaced Repetition Review
+                    <span class="review-pool-count" id="review-pool-count">0</span>
+                </div>
+                <p style="font-size:13px;color:#666;margin-bottom:8px;">Questions you got wrong are scheduled for review at optimal intervals.</p>
+                <button class="btn-review-pool" onclick="startReviewPool()">Start Review Session</button>
+            </div>
+
+            <div class="exam-history-list" id="exam-history-list"></div>
+        </div>
+    </div>
+
+    <script>
+        function getExamHistory() {
+            try { return JSON.parse(localStorage.getItem('jft_exam_history') || '[]'); } catch (e) { return []; }
+        }
+
+        function getWrongAnswerPool() {
+            try { return JSON.parse(localStorage.getItem('jft_wrong_pool') || '{}'); } catch (e) { return {}; }
+        }
+
+        function renderDashboard() {
+            const history = getExamHistory();
+            const pool = getWrongAnswerPool();
+            const dueReviews = Object.values(pool).filter(item => item.nextReview <= Date.now());
+
+            if (history.length === 0) {
+                document.getElementById('empty-state').style.display = 'block';
+                document.getElementById('history-content').style.display = 'none';
+                return;
+            }
+
+            document.getElementById('empty-state').style.display = 'none';
+            document.getElementById('history-content').style.display = 'block';
+
+            // Stats
+            const totalExams = history.length;
+            const passedExams = history.filter(h => h.passed).length;
+            const avgScore = Math.round(history.reduce((s, h) => s + h.score, 0) / totalExams);
+            const bestScore = Math.max(...history.map(h => h.score));
+            const passRate = Math.round(passedExams / totalExams * 100);
+
+            document.getElementById('history-subtitle').textContent = `${totalExams} exam${totalExams !== 1 ? 's' : ''} completed`;
+            document.getElementById('stats-grid').innerHTML = `
+                <div class="stat-card"><div class="stat-num blue">${totalExams}</div><div class="stat-label">Exams Taken</div></div>
+                <div class="stat-card"><div class="stat-num">${avgScore}</div><div class="stat-label">Avg Score</div></div>
+                <div class="stat-card"><div class="stat-num">${bestScore}</div><div class="stat-label">Best Score</div></div>
+                <div class="stat-card"><div class="stat-num ${passRate >= 50 ? '' : 'red'}">${passRate}%</div><div class="stat-label">Pass Rate</div></div>
+            `;
+
+            // Weakest sections (aggregate across all exams)
+            const sectionTotals = {};
+            history.forEach(h => {
+                h.sectionResults.forEach(sr => {
+                    if (!sectionTotals[sr.name]) sectionTotals[sr.name] = { correct: 0, total: 0 };
+                    sectionTotals[sr.name].correct += sr.correct;
+                    sectionTotals[sr.name].total += sr.total;
+                });
+            });
+            const sectionAvgs = Object.entries(sectionTotals).map(([name, d]) => ({
+                name, pct: Math.round(d.correct / d.total * 100)
+            })).sort((a, b) => a.pct - b.pct);
+
+            if (sectionAvgs.length > 0) {
+                document.getElementById('weak-areas-section').style.display = 'block';
+                document.getElementById('weak-areas-list').innerHTML = sectionAvgs.slice(0, 4).map(s => `
+                    <div class="weak-item">
+                        <span class="weak-section">${s.name}</span>
+                        <span class="weak-pct">${s.pct}%</span>
+                    </div>
+                `).join('');
+            }
+
+            // Review pool
+            if (dueReviews.length > 0) {
+                document.getElementById('review-pool-section').style.display = 'block';
+                document.getElementById('review-pool-count').textContent = dueReviews.length;
+            }
+
+            // Exam list
+            const sectionColors = ['#3a7d3a', '#4361ee', '#e94560', '#f0c040'];
+            document.getElementById('exam-history-list').innerHTML = history.map(h => {
+                const date = new Date(h.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                return `
+                    <div class="exam-history-card">
+                        <div class="exam-info">
+                            <div class="exam-id">${h.examId.toUpperCase()}</div>
+                            <div class="exam-date">${date}</div>
+                            <div class="section-mini-bars">
+                                ${h.sectionResults.map((sr, i) => {
+                                    const pct = Math.round(sr.correct / sr.total * 100);
+                                    return `<div class="section-mini-bar" style="width:${Math.max(pct, 5)}%;background:${sectionColors[i % sectionColors.length]}" title="${sr.name}: ${pct}%"></div>`;
+                                }).join('')}
+                            </div>
+                        </div>
+                        <div class="exam-score-box">
+                            <div class="exam-score ${h.passed ? 'passed' : 'failed'}">${h.score}</div>
+                            <div class="exam-pass-label ${h.passed ? 'passed' : 'failed'}">${h.passed ? 'PASS' : 'FAIL'}</div>
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        function clearHistory() {
+            if (!confirm('Clear all exam history? This cannot be undone.')) return;
+            localStorage.removeItem('jft_exam_history');
+            localStorage.removeItem('jft_wrong_pool');
+            renderDashboard();
+        }
+
+        function startReviewPool() {
+            // Store review pool data for the exam page to pick up
+            const pool = getWrongAnswerPool();
+            const due = Object.values(pool).filter(item => item.nextReview <= Date.now());
+            if (due.length === 0) {
+                alert('No reviews due right now. Keep practicing!');
+                return;
+            }
+            // Navigate to a special review mode — for now just show an alert with count
+            alert(`${due.length} question(s) due for review.\n\nThis feature will launch a dedicated review session soon.\n\nFor now, re-take exams you got questions wrong on.`);
+        }
+
+        renderDashboard();
+    </script>
+</body>
+</html>

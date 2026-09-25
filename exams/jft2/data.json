@@ -1,0 +1,800 @@
+{
+    "id": "jft2",
+    "title": "JFT-Basic Simulation Exam 2",
+    "description": "Simulation Exam testing daily interactions, nuanced vocabulary and grammar, and practical Japanese communication skills.",
+    "duration": 3600,
+    "sections": [
+        {
+            "id": "s1",
+            "title": "文字・語彙 (Script and Vocabulary)",
+            "description": "文字や語彙の知識を測ります。",
+            "questions": [
+                {
+                    "id": "q1",
+                    "type": "image",
+                    "imagePrompt": "A close-up image of a hand searching inside a handbag, with a small, rectangular train ticket partially visible among other items like keys and a wallet. The person looks a bit worried.",
+                    "stem": "電車の（　　　）が見つかりません。",
+                    "options": [
+                        "1. きっぷ",
+                        "2. パスポート",
+                        "3. お金",
+                        "4. 地図"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q2",
+                    "type": "image",
+                    "imagePrompt": "A bright, clear sky with a large, friendly sun shining brightly. There are no clouds, indicating perfect weather.",
+                    "stem": "今日はとても（　　　）ですね。",
+                    "options": [
+                        "1. 暑い",
+                        "2. 寒い",
+                        "3. 良い天気",
+                        "4. 悪い天気"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q3",
+                    "type": "image",
+                    "imagePrompt": "A single, yellow wooden pencil with a pink eraser at the end, lying on a white desk.",
+                    "stem": "これは（　　　）です。",
+                    "options": [
+                        "1. ペン",
+                        "2. えんぴつ",
+                        "3. ノート",
+                        "4. けしゴム"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q4",
+                    "type": "image",
+                    "imagePrompt": "A person's index finger is shown pressing a button on an elevator panel. The button has an upward arrow on it.",
+                    "stem": "エレベーターのボタンを（　　　）。",
+                    "options": [
+                        "1. 開けます",
+                        "2. 押します",
+                        "3. 閉めます",
+                        "4. 引きます"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q5",
+                    "type": "image",
+                    "imagePrompt": "A busy train station platform in Japan, with a train pulling into the station. Several people are waiting on the platform.",
+                    "stem": "毎日、この（　　　）で電車に乗ります。",
+                    "options": [
+                        "1. バス停",
+                        "2. 飛行機",
+                        "3. 駅",
+                        "4. 港"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q6",
+                    "type": "image",
+                    "imagePrompt": "A simple red arrow pointing clearly to the right on a white background.",
+                    "stem": "（　　　）に曲がってください。",
+                    "options": [
+                        "1. 右",
+                        "2. 左",
+                        "3. 前",
+                        "4. 後ろ"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q7",
+                    "type": "text",
+                    "stem": "これは私の(______)です。",
+                    "options": [
+                        "1. 名前",
+                        "2. 銀行",
+                        "3. 電話",
+                        "4. 住所"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q8",
+                    "type": "text",
+                    "stem": "毎日、朝食(______)パンを食べます。",
+                    "options": [
+                        "1. で",
+                        "2. を",
+                        "3. に",
+                        "4. へ"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q9",
+                    "type": "text",
+                    "stem": "この公園はとても(______)です。子供たちが楽しく遊んでいます。",
+                    "options": [
+                        "1. 小さい",
+                        "2. 静か",
+                        "3. 広い",
+                        "4. 高い"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q10",
+                    "type": "text",
+                    "stem": "デパートで新しいセーターを(______)ました。",
+                    "options": [
+                        "1. 買います",
+                        "2. 買いました",
+                        "3. 買う",
+                        "4. 買って"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q11",
+                    "type": "text",
+                    "stem": "電車(______)駅へ行きます。",
+                    "options": [
+                        "1. で",
+                        "2. と",
+                        "3. に",
+                        "4. から"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q12",
+                    "type": "text",
+                    "stem": "コーヒーを一杯(______)か。",
+                    "options": [
+                        "1. 飲みます",
+                        "2. 飲みませんか",
+                        "3. 飲みません",
+                        "4. 飲みました"
+                    ],
+                    "answer": "2"
+                }
+            ]
+        },
+        {
+            "id": "s2",
+            "title": "会話・表現 (Conversation and Expression)",
+            "description": "日常会話における適切な表現力を測ります。",
+            "questions": [
+                {
+                    "id": "q13",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "おはようございます。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "(______)。"
+                        }
+                    ],
+                    "options": [
+                        "1. こんにちは",
+                        "2. おやすみなさい",
+                        "3. おはようございます",
+                        "4. こんばんは"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q14",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "すみません、遅くなりました。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "いいえ、(______)。"
+                        }
+                    ],
+                    "options": [
+                        "1. どういたしまして",
+                        "2. 大丈夫です",
+                        "3. お願いします",
+                        "4. お疲れ様でした"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q15",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "すみません、郵便局はどこですか。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "あそこの(______)を右に曲がってください。"
+                        }
+                    ],
+                    "options": [
+                        "1. バス停",
+                        "2. 交差点",
+                        "3. 信号",
+                        "4. 建物"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q16",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "荷物がたくさんありますね。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "ええ、ちょっと重くて。"
+                        },
+                        {
+                            "speaker": "A",
+                            "speech": "(______)。"
+                        }
+                    ],
+                    "options": [
+                        "1. 手伝いましょうか",
+                        "2. 貸しましょうか",
+                        "3. 買いましょうか",
+                        "4. 運びましょうか"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q17",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "もう一杯いかがですか。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "いいえ、(______)。ありがとうございます。"
+                        }
+                    ],
+                    "options": [
+                        "1. 結構です",
+                        "2. ください",
+                        "3. あります",
+                        "4. 食べます"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q18",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "これはあなたのお土産です。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "わあ、(______)。ありがとうございます。"
+                        }
+                    ],
+                    "options": [
+                        "1. 残念ですね",
+                        "2. 嬉しいです",
+                        "3. 困ります",
+                        "4. 寂しいです"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q19",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "週末は何かしましたか。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "いいえ、何も(______)でした。"
+                        }
+                    ],
+                    "options": [
+                        "1. しません",
+                        "2. しませんでした",
+                        "3. しなかった",
+                        "4. する"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q20",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "すみませんが、窓を(______)。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "はい、わかりました。"
+                        }
+                    ],
+                    "options": [
+                        "1. 開けてください",
+                        "2. 閉めてください",
+                        "3. 見てください",
+                        "4. 聞いてください"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q21",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "この店のラーメンは美味しいですよ。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "(______)。私もそう思います。"
+                        }
+                    ],
+                    "options": [
+                        "1. そうですね",
+                        "2. いいえ",
+                        "3. 違います",
+                        "4. だめです"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q22",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "テスト、残念だったね。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "うん、本当に(______)。"
+                        }
+                    ],
+                    "options": [
+                        "1. 嬉しい",
+                        "2. 楽しい",
+                        "3. 悔しい",
+                        "4. 嬉しいです"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q23",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "ここで写真を(______)か。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "はい、どうぞ。"
+                        }
+                    ],
+                    "options": [
+                        "1. 撮りましょう",
+                        "2. 撮ってもいいですか",
+                        "3. 撮ります",
+                        "4. 撮って"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q24",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "コーヒーと紅茶、どちらが(______)か。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "コーヒーをお願いします。"
+                        }
+                    ],
+                    "options": [
+                        "1. いいですか",
+                        "2. 好きですか",
+                        "3. 高いですか",
+                        "4. 安いですか"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q25",
+                    "type": "text",
+                    "dialogue": [
+                        {
+                            "speaker": "A",
+                            "speech": "日本語の勉強は難しいですか。"
+                        },
+                        {
+                            "speaker": "B",
+                            "speech": "はい、でもとても(______)。"
+                        }
+                    ],
+                    "options": [
+                        "1. つまらないです",
+                        "2. 楽しいです",
+                        "3. 嫌いです",
+                        "4. 怖いです"
+                    ],
+                    "answer": "2"
+                }
+            ]
+        },
+        {
+            "id": "s3",
+            "title": "聴解 (Listening Comprehension)",
+            "description": "日本語の聞き取り能力を測ります。",
+            "questions": [
+                {
+                    "id": "q26",
+                    "type": "audio",
+                    "audio": "q26.mp3",
+                    "audioTranscript": "女：あの、すみません。これは何ですか。男：それは鉛筆ですよ。",
+                    "stem": "女の人は何について聞いていますか。",
+                    "options": [
+                        "1. ノート",
+                        "2. 消しゴム",
+                        "3. 鉛筆",
+                        "4. ペン"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q27",
+                    "type": "audio",
+                    "audio": "q27.mp3",
+                    "audioTranscript": "男：郵便局はどこですか。女：あちらの信号を渡って、すぐ左にありますよ。",
+                    "stem": "郵便局はどこにありますか。",
+                    "options": [
+                        "1. 信号の右",
+                        "2. 信号の向こう側を左",
+                        "3. 信号の手前",
+                        "4. 信号のすぐ右"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q28",
+                    "type": "audio",
+                    "audio": "q28.mp3",
+                    "audioTranscript": "女：田中さん、来週の土曜日は暇ですか。男：来週の土曜日ですね。はい、大丈夫ですよ。",
+                    "stem": "男の人はいつ暇ですか。",
+                    "options": [
+                        "1. 今週の土曜日",
+                        "2. 来週の日曜日",
+                        "3. 来週の土曜日",
+                        "4. 今週の金曜日"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q29",
+                    "type": "audio",
+                    "audio": "q29.mp3",
+                    "audioTranscript": "男：このTシャツはいくらですか。女：それは3500円です。",
+                    "stem": "Tシャツの値段はいくらですか。",
+                    "options": [
+                        "1. 3000円",
+                        "2. 3500円",
+                        "3. 5000円",
+                        "4. 5500円"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q30",
+                    "type": "audio",
+                    "audio": "q30.mp3",
+                    "audioTranscript": "女：今から何をしますか。男：図書館で本を借ります。",
+                    "stem": "男の人は何をしますか。",
+                    "options": [
+                        "1. 本を買います",
+                        "2. 本を借ります",
+                        "3. 図書館で勉強します",
+                        "4. 図書館で働きます"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q31",
+                    "type": "audio",
+                    "audio": "q31.mp3",
+                    "audioTranscript": "男：昨日の映画はどうでしたか。女：とても面白かったです。",
+                    "stem": "女の人は昨日の映画をどう思っていますか。",
+                    "options": [
+                        "1. つまらなかった",
+                        "2. 面白かった",
+                        "3. 難しかった",
+                        "4. 怖かった"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q32",
+                    "type": "audio",
+                    "audio": "q32.mp3",
+                    "audioTranscript": "女：朝ごはんに何を食べますか。男：いつもパンとコーヒーです。",
+                    "stem": "男の人は朝ごはんに何を食べますか。",
+                    "options": [
+                        "1. ご飯とみそ汁",
+                        "2. パンとコーヒー",
+                        "3. 卵とパン",
+                        "4. シリアルと牛乳"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q33",
+                    "type": "audio",
+                    "audio": "q33.mp3",
+                    "audioTranscript": "男：すみません、少し寒いので、窓を閉めてもいいですか。女：はい、どうぞ。",
+                    "stem": "男の人は女の人に何を頼んでいますか。",
+                    "options": [
+                        "1. 窓を開けること",
+                        "2. 窓を閉めること",
+                        "3. エアコンをつけること",
+                        "4. ヒーターをつけること"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q34",
+                    "type": "audio",
+                    "audio": "q34.mp3",
+                    "audioTranscript": "女：週末はどこに行きますか。男：友達とデパートへ買い物に行きます。",
+                    "stem": "男の人は週末どこへ行きますか。",
+                    "options": [
+                        "1. 友達の家",
+                        "2. 公園",
+                        "3. デパート",
+                        "4. 映画館"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q35",
+                    "type": "audio",
+                    "audio": "q35.mp3",
+                    "audioTranscript": "男：どうやって会社に来ますか。女：いつも電車で来ます。",
+                    "stem": "女の人はどうやって会社に来ますか。",
+                    "options": [
+                        "1. バス",
+                        "2. 自転車",
+                        "3. 電車",
+                        "4. 車"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q36",
+                    "type": "audio",
+                    "audio": "q36.mp3",
+                    "audioTranscript": "女：顔色が悪いですね。大丈夫ですか。男：ええ、少し頭が痛いです。",
+                    "stem": "男の人はどうしましたか。",
+                    "options": [
+                        "1. 喉が痛い",
+                        "2. お腹が痛い",
+                        "3. 熱がある",
+                        "4. 頭が痛い"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q37",
+                    "type": "audio",
+                    "audio": "q37.mp3",
+                    "audioTranscript": "男：なぜ日本語を勉強していますか。女：将来、日本で働きたいからです。",
+                    "stem": "女の人はなぜ日本語を勉強していますか。",
+                    "options": [
+                        "1. 日本の文化が好きだから",
+                        "2. 日本のアニメが好きだから",
+                        "3. 日本で働きたいから",
+                        "4. 日本人の友達がいるから"
+                    ],
+                    "answer": "3"
+                }
+            ]
+        },
+        {
+            "id": "s4",
+            "title": "読解 (Reading Comprehension)",
+            "description": "日本語の文章理解能力を測ります。",
+            "questions": [
+                {
+                    "id": "q38",
+                    "type": "text",
+                    "context": "お知らせ：図書館は、来週の月曜日（5月15日）は、設備点検のため、午前9時から午後1時まで閉館します。午後1時からは通常通り開館します。",
+                    "stem": "図書館は来週の月曜日の午前中、どうなりますか。",
+                    "options": [
+                        "1. ずっと開いている",
+                        "2. ずっと閉まっている",
+                        "3. 午後から閉まる",
+                        "4. 午前中だけ閉まる"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q39",
+                    "type": "text",
+                    "context": "佐藤さんへ。明日の会議は午後2時から3時になりました。場所は変わりません。よろしくお願いします。田中",
+                    "stem": "田中さんが佐藤さんに伝えていることは何ですか。",
+                    "options": [
+                        "1. 会議の場所が変わったこと",
+                        "2. 会議の時間と場所が変わったこと",
+                        "3. 会議の時間が変わったこと",
+                        "4. 会議が中止になったこと"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q40",
+                    "type": "text",
+                    "context": "今日の予定：午前9時：メールチェック。午前10時：会議（A室）。午後1時：ランチ。午後2時：レポート作成。午後4時：お客様訪問。",
+                    "stem": "お客様訪問は何時ですか。",
+                    "options": [
+                        "1. 午前10時",
+                        "2. 午後1時",
+                        "3. 午後2時",
+                        "4. 午後4時"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q41",
+                    "type": "text",
+                    "context": "簡単なオムライスの作り方：１．卵を混ぜる。２．ご飯を炒める。３．卵でご飯を包む。４．ケチャップをかける。",
+                    "stem": "ケチャップはいつかけますか。",
+                    "options": [
+                        "1. 卵を混ぜる前",
+                        "2. ご飯を炒める前",
+                        "3. 卵でご飯を包んだ後",
+                        "4. 最初"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q42",
+                    "type": "text",
+                    "context": "SALE！全品20%オフ！本日限り！",
+                    "stem": "この店では、今日、何ができますか。",
+                    "options": [
+                        "1. 全ての商品が2割引で買える",
+                        "2. 新しい商品が入荷する",
+                        "3. 店が閉まる",
+                        "4. 20%割引券がもらえる"
+                    ],
+                    "answer": "1"
+                },
+                {
+                    "id": "q43",
+                    "type": "text",
+                    "context": "今日、初めて日本料理教室に行きました。巻き寿司を作りましたが、少し難しかったです。でも、とても楽しかったです。来週も行きたいです。",
+                    "stem": "この人は何を作りましたか。",
+                    "options": [
+                        "1. ラーメン",
+                        "2. 天ぷら",
+                        "3. 巻き寿司",
+                        "4. お好み焼き"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q44",
+                    "type": "text",
+                    "context": "お客様にご案内いたします。まもなく、1番線に東京行きがまいります。黄色い線の内側でお待ちください。",
+                    "stem": "乗客は何を待っていますか。",
+                    "options": [
+                        "1. 新幹線",
+                        "2. バス",
+                        "3. 東京行きの電車",
+                        "4. タクシー"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q45",
+                    "type": "text",
+                    "context": "アルバイト募集：喫茶店。時給1000円。週3日以上。交通費支給。未経験者歓迎！",
+                    "stem": "このアルバイトについて正しいものはどれですか。",
+                    "options": [
+                        "1. 経験者のみ応募できる",
+                        "2. 交通費は出ない",
+                        "3. 週に2日だけ働ける",
+                        "4. 時給は1000円である"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q46",
+                    "type": "text",
+                    "context": "今日の天気予報：東京は一日中晴れでしょう。最高気温は25度。洗濯日和です。",
+                    "stem": "今日の東京の天気はどんな天気ですか。",
+                    "options": [
+                        "1. 雨",
+                        "2. 曇り",
+                        "3. 雪",
+                        "4. 晴れ"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q47",
+                    "type": "text",
+                    "context": "風邪をひいたら：暖かくして、ゆっくり休んでください。水分をたくさん取って、栄養のあるものを食べてください。",
+                    "stem": "風邪をひいたときに、何をするといいですか。",
+                    "options": [
+                        "1. 運動する",
+                        "2. 冷たいものを飲む",
+                        "3. 栄養のあるものを食べる",
+                        "4. 仕事をする"
+                    ],
+                    "answer": "3"
+                },
+                {
+                    "id": "q48",
+                    "type": "text",
+                    "context": "お元気ですか。こちらは毎日暑いですが、元気です。来月、日本へ行きます。会えるのを楽しみにしています。体に気をつけてくださいね。マリア",
+                    "stem": "マリアさんはいつ日本へ来ますか。",
+                    "options": [
+                        "1. 今月",
+                        "2. 来月",
+                        "3. 再来月",
+                        "4. 分からない"
+                    ],
+                    "answer": "2"
+                },
+                {
+                    "id": "q49",
+                    "type": "text",
+                    "context": "メニュー：カレーライス 700円。ラーメン 800円。うどん 650円。コーヒー 300円。",
+                    "stem": "この中で一番安いものは何ですか。",
+                    "options": [
+                        "1. カレーライス",
+                        "2. ラーメン",
+                        "3. うどん",
+                        "4. コーヒー"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "id": "q50",
+                    "type": "text",
+                    "context": "電車内でのマナー：携帯電話での通話はご遠慮ください。優先席ではお年寄りや体の不自由な方に席をお譲りください。",
+                    "stem": "電車の中でしてはいけないことは何ですか。",
+                    "options": [
+                        "1. 携帯電話でメールをする",
+                        "2. 優先席に座る",
+                        "3. 携帯電話で話す",
+                        "4. 本を読む"
+                    ],
+                    "answer": "3"
+                }
+            ]
+        }
+    ]
+}
