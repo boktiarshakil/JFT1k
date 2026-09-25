@@ -6,10 +6,31 @@
 (function () {
   const SUPABASE_URL = 'https://bynxrlybssnxjrbijitq.supabase.co';
   const SUPABASE_ANON_KEY = 'sb_publishable_egUPz76TLOJdocc8XollaQ_HjuPz4Y3';
+  const REQUIRE_AUTH = true; // Gate the app: requires Nihongo Pathway login
 
   let supabaseClient = null;
   let currentUser = null;
   let authListeners = [];
+
+  function checkAccessGate() {
+    if (!REQUIRE_AUTH) return;
+    const modal = document.getElementById('np-auth-modal-root');
+    if (!currentUser) {
+      document.body.classList.add('np-auth-locked');
+      if (modal) {
+        modal.classList.add('active', 'np-blocking');
+      } else {
+        injectAuthModal();
+        const m = document.getElementById('np-auth-modal-root');
+        if (m) m.classList.add('active', 'np-blocking');
+      }
+    } else {
+      document.body.classList.remove('np-auth-locked');
+      if (modal && modal.classList.contains('np-blocking')) {
+        modal.classList.remove('active', 'np-blocking');
+      }
+    }
+  }
 
   // Initialize Supabase Client
   function getSupabaseClient() {
@@ -225,8 +246,12 @@
     },
 
     closeLoginModal() {
+      if (REQUIRE_AUTH && !currentUser) {
+        // App is locked until user logs in
+        return;
+      }
       const modal = document.getElementById('np-auth-modal-root');
-      if (modal) modal.classList.remove('active');
+      if (modal) modal.classList.remove('active', 'np-blocking');
     },
 
     async handleLoginSubmit(e) {
@@ -269,7 +294,7 @@
             localStorage.setItem('nihongo_pathway_user', JSON.stringify(currentUser));
           } catch (_) {}
 
-          window.NihongoAuth.closeLoginModal();
+          checkAccessGate();
           updateAuthUI();
           authListeners.forEach(fn => fn(currentUser));
         }
@@ -301,6 +326,7 @@
       try {
         localStorage.removeItem('nihongo_pathway_user');
       } catch (_) {}
+      checkAccessGate();
       updateAuthUI();
       authListeners.forEach(fn => fn(null));
     },
@@ -326,6 +352,7 @@
     ensureAuthContainers();
     updateAuthUI();
     injectAuthModal();
+    checkAccessGate();
 
     ensureSupabaseScript(async () => {
       const client = getSupabaseClient();
@@ -338,6 +365,7 @@
           try {
             localStorage.setItem('nihongo_pathway_user', JSON.stringify(currentUser));
           } catch (_) {}
+          checkAccessGate();
           updateAuthUI();
           authListeners.forEach(fn => fn(currentUser));
         } else if (!data || !data.session) {
@@ -346,6 +374,7 @@
           try {
             localStorage.removeItem('nihongo_pathway_user');
           } catch (_) {}
+          checkAccessGate();
           updateAuthUI();
           authListeners.forEach(fn => fn(null));
         }
@@ -365,6 +394,7 @@
             localStorage.removeItem('nihongo_pathway_user');
           } catch (_) {}
         }
+        checkAccessGate();
         updateAuthUI();
         authListeners.forEach(fn => fn(currentUser));
       });

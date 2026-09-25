@@ -114,6 +114,22 @@
   visibility: visible;
 }
 
+/* Auth Gate / App Lock */
+body.np-auth-locked {
+  overflow: hidden !important;
+}
+
+body.np-auth-locked > *:not(#np-auth-modal-root) {
+  filter: blur(6px);
+  pointer-events: none !important;
+  user-select: none !important;
+  transition: filter 0.3s ease;
+}
+
+.np-modal-backdrop.np-blocking .np-modal-close {
+  display: none !important;
+}
+
 /* Modal Card */
 .np-modal-card {
   background: #ffffff;
