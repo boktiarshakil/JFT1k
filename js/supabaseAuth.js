@@ -104,6 +104,104 @@
     };
   }
 
+  // Hardware Fingerprint: Same physical machine produces the exact same ID
+  async function getHardwareDeviceId() {
+    try {
+      const canvas = document.createElement('canvas');
+      let renderer = '';
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (gl) {
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        if (debugInfo) {
+          renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) || '';
+        }
+      }
+
+      const components = [
+        navigator.platform || '',
+        navigator.hardwareConcurrency || 4,
+        screen.width + 'x' + screen.height + 'x' + screen.colorDepth,
+        Intl.DateTimeFormat().resolvedOptions().timeZone || '',
+        renderer
+      ].join('###');
+
+      const msgBuffer = new TextEncoder().encode(components);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return 'hw_' + hashArray.map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 20);
+    } catch (e) {
+      let fallback = localStorage.getItem('np_device_uuid') || ('web_' + Math.random().toString(36).substring(2));
+      localStorage.setItem('np_device_uuid', fallback);
+      return fallback;
+    }
+  }
+
+  // Device verification and binding rule
+  async function verifyAndBindDevice(userProfile) {
+    if (!userProfile) return { allowed: true };
+    const role = (userProfile.role || '').toLowerCase();
+    if (['super_admin', 'superadmin', 'branch_manager', 'branchmanager'].includes(role)) {
+      return { allowed: true };
+    }
+
+    try {
+      const client = getSupabaseClient();
+      if (!client) return { allowed: true };
+
+      const currentDeviceId = await getHardwareDeviceId();
+      const userId = userProfile.uid;
+
+      const { data: dbUser, error } = await client
+        .from('users')
+        .select('device_id, device_ids, device_limit')
+        .or(`uid.eq.${userId},auth_id.eq.${userId}`)
+        .maybeSingle();
+
+      if (error || !dbUser) return { allowed: true };
+
+      const limit = dbUser.device_limit ?? 1;
+      if (limit <= 0) return { allowed: true, deviceId: currentDeviceId };
+
+      let devices = Array.isArray(dbUser.device_ids) ? dbUser.device_ids : [];
+      if (dbUser.device_id && !devices.includes(dbUser.device_id)) {
+        devices = [...devices, dbUser.device_id];
+      }
+
+      // 1. No device bound yet -> Bind this device
+      if (devices.length === 0) {
+        await client
+          .from('users')
+          .update({ device_id: currentDeviceId, device_ids: [currentDeviceId] })
+          .or(`uid.eq.${userId},auth_id.eq.${userId}`);
+        return { allowed: true, deviceId: currentDeviceId };
+      }
+
+      // 2. Current device already registered -> Access allowed
+      if (devices.includes(currentDeviceId)) {
+        return { allowed: true, deviceId: currentDeviceId };
+      }
+
+      // 3. Room for another device -> Register it
+      if (devices.length < limit) {
+        const updatedDevices = [...devices, currentDeviceId];
+        await client
+          .from('users')
+          .update({ device_id: updatedDevices[0], device_ids: updatedDevices })
+          .or(`uid.eq.${userId},auth_id.eq.${userId}`);
+        return { allowed: true, deviceId: currentDeviceId, devices: updatedDevices };
+      }
+
+      // 4. Limit reached on a different physical device -> Block access
+      return {
+        allowed: false,
+        message: 'This account is limited to 1 device. You can use any browser on the same phone or computer. A different phone or computer will be blocked. Contact your institute if you need another device.'
+      };
+    } catch (err) {
+      console.warn('Device verification fallback:', err);
+      return { allowed: true };
+    }
+  }
+
   // Create & Inject Modal HTML
   function injectAuthModal() {
     if (document.getElementById('np-auth-modal-root')) return;
@@ -289,7 +387,22 @@
         if (error) throw error;
 
         if (data && data.user) {
-          currentUser = await fetchUserProfile(data.user);
+          const profile = await fetchUserProfile(data.user);
+          const devCheck = await verifyAndBindDevice(profile);
+          if (!devCheck.allowed) {
+            await client.auth.signOut();
+            currentUser = null;
+            try { localStorage.removeItem('nihongo_pathway_user'); } catch (_) {}
+            checkAccessGate();
+            updateAuthUI();
+            if (errorBox) {
+              errorBox.textContent = '⚠️ ' + devCheck.message;
+              errorBox.classList.add('visible');
+            }
+            return;
+          }
+
+          currentUser = profile;
           try {
             localStorage.setItem('nihongo_pathway_user', JSON.stringify(currentUser));
           } catch (_) {}
@@ -361,7 +474,23 @@
       try {
         const { data } = await client.auth.getSession();
         if (data && data.session && data.session.user) {
-          currentUser = await fetchUserProfile(data.session.user);
+          const profile = await fetchUserProfile(data.session.user);
+          const devCheck = await verifyAndBindDevice(profile);
+          if (!devCheck.allowed) {
+            await client.auth.signOut();
+            currentUser = null;
+            try { localStorage.removeItem('nihongo_pathway_user'); } catch (_) {}
+            checkAccessGate();
+            updateAuthUI();
+            const errEl = document.getElementById('np-auth-error');
+            if (errEl) {
+              errEl.textContent = '⚠️ ' + devCheck.message;
+              errEl.classList.add('visible');
+            }
+            return;
+          }
+
+          currentUser = profile;
           try {
             localStorage.setItem('nihongo_pathway_user', JSON.stringify(currentUser));
           } catch (_) {}
