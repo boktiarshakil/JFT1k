@@ -140,7 +140,7 @@
             </form>
 
             <div class="np-modal-footer">
-              Don't have an account yet? Visit <a href="https://nihongopathway.com" target="_blank" rel="noopener">Nihongo Pathway</a>
+              Don't have an account yet? Visit <a href="https://nihongopathway.netlify.app" target="_blank" rel="noopener">Nihongo Pathway</a>
             </div>
           </div>
         </div>
