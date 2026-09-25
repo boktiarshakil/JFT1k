@@ -104,33 +104,52 @@
     };
   }
 
-  // Hardware Fingerprint: Same physical machine produces the exact same ID
+  // Exact hardware fingerprint formula used across Nihongo Pathway & JFT-Basic
+  // Keys: np_device_hw and np_device_uuid (localStorage + cookie)
+  // Fingerprint: os|screenW|screenH|dpr|touchPoints|cpuCores|timezone -> SHA-256 -> first 20 hex -> hw_
   async function getHardwareDeviceId() {
+    // 1. Check cached in localStorage or cookie
     try {
-      const canvas = document.createElement('canvas');
-      let renderer = '';
-      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-      if (gl) {
-        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-        if (debugInfo) {
-          renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) || '';
-        }
+      let cached = localStorage.getItem('np_device_hw') || localStorage.getItem('np_device_uuid');
+      if (!cached) {
+        const m = document.cookie.match(/(?:^|;\s*)(?:np_device_hw|np_device_uuid)=([^;]+)/);
+        if (m) cached = decodeURIComponent(m[1]);
       }
+      if (cached && cached.startsWith('hw_')) {
+        return cached;
+      }
+    } catch (_) {}
 
-      const components = [
-        navigator.platform || '',
-        navigator.hardwareConcurrency || 4,
-        screen.width + 'x' + screen.height + 'x' + screen.colorDepth,
-        Intl.DateTimeFormat().resolvedOptions().timeZone || '',
-        renderer
-      ].join('###');
+    // 2. Compute fingerprint: os|screenW|screenH|dpr|touchPoints|cpuCores|timezone
+    try {
+      const os = (navigator.userAgentData?.platform || navigator.platform || 'unknown').toLowerCase();
+      const screenW = screen.width || 0;
+      const screenH = screen.height || 0;
+      const dpr = window.devicePixelRatio || 1;
+      const touchPoints = navigator.maxTouchPoints || 0;
+      const cpuCores = navigator.hardwareConcurrency || 4;
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
 
-      const msgBuffer = new TextEncoder().encode(components);
+      const raw = `${os}|${screenW}|${screenH}|${dpr}|${touchPoints}|${cpuCores}|${timezone}`;
+
+      const msgBuffer = new TextEncoder().encode(raw);
       const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
       const hashArray = Array.from(new Uint8Array(hashBuffer));
-      return 'hw_' + hashArray.map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 20);
+      const hex20 = hashArray.map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 20);
+      const hwId = 'hw_' + hex20;
+
+      // 3. Persist to localStorage and cookie
+      try {
+        localStorage.setItem('np_device_hw', hwId);
+        localStorage.setItem('np_device_uuid', hwId);
+        const expires = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+        document.cookie = `np_device_hw=${encodeURIComponent(hwId)}; expires=${expires}; path=/; SameSite=Lax`;
+        document.cookie = `np_device_uuid=${encodeURIComponent(hwId)}; expires=${expires}; path=/; SameSite=Lax`;
+      } catch (_) {}
+
+      return hwId;
     } catch (e) {
-      let fallback = localStorage.getItem('np_device_uuid') || ('web_' + Math.random().toString(36).substring(2));
+      let fallback = localStorage.getItem('np_device_uuid') || ('hw_' + Math.random().toString(36).substring(2).padEnd(20, '0').slice(0, 20));
       localStorage.setItem('np_device_uuid', fallback);
       return fallback;
     }
