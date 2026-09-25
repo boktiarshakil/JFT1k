@@ -77,6 +77,13 @@ async function initExam() {
     const res = await fetch(`exams/${examId}/data.json`);
     if (!res.ok) throw new Error('not found');
     examData = await res.json();
+    if (examData && Array.isArray(examData.sections)) {
+      examData.sections.forEach((sec, idx) => {
+        if (!sec.name) {
+          sec.name = sec.title || (idx === 0 ? 'Script and Vocabulary' : idx === 1 ? 'Conversation and Expression' : idx === 2 ? 'Listening Comprehension' : 'Reading Comprehension');
+        }
+      });
+    }
   } catch (e) {
     document.getElementById('exam-main').innerHTML = `
       <div style="text-align:center;padding:60px;color:#c00">
