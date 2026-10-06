@@ -1,12 +1,15 @@
 // JFT Exam Hub — Service Worker for offline support (Item #13)
-const CACHE_NAME = 'jft-hub-v1';
+const CACHE_NAME = 'jft-hub-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/exam.html',
   '/history.html',
   '/css/style.css',
-  '/js/app.js'
+  '/js/app.js',
+  '/js/audio.js',
+  '/js/darkmode.js',
+  '/js/i18n.js'
 ];
 
 // Install: cache static assets
@@ -20,7 +23,7 @@ self.addEventListener('install', event => {
 // Activate: clean old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => 
+    caches.keys().then(keys =>
       Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
     )
   );
@@ -45,7 +48,6 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(cached => {
       const fetchPromise = fetch(event.request).then(response => {
-        // Cache successful responses
         if (response.ok) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));

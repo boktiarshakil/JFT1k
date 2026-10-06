@@ -6,7 +6,6 @@
     <title>My Progress — JFT Exam Hub</title>
     <meta name="description" content="Your JFT-Basic exam history and analytics.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/auth.css">
     <style>
         .history-container { max-width: 800px; margin: 0 auto; padding: 24px 16px; }
         .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
@@ -50,6 +49,15 @@
         .review-pool-count { background: #e94560; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
         .btn-review-pool { background: #4361ee; color: #fff; border: none; border-radius: 6px; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 8px; }
         .btn-review-pool:hover { background: #3651ce; }
+        @media (max-width: 480px) {
+            .history-container { padding: 16px 10px; }
+            .history-header { flex-direction: column; gap: 12px; align-items: flex-start; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .stat-card { padding: 14px; }
+            .stat-num { font-size: 24px; }
+            .exam-history-card { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .exam-score-box { text-align: left; }
+        }
     </style>
 </head>
 <body class="hub-body">
@@ -196,20 +204,19 @@
         }
 
         function startReviewPool() {
-            // Store review pool data for the exam page to pick up
             const pool = getWrongAnswerPool();
             const due = Object.values(pool).filter(item => item.nextReview <= Date.now());
             if (due.length === 0) {
                 alert('No reviews due right now. Keep practicing!');
                 return;
             }
-            // Navigate to a special review mode — for now just show an alert with count
-            alert(`${due.length} question(s) due for review.\n\nThis feature will launch a dedicated review session soon.\n\nFor now, re-take exams you got questions wrong on.`);
+            // Store review session data for exam page to pick up
+            sessionStorage.setItem('jft_review_pool', JSON.stringify(due));
+            window.location.href = 'exam.html?review=1';
         }
 
         renderDashboard();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="js/supabaseAuth.js"></script>
+
+    <script src="js/darkmode.js"></script>
 </body>
 </html>

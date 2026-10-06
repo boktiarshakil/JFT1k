@@ -7,7 +7,6 @@
     <title>JFT Exam — JFT Exam Hub</title>
     <meta name="description" content="JFT-Basic simulation exam practice." />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/auth.css" />
     <link rel="manifest" href="manifest.json" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -86,7 +85,52 @@
         </div>
     </div>
 
+    <script>
+      // Review Mode: build synthetic exam from wrong-answer pool
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('review') !== '1') return;
+        const raw = sessionStorage.getItem('jft_review_pool');
+        if (!raw) return;
+        let due;
+        try { due = JSON.parse(raw); } catch(e) { return; }
+        if (!due.length) return;
+        // Build a synthetic exam with up to 30 questions from the review pool
+        const questions = due.slice(0, 30).map((item, idx) => {
+          const q = item.question || {};
+          return {
+            stem: q.stem || '',
+            instruction: q.instruction || '',
+            options: q.options || [],
+            imageOptions: q.imageOptions || [],
+            image: q.image || '',
+            type: q.type || 'text',
+            audio: q.audio || '',
+            audioTranscript: q.audioTranscript || '',
+            characters: q.characters || [],
+            context: q.context || '',
+            dialogue: q.dialogue || [],
+            answer: q.answer,
+            translations: q.translations || [],
+            _reviewKey: item.examId + '_' + item.si + '_' + item.qi,
+            _reviewSi: item.si,
+            _reviewQi: item.qi,
+          };
+        });
+        // Override the fetch for this exam's data.json to return synthetic data
+        window.__reviewExamData = {
+          id: 'review',
+          title: 'Spaced Repetition Review',
+          sections: [{
+            name: 'Review Questions',
+            questions: questions
+          }]
+        };
+      })();
+    </script>
+    <script src="js/audio.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/i18n.js"></script>
     <!-- PWA / Service Worker (Item #13) -->
     <script>
       if ('serviceWorker' in navigator) {
@@ -130,23 +174,26 @@
       </div>
     </div>
 
+    <script src="js/darkmode.js"></script>
     <script>
-      // Dark mode persistence
-      function applyDarkMode() {
-        const isDark = localStorage.getItem('jft_dark_mode') === '1';
-        document.body.classList.toggle('dark-mode', isDark);
+      // Settings popup dark mode integration
+      function syncSettingsToggle() {
+        const isDark = document.body.classList.contains('dark-mode');
         const toggle = document.getElementById('dark-mode-toggle');
         if (toggle) toggle.classList.toggle('on', isDark);
       }
       function toggleDarkModeFromPopup() {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        localStorage.setItem('jft_dark_mode', isDark ? '1' : '0');
-        const toggle = document.getElementById('dark-mode-toggle');
-        if (toggle) toggle.classList.toggle('on', isDark);
+        if (window.JFTDarkMode) {
+          window.JFTDarkMode.toggleDarkMode();
+        } else {
+          document.body.classList.toggle('dark-mode');
+          const isDark = document.body.classList.contains('dark-mode');
+          localStorage.setItem('jft_dark_mode', isDark ? '1' : '0');
+        }
+        syncSettingsToggle();
       }
       function openSettingsPopup() {
-        applyDarkMode();
+        syncSettingsToggle();
         document.getElementById('settings-popup-backdrop').classList.add('open');
       }
       function closeSettingsPopup(e) {
@@ -186,11 +233,7 @@
       }
       // Wire settings button
       document.getElementById('btn-settings').onclick = openSettingsPopup;
-      // Init dark mode state on load
-      applyDarkMode();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="js/supabaseAuth.js"></script>
 </body>
 
 </html>

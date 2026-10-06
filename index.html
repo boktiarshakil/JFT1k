@@ -7,7 +7,6 @@
     <title>JFT Exam Hub | Simulation Portal</title>
     <meta name="description" content="Central Hub for taking JFT-Basic Simulation Exams. Access 400+ practice tests." />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/auth.css" />
     <link rel="manifest" href="manifest.json" />
     <style>
         /* Hub-specific layout overrides */
@@ -328,6 +327,16 @@
                 justify-content: center;
             }
         }
+        @media (max-width: 480px) {
+            .hub-hero h1 { font-size: 24px; }
+            .hub-hero p { font-size: 14px; }
+            .hero-actions { flex-direction: column; gap: 10px; }
+            .btn-hero { width: 100%; justify-content: center; }
+            .hub-controls { flex-direction: column; align-items: stretch; }
+            .search-wrapper { max-width: 100%; }
+            .exam-grid { grid-template-columns: 1fr; gap: 16px; }
+            .hub-container { padding: 20px 12px; }
+        }
     </style>
 </head>
 
@@ -534,9 +543,8 @@
             };
             hubTopbar.appendChild(langBtn);
         }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="js/supabaseAuth.js"></script>
+
+    <script src="js/darkmode.js"></script>
 </body>
 
 </html>
