@@ -1,6 +1,5 @@
 /**
- * JFT Exam Hub — Core Application Engine v3
- * Requires: js/audio.js, js/i18n.js (loaded before this file)
+ * JFT Exam Hub — Core Application Engine v2
  * Mimics the official JFT-Basic exam interface behavior exactly.
  */
 
@@ -17,28 +16,787 @@ let examData = null;
 let examId = 'jft1';
 let currentSectionIdx = 0;
 let currentQIdx = 0;
-let sectionTimers = {};       // { [si]: secondsRemaining }
-let activeTimerSi = null;     // which section timer is currently running
+let timeLeft = 3600;         // global 60-min timer
 let timerInterval = null;
 let examMode = 'exam';       // 'exam' | 'study'
 let progressSaveInterval = null;
-let timerWarningShown = {};   // { [si]: { fiveMin: bool, oneMin: bool } }
-
-// Per-section durations (seconds) — matches real JFT-Basic timing
-const SECTION_DURATIONS = {
-  0: 20 * 60,   // Script and Vocabulary: 20 min
-  1: 15 * 60,   // Conversation and Expression: 15 min
-  2: 25 * 60,   // Listening Comprehension: 25 min
-  3: 30 * 60,   // Reading Comprehension: 30 min
-};
-const DEFAULT_SECTION_DURATION = 20 * 60;
+let timerWarningShown = { fiveMin: false, oneMin: false };
 let keyboardHandler = null;
 
 // Speech Synthesis Context
+let synthVoices = [];
+let activeUtterance = null; // Prevent garbage collection during playback
+function loadVoices() {
+  const voices = window.speechSynthesis.getVoices();
+  // Filter for Japanese and sort by quality (Neural/Online first)
+  synthVoices = voices
+    .filter(v => v.lang.includes('ja'))
+    .sort((a, b) => {
+      const q = (v) => v.name.includes('Google') || v.name.includes('Online') || v.name.includes('Natural') || v.name.includes('Neural');
+      return q(b) - q(a);
+    });
+}
+if (window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  loadVoices();
+}
 
-// Audio module loaded separately via js/audio.js
-// i18n module loaded separately via js/i18n.js
+/**
+ * Sanitizes Japanese text for smoother synthesis.
+ */
+function sanitizeJapanese(text) {
+  if (!text) return "";
+  return text
+    .normalize('NFC') // Combine base characters and marks (e.g., ホ + ゛ -> ポ)
+    .replace(/[！-～]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xfee0)) // Full-width to Half-width
+    .replace(/[-－]/g, 'ー') // Proper Katakana vowel marks
+    .replace(/[\u200B-\u200D\uFEFF]/g, '') // Remove zero-width pauses
+    .replace(/\s(?=[ぁ-んァ-ヶー々一-龠])/g, '') // Remove spaces
+    .replace(/([ぁ-んァ-ヶー々一-龠])\s/g, '$1');
+}
 
+// Per-section, per-question state
+// state[si][qi] = { selected: null|int, flagged: bool, answered: bool }
+const state = {};
+
+// Audio play counts for Listening section
+const audioPlays = {};
+
+// Whether answers have been locked (on result screen)
+let examFinished = false;
+
+// ============================================================
+// Init
+// ============================================================
+async function initExam() {
+  const params = new URLSearchParams(window.location.search);
+  examId = params.get('exam') || 'jft1';
+  examMode = params.get('mode') || 'exam';  // study mode support
+
+  try {
+    const res = await fetch(`exams/${examId}/data.json`);
+    if (!res.ok) throw new Error('not found');
+    examData = await res.json();
+    if (examData && Array.isArray(examData.sections)) {
+      examData.sections.forEach((sec, idx) => {
+        if (!sec.name) {
+          sec.name = sec.title || (idx === 0 ? 'Script and Vocabulary' : idx === 1 ? 'Conversation and Expression' : idx === 2 ? 'Listening Comprehension' : 'Reading Comprehension');
+        }
+      });
+    }
+  } catch (e) {
+    document.getElementById('exam-main').innerHTML = `
+      <div style="text-align:center;padding:60px;color:#c00">
+        <div style="font-size:48px;margin-bottom:16px">⚠️</div>
+        <h3>Could not load exam: exams/${examId}/data.json</h3>
+        <p style="color:#666;margin-top:8px">Make sure the file exists.</p>
+        <a href="index.html" style="color:#2d6a2d;margin-top:16px;display:inline-block">← Back to Hub</a>
+      </div>`;
+    return;
+  }
+
+  document.title = examData.title + ' — JFT Exam Hub';
+  document.getElementById('infobar-test-name').textContent = examData.title;
+  try { localStorage.setItem('last_jft_exam', examId); } catch (e) {}
+
+  // Check for saved progress
+  const savedProgress = loadProgress(examId);
+  const hasSaved = savedProgress && savedProgress.examId === examId;
+
+  if (hasSaved && examMode === 'exam') {
+    const resume = confirm(
+      `You have a saved progress for this exam.\n` +
+      `Section: ${savedProgress.currentSectionIdx + 1}, Question: ${savedProgress.currentQIdx + 1}\n` +
+      `Time remaining: ${Math.floor(savedProgress.timeLeft / 60)}:${String(savedProgress.timeLeft % 60).padStart(2, '0')}\n\n` +
+      `Resume where you left off?`
+    );
+    if (resume) {
+      currentSectionIdx = savedProgress.currentSectionIdx;
+      currentQIdx = savedProgress.currentQIdx;
+      timeLeft = savedProgress.timeLeft;
+      // Restore state
+      Object.keys(savedProgress.state).forEach(si => {
+        Object.keys(savedProgress.state[si]).forEach(qi => {
+          state[si] = state[si] || {};
+          state[si][qi] = savedProgress.state[si][qi];
+        });
+      });
+    } else {
+      initFreshState();
+    }
+  } else {
+    initFreshState();
+  }
+
+  renderSidebar();
+  goToQuestion(currentSectionIdx, currentQIdx);
+
+  if (examMode === 'study') {
+    // Study mode: no timer, show study UI
+    const timerEl = document.getElementById('timer-display');
+    if (timerEl) timerEl.textContent = 'Study Mode';
+    const finishBtn = document.getElementById('btn-finish-section');
+    if (finishBtn) finishBtn.textContent = 'End Review';
+    const banner = document.getElementById('study-mode-banner');
+    if (banner) banner.style.display = 'block';
+  } else {
+    startTimer();
+    // Start periodic progress saving
+    progressSaveInterval = setInterval(() => saveProgress(examId), 5000);
+  }
+
+  // Setup keyboard navigation
+  setupKeyboardNav();
+}
+
+function initFreshState() {
+  examData.sections.forEach((sec, si) => {
+    state[si] = {};
+    sec.questions.forEach((_, qi) => {
+      state[si][qi] = { selected: null, flagged: false, answered: false };
+    });
+  });
+}
+
+// ============================================================
+// Progress Persistence (Item #2)
+// ============================================================
+function saveProgress(examId) {
+  try {
+    const data = {
+      examId,
+      currentSectionIdx,
+      currentQIdx,
+      timeLeft,
+      state,
+      savedAt: Date.now()
+    };
+    localStorage.setItem(`jft_progress_${examId}`, JSON.stringify(data));
+  } catch (e) { /* quota exceeded, silently fail */ }
+}
+
+function loadProgress(examId) {
+  try {
+    const raw = localStorage.getItem(`jft_progress_${examId}`);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    // Discard saves older than 24 hours
+    if (Date.now() - data.savedAt > 86400000) {
+      localStorage.removeItem(`jft_progress_${examId}`);
+      return null;
+    }
+    return data;
+  } catch (e) { return null; }
+}
+
+function clearProgress(examId) {
+  try { localStorage.removeItem(`jft_progress_${examId}`); } catch (e) {}
+}
+
+// ============================================================
+// Keyboard Navigation (Item #4)
+// ============================================================
+function setupKeyboardNav() {
+  keyboardHandler = (e) => {
+    // Don't capture when modal is open
+    const modal = document.getElementById('lang-modal');
+    if (modal && modal.classList.contains('open')) return;
+
+    // Don't capture when typing in inputs
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    switch (e.key) {
+      case '1':
+      case '2':
+      case '3':
+      case '4':
+        if (!examFinished) {
+          const oi = parseInt(e.key) - 1;
+          const sec = examData.sections[currentSectionIdx];
+          const q = sec.questions[currentQIdx];
+          const maxOpts = (q.imageOptions && q.imageOptions.length) || (q.options && q.options.length) || 0;
+          if (oi < maxOpts) selectOption(currentSectionIdx, currentQIdx, oi);
+        }
+        break;
+      case 'ArrowLeft':
+        if (!examFinished) navigateQ(-1);
+        break;
+      case 'ArrowRight':
+        if (!examFinished) navigateQ(1);
+        break;
+      case 'f':
+      case 'F':
+        if (!examFinished) toggleFlag();
+        break;
+      case 'Enter':
+        if (!examFinished) {
+          const sec = examData.sections[currentSectionIdx];
+          if (currentQIdx < sec.questions.length - 1) {
+            navigateQ(1);
+          } else {
+            handleFinishSection();
+          }
+        }
+        break;
+    }
+  };
+  document.addEventListener('keydown', keyboardHandler);
+}
+
+// ============================================================
+// Timer
+// ============================================================
+function startTimer() {
+  updateTimerUI();
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    updateTimerUI();
+    if (timeLeft <= 0) { clearInterval(timerInterval); finishExam(true); }
+  }, 1000);
+}
+
+function updateTimerUI() {
+  const el = document.getElementById('timer-display');
+  if (!el) return;
+  const m = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const s = String(timeLeft % 60).padStart(2, '0');
+  el.textContent = `${m}:${s}`;
+
+  // Timer warnings (Item #3)
+  const timerArea = document.querySelector('.topbar-timer-area');
+  if (timerArea) {
+    if (timeLeft <= 300 && timeLeft > 60) {
+      timerArea.style.background = 'rgba(255, 165, 0, 0.3)';
+      timerArea.style.borderRadius = '4px';
+      timerArea.style.padding = '2px 8px';
+      if (!timerWarningShown.fiveMin) {
+        timerWarningShown.fiveMin = true;
+        try {
+          // Subtle beep using Web Audio
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 800;
+          gain.gain.value = 0.15;
+          osc.start();
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+          osc.stop(ctx.currentTime + 0.3);
+        } catch (e) {}
+      }
+    } else if (timeLeft <= 60) {
+      timerArea.style.background = 'rgba(255, 0, 0, 0.4)';
+      timerArea.style.borderRadius = '4px';
+      timerArea.style.padding = '2px 8px';
+      el.style.color = '#ff4444';
+      if (!timerWarningShown.oneMin) {
+        timerWarningShown.oneMin = true;
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 1000;
+          gain.gain.value = 0.2;
+          osc.start();
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+          osc.stop(ctx.currentTime + 0.5);
+        } catch (e) {}
+      }
+    }
+  }
+}
+
+// ============================================================
+// Sidebar
+// ============================================================
+function renderSidebar() {
+  const sidebar = document.getElementById('exam-sidebar');
+  sidebar.innerHTML = '';
+
+  examData.sections.forEach((sec, si) => {
+    // Section tab
+    const tab = document.createElement('div');
+    tab.className = 'sidebar-section-tab' + (si === currentSectionIdx ? ' active' : (si < currentSectionIdx ? ' done' : ''));
+    tab.id = `sec-tab-${si}`;
+    tab.title = sec.name;
+    // Show short label
+    const labels = ['S&V', 'Con.', 'List.', 'Rea.'];
+    tab.textContent = labels[si] || `S${si + 1}`;
+    sidebar.appendChild(tab);
+
+    // Question buttons (only for current section visible)
+    if (si === currentSectionIdx) {
+      const qList = document.createElement('div');
+      qList.className = 'sidebar-q-list';
+      qList.id = 'sidebar-q-list';
+      sec.questions.forEach((_, qi) => {
+        const btn = document.createElement('button');
+        btn.className = getSidebarBtnClass(si, qi);
+        btn.id = `sq-btn-${qi}`;
+        btn.textContent = qi + 1;
+        const isListening = sec.name.includes('Listening');
+        if (isListening) {
+          btn.classList.add('locked');
+          btn.title = 'Navigation disabled in Listening section';
+        } else {
+          btn.onclick = () => goToQuestion(si, qi);
+        }
+        qList.appendChild(btn);
+      });
+      sidebar.appendChild(qList);
+    }
+  });
+}
+
+function getSidebarBtnClass(si, qi) {
+  const s = state[si][qi];
+  let cls = 'sidebar-q-btn';
+  if (si === currentSectionIdx && qi === currentQIdx) cls += ' current';
+  else if (s.flagged) cls += ' flagged';
+  else if (s.answered) cls += ' answered';
+  return cls;
+}
+
+function updateSidebarQ() {
+  const sec = examData.sections[currentSectionIdx];
+  sec.questions.forEach((_, qi) => {
+    const btn = document.getElementById(`sq-btn-${qi}`);
+    if (!btn) return;
+    btn.className = getSidebarBtnClass(currentSectionIdx, qi);
+    // Keep listening locked
+    if (sec.name.includes('Listening') && qi !== currentQIdx) btn.classList.add('locked');
+  });
+}
+
+// ============================================================
+// Navigation
+// ============================================================
+function goToQuestion(si, qi) {
+  currentSectionIdx = si;
+  currentQIdx = qi;
+
+  // Update topbar
+  document.getElementById('topbar-q-num').textContent = qi + 1;
+  document.getElementById('topbar-sec-name').textContent = examData.sections[si].name;
+
+  // Render question
+  renderQuestion(si, qi);
+
+  // Update sidebar
+  updateSidebarQ();
+
+  // Update Back/Next buttons
+  const isListening = examData.sections[si].name.includes('Listening');
+  const backBtn = document.getElementById('btn-back');
+  const nextBtn = document.getElementById('btn-next-q');
+
+  // Back: disabled if first Q in section, OR in Listening section
+  backBtn.disabled = (qi === 0 || isListening);
+
+  // Next: if Listening, disabled until answered; else always enabled
+  const qState = state[si][qi];
+  if (isListening) {
+    nextBtn.disabled = !qState.answered;
+    nextBtn.textContent = 'Next ▶';
+  } else {
+    nextBtn.disabled = false;
+    const isLastQ = qi === examData.sections[si].questions.length - 1;
+    nextBtn.textContent = isLastQ ? 'Last ▶' : 'Next ▶';
+  }
+
+  // Update flag button
+  updateFlagBtn();
+}
+
+function navigateQ(delta) {
+  const sec = examData.sections[currentSectionIdx];
+  const nextQi = currentQIdx + delta;
+  if (nextQi < 0 || nextQi >= sec.questions.length) return;
+  goToQuestion(currentSectionIdx, nextQi);
+}
+
+// ============================================================
+// Render Question
+// ============================================================
+function renderQuestion(si, qi) {
+  const q = examData.sections[si].questions[qi];
+  const isListening = examData.sections[si].name.includes('Listening');
+  const sec = examData.sections[si];
+  const qState = state[si][qi];
+  const main = document.getElementById('exam-main');
+  main.innerHTML = '';
+  main.scrollTop = 0;
+
+  // --- Instruction box ---
+  const instruction = q.instruction || defaultInstruction(q.type);
+  const instBox = el('div', 'q-instruction-box', instruction);
+  main.appendChild(instBox);
+
+  // --- Language buttons ---
+  if (q.translations) {
+    const langRow = el('div', 'lang-buttons');
+    Object.keys(q.translations).forEach((lang, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'btn-lang';
+      btn.innerHTML = `<span class="lang-icon">🌐</span> Your Language ${i + 1}`;
+      btn.onclick = () => openLangModal(q, i);
+      langRow.appendChild(btn);
+    });
+    main.appendChild(langRow);
+  } else {
+    // Default language buttons (just show generic ones)
+    const langRow = el('div', 'lang-buttons');
+    const btn1 = document.createElement('button');
+    btn1.className = 'btn-lang';
+    btn1.innerHTML = `<span class="lang-icon">🌐</span> Your Language 1`;
+    btn1.onclick = () => openLangModal(q, 0);
+    langRow.appendChild(btn1);
+    main.appendChild(langRow);
+  }
+
+  // --- Stem (question text) ---
+  if (q.stem) {
+    const stemDiv = el('div', 'q-stem-text', q.stem);
+    main.appendChild(stemDiv);
+  }
+
+  // --- Media: image / audio / text context / dialogue ---
+  if (q.type === 'image') {
+    const imgSrc = `exams/${examId}/images/${q.image}`;
+    const img = document.createElement('img');
+    img.className = 'q-illustration';
+    img.src = imgSrc;
+    img.alt = `Question ${qi + 1}`;
+    img.onerror = function () {
+      this.style.display = 'none';
+      const ph = el('div', 'q-image-placeholder', `📷 ${q.image}`);
+      if (q.imagePrompt) {
+        const tip = el('div', '', `Prompt: ${q.imagePrompt}`);
+        tip.style.cssText = 'font-size:10px;color:#aaa;text-align:center;padding:4px';
+        ph.appendChild(tip);
+      }
+      this.parentNode.insertBefore(ph, this.nextSibling);
+    };
+    main.appendChild(img);
+
+  } else if (q.type === 'audio') {
+    const audioSrc = `exams/${examId}/audio/${q.audio}`;
+
+    // Character icons
+    if (q.characters) {
+      const chars = el('div', 'conversation-chars');
+      q.characters.forEach(c => {
+        const ci = el('div', 'char-icon');
+        ci.innerHTML = `<span class="char-face">${c.face || '👤'}</span><span class="char-name">${c.name || ''}</span>`;
+        chars.appendChild(ci);
+      });
+      main.appendChild(chars);
+    } else {
+      const chars = el('div', 'conversation-chars');
+      chars.innerHTML = `<div class="char-icon"><span class="char-face">👩</span><span class="char-name">A</span></div>
+                         <div class="char-icon"><span class="char-face">👨</span><span class="char-name">B</span></div>`;
+      main.appendChild(chars);
+    }
+
+    // Audio player (Web Speech API)
+    if (!audioPlays[`${si}-${qi}`]) audioPlays[`${si}-${qi}`] = 0;
+    const maxPlays = 2;
+    const playsUsed = audioPlays[`${si}-${qi}`];
+    const canPlay = playsUsed < maxPlays;
+
+    const player = document.createElement('div');
+    player.className = 'q-audio-player';
+
+    // Store transcript on the element to avoid encoding issues in inline handlers
+    const transcript = q.audioTranscript || '';
+
+    player.innerHTML = `
+      <button class="btn-audio-play" id="btn-play-${qi}" ${!canPlay ? 'disabled' : ''}>▶</button>
+      <div class="audio-progress-bar"><div class="audio-fill" id="audio-fill-${qi}"></div></div>
+      <span class="audio-plays-left" id="plays-left-${qi}">${maxPlays - playsUsed} plays left</span>`;
+    main.appendChild(player);
+
+    // Attach click handler properly to avoid encoding issues
+    const playBtn = document.getElementById(`btn-play-${qi}`);
+    if (playBtn) {
+      playBtn.addEventListener('click', () => playAudio(transcript, si, qi));
+    }
+
+  } else if (q.type === 'text') {
+    if (q.context) {
+      main.appendChild(el('div', 'context-box', q.context));
+    }
+    if (q.dialogue) {
+      const dlBox = el('div', 'dialogue-box');
+      q.dialogue.forEach(line => {
+        const lineDiv = el('div', 'dialogue-line');
+        const speech = (line.speech || '').replace(/___/g, '<span class="blank"></span>');
+        lineDiv.innerHTML = `<span class="speaker">${line.speaker}：</span><span class="speech">${speech}</span>`;
+        dlBox.appendChild(lineDiv);
+      });
+      main.appendChild(dlBox);
+    }
+  }
+
+  // --- Options ---
+  if (q.imageOptions && isListening) {
+    // Image option grid for Listening
+    const grid = el('div', 'image-options-grid');
+    const answerIndex = getAnswerIndex(q);
+    q.imageOptions.forEach((opt, oi) => {
+      const imgOpt = document.createElement('div');
+      imgOpt.className = 'image-option' + (qState.selected === oi ? ' selected' : '');
+      imgOpt.id = `opt-${qi}-${oi}`;
+      if (examFinished) {
+        if (oi === answerIndex) imgOpt.classList.add('correct');
+        else if (qState.selected === oi) imgOpt.classList.add('wrong');
+      }
+      const optImgSrc = `exams/${examId}/images/${opt}`;
+      imgOpt.innerHTML = `<img src="${optImgSrc}" alt="Option ${oi + 1}" onerror="this.parentNode.innerHTML='<div class=\\'image-option-placeholder\\'>📷 ${opt}</div>'">`;
+      if (!examFinished) {
+        imgOpt.onclick = () => selectOption(si, qi, oi);
+      }
+      grid.appendChild(imgOpt);
+    });
+    main.appendChild(grid);
+  } else {
+    // Text options
+    const optList = el('div', 'options-list');
+    const answerIndex = getAnswerIndex(q);
+    q.options.forEach((opt, oi) => {
+      const row = document.createElement('div');
+      row.className = 'option-row';
+      row.id = `opt-${qi}-${oi}`;
+      row.textContent = opt;
+      if (qState.selected === oi) row.classList.add('selected');
+      if (examFinished) {
+        if (oi === answerIndex) row.classList.add('correct');
+        else if (qState.selected === oi && oi !== answerIndex) row.classList.add('wrong');
+        row.style.cursor = 'default';
+      } else {
+        row.onclick = () => selectOption(si, qi, oi);
+      }
+      optList.appendChild(row);
+    });
+    main.appendChild(optList);
+  }
+}
+
+function defaultInstruction(type) {
+  if (type === 'image') return 'Look at the illustration and choose the correct word.';
+  if (type === 'audio') return 'Listen to the audio and answer the question.';
+  return 'Read and choose the best answer.';
+}
+
+function getAnswerIndex(q) {
+  if (!q) return -1;
+  if (Number.isInteger(q.answer)) return q.answer;
+  if (!Array.isArray(q.options)) return -1;
+  const numericAnswer = Number(q.answer);
+  if (Number.isInteger(numericAnswer) && numericAnswer >= 1 && numericAnswer <= q.options.length) {
+    return numericAnswer - 1;
+  }
+  return q.options.findIndex(opt => String(opt).trim() === String(q.answer).trim());
+}
+
+function getOptionText(q, optionIndex) {
+  if (Array.isArray(q.options) && Number.isInteger(optionIndex) && optionIndex >= 0) {
+    return q.options[optionIndex] || `option ${optionIndex + 1}`;
+  }
+  return optionIndex !== null && optionIndex !== undefined ? `option ${optionIndex + 1}` : '';
+}
+
+function isCorrectAnswer(q, selectedIndex) {
+  return selectedIndex !== null && selectedIndex === getAnswerIndex(q);
+}
+
+// ============================================================
+// Option Selection
+// ============================================================
+function selectOption(si, qi, oi) {
+  if (examFinished) return;
+  const qState = state[si][qi];
+  qState.selected = oi;
+  qState.answered = true;
+
+  updateSidebarQ();
+
+  // For Listening: enable Next button after answering
+  const isListening = examData.sections[si].name.includes('Listening');
+  if (isListening) {
+    const nextBtn = document.getElementById('btn-next-q');
+    if (nextBtn) nextBtn.disabled = false;
+  }
+
+  // Re-render options to show selection
+  const q = examData.sections[si].questions[qi];
+  const isImgOptions = q.imageOptions && isListening;
+
+  if (isImgOptions) {
+    q.imageOptions.forEach((_, o) => {
+      const el = document.getElementById(`opt-${qi}-${o}`);
+      if (el) el.classList.toggle('selected', o === oi);
+    });
+  } else {
+    q.options.forEach((_, o) => {
+      const el = document.getElementById(`opt-${qi}-${o}`);
+      if (el) el.classList.toggle('selected', o === oi);
+    });
+  }
+}
+
+// ============================================================
+// Audio
+// ============================================================
+// ============================================================
+// Audio (Web Speech API)
+// ============================================================
+let isSpeechPlaying = false;
+
+function playAudio(transcript, si, qi, idPrefix = '') {
+  if (isSpeechPlaying) {
+    // If stuck, reset and allow retry
+    isSpeechPlaying = false;
+    window.speechSynthesis.cancel();
+    return;
+  }
+  if (!transcript) return;
+
+  const maxPlays = 2;
+  const key = `${si}-${qi}`;
+  const isReview = !!idPrefix;
+
+  if (!isReview) {
+    if (!audioPlays[key]) audioPlays[key] = 0;
+    if (audioPlays[key] >= maxPlays) return;
+    audioPlays[key]++;
+
+    const remaining = maxPlays - audioPlays[key];
+    const plLabel = document.getElementById(`plays-left-${qi}`);
+    if (plLabel) plLabel.textContent = `${remaining} play${remaining !== 1 ? 's' : ''} left`;
+
+    if (audioPlays[key] >= maxPlays) {
+      const playBtn = document.getElementById(`btn-play-${qi}`);
+      if (playBtn) playBtn.disabled = true;
+    }
+  }
+
+  // Cancel any existing speech and reset state
+  window.speechSynthesis.cancel();
+  isSpeechPlaying = true;
+
+  // Progress animation
+  const fill = document.getElementById(`${idPrefix}audio-fill-${qi}`);
+  let progressInterval = null;
+  if (fill) {
+    fill.style.width = '0%';
+    fill.style.transition = 'width 0.5s linear';
+    const estimateMs = Math.max(transcript.length * 180, 2000);
+    let elapsedMs = 0;
+    progressInterval = setInterval(() => {
+      elapsedMs += 500;
+      let p = (elapsedMs / estimateMs) * 100;
+      if (p > 95) p = 95;
+      fill.style.width = p + '%';
+    }, 500);
+  }
+
+  // Safety timeout: reset isSpeechPlaying after estimated duration + 5s buffer
+  const safetyTimeout = setTimeout(() => {
+    isSpeechPlaying = false;
+    window.speechSynthesis.cancel();
+    if (progressInterval) clearInterval(progressInterval);
+    activeUtterance = null;
+    if (fill) {
+      fill.style.width = '100%';
+      setTimeout(() => { if (!isSpeechPlaying) fill.style.width = '0%'; }, 1000);
+    }
+  }, Math.max(transcript.length * 180, 2000) + 5000);
+
+  // Parse segments by speaker (detecting "Speaker:" at start of lines)
+  const segments = [];
+  const lines = transcript.split(/\r?\n/);
+  const roleToVoiceIdx = {};
+  let voiceCounter = 0;
+  let currentRole = 'unknown';
+
+  lines.forEach(line => {
+    let text = line.trim();
+    if (!text) return;
+
+    // Check for speaker pattern: "Name：" or "Name:" at start
+    const speakerMatch = text.match(/^([^：:\n]{1,8})[：:](.*)/);
+    if (speakerMatch) {
+      currentRole = speakerMatch[1].trim();
+      text = speakerMatch[2].trim();
+
+      if (!(currentRole in roleToVoiceIdx)) {
+        roleToVoiceIdx[currentRole] = voiceCounter % 2;
+        voiceCounter++;
+      }
+    }
+
+    if (text) {
+      segments.push({
+        text: text,
+        role: currentRole,
+        voiceIdx: roleToVoiceIdx[currentRole] || 0
+      });
+    }
+  });
+
+  function speakNext(idx) {
+    if (idx >= segments.length) {
+      clearTimeout(safetyTimeout);
+      isSpeechPlaying = false;
+      if (progressInterval) clearInterval(progressInterval);
+      activeUtterance = null;
+      if (fill) {
+        fill.style.width = '100%';
+        setTimeout(() => { if (!isSpeechPlaying) fill.style.width = '0%'; }, 1000);
+      }
+      return;
+    }
+
+    const item = segments[idx];
+    const cleanText = sanitizeJapanese(item.text);
+    if (!cleanText) return speakNext(idx + 1);
+
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'ja-JP';
+    activeUtterance = utterance; // Retain reference to avoid GC pauses
+
+    if (synthVoices.length > 0) {
+      if (item.voiceIdx === 0) {
+        utterance.voice = synthVoices[0];
+        utterance.pitch = 1.05;
+        utterance.rate = 1.05;
+      } else {
+        utterance.voice = synthVoices[synthVoices.length > 1 ? 1 : 0];
+        utterance.pitch = 0.7;
+        utterance.rate = 1.05;
+      }
+    }
+
+    utterance.onend = () => {
+      activeUtterance = null;
+      speakNext(idx + 1);
+    };
+    utterance.onerror = (e) => {
+      console.error('TTS Error:', e);
+      activeUtterance = null;
+      // Continue to next segment instead of stopping
+      speakNext(idx + 1);
+    };
+
+    window.speechSynthesis.speak(utterance);
+  }
+
+  speakNext(0);
+}
 
 // ============================================================
 // Flag for Review
@@ -87,7 +845,7 @@ function handleFinishSection() {
 
 function toggleSidebar() {
   const sidebar = document.getElementById('exam-sidebar');
-  sidebar.style.display = sidebar.style.display === 'none' ? '' : 'none';
+  sidebar.style.display = sidebar.style.display === 'none' ? 'flex' : 'none';
 }
 
 // ============================================================
@@ -150,9 +908,8 @@ function finishExam(timeout) {
 
   // Save exam history & wrong answers (Items #6, #10)
   saveExamHistory(examId, examData.title, scaledScore, passingScore, passed, sectionResults);
-  saveWrongAnswers(examId);
+  saveWrongAnswers(examId, sectionResults);
 
-  updateReviewPool(examId, sectionResults);
   renderResultsScreen(scaledScore, passingScore, passed, sectionResults, timeout);
 }
 
@@ -218,24 +975,6 @@ function saveWrongAnswers(examId) {
   } catch (e) { /* quota exceeded */ }
 }
 
-function cleanupStaleReviewItems() {
-  try {
-    const pool = JSON.parse(localStorage.getItem('jft_wrong_pool') || '{}');
-    const now = Date.now();
-    const STALE_DAYS = 90;
-    let changed = false;
-    Object.keys(pool).forEach(key => {
-      const item = pool[key];
-      // Remove items not reviewed in 90 days (mastered or abandoned)
-      if (item.lastWrong && now - item.lastWrong > STALE_DAYS * 86400000) {
-        delete pool[key];
-        changed = true;
-      }
-    });
-    if (changed) localStorage.setItem('jft_wrong_pool', JSON.stringify(pool));
-  } catch (e) { /* quota exceeded */ }
-}
-
 function getWrongAnswerPool() {
   try {
     return JSON.parse(localStorage.getItem('jft_wrong_pool') || '{}');
@@ -284,40 +1023,15 @@ async function requestInlineExplanation(si, qi) {
 
 ব্যাখ্যা:`;
 
-  const maxRetries = 3;
-  let lastError = null;
-
-  for (let attempt = 0; attempt < maxRetries; attempt++) {
+  try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 25000);
-
-    try {
-      const reportText = await fetchFromAI(prompt, controller.signal);
-      clearTimeout(timeoutId);
-
-      if (reportText && reportText.trim().length > 0) {
-        inlineAICache[cacheKey] = marked.parse(reportText);
-        content.innerHTML = inlineAICache[cacheKey];
-        return;
-      }
-      throw new Error('Empty response');
-    } catch (err) {
-      clearTimeout(timeoutId);
-      lastError = err;
-      console.error(`Inline AI Error (attempt ${attempt + 1}/${maxRetries}):`, err);
-
-      if (attempt < maxRetries - 1) {
-        const delay = Math.pow(2, attempt) * 1000; // 1s, 2s
-        content.innerHTML = `<div class="ai-loading-mini">Retrying... (${attempt + 2}/${maxRetries})</div>`;
-        await new Promise(r => setTimeout(r, delay));
-      }
-    }
+    setTimeout(() => controller.abort(), 8000);
+    const reportText = await fetchFromAI(prompt, controller.signal);
+    inlineAICache[cacheKey] = marked.parse(reportText);
+    content.innerHTML = inlineAICache[cacheKey];
+  } catch (err) {
+    content.innerHTML = `<div class="ai-error-mini">Could not load explanation. <button class="ai-retry-btn-small" onclick="requestInlineExplanation(${si}, ${qi})">Retry</button></div>`;
   }
-
-  // All retries failed
-  const isTimeout = lastError && (lastError.name === 'AbortError' || lastError.message.includes('aborted'));
-  const isNetworkError = lastError && (lastError.message.includes('Failed to fetch') || lastError.message.includes('NetworkError'));
-  content.innerHTML = `<div class="ai-error-mini">${isTimeout ? '⏱️ সময় শেষ হয়ে গেছে।' : (isNetworkError ? '📡 নেটওয়ার্ক সমস্যা।' : 'দুঃখিত, ব্যাখ্যা লোড করা যায়নি।')} <button class="ai-retry-btn-small" onclick="requestInlineExplanation(${si}, ${qi})">Retry</button></div>`;
 }
 
 // ============================================================
@@ -457,15 +1171,12 @@ function renderResultsScreen(score, passing, passed, sectionResults, timeout) {
   if (!wrapper) return;
   wrapper.style.display = 'block';
   wrapper.style.height = 'auto';
-  wrapper.style.minHeight = '100dvh';
+  wrapper.style.minHeight = '100vh';
   wrapper.style.overflow = 'visible';
-
-  const studyBanner = examMode === 'study' ? '<div class="study-mode-results-banner">📖 Study Mode — Practice without time pressure</div>' : '';
 
   wrapper.innerHTML = `
     <div class="results-wrapper" id="results-wrapper">
       <div class="results-card">
-        ${studyBanner}
 
         <div class="results-header-top">
           <div class="results-sample-badge">SAMPLE</div>
@@ -514,7 +1225,7 @@ function renderResultsScreen(score, passing, passed, sectionResults, timeout) {
               <div class="passing-line-label">${passing}</div>
             </div>
             <!-- Score marker -->
-            <div class="score-scale-marker" style="left: clamp(0%, ${((score - 10) / 240 * 100).toFixed(1)}%, calc(100% - 14px))" id="score-marker">
+            <div class="score-scale-marker" style="left: ${((score - 10) / 240 * 100).toFixed(1)}%" id="score-marker">
               <div class="score-marker-dot"></div>
             </div>
           </div>
@@ -585,7 +1296,7 @@ function renderResultsScreen(score, passing, passed, sectionResults, timeout) {
         <div class="results-actions">
           <button class="btn-retry-hub" onclick="location.reload()">🔄 Retry This Exam</button>
           <button class="btn-retry-hub" onclick="location.href='exam.html?exam=${examId}&mode=study'" style="background:#4361ee">📖 Study Mode</button>
-          <button class="btn-retry-hub secondary" onclick="location.href='history.html'">← Back to Progress</button>
+          <button class="btn-retry-hub secondary" onclick="location.href='index.html'">🏠 Back to Hub</button>
         </div>
 
       </div>
@@ -601,7 +1312,7 @@ function renderResultsScreen(score, passing, passed, sectionResults, timeout) {
         const transcript = decodeURIComponent(player?.dataset?.transcript || '');
         const si = parseInt(this.dataset.si);
         const qi = parseInt(this.dataset.qi);
-        window.JFTAudio.playAudio(transcript, si, qi, `review-${si}-`);
+        playAudio(transcript, si, qi, `review-${si}-`);
       });
     });
   }, 200);
@@ -662,18 +1373,8 @@ async function fetchFromAI(prompt, signal) {
   });
 
   if (!response.ok) {
-    // Try to parse structured error from our proxy
-    let errMsg = `HTTP ${response.status}`;
-    try {
-      const errData = await response.json();
-      if (errData?.error?.message) {
-        errMsg = errData.error.message;
-      }
-    } catch (_) {
-      // Non-JSON error — use status text
-      errMsg = `HTTP ${response.status}: ${response.statusText || 'Server error'}`;
-    }
-    throw new Error(errMsg);
+    const errData = await response.json().catch(() => ({}));
+    throw new Error(errData?.error?.message || `HTTP ${response.status}`);
   }
 
   const data = await response.json();
@@ -764,26 +1465,13 @@ async function generateAIOverview(sectionResults) {
 
   // All retries failed
   const isTimeout = lastError && (lastError.name === 'AbortError' || lastError.message.includes('aborted'));
-  const isNetworkError = lastError && (lastError.message.includes('Failed to fetch') || lastError.message.includes('NetworkError') || lastError.message.includes('network'));
-  let errorTitle, errorDesc;
-  if (isTimeout) {
-    errorTitle = '⏱️ সময় শেষ হয়ে গেছে';
-    errorDesc = 'LongCat API থেকে উত্তর পেতে বেশি সময় লাগছে। ইন্টারনেট কানেকশন চেক করে আবার চেষ্টা করুন।';
-  } else if (isNetworkError) {
-    errorTitle = '📡 নেটওয়ার্ক সমস্যা';
-    errorDesc = 'সার্ভারে সংযোগ করা যাচ্ছে না। আপনার ইন্টারনেট কানেকশন চেক করুন।';
-  } else {
-    errorTitle = '⚠️ রিপোর্ট তৈরি করা সম্ভব হয়নি';
-    errorDesc = lastError?.message || 'Unknown error';
-  }
   container.innerHTML = `
     <div class="ai-error-box">
-      <div class="ai-error-icon">${isTimeout ? '⏱️' : (isNetworkError ? '📡' : '⚠️')}</div>
+      <div class="ai-error-icon">⚠️</div>
       <div class="ai-error-text">
-        <strong>${errorTitle}</strong><br>
-        <span style="font-size:13px;color:#888">${errorDesc}</span>
+        ${isTimeout ? 'সময় শেষ হয়ে গেছে (Timeout)। সার্ভার থেকে উত্তর পেতে দেরি হচ্ছে।' : 'দুঃখিত, রিপোর্ট তৈরি করা সম্ভব হয়নি: ' + (lastError?.message || 'Unknown error')}
       </div>
-      <button class="ai-retry-btn" onclick="generateAIOverview(window.__lastSectionResults)">🔄 আবার চেষ্টা করুন (Retry)</button>
+      <button class="ai-retry-btn" onclick="generateAIOverview(window.__lastSectionResults)">আবার চেষ্টা করুন (Retry)</button>
     </div>`;
   aiGenerationActive = false;
 }
@@ -837,28 +1525,51 @@ function el(tag, cls, text) {
 window.addEventListener('DOMContentLoaded', initExam);
 
 // ============================================================
+// i18n System (Item #12)
 // ============================================================
-// Review Pool Update
-// ============================================================
-function updateReviewPool(examId, sectionResults) {
-  if (examId !== 'review') return;
-  try {
-    const pool = JSON.parse(localStorage.getItem('jft_wrong_pool') || '{}');
-    examData.sections.forEach((sec, si) => {
-      sec.questions.forEach((q, qi) => {
-        const key = q._reviewKey;
-        if (!key || !pool[key]) return;
-        if (isCorrectAnswer(q, state[si][qi].selected)) {
-          delete pool[key];
-        } else {
-          pool[key].wrongCount++;
-          pool[key].lastWrong = Date.now();
-          const intervals = [1, 3, 7, 14, 30];
-          const idx = Math.min(pool[key].wrongCount - 1, intervals.length - 1);
-          pool[key].nextReview = Date.now() + intervals[idx] * 86400000;
-        }
-      });
-    });
-    localStorage.setItem('jft_wrong_pool', JSON.stringify(pool));
-  } catch (e) { /* quota exceeded */ }
+const I18N = {
+  en: {
+    'timer.label': 'Section Time Remaining',
+    'finish.section': 'Finish Section',
+    'flag': '🚩 Flag',
+    'flagged': '🚩 Flagged',
+    'back': '◀ Back',
+    'next': 'Next ▶',
+    'last': 'Last ▶',
+    'question.review': 'Detailed Question Review',
+    'review.subtitle': 'Review each question and see your results',
+    'correct': '✓ Correct',
+    'incorrect': '✗ Incorrect',
+    'ai.teacher': "🤖 AI Teacher's Note",
+    'study.mode': 'Study Mode',
+    'study.banner': '📖 Study Mode — No timer, learn at your own pace',
+    'keyboard.hints': '⌨️ 1-4: select | ←→: nav | F: flag | Enter: next',
+  },
+  bn: {
+    'timer.label': 'সেকশনের অবশিষ্ট সময়',
+    'finish.section': 'সেকশন শেষ করুন',
+    'flag': '🚩 ফ্ল্যাগ',
+    'flagged': '🚩 ফ্ল্যাগ করা হয়েছে',
+    'back': '◀ পিছনে',
+    'next': 'পরবর্তী ▶',
+    'last': 'শেষ ▶',
+    'question.review': 'বিস্তারিত প্রশ্ন পর্যালোচনা',
+    'review.subtitle': 'প্রতিটি প্রশ্ন পর্যালোচনা করুন এবং ফলাফল দেখুন',
+    'correct': '✓ সঠিক',
+    'incorrect': '✗ ভুল',
+    'ai.teacher': '🤖 AI শিক্ষকের নোট',
+    'study.mode': 'স্টাডি মোড',
+    'study.banner': '📖 স্টাডি মোড — কোনো টাইমার নেই, নিজের গতিতে শিখুন',
+    'keyboard.hints': '⌨️ ১-৪: সিলেক্ট | ←→: নেভিগেট | F: ফ্ল্যাগ | Enter: পরবর্তী',
+  }
+};
+
+function t(key) {
+  const lang = localStorage.getItem('jft_lang') || 'en';
+  return (I18N[lang] && I18N[lang][key]) || I18N['en'][key] || key;
+}
+
+function setLanguage(lang) {
+  localStorage.setItem('jft_lang', lang);
+  location.reload();
 }
