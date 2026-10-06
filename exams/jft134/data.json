@@ -149,262 +149,275 @@
       "name": "Conversation and Expression",
       "questions": [
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "日本の文化について、(______)興味がありますか。"
+              "speech": "日本の伝統文化について、どんなことに興味がありますか。"
             },
             {
               "speaker": "B",
-              "speech": "私は特に着物に興味があります。"
+              "speech": "私は特に日本の（______）を着てみたいと思っています。"
             }
           ],
           "options": [
-            "何か",
-            "どれか",
-            "だれか"
+            "着物",
+            "料理",
+            "言葉",
+            "電車"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "茶道を(______)みたことはありますか。"
+              "speech": "茶道を体験（______）ことはありますか。"
             },
             {
               "speaker": "B",
-              "speech": "いいえ、一度もありません。ぜひやってみたいです。"
+              "speech": "いいえ、まだ一度もありません。ぜひやってみたいです。"
             }
           ],
           "options": [
-            "やって",
-            "見て",
-            "聞いて"
+            "した",
+            "する",
+            "して",
+            "しない"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "この神社は(______)で有名ですか。"
+              "speech": "このお寺は春の桜がとても（______）有名ですよ。"
             },
             {
               "speaker": "B",
-              "speech": "古い歴史と美しい庭で有名ですよ。"
+              "speech": "そうなんですね。春になったら見に行きたいです。"
             }
           ],
           "options": [
-            "何",
-            "どこ",
-            "だれ"
+            "綺麗で",
+            "綺麗に",
+            "綺麗な",
+            "綺麗だ"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "(______)日本に来ましたか。"
+              "speech": "日本に来てから、もうどのくらい（______）か。"
             },
             {
               "speaker": "B",
-              "speech": "去年の4月に来ました。"
+              "speech": "ちょうど半年が経ちました。生活にも慣れました。"
             }
           ],
           "options": [
-            "いつ",
-            "どこ",
-            "だれ"
+            "経ちました",
+            "行きました",
+            "来ました",
+            "戻りました"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "日本での生活は(______)ですか。"
+              "speech": "日本での一人暮らしの生活は（______）ですか。"
             },
             {
               "speaker": "B",
-              "speech": "とても楽しいですが、少し忙しいです。"
+              "speech": "最初は大変でしたが、今はとても楽しいです。"
             }
           ],
           "options": [
             "どう",
             "どれ",
-            "だれ"
+            "だれ",
+            "どこ"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "あ、落とし物ですよ。"
+              "speech": "作業中の機械の近くを通るときは、（______）気をつけてください。"
             },
             {
               "speaker": "B",
-              "speech": "本当だ。(______)、ありがとうございます。"
+              "speech": "はい、巻き込まれないように距離を取って歩きます。"
             }
           ],
           "options": [
-            "教えてくれて",
-            "話してくれて",
-            "見てくれて"
+            "十分に",
+            "適当に",
+            "急いで",
+            "慌てて"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "どうぞ、入ってください。"
+              "speech": "荷物を段ボールに詰めたら、ガムテープで（______）留めてください。"
             },
             {
               "speaker": "B",
-              "speech": "おじゃま(______)。"
+              "speech": "はい、箱の口をしっかり塞ぎます。"
             }
           ],
           "options": [
-            "します",
-            "しました",
-            "して"
+            "しっかり",
+            "うっかり",
+            "ぼんやり",
+            "すっかり"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "いつも何で会社に来ますか。"
+              "speech": "すみません、その油汚れ用洗剤を（______）いただけますか。"
             },
             {
               "speaker": "B",
-              "speech": "(______)で来ますよ. 健康のためです。"
+              "speech": "はい、どうぞ。換気扇の掃除に使ってください。"
             }
           ],
           "options": [
-            "自転車",
-            "走って",
-            "車"
+            "取って",
+            "取られて",
+            "取る",
+            "取った"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "お先に失礼します。"
+              "speech": "明日の作業開始時間は朝8時半に（______）あります。"
             },
             {
               "speaker": "B",
-              "speech": "(______)。お気をつけて。"
+              "speech": "了解しました。遅れないように集合します。"
             }
           ],
           "options": [
-            "お疲れ様",
-            "いってらっしゃい",
-            "おやすみなさい"
+            "決まって",
+            "決めて",
+            "決められて",
+            "決めると"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "いってきます！"
+              "speech": "この野菜は冷暗所に（______）おいてください。"
             },
             {
               "speaker": "B",
-              "speech": "(______)。忘れ物ない？"
+              "speech": "はい、日の当たらない涼しい棚に入れておきます。"
             }
           ],
           "options": [
-            "いってらっしゃい",
-            "おかえりなさい",
-            "こんにちは"
+            "保管して",
+            "保管されて",
+            "保管すると",
+            "保管した"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "客",
-              "speech": "これ、別々に包んでください。"
-            },
-            {
-              "speaker": "店員",
-              "speech": "はい、(______)。"
-            }
-          ],
-          "options": [
-            "かしこまりました",
-            "ありがとうございます",
-            "少々お待ちください"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "どうしたんですか。(______)。"
+              "speech": "課長、本日の売上報告書を提出（______）。"
             },
             {
               "speaker": "B",
-              "speech": "ええ、ちょっと足が痛くて。"
+              "speech": "確認しました。今日も一日ご苦労様でした。"
             }
           ],
           "options": [
-            "大丈夫ですか",
-            "どこですか",
-            "いいですね"
+            "いたしました",
+            "されました",
+            "させました",
+            "なさいました"
           ],
           "answer": 0
         },
         {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "明日、一緒に映画に行きませんか。"
+              "speech": "体調が優れないときは、無理を（______）休んでくださいね。"
             },
             {
               "speaker": "B",
-              "speech": "すみません、明日はちょっと(______)。"
+              "speech": "ありがとうございます。気をつけます。"
             }
           ],
           "options": [
-            "都合が悪いです",
-            "都合がいいです",
-            "空いています"
+            "しないで",
+            "して",
+            "すれば",
+            "しようと"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "dialogue",
+          "instruction": "次の会話の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらんでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "本日の清掃作業は（______）で終わりです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "お疲れ様でした。ゴミをまとめて捨ててきます。"
+            }
+          ],
+          "options": [
+            "以上",
+            "以下",
+            "以外",
+            "未満"
           ],
           "answer": 0
         }
@@ -415,171 +428,171 @@
       "questions": [
         {
           "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
           "audio": "q26.mp3",
-          "audioTranscript": "男：すみません、この電車は横浜に停まりますか。女：ええ、行きますよ. でも、これは各駅停車ですから、次の快速に乗ったほうが早いですよ. 男：わかりました。ありがとうございます。",
-          "stem": "26. 男の人はどの電車に乗りますか。",
+          "audioTranscript": "男：すみません、この電車は快速急行ですか。\n女：いいえ、これは急行です。快速急行は次の8時45分発になりますよ。\n男：8時45分発ですね。向かいのホームで待ちます。ありがとうございます。",
+          "stem": "快速急行は何時何分発ですか。",
           "options": [
-            "快速",
-            "各駅停車",
-            "特急",
-            "急行"
+            "8時30分発",
+            "8時40分発",
+            "8時45分発",
+            "9時00分発"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
           "audio": "q27.mp3",
-          "audioTranscript": "女：あの、明日のパーティーですが、飲み物はどうすればいいですか. 男：マリアさんはビールをお願いします. 他のは私が買ってきます. 女：わかりました. ビールですね.",
-          "stem": "27. マリアさんは明日何を持って行きますか。",
+          "audioTranscript": "店員：いらっしゃいませ。店内でお召し上がりですか。\n客：持ち帰りでお願いします。ホットココアとチョコスコーンを一つください。\n店員：かしこまりました。お持ち帰りでホットココアとスコーンですね。",
+          "stem": "客は何を注文し、どうしますか。",
           "options": [
-            "ビール",
-            "ワイン",
-            "お茶",
-            "ジュース"
+            "店内でホットコーヒーとケーキ",
+            "持ち帰りでホットココアとチョコスコーン",
+            "店内でアイスティーとサンド",
+            "持ち帰りでジュースのみ"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
           "audio": "q28.mp3",
-          "audioTranscript": "男：もしもし、田中ですが、けんさんいますか. 母：けんは今、お風呂に入っているのよ. あと20分くらいで出てくると思うわ. 男：そうですか. じゃあ、また後でかけます。",
-          "stem": "28. けんさんは今何をしていますか。",
+          "audioTranscript": "アナウンス：ご来店のお客様にご案内いたします。本日午後2時より、3階特設会場にてビンゴ大会を開催いたします。参加券は1階サービスカウンターにて先着100名様に配布しております。",
+          "stem": "ビンゴ大会は何時からどこで開催されますか。",
           "options": [
-            "お風呂に入っている",
-            "勉強している",
-            "ご飯を食べている",
-            "寝ている"
+            "午後1時から1階",
+            "午後2時から3階特設会場",
+            "午後3時から屋外広場",
+            "午後4時から屋上"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
           "audio": "q29.mp3",
-          "audioTranscript": "女：鈴木さん、趣味は何ですか。男：キャンプをすることです。静かな森の中でゆっくりするのが好きなんですよ。女：いいですね. 今度私も連れて行ってください。",
-          "stem": "29. 鈴木さんの趣味は何ですか。",
+          "audioTranscript": "男：佐藤さん、明日の社内懇親会は何時スタートだっけ？\n女：夜7時から駅前の居酒屋「さくら」だよ。会費は3,000円だから用意しておいてね。\n男：7時に「さくら」、会費3,000円ね。了解！",
+          "stem": "懇親会の開始時間と会費はいくらですか。",
           "options": [
-            "キャンプ",
-            "釣り",
-            "読書",
-            "旅行"
+            "6時から2,000円",
+            "7時から3,000円",
+            "7時半から4,000円",
+            "8時から5,000円"
           ],
-          "answer": 0
+          "answer": 1
         },
         {
           "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
           "audio": "q30.mp3",
-          "audioTranscript": "男：いらっしゃいませ. ご注文はお決まりですか. 女：はい. カレーライスとお水をお願いします. 男：かしこまりました. サラダはつけますか. 女：いいえ、大丈夫です。",
-          "stem": "30. 女の人は何を注文しましたか。",
+          "audioTranscript": "先輩：倉庫でフォークリフトが動いている時は、必ずアイコンタクトを取って、リフトの回転範囲内に入らないようにしてね。\n後輩：はい、運転手さんと目を見て合図し、離れて歩きます！",
+          "stem": "フォークリフトが動いている時の安全ルールは何ですか。",
+          "options": [
+            "走って前を横切る",
+            "アイコンタクトを取り回転範囲に入らない",
+            "リフトの後ろについて歩く",
+            "イヤホンで音楽を聴きながら歩く"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q31.mp3",
+          "audioTranscript": "女：田中さん、週末は何をして過ごしたの？\n男：天気が良かったので、自転車で海までサイクリングに行ってきたよ。潮風が気持ちよかったな。\n女：いいですね！リフレッシュできましたね。",
+          "stem": "男の人は週末何をしましたか。",
+          "options": [
+            "山登り",
+            "海までサイクリング",
+            "家でゲーム",
+            "買い物"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q32.mp3",
+          "audioTranscript": "医師：こちらの塗り薬は、患部を清潔に洗った後、1日2回薄く伸ばして塗ってください。目や口の周りには塗らないでくださいね。\n患者：1日2回、薄く塗るんですね。わかりました。",
+          "stem": "この塗り薬の使い方で正しいものはどれですか。",
+          "options": [
+            "1日何回も厚く塗る",
+            "患部を清潔にして1日2回薄く塗る",
+            "目や口の中に塗る",
+            "お風呂に入る直前に塗る"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q33.mp3",
+          "audioTranscript": "店長：木村さん、売り場のお豆腐に「本日限りのお買い得」のシールを貼ってくれる？\n木村：はい、賞味期限の近いものに黄色いお買い得シールを貼ります！",
+          "stem": "木村さんはお豆腐に何を貼りますか。",
+          "options": [
+            "半額シール",
+            "「本日限りのお買い得」の黄色いシール",
+            "定価シール",
+            "廃棄シール"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q34.mp3",
+          "audioTranscript": "女：すみません、このキャリーケースは飛行機の機内に持ち込めますか。\n店員：はい、国内線・国際線ともに一般的な100席以上の飛行機でしたら機内持ち込み可能サイズとなっております。\n女：機内に持ち込めるんですね！これにします。",
+          "stem": "このキャリーケースのサイズはどうなっていますか。",
+          "options": [
+            "機内持ち込み不可の大型",
+            "一般的な飛行機の機内持ち込み可能サイズ",
+            "子供用サイズ",
+            "宅急便専用サイズ"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q35.mp3",
+          "audioTranscript": "課長：明日の午後は会社の創立記念式典があります。午後1時半までにスーツ着用で講堂に集合してください。\n社員一同：かしこまりました。",
+          "stem": "明日の午後の式典の服装と集合時間は何ですか。",
+          "options": [
+            "作業着で午後1時",
+            "スーツ着用で午後1時半",
+            "私服で午後2時",
+            "運動着で午前10時"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q36.mp3",
+          "audioTranscript": "アナウンス：地下鉄東西線をご利用のお客様にご案内いたします。車両ドア点検のため、一部列車に約7分の遅れが出ております。ご迷惑をおかけいたします。",
+          "stem": "地下鉄が遅れている理由は何ですか。",
+          "options": [
+            "大雨のため",
+            "車両ドア点検のため",
+            "信号故障のため",
+            "急病人救護のため"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q37.mp3",
+          "audioTranscript": "同僚A：今日のお昼休み、何食べる？\n同僚B：社食で今日限定の長崎ちゃんぽんフェアをやってるよ。野菜たっぷりで美味しそうだよ！\n同僚A：ちゃんぽん！温まるし野菜も摂れていいね。社食に行こう！",
+          "stem": "二人は社食で何を食べますか。",
           "options": [
             "カレーライス",
-            "ラーメン",
-            "うどん",
-            "牛丼"
+            "長崎ちゃんぽん",
+            "カツ丼",
+            "ハンバーグ"
           ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q31.mp3",
-          "audioTranscript": "女：田中さん、昨日の試験はどうだった？男：すごく難しかったよ！特にリスニングが全然わからなくて. 女：そうだったんだ。次は頑張ろうね. 男：うん、頑張るよ。",
-          "stem": "31. 田中さんは昨日の試験についてどう言っていますか。",
-          "options": [
-            "とても難しかった",
-            "簡単だった",
-            "リスニングが易しかった",
-            "時間が足りなかった"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q32.mp3",
-          "audioTranscript": "男：明日の天気はどうかな. 女：明日は全国的に雨が降るそうよ。雷も鳴るかもしれないって。男：そうか、明日は家でゆっくりしようかな。",
-          "stem": "32. 明日の天気はどうなる予想ですか。",
-          "options": [
-            "雨",
-            "晴れ",
-            "曇り",
-            "雪"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q33.mp3",
-          "audioTranscript": "女：あのう、この本を借りたいんですが。男：はい。利用者カードをお持ちですか. あ、期限切れですね. こちらの書類に記入をお願いします. 女：わかりました。",
-          "stem": "33. 女の人はまず何をしなければなりませんか。",
-          "options": [
-            "書類に記入する",
-            "本を返す",
-            "カードを捨てる",
-            "お金を払う"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q34.mp3",
-          "audioTranscript": "男：昨日、新しいデジカメを買ったんだ。女：いいなあ。どんなの？男：すごく軽くて、ポケットにも入るよ. ほら、見て. 女：本当だ！持ち運びに便利そうだね。",
-          "stem": "34. 新しいデジカメのいいところはどこですか。",
-          "options": [
-            "軽くて小さい",
-            "画面が大きい",
-            "音が良い",
-            "電池が長持ち"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q35.mp3",
-          "audioTranscript": "女：あ、財布がない！どこかに置いてきたのかも. 男：え？いつまであったの？女：朝、家を出る時はあったの. そのあと、カフェに行って、そのあと映画館に行ったわ. 男：じゃあ、カフェか映画館のどっちかだね.",
-          "stem": "35. 女の人は財布をどこに忘れた可能性がありますか。",
-          "options": [
-            "カフェか映画館",
-            "家かカフェ",
-            "映画館か駅",
-            "家か映画館"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q36.mp3",
-          "audioTranscript": "男：マリアさん、週末は何をして過ごしましたか. 女：土曜日は一日中家で掃除をしていました. 日曜日は友達と映画を見に行きました. 男：充実していましたね. 女：ええ、楽しかったです.",
-          "stem": "36. 女の人は日曜日に何をしましたか。",
-          "options": [
-            "映画を見る",
-            "掃除",
-            "散歩",
-            "料理"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q37.mp3",
-          "audioTranscript": "女：あのう、すみません。新宿駅までいくらですか。男：210円ですよ. あちらの自販機で切ップを買ってください. 女：わかりました. ありがとうございます。",
-          "stem": "37. 新宿駅までの運賃はいくらですか。",
-          "options": [
-            "210円",
-            "170円",
-            "190円",
-            "230円"
-          ],
-          "answer": 0
+          "answer": 1
         }
       ]
     },
