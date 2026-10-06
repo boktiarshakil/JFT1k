@@ -1,5 +1,5 @@
 // JFT Exam Hub — Service Worker for offline support (Item #13)
-const CACHE_NAME = 'jft-hub-v3';
+const CACHE_NAME = 'jft-hub-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
