@@ -1,761 +1,761 @@
 {
-    "id": "jft42",
-    "title": "JFT-Basic Simulation Exam 42",
-    "description": "Simulation Exam 42 focusing on paying at the register, throwing away garbage, asking for help, and expressing surprise.",
-    "duration": 3600,
-    "sections": [
+  "id": "jft42",
+  "title": "JFT-Basic Simulation Exam 42",
+  "description": "Simulation Exam 42 focusing on paying at the register, throwing away garbage, asking for help, and expressing surprise.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
         {
-            "name": "Script and Vocabulary",
-            "questions": [
-                {
-                    "type": "image",
-                    "instruction": "Look at the illustration and choose the correct word.",
-                    "image": "q1.jpeg",
-                    "imagePrompt": "A person paying with a smartphone at a convenience store register. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
-                    "options": [
-                        "支払います",
-                        "もらいます",
-                        "貸します"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "image",
-                    "instruction": "Look at the illustration and choose the correct word.",
-                    "image": "q2.jpeg",
-                    "imagePrompt": "A person throwing a trash bag into a designated garbage collection area. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
-                    "options": [
-                        "ゴミを捨てます",
-                        "ゴミを拾います",
-                        "ゴミを燃やします"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "image",
-                    "instruction": "Look at the illustration and choose the correct word.",
-                    "image": "q3.jpeg",
-                    "imagePrompt": "A person carrying heavy boxes and asking a colleague to help them. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
-                    "options": [
-                        "手伝います",
-                        "邪魔します",
-                        "休みます"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "image",
-                    "instruction": "Look at the illustration and choose the correct word.",
-                    "image": "q4.jpeg",
-                    "imagePrompt": "A person looking very surprised, with eyes wide open and hands on their face. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
-                    "options": [
-                        "驚きます",
-                        "喜びます",
-                        "悲しみます"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-                    "stem": "5. この靴は少し(______)ので、足が痛くなります。",
-                    "options": [
-                        "きつい",
-                        "ゆるい",
-                        "まるい"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-                    "stem": "6. もし熱が(______)、この薬を飲んでください。",
-                    "options": [
-                        "出たら",
-                        "出ると",
-                        "出れば"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-                    "stem": "7. (______)、子供のころはよくここで遊びました。",
-                    "options": [
-                        "昔",
-                        "最近",
-                        "将来"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-                    "stem": "8. このスープは少し(______)ですね。お湯を入れますか。",
-                    "options": [
-                        "濃い",
-                        "薄い",
-                        "厚い"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-                    "stem": "9. すみません、(質問)があります。",
-                    "options": [
-                        "しつもん",
-                        "しちもん",
-                        "しちも"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-                    "stem": "10. あの(店員)さんは親切です。",
-                    "options": [
-                        "てんいん",
-                        "ていいん",
-                        "ていん"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-                    "stem": "11. (注意)が必要です。",
-                    "options": [
-                        "ちゅうい",
-                        "ちゅい",
-                        "ちゅうじ"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "Read the sentence and choose the kanji word that fits in ( ) most.",
-                    "stem": "12. コンサートに(______)ことができて、本当に良かったです。",
-                    "options": [
-                        "出席する",
-                        "参加する",
-                        "合格する"
-                    ],
-                    "answer": 1
-                }
-            ]
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A person paying with a smartphone at a convenience store register. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "options": [
+            "支払います",
+            "もらいます",
+            "貸します"
+          ],
+          "answer": 0
         },
         {
-            "name": "Conversation and Expression",
-            "questions": [
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "この手紙、簡易書留で（______）ください。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "かしこまりました。追加料金は350円になります。"
-                        }
-                    ],
-                    "options": [
-                        "出して",
-                        "出されて",
-                        "出した"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "昨日の歓迎会、とても（______）ですね。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "ええ、新しい仲間と親しくなれて嬉しかったです。"
-                        }
-                    ],
-                    "options": [
-                        "楽しかった",
-                        "楽しい",
-                        "楽しく"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "作業を始めるときは、必ず点検を（______）てください。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "はい、チェックリストに沿って確認します。"
-                        }
-                    ],
-                    "options": [
-                        "行っ",
-                        "行わ",
-                        "行い"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "週末は天気が良ければ、海辺を散歩（______）つもりです。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "いいですね。潮風が気持ちいいでしょうね。"
-                        }
-                    ],
-                    "options": [
-                        "する",
-                        "して",
-                        "した"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "明日の朝礼で5分間スピーチを（______）なければなりません。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "落ち着いて笑顔で話せば大丈夫ですよ。"
-                        }
-                    ],
-                    "options": [
-                        "し",
-                        "する",
-                        "して"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "このうどん、少し汁が（______）すぎます。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "だし汁を足して薄めましょう。"
-                        }
-                    ],
-                    "options": [
-                        "濃",
-                        "濃い",
-                        "濃く"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "ストーブを（______）まま寝てしまい、喉がカラカラです。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "火事にも気をつけてくださいね。消してから寝ましょう。"
-                        }
-                    ],
-                    "options": [
-                        "つけた",
-                        "つけて",
-                        "つける"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "日本語のメールがひとりで（______）ようになりました。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "素晴らしい進歩ですね！自信を持って送ってください。"
-                        }
-                    ],
-                    "options": [
-                        "書ける",
-                        "書いて",
-                        "書いた"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "足が痛いなら、無理を（______）ほうがいいですよ。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "はい、今日は重い荷物を持たないようにします。"
-                        }
-                    ],
-                    "options": [
-                        "しない",
-                        "する",
-                        "して"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "打ち合わせ用のプロジェクターは（______）おきましたか。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "はい、第2会議室にセットしてあります。"
-                        }
-                    ],
-                    "options": [
-                        "準備して",
-                        "準備する",
-                        "準備した"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "雪が（______）そうなので、早めに帰りましょう。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "そうですね。電車が止まると大変ですからね。"
-                        }
-                    ],
-                    "options": [
-                        "降り",
-                        "降る",
-                        "降った"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "すみません、ホッチキスを（______）いただけませんか。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "はい、どうぞ。机の上のを使ってください。"
-                        }
-                    ],
-                    "options": [
-                        "貸して",
-                        "借りて",
-                        "使って"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
-                    "dialogue": [
-                        {
-                            "speaker": "A",
-                            "speech": "本日もお疲れ様でした。"
-                        },
-                        {
-                            "speaker": "B",
-                            "speech": "お疲れ様でした。（______）失礼します。"
-                        }
-                    ],
-                    "options": [
-                        "お先に",
-                        "お後に",
-                        "お早く"
-                    ],
-                    "answer": 0
-                }
-            ]
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A person throwing a trash bag into a designated garbage collection area. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "options": [
+            "ゴミを捨てます",
+            "ゴミを拾います",
+            "ゴミを燃やします"
+          ],
+          "answer": 0
         },
         {
-            "name": "Listening Comprehension",
-            "questions": [
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q26.mp3",
-                    "audioTranscript": "男：すみません、この快速電車は平塚に停まりますか。\n女：はい、茅ヶ崎の次が平塚です。1番線から発車しますよ。\n男：平塚に停まるんですね。ありがとうございます。",
-                    "stem": "この快速電車は平塚に停まりますか。",
-                    "options": [
-                        "停まらない",
-                        "平塚に停まる",
-                        "茅ヶ崎止まりである",
-                        "各駅停車に乗り換える"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q27.mp3",
-                    "audioTranscript": "女：明日の社内健康診断、採血があるそうですが、前日の飲酒はどうすればいいですか。\n男：検査前日の夜8時以降のアルコール摂取は控えてください。肝機能の数値に影響が出ますので。\n女：夜8時以降はお酒を飲まないようにしますね。",
-                    "stem": "受診者は前日の夜何時以降にお酒を控えるべきですか。",
-                    "options": [
-                        "夕方6時",
-                        "夜7時",
-                        "夜8時",
-                        "夜9時"
-                    ],
-                    "answer": 2
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q28.mp3",
-                    "audioTranscript": "男：長谷川さん、伝票の照合は進んでいますか。\n女：今、注文番号と受領印を照合しているところです。あと15分ほどで終わります。\n男：了解です。完了したらファイルに綴じて棚に戻してください。",
-                    "stem": "長谷川さんは今何をしていますか。",
-                    "options": [
-                        "注文番号と受領印を照合している",
-                        "荷物を発送している",
-                        "電話対応をしている",
-                        "休憩している"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q29.mp3",
-                    "audioTranscript": "女：佐藤さん、明日の定例連絡会は何時からですか。\n男：いつもは11時からですが、明日は新入社員の紹介があるため10時45分開始に変更になりました。\n女：10時45分ですね。15分早めに出席します。",
-                    "stem": "明日の連絡会は何時に始まりますか。",
-                    "options": [
-                        "10時15分",
-                        "10時30分",
-                        "10時45分",
-                        "11時00分"
-                    ],
-                    "answer": 2
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q30.mp3",
-                    "audioTranscript": "店員：いらっしゃいませ。ご注文をお伺いします。\n客：野菜炒め定食を1つ、お味噌汁を豚汁に変更でお願いします。\n店員：野菜炒め定食のお味噌汁を豚汁に変更ですね。かしこまりました。",
-                    "stem": "客はお味噌汁を何に変更しましたか。",
-                    "options": [
-                        "わかめスープ",
-                        "豚汁",
-                        "コーンポタージュ",
-                        "うどん"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q31.mp3",
-                    "audioTranscript": "女：点鼻薬を使ってから、鼻の調子はどうですか。\n男：鼻詰まりがスッと通って、頭の重さもなくなりました。\n女：効いて良かったですね。外出時はマスクを忘れないでくださいね。",
-                    "stem": "男の人の鼻の調子はどうなりましたか。",
-                    "options": [
-                        "鼻詰まりが通って頭の重さがなくなった",
-                        "さらに詰まった",
-                        "変わらない",
-                        "痛くなった"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q32.mp3",
-                    "audioTranscript": "アナウンス：業務連絡です。本日午後2時より、受水槽の定期清掃を実施いたします。作業中は全館で断水となりますので、手洗いや給湯は作業前にお済ませください。",
-                    "stem": "午後2時からの作業中に全館で起きることは何ですか。",
-                    "options": [
-                        "停電",
-                        "断水",
-                        "エレベーター停止",
-                        "火災訓練"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q33.mp3",
-                    "audioTranscript": "職長：フォークリフトでの運搬時は、荷物を地上から20センチ程度上げて走行してください。高く上げたままの走行は転倒の恐れがあり危険です。\n作業員：はい、荷物を低く保って安全運転します。",
-                    "stem": "フォークリフト運搬時の安全ルールは何ですか。",
-                    "options": [
-                        "荷物を高く上げて走る",
-                        "荷物を地上から約20cm上げて走る",
-                        "スピードを上げて走る",
-                        "後ろを見ずにバックする"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q34.mp3",
-                    "audioTranscript": "女：職場の近くのうどん屋さん、行ってみた？\n男：自家製麺でコシがあって出汁も最高だよ。ただ、大盛り無料だからついつい食べすぎて午後の仕事が眠くなるのが難点だね。",
-                    "stem": "うどん屋について男の人が冗談交じりに言っている難点は何ですか。",
-                    "options": [
-                        "大盛りで食べすぎて午後眠くなること",
-                        "麺が柔らかすぎること",
-                        "出汁がまずいこと",
-                        "値段が高いこと"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q35.mp3",
-                    "audioTranscript": "男：もしもし、待ち合わせの駅に着いたよ。どこ？\n女：南口のタクシー乗り場のすぐ後ろにある公衆電話ボックスの横に立っているよ。\n男：あ、電話ボックスの横ね。すぐ行くよ。",
-                    "stem": "女の人はどこで待っていますか。",
-                    "options": [
-                        "タクシー乗り場後ろの公衆電話ボックスの横",
-                        "北口のバス停",
-                        "改札の中",
-                        "交番の前"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q36.mp3",
-                    "audioTranscript": "男：先週の日曜日は何をしましたか。\n女：天気が良かったので、近所の図書館へ行って歴史の本をじっくり読みました。\n男：静かで知的な休日を過ごせましたね。",
-                    "stem": "女の人は日曜日に何をしましたか。",
-                    "options": [
-                        "図書館で歴史の本を読んだ",
-                        "家でテレビゲームをした",
-                        "映画を見に行った",
-                        "買い物に行った"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "audio",
-                    "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
-                    "audio": "q37.mp3",
-                    "audioTranscript": "客：このハサミを1丁と、スティックのりを1本ください。\n店員：ハサミが350円、スティックのりが120円で、合計470円になります。\n客：じゃあ、500円玉で払います。",
-                    "stem": "文房具の合計金額はいくらですか。",
-                    "options": [
-                        "420円",
-                        "450円",
-                        "470円",
-                        "500円"
-                    ],
-                    "answer": 2
-                }
-            ]
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A person carrying heavy boxes and asking a colleague to help them. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "options": [
+            "手伝います",
+            "邪魔します",
+            "休みます"
+          ],
+          "answer": 0
         },
         {
-            "name": "Reading Comprehension",
-            "questions": [
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【市立図書館 開館時間延長のお知らせ】\n試験勉強や読書を支援するため、7月と8月の夏休み期間中、平日の閉館時間を1時間延長し、夜20時まで開館いたします（通常19時閉館）。土日祝日は通常通り17時閉館です。館内の学習室をぜひご利用ください。",
-                    "stem": "38. 夏休み期間中、平日は何時まで開館しますか。",
-                    "options": [
-                        "17時まで",
-                        "18時まで",
-                        "19時まで",
-                        "20時まで"
-                    ],
-                    "answer": 3
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【市立図書館 開館時間延長のお知らせ】\n試験勉強や読書を支援するため、7月と8月の夏休み期間中、平日の閉館時間を1時間延長し、夜20時まで開館いたします（通常19時閉館）。土日祝日は通常通り17時閉館です。館内の学習室をぜひご利用ください。",
-                    "stem": "39. 土日祝日の閉館時間は何時ですか。",
-                    "options": [
-                        "15時",
-                        "17時",
-                        "19時",
-                        "20時"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【社員寮の洗濯室 利用時間とマナー】\n・洗濯機・乾燥機の利用時間：朝6:00〜夜22:00\n・洗濯が終わった衣類は、次の人のために速やかに取り出してください。\n・夜22時以降の運転は、騒音防止のため電源が自動で切れますのでご注意ください。",
-                    "stem": "40. 洗濯機や乾燥機が利用できる時間帯はいつですか。",
-                    "options": [
-                        "24時間いつでも",
-                        "朝6:00〜夜22:00",
-                        "朝8:00〜夕方18:00",
-                        "夜間のみ"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【社員寮の洗濯室 利用時間とマナー】\n・洗濯機・乾燥機の利用時間：朝6:00〜夜22:00\n・洗濯が終わった衣類は、次の人のために速やかに取り出してください。\n・夜22時以降の運転は、騒音防止のため電源が自動で切れますのでご注意ください。",
-                    "stem": "41. 夜22時を過ぎるとどうなりますか。",
-                    "options": [
-                        "追加料金がかかる",
-                        "騒音防止のため電源が自動で切れる",
-                        "警備員が来る",
-                        "鍵がかかる"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【ドラッグストア「スマイル」割引クーポン】\n1回のお会計が2,000円（税込）以上で200円引き！\n有効期限：4月1日〜4月15日\n※処方せん調剤、タバコ、雑誌等の一部商品にはご利用いただけません。他クーポンとの併用はできません。",
-                    "stem": "42. 200円引きになる条件は何ですか。",
-                    "options": [
-                        "お会計が2,000円以上",
-                        "タバコを買うこと",
-                        "毎日来店すること",
-                        "会員登録のみ"
-                    ],
-                    "answer": 0
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【ドラッグストア「スマイル」割引クーポン】\n1回のお会計が2,000円（税込）以上で200円引き！\n有効期限：4月1日〜4月15日\n※処方せん調剤、タバコ、雑誌等の一部商品にはご利用いただけません。他クーポンとの併用はできません。",
-                    "stem": "43. クーポンが使えない商品はどれですか。",
-                    "options": [
-                        "お菓子",
-                        "シャンプー",
-                        "タバコや処方せん調剤",
-                        "洗剤"
-                    ],
-                    "answer": 2
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "渡辺リーダー\nお疲れ様です。自動車部品検査担当のラザックです。本日午前中に検査したブレーキキャリパー（ロットNo.408）ですが、ネジ穴の深さが基準値（15mm）より1mm浅いものが3個確認されました。該当パレットを一時保留エリアへ移動させました。再測定の手順についてご指示をいただけますでしょうか。",
-                    "stem": "44. ラザックさんが発見した製品の不良は何ですか。",
-                    "options": [
-                        "製品に傷があった",
-                        "ネジ穴の深さが基準値より1mm浅かった",
-                        "色が付いていなかった",
-                        "重すぎた"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "渡辺リーダー\nお疲れ様です。自動車部品検査担当のラザックです。本日午前中に検査したブレーキキャリパー（ロットNo.408）ですが、ネジ穴の深さが基準値（15mm）より1mm浅いものが3個確認されました。該当パレットを一時保留エリアへ移動させました。再測定の手順についてご指示をいただけますでしょうか。",
-                    "stem": "45. 不良が見つかった製品はどうされましたか。",
-                    "options": [
-                        "ゴミ箱に捨てた",
-                        "一時保留エリアへ移動させた",
-                        "そのまま出荷した",
-                        "自分で削った"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "私は日本の「お中元」や「お歳暮」の贈り物文化に感心しました。お世話になった上司や取引先、親戚に対して、日頃の感謝を込めてビールやそうめん、果物などを贈る習慣です。贈り物には必ず丁寧なお礼状を添えたり、受け取った側もすぐにお礼の連絡を入れるなど、礼儀を重んじる日本の心が表れています。",
-                    "stem": "46. お中元やお歳暮を贈る目的は何ですか。",
-                    "options": [
-                        "物を自慢するため",
-                        "日頃の感謝の気持ちを伝えるため",
-                        "お金を節約するため",
-                        "お祝いのパーティーを開くため"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "私は日本の「お中元」や「お歳暮」の贈り物文化に感心しました。お世話になった上司や取引先、親戚に対して、日頃の感謝を込めてビールやそうめん、果物などを贈る習慣です。贈り物には必ず丁寧なお礼状を添えたり、受け取った側もすぐにお礼の連絡を入れるなど、礼儀を重んじる日本の心が表れています。",
-                    "stem": "47. 贈り物を受け取った側がすることは何ですか。",
-                    "options": [
-                        "そのままにしておく",
-                        "すぐにお礼の連絡やお礼状を送る",
-                        "同じ物を送り返す",
-                        "お金を払う"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【アパートの共用玄関 オートロックの暗証番号変更について】\n防犯強化のため、3月1日（日）午前10時にオートロックの暗証番号を変更いたします。新しい暗証番号は、各部屋の郵便受けに投函された封書に記載されております。防犯上、外部の人に暗証番号を教えないよう厳重に管理してください。",
-                    "stem": "48. 新しい暗証番号はどのように伝えられますか。",
-                    "options": [
-                        "掲示板に貼り出される",
-                        "郵便受けに投函された封書に記載されている",
-                        "メールで一斉送信される",
-                        "電話で伝えられる"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "【アパートの共用玄関 オートロックの暗証番号変更について】\n防犯強化のため、3月1日（日）午前10時にオートロックの暗証番号を変更いたします。新しい暗証番号は、各部屋の郵便受けに投函された封書に記載されております。防犯上、外部の人に暗証番号を教えないよう厳重に管理してください。",
-                    "stem": "49. 暗証番号の取り扱いについて注意されていることは何ですか。",
-                    "options": [
-                        "友人に教えること",
-                        "外部の人に教えないよう厳重に管理すること",
-                        "メモしてドアに貼ること",
-                        "変更しないこと"
-                    ],
-                    "answer": 1
-                },
-                {
-                    "type": "text",
-                    "instruction": "文章を読んで、質問に答えてください。",
-                    "context": "マリーさんへ\n今日の日本語能力試験の模擬テスト、お疲れ様でした。リスニングの第3問の答え合わせを一緒に行いたいので、もし時間があれば今日の17時に駅前のマクドナルドでお茶しませんか。都合が良ければ返信をください。リンより。",
-                    "stem": "50. リンさんはマリーさんに何を提案していますか。",
-                    "options": [
-                        "模擬テストのやり直し",
-                        "17時に駅前マクドナルドで一緒に答え合わせとお茶をすること",
-                        "明日の試験の申し込み",
-                        "教科書の貸し出し"
-                    ],
-                    "answer": 1
-                }
-            ]
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A person looking very surprised, with eyes wide open and hands on their face. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "options": [
+            "驚きます",
+            "喜びます",
+            "悲しみます"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "5. この手袋はサイズが少し（______）ので、作業がしやすいです。",
+          "options": [
+            "ぴったりな",
+            "きつい",
+            "重い"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "6. もし熱が（______）、すぐに体温計で測ってください。",
+          "options": [
+            "出たら",
+            "出ると",
+            "出れば"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "7. （______）は毎週日曜日に家族で外食を楽しんでいました。",
+          "options": [
+            "昔",
+            "来週",
+            "再来週"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "8. このラーメンのスープはとても（______）ですが深みがあります。",
+          "options": [
+            "濃厚",
+            "薄口",
+            "苦い"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
+          "stem": "9. （質問）箱にアンケートの用紙を入れました。",
+          "options": [
+            "しつもん",
+            "しちもん",
+            "しつぶん"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
+          "stem": "10. 新しい（店員）にレジの打ち方を指導しました。",
+          "options": [
+            "てんいん",
+            "ていいん",
+            "ていん"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
+          "stem": "11. 段差がありますので足元にご（注意）ください。",
+          "options": [
+            "ちゅうい",
+            "ちゅい",
+            "じゅうい"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the kanji word that fits in ( ) most.",
+          "stem": "12. 市民マラソン大会に(______)ことができて、完走メダルをもらいました。",
+          "options": [
+            "出場する",
+            "棄権する",
+            "落選する"
+          ],
+          "answer": 0
         }
-    ]
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この手紙、簡易書留で（______）ください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "かしこまりました。追加料金は350円になります。"
+            }
+          ],
+          "options": [
+            "出して",
+            "出されて",
+            "出した"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "昨日の歓迎会、とても（______）ですね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "ええ、新しい仲間と親しくなれて嬉しかったです。"
+            }
+          ],
+          "options": [
+            "楽しかった",
+            "楽しい",
+            "楽しく"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業を始めるときは、必ず点検を（______）てください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、チェックリストに沿って確認します。"
+            }
+          ],
+          "options": [
+            "行っ",
+            "行わ",
+            "行い"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "週末は天気が良ければ、海辺を散歩（______）つもりです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "いいですね。潮風が気持ちいいでしょうね。"
+            }
+          ],
+          "options": [
+            "する",
+            "して",
+            "した"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "明日の朝礼で5分間スピーチを（______）なければなりません。"
+            },
+            {
+              "speaker": "B",
+              "speech": "落ち着いて笑顔で話せば大丈夫ですよ。"
+            }
+          ],
+          "options": [
+            "し",
+            "する",
+            "して"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "このうどん、少し汁が（______）すぎます。"
+            },
+            {
+              "speaker": "B",
+              "speech": "だし汁を足して薄めましょう。"
+            }
+          ],
+          "options": [
+            "濃",
+            "濃い",
+            "濃く"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ストーブを（______）まま寝てしまい、喉がカラカラです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "火事にも気をつけてくださいね。消してから寝ましょう。"
+            }
+          ],
+          "options": [
+            "つけた",
+            "つけて",
+            "つける"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "日本語のメールがひとりで（______）ようになりました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "素晴らしい進歩ですね！自信を持って送ってください。"
+            }
+          ],
+          "options": [
+            "書ける",
+            "書いて",
+            "書いた"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "足が痛いなら、無理を（______）ほうがいいですよ。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、今日は重い荷物を持たないようにします。"
+            }
+          ],
+          "options": [
+            "しない",
+            "する",
+            "して"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "打ち合わせ用のプロジェクターは（______）おきましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、第2会議室にセットしてあります。"
+            }
+          ],
+          "options": [
+            "準備して",
+            "準備する",
+            "準備した"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "雪が（______）そうなので、早めに帰りましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "そうですね。電車が止まると大変ですからね。"
+            }
+          ],
+          "options": [
+            "降り",
+            "降る",
+            "降った"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、ホッチキスを（______）いただけませんか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、どうぞ。机の上のを使ってください。"
+            }
+          ],
+          "options": [
+            "貸して",
+            "借りて",
+            "使って"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "会話を読んで、（　　）に最も適した言葉を選んでください。",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "本日の業務報告を終えました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "ご苦労様でした。（______）失礼します。"
+            }
+          ],
+          "options": [
+            "お先に",
+            "お後に",
+            "お早く"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：すみません、この快速電車は平塚に停まりますか。\n女：はい、茅ヶ崎の次が平塚です。1番線から発車しますよ。\n男：平塚に停まるんですね。ありがとうございます。",
+          "stem": "この快速電車は平塚に停まりますか。",
+          "options": [
+            "停まらない",
+            "平塚に停まる",
+            "茅ヶ崎止まりである",
+            "各駅停車に乗り換える"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q27.mp3",
+          "audioTranscript": "女：明日の社内健康診断、採血があるそうですが、前日の飲酒はどうすればいいですか。\n男：検査前日の夜8時以降のアルコール摂取は控えてください。肝機能の数値に影響が出ますので。\n女：夜8時以降はお酒を飲まないようにしますね。",
+          "stem": "受診者は前日の夜何時以降にお酒を控えるべきですか。",
+          "options": [
+            "夕方6時",
+            "夜7時",
+            "夜8時",
+            "夜9時"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：長谷川さん、伝票の照合は進んでいますか。\n女：今、注文番号と受領印を照合しているところです。あと15分ほどで終わります。\n男：了解です。完了したらファイルに綴じて棚に戻してください。",
+          "stem": "長谷川さんは今何をしていますか。",
+          "options": [
+            "注文番号と受領印を照合している",
+            "荷物を発送している",
+            "電話対応をしている",
+            "休憩している"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q29.mp3",
+          "audioTranscript": "女：佐藤さん、明日の定例連絡会は何時からですか。\n男：いつもは11時からですが、明日は新入社員の紹介があるため10時45分開始に変更になりました。\n女：10時45分ですね。15分早めに出席します。",
+          "stem": "明日の連絡会は何時に始まりますか。",
+          "options": [
+            "10時15分",
+            "10時30分",
+            "10時45分",
+            "11時00分"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q30.mp3",
+          "audioTranscript": "店員：いらっしゃいませ。ご注文をお伺いします。\n客：野菜炒め定食を1つ、お味噌汁を豚汁に変更でお願いします。\n店員：野菜炒め定食のお味噌汁を豚汁に変更ですね。かしこまりました。",
+          "stem": "客はお味噌汁を何に変更しましたか。",
+          "options": [
+            "わかめスープ",
+            "豚汁",
+            "コーンポタージュ",
+            "うどん"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q31.mp3",
+          "audioTranscript": "女：点鼻薬を使ってから、鼻の調子はどうですか。\n男：鼻詰まりがスッと通って、頭の重さもなくなりました。\n女：効いて良かったですね。外出時はマスクを忘れないでくださいね。",
+          "stem": "男の人の鼻の調子はどうなりましたか。",
+          "options": [
+            "鼻詰まりが通って頭の重さがなくなった",
+            "さらに詰まった",
+            "変わらない",
+            "痛くなった"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q32.mp3",
+          "audioTranscript": "アナウンス：業務連絡です。本日午後2時より、受水槽の定期清掃を実施いたします。作業中は全館で断水となりますので、手洗いや給湯は作業前にお済ませください。",
+          "stem": "午後2時からの作業中に全館で起きることは何ですか。",
+          "options": [
+            "停電",
+            "断水",
+            "エレベーター停止",
+            "火災訓練"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q33.mp3",
+          "audioTranscript": "職長：フォークリフトでの運搬時は、荷物を地上から20センチ程度上げて走行してください。高く上げたままの走行は転倒の恐れがあり危険です。\n作業員：はい、荷物を低く保って安全運転します。",
+          "stem": "フォークリフト運搬時の安全ルールは何ですか。",
+          "options": [
+            "荷物を高く上げて走る",
+            "荷物を地上から約20cm上げて走る",
+            "スピードを上げて走る",
+            "後ろを見ずにバックする"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q34.mp3",
+          "audioTranscript": "女：職場の近くのうどん屋さん、行ってみた？\n男：自家製麺でコシがあって出汁も最高だよ。ただ、大盛り無料だからついつい食べすぎて午後の仕事が眠くなるのが難点だね。",
+          "stem": "うどん屋について男の人が冗談交じりに言っている難点は何ですか。",
+          "options": [
+            "大盛りで食べすぎて午後眠くなること",
+            "麺が柔らかすぎること",
+            "出汁がまずいこと",
+            "値段が高いこと"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：もしもし、待ち合わせの駅に着いたよ。どこ？\n女：南口のタクシー乗り場のすぐ後ろにある公衆電話ボックスの横に立っているよ。\n男：あ、電話ボックスの横ね。すぐ行くよ。",
+          "stem": "女の人はどこで待っていますか。",
+          "options": [
+            "タクシー乗り場後ろの公衆電話ボックスの横",
+            "北口のバス停",
+            "改札の中",
+            "交番の前"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：先週の日曜日は何をしましたか。\n女：天気が良かったので、近所の図書館へ行って歴史の本をじっくり読みました。\n男：静かで知的な休日を過ごせましたね。",
+          "stem": "女の人は日曜日に何をしましたか。",
+          "options": [
+            "図書館で歴史の本を読んだ",
+            "家でテレビゲームをした",
+            "映画を見に行った",
+            "買い物に行った"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "会話やアナウンスを聞いて、質問に答えてください。",
+          "audio": "q37.mp3",
+          "audioTranscript": "客：このハサミを1丁と、スティックのりを1本ください。\n店員：ハサミが350円、スティックのりが120円で、合計470円になります。\n客：じゃあ、500円玉で払います。",
+          "stem": "文房具の合計金額はいくらですか。",
+          "options": [
+            "420円",
+            "450円",
+            "470円",
+            "500円"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【市立図書館 開館時間延長のお知らせ】\n試験勉強や読書を支援するため、7月と8月の夏休み期間中、平日の閉館時間を1時間延長し、夜20時まで開館いたします（通常19時閉館）。土日祝日は通常通り17時閉館です。館内の学習室をぜひご利用ください。",
+          "stem": "38. 夏休み期間中、平日は何時まで開館しますか。",
+          "options": [
+            "17時まで",
+            "18時まで",
+            "19時まで",
+            "20時まで"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【市立図書館 開館時間延長のお知らせ】\n試験勉強や読書を支援するため、7月と8月の夏休み期間中、平日の閉館時間を1時間延長し、夜20時まで開館いたします（通常19時閉館）。土日祝日は通常通り17時閉館です。館内の学習室をぜひご利用ください。",
+          "stem": "39. 土日祝日の閉館時間は何時ですか。",
+          "options": [
+            "15時",
+            "17時",
+            "19時",
+            "20時"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【社員寮の洗濯室 利用時間とマナー】\n・洗濯機・乾燥機の利用時間：朝6:00〜夜22:00\n・洗濯が終わった衣類は、次の人のために速やかに取り出してください。\n・夜22時以降の運転は、騒音防止のため電源が自動で切れますのでご注意ください。",
+          "stem": "40. 洗濯機や乾燥機が利用できる時間帯はいつですか。",
+          "options": [
+            "24時間いつでも",
+            "朝6:00〜夜22:00",
+            "朝8:00〜夕方18:00",
+            "夜間のみ"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【社員寮の洗濯室 利用時間とマナー】\n・洗濯機・乾燥機の利用時間：朝6:00〜夜22:00\n・洗濯が終わった衣類は、次の人のために速やかに取り出してください。\n・夜22時以降の運転は、騒音防止のため電源が自動で切れますのでご注意ください。",
+          "stem": "41. 夜22時を過ぎるとどうなりますか。",
+          "options": [
+            "追加料金がかかる",
+            "騒音防止のため電源が自動で切れる",
+            "警備員が来る",
+            "鍵がかかる"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【ドラッグストア「スマイル」割引クーポン】\n1回のお会計が2,000円（税込）以上で200円引き！\n有効期限：4月1日〜4月15日\n※処方せん調剤、タバコ、雑誌等の一部商品にはご利用いただけません。他クーポンとの併用はできません。",
+          "stem": "42. 200円引きになる条件は何ですか。",
+          "options": [
+            "お会計が2,000円以上",
+            "タバコを買うこと",
+            "毎日来店すること",
+            "会員登録のみ"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【ドラッグストア「スマイル」割引クーポン】\n1回のお会計が2,000円（税込）以上で200円引き！\n有効期限：4月1日〜4月15日\n※処方せん調剤、タバコ、雑誌等の一部商品にはご利用いただけません。他クーポンとの併用はできません。",
+          "stem": "43. クーポンが使えない商品はどれですか。",
+          "options": [
+            "お菓子",
+            "シャンプー",
+            "タバコや処方せん調剤",
+            "洗剤"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "渡辺リーダー\nお疲れ様です。自動車部品検査担当のラザックです。本日午前中に検査したブレーキキャリパー（ロットNo.408）ですが、ネジ穴の深さが基準値（15mm）より1mm浅いものが3個確認されました。該当パレットを一時保留エリアへ移動させました。再測定の手順についてご指示をいただけますでしょうか。",
+          "stem": "44. ラザックさんが発見した製品の不良は何ですか。",
+          "options": [
+            "製品に傷があった",
+            "ネジ穴の深さが基準値より1mm浅かった",
+            "色が付いていなかった",
+            "重すぎた"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "渡辺リーダー\nお疲れ様です。自動車部品検査担当のラザックです。本日午前中に検査したブレーキキャリパー（ロットNo.408）ですが、ネジ穴の深さが基準値（15mm）より1mm浅いものが3個確認されました。該当パレットを一時保留エリアへ移動させました。再測定の手順についてご指示をいただけますでしょうか。",
+          "stem": "45. 不良が見つかった製品はどうされましたか。",
+          "options": [
+            "ゴミ箱に捨てた",
+            "一時保留エリアへ移動させた",
+            "そのまま出荷した",
+            "自分で削った"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "私は日本の「お中元」や「お歳暮」の贈り物文化に感心しました。お世話になった上司や取引先、親戚に対して、日頃の感謝を込めてビールやそうめん、果物などを贈る習慣です。贈り物には必ず丁寧なお礼状を添えたり、受け取った側もすぐにお礼の連絡を入れるなど、礼儀を重んじる日本の心が表れています。",
+          "stem": "46. お中元やお歳暮を贈る目的は何ですか。",
+          "options": [
+            "物を自慢するため",
+            "日頃の感謝の気持ちを伝えるため",
+            "お金を節約するため",
+            "お祝いのパーティーを開くため"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "私は日本の「お中元」や「お歳暮」の贈り物文化に感心しました。お世話になった上司や取引先、親戚に対して、日頃の感謝を込めてビールやそうめん、果物などを贈る習慣です。贈り物には必ず丁寧なお礼状を添えたり、受け取った側もすぐにお礼の連絡を入れるなど、礼儀を重んじる日本の心が表れています。",
+          "stem": "47. 贈り物を受け取った側がすることは何ですか。",
+          "options": [
+            "そのままにしておく",
+            "すぐにお礼の連絡やお礼状を送る",
+            "同じ物を送り返す",
+            "お金を払う"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【アパートの共用玄関 オートロックの暗証番号変更について】\n防犯強化のため、3月1日（日）午前10時にオートロックの暗証番号を変更いたします。新しい暗証番号は、各部屋の郵便受けに投函された封書に記載されております。防犯上、外部の人に暗証番号を教えないよう厳重に管理してください。",
+          "stem": "48. 新しい暗証番号はどのように伝えられますか。",
+          "options": [
+            "掲示板に貼り出される",
+            "郵便受けに投函された封書に記載されている",
+            "メールで一斉送信される",
+            "電話で伝えられる"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "【アパートの共用玄関 オートロックの暗証番号変更について】\n防犯強化のため、3月1日（日）午前10時にオートロックの暗証番号を変更いたします。新しい暗証番号は、各部屋の郵便受けに投函された封書に記載されております。防犯上、外部の人に暗証番号を教えないよう厳重に管理してください。",
+          "stem": "49. 暗証番号の取り扱いについて注意されていることは何ですか。",
+          "options": [
+            "友人に教えること",
+            "外部の人に教えないよう厳重に管理すること",
+            "メモしてドアに貼ること",
+            "変更しないこと"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "文章を読んで、質問に答えてください。",
+          "context": "マリーさんへ\n今日の日本語能力試験の模擬テスト、お疲れ様でした。リスニングの第3問の答え合わせを一緒に行いたいので、もし時間があれば今日の17時に駅前のマクドナルドでお茶しませんか。都合が良ければ返信をください。リンより。",
+          "stem": "50. リンさんはマリーさんに何を提案していますか。",
+          "options": [
+            "模擬テストのやり直し",
+            "17時に駅前マクドナルドで一緒に答え合わせとお茶をすること",
+            "明日の試験の申し込み",
+            "教科書の貸し出し"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
 }
