@@ -1,0 +1,828 @@
+{
+  "id": "jft435",
+  "title": "JFT-Basic Simulation Exam 435",
+  "description": "Simulation Exam 435 focusing on コンビニでのサービス（公共料金の支払い、ATM、コピー機、宅配便受け取り）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a convenience store clerk handing over a receipt, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "レジ",
+            "ATM",
+            "コピー機",
+            "荷物"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a person using a cash machine, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "コピー機",
+            "レジ",
+            "ATM",
+            "宅配便"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a copy machine with a document being copied, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "レジ",
+            "コピー機",
+            "ATM",
+            "荷物"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a delivery person handing over a package, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "宅配便",
+            "レジ",
+            "コピー機",
+            "ATM"
+          ],
+          "answer": 3,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "この時間だとコンビニは( )やっていますか。",
+          "options": [
+            "開いて",
+            "開いています",
+            "開いていた",
+            "開いていません"
+          ],
+          "answer": 3,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "公共料金を( )で支払えますか。",
+          "options": [
+            "ATMで",
+            "窓口で",
+            "ネットで",
+            "電話で"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "コピーは1枚( )100円です。",
+          "options": [
+            "いくら",
+            "から",
+            "まで",
+            "以上"
+          ],
+          "answer": 1,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "荷物が届いたので、コンビニで( )してもらえますか。",
+          "options": [
+            "受け取り",
+            "発送",
+            "コピー",
+            "支払い"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "コンビニで公共料金を ( ) きます。",
+          "options": [
+            "払う",
+            "払われる",
+            "払った",
+            "払っています"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "コンビニのATMでお金を ( ) ます。",
+          "options": [
+            "引き出す",
+            "引き出された",
+            "引き出して",
+            "引き出せます"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "コピー機で文書を ( ) ます。",
+          "options": [
+            "コピーする",
+            "コピーされた",
+            "コピーして",
+            "コピーできます"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "宅配便が届いたので、受け取りに ( ) 行きます。",
+          "options": [
+            "コンビニ",
+            "スーパー",
+            "病院",
+            "学校"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、公共料金の支払いをしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ATMはどこにありますか。",
+            "料金は一万円札で支払えますか。",
+            "領収書は必要ですか。",
+            "時間は何時までやっていますか。"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "コピーをしたいのですが、何枚コピーできますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "一枚一百円です。",
+            "右側のコピー機です。",
+            "黒白とカラーがあります。",
+            "ファイルは保存されますか。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "荷物を預けたいのですが、何時に受け取れますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "明日の午後三時からです。",
+            "大きさは何センチですか。",
+            "料金は一万円です。",
+            "右の窓口です。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ATMで現金を引き出したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "レシートは必要ですか。",
+            "何枚引き出しますか。",
+            "暗証番号は四桁です。",
+            "手数料はかかりますか。"
+          ],
+          "answer": 3,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、公共料金の支払いをしたいのですが、どちらの料金ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "クレジットカードで支払いたいです",
+            "水道料金です",
+            "あとで来ます",
+            "すみません、わかりません"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ATMでお金をおろしたいのですが、手数料はいくらですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "手数料はかかりません",
+            "時間帯によって違います",
+            "どこでも同じです",
+            "ATMはここです"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "コピー機の使い方がわかりません。どうしようもありませんか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "すみません、わかりません",
+            "こちらのボタンを押してください",
+            "コピーはやめましょう",
+            "時間がかかります"
+          ],
+          "answer": 1,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "宅配便の受け取りです。受け取り連絡はどうしましたか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "電話で連絡しました",
+            "スマホで確認しました",
+            "後で連絡します",
+            "置き配にしました"
+          ],
+          "answer": 0,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、公共料金の支払いをしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. どの料金ですか？",
+            "2. 手数料がかかります。",
+            "3. カードでお願いします。",
+            "4. 申し訳ありませんが、お時間がかかります。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ATMで現金を引き出したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. どこでですか？",
+            "2. 手数料はかかりますか？",
+            "3. 少なくしてください。",
+            "4. すぐに終わります。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "コピーをしたいのですが、何枚コピーしますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、結構です。",
+            "2. 5枚コピーします。",
+            "3. 何枚コピーしますか？",
+            "4. コピー機は壊れています。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "承りました。"
+            }
+          ],
+          "options": [
+            "1. どこからですか？",
+            "2. 何時までに届きますか？",
+            "3. 受け取りはこちらで行います。",
+            "4. 申し訳ありませんが、お待ちください。"
+          ],
+          "answer": 3,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、コピー機の使い方がわかりません。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. ありがとうございます。",
+            "2. こちらのボタンを押してください。",
+            "3. すみません、わかりません。",
+            "4. すぐに終わります。"
+          ],
+          "answer": 1,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：すみません、公共料金の支払いをしたいのですが、どこでできますか？\n女：こちらのATMでできますよ。手数料はかかりますが、24時間対応しています。\n男：そうですか。では、早速やってみます。",
+          "stem": "男性はどこで公共料金を支払うつもりですか？",
+          "options": [
+            "ATMで支払う",
+            "店員に直接支払う",
+            "コンビニのレジで支払う",
+            "銀行の窓口で支払う"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：このコピー機、使い方がわかりません。どうすればいいですか？\n女：まずは用紙をセットして、画面のボタンを押します。カラーかモノクロか選べますよ。",
+          "stem": "女性はコピー機の使い方について何を説明していますか？",
+          "options": [
+            "用紙のセット方とボタンの操作",
+            "コピーの枚数の設定",
+            "料金の支払い方法",
+            "トラブル時の対処法"
+          ],
+          "answer": 0,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：荷物が届いたので、受け取りに行きます。\n女：わかりました。伝票はありますか？",
+          "stem": "男性がコンビニで行う予定のこととは何ですか？",
+          "options": [
+            "荷物の受け取り",
+            "荷物の発送",
+            "コピーの依頼",
+            "料金の支払い"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：すみません、このコピーはモノクロでお願いします。\n女：承知しました。料金は200円になります。",
+          "stem": "男性が頼んだコピーの種類は何ですか？",
+          "options": [
+            "モノクロ",
+            "カラー",
+            "両面",
+            "大判"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：すみません、公共料金を払いたいんですけど。\n女：はい、どちらの料金ですか？\n男：電気代です。\n女：では、こちらの機械でお願いします。",
+          "stem": "男性はどの料金を支払うと言っていますか。",
+          "options": [
+            "電気代",
+            "ガス代",
+            "水道代",
+            "通信料"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：コピー機はどこにありますか？\n女：奥の方、右側にあります。\n男：ありがとうございます。",
+          "stem": "女性はコピー機の場所をどこと言いましたか。",
+          "options": [
+            "左側",
+            "手前",
+            "奥の方",
+            "入り口横"
+          ],
+          "answer": 2,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：荷物を受け取りたいんですけど。\n女：お名前は？\n男：佐藤です。\n女：では、受け取り番号は3番です。",
+          "stem": "女性は受け取り番号として何を言いましたか。",
+          "options": [
+            "1番",
+            "2番",
+            "3番",
+            "4番"
+          ],
+          "answer": 2,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：ATMで現金を下ろしたいんです。\n女：カードは挿入してください。\n男：はい。",
+          "stem": "女性は男性に何をしてと言いましたか。",
+          "options": "カードを挿入する",
+          "answer": 0,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：すみません、公共料金の支払いをしたいのですが。\n女：はい、どの料金をお支払いですか？\n男：電気料金です。\n女：それでは、こちらの機械でお支払いください。",
+          "stem": "男性は何をするつもりですか？",
+          "options": [
+            "電気料金を支払う",
+            "ATMでお金を引き出す",
+            "コピーをする",
+            "荷物を受け取る"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：すみません、ATMでお金を下ろしたいのですが。\n女：はい、口座番号と暗証番号をお入りください。\n男：ありがとうございます。では、こちらでお願いします。",
+          "stem": "男性はどこでお金を下ろすつもりですか？",
+          "options": [
+            "コピー機で",
+            "ATMで",
+            "レジで",
+            "宅配便の窓口で"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：これ、コピーしてもいいですか？\n女：はい、1枚50円です。何枚コピーしますか？\n男：じゃあ、3枚コピーします。",
+          "stem": "女性はコピーにいくらかかりますかと言いましたか？",
+          "options": [
+            "1枚10円",
+            "1枚50円",
+            "1枚100円",
+            "1枚200円"
+          ],
+          "answer": 1,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：こんにちは、宅配便を受け取りたいのですが。\n女：はい、差出人の名前をお聞きします。\n男：山田さんです。",
+          "stem": "男性は何を受け取りたいと言いましたか？",
+          "options": [
+            "公共料金の領収書",
+            "コピー用紙",
+            "宅配便",
+            "ATMのカード"
+          ],
+          "answer": 2,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：お支払い方法はどうされますか。\nお客様：現金でお願いします。\n店員：はい、レシートはこちらです。\nお客様：ありがとうございます。",
+          "stem": "お客様はお支払いに何を使いましたか。",
+          "options": [
+            "クレジットカード",
+            "現金",
+            "電子マネー",
+            "ポイント"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：こちらがATMのご案内です。\nお客様：ありがとうございます。\n店員：ご利用のカードはなんですか。\nお客様：普通預金です。",
+          "stem": "お客様はATMで何をしましたか。",
+          "options": [
+            "預金の引き出し",
+            "入金",
+            "残高照会",
+            "振込"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：コピーは何枚ですか。\nお客様：5枚コピーしたいです。\n店員：料金は250円です。\nお客様：失礼します。",
+          "stem": "お客様はコピーを何枚しましたか。",
+          "options": [
+            "1枚",
+            "3枚",
+            "5枚",
+            "10枚"
+          ],
+          "answer": 2,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：荷物はお預かりしますか。\nお客様：はい、お願いします。\n店員：伝票はこちらに書いてください。\nお客様：ありがとうございます。",
+          "stem": "お客様は店員に何を頼みましたか。",
+          "options": [
+            "宅配便の受け取り",
+            "荷物の預かり",
+            "切手の購入",
+            "ポストへの投函"
+          ],
+          "answer": 1,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店舗の入り口に貼られているコピー機の案内。右側に色付きのボタンが並び、左下に「スタート」の文字。",
+          "stem": "コピー機の「スタート」ボタンはどこにありますか。",
+          "options": [
+            "右上",
+            "左下",
+            "中央",
+            "左上"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATMの操作画面に表示されているメニュー。下部に「送金」「預け入れ」の文字があり、上部に残高表示。",
+          "stem": "ATMでお金を下ろすとき、まず何を選びますか。",
+          "options": [
+            "送金",
+            "預け入れ",
+            "残高照会",
+            "引き出し"
+          ],
+          "answer": 3,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "宅配便の受け取り番号が書かれたメモ。差出人の名前と電話番号が右側に記載されている。",
+          "stem": "宅配便の受け取りに必要な番号はどこに書かれていますか。",
+          "options": [
+            "左上",
+            "右側",
+            "下部",
+            "中央"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "公共料金の支払い用紙。上部にバーコードがあり、下部に口座振替の案内と振込手数料の金額が記載されている。",
+          "stem": "公共料金の支払い用紙にあるバーコードはどこにありますか。",
+          "options": [
+            "左側",
+            "右側",
+            "上部",
+            "下部"
+          ],
+          "answer": 2,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：お疲れ様です。公共料金の支払いとコピー機のご利用ですか？\n客：はい、料金を払いたいのとコピーをしたいのですが。",
+          "stem": "店員は客に何を確認していますか？",
+          "options": [
+            "公共料金の支払い",
+            "ATMの利用",
+            "宅配便の受け取り",
+            "コピー機の利用"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATMコーナー：ご利用のカードはお入りになりますか？\n受付：はい、口座からお金を下ろします。",
+          "stem": "ATMで何ができますか？",
+          "options": [
+            "お金を下ろす",
+            "料金を払う",
+            "コピーをする",
+            "宅配便を受け取る"
+          ],
+          "answer": 0,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "コピー機：1枚50円です。何枚コピーしますか？\n客：3枚コピーしたいのですが。",
+          "stem": "コピー1枚の料金はいくらですか？",
+          "options": [
+            "10円",
+            "50円",
+            "100円",
+            "200円"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "宅配便受け取り：佐川急便の荷物が届いています。お名前は？",
+          "客": "佐藤です。",
+          "stem": "宅配便を受け取る人は誰ですか？",
+          "options": [
+            "店員",
+            "客",
+            "配達員",
+            "佐藤"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店員：お疲れ様です。公共料金の支払いとコピー機のご利用ですか？\n客：はい、料金を払いたいのとコピーをしたいのですが。",
+          "stem": "客は店員に何を頼んでいますか？",
+          "options": [
+            "公共料金の支払い",
+            "ATMの利用",
+            "宅配便の受け取り",
+            "コピー機の利用"
+          ],
+          "answer": 3,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
