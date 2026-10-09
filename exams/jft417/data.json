@@ -1,0 +1,829 @@
+{
+  "id": "jft417",
+  "title": "JFT-Basic Simulation Exam 417",
+  "description": "Simulation Exam 417 focusing on スーパー・八百屋・魚屋での買い物（タイムセール、割引シール、賞味期限の確認）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "図をよく見て、正しい言葉を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a supermarket time sale sign with a red discount tag, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "タイムセール",
+            "割引シール",
+            "賞味期限",
+            "値段"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "図をよく見て、正しい言葉を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a vegetable shop with a discount sticker on a radish, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "玉ねぎ",
+            "にんじん",
+            "だいこん",
+            "レタス"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "図をよく見て、正しい言葉を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a fish shop with a price sticker showing a low price on a salmon, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "さけ",
+            "まぐろ",
+            "えび",
+            "いか"
+          ],
+          "answer": 0,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "図をよく見て、正しい言葉を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a supermarket shelf with a product and a best-before date label, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "賞味期限",
+            "産地",
+            "値段",
+            "製造日"
+          ],
+          "answer": 2,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "タイムセールで、魚は（ ）価格になっています。",
+          "options": [
+            "安く",
+            "高く",
+            "美味しく",
+            "新鮮に"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "このお肉は（ ）表示されています。",
+          "options": [
+            "賞味期限",
+            "産地",
+            "価格",
+            "重さ"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "八百屋で、りんごは（ ）シールが貼ってあります。",
+          "options": [
+            "割引",
+            "賞味期限",
+            "産地",
+            "重さ"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お魚は（ ）です。新しいものを選んでください。",
+          "options": [
+            "鮮度が良い",
+            "高価です",
+            "売り切れです",
+            "古いです"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "10時からの（ ）で、お肉が安くなりました。",
+          "options": [
+            "タイムセール",
+            "賞味期限",
+            "割引シール",
+            "ポイントカード"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "この魚は（ ）が貼ってあります。",
+          "options": [
+            "賞味期限",
+            "値段",
+            "産地",
+            "重さ"
+          ],
+          "answer": 1,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "賞味期限は明日までですので、お早めにお買い求め（ ）ください。",
+          "options": [
+            "ください",
+            "してください",
+            "していただけますか",
+            "いただけますでしょうか"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "野菜が（ ）になっています。",
+          "options": [
+            "安い",
+            "高い",
+            "新しい",
+            "美味しい"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、タイムセールで安くなっていますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(_____)"
+            }
+          ],
+          "options": [
+            "いいえ、高いです。",
+            "いいえ、タイムセールは明日からです。",
+            "いいえ、売り切れです。",
+            "いいえ、割引シールはありません。"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この魚、賞味期限はいつまでですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(_____)"
+            }
+          ],
+          "options": [
+            "明日の朝までです。",
+            "昨日までです。",
+            "来週までです。",
+            "一週間前です。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、値引きシールが貼ってありますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(_____)"
+            }
+          ],
+          "options": [
+            "いいえ、貼っていません。",
+            "いいえ、貼っていませんか？",
+            "いいえ、貼っていませんでした。",
+            "いいえ、貼っています。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この野菜、お安くなっていますね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(_____)"
+            }
+          ],
+          "options": [
+            "いいえ、高いです。",
+            "いいえ、タイムセールは明日からです。",
+            "いいえ、売り切れです。",
+            "いいえ、割引シールはありません。"
+          ],
+          "answer": 3,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "タイムセールは何時からですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. 午後5時からです。",
+            "B. それは高いです。",
+            "C. ありがとうございます。",
+            "D. 結構です。"
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "このお肉は賞味期限が明日までです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. 結構です。",
+            "B. 安くしてください。",
+            "C. それは分かりません。",
+            "D. 美味しいです。"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "割引シールはどこにありますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. レジにあります。",
+            "B. それは分かりません。",
+            "C. ありがとうございます。",
+            "D. 高いです。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、お値段はいくらくらいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. 200円です。",
+            "B. 結構です。",
+            "C. ありがとうございます。",
+            "D. 高いです。"
+          ],
+          "answer": 0,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "このお肉、タイムセールになっていますね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、全部で二千円です。",
+            "そうですね、賞味期限は明日までです。",
+            "ありがとうございます、レジへ行きましょう。",
+            "いいえ、まだ早いです。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この賞味期限は大丈夫ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、切れています。",
+            "はい、今日中に食べます。",
+            "すみません、高いです。",
+            "いいえ、野菜です。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、二十％オフのシールが貼ってありますね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、一割です。",
+            "はい、お安くなりました。",
+            "ありがとうございます、買います。",
+            "いいえ、切れています。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "魚は新鮮ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、昨日のです。",
+            "いいえ、高いです。",
+            "はい、とても新鮮です。",
+            "いいえ、切れています。"
+          ],
+          "answer": 2,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この野菜、おすすめです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、高いです。",
+            "ありがとうございます、買います。",
+            "いいえ、切れています。",
+            "いいえ、野菜ではありません。"
+          ],
+          "answer": 1,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：ここ、タイムセールやってますね。\n女：そうですね。安くなってるものは何ですか？\n男：賞味期限が近いものが多いです。\n女：じゃあ、このパックの肉、買いますか？",
+          "stem": "女性はパックの肉を買うつもりですか？",
+          "options": [
+            "はい、買います",
+            "いいえ、買いません",
+            "時間がありません",
+            "高すぎます"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：この魚、新鮮そうですね。\n女：そうです。でも、賞味期限は明日までです。\n男：そうですか。じゃあ、もう一ついかがですか？\n女：いいえ、一匹で十分です。",
+          "stem": "女性は魚を何匹買うつもりですか？",
+          "options": [
+            "一匹",
+            "二匹",
+            "三匹",
+            "四匹"
+          ],
+          "answer": 0,
+          "id": 27,
+          "audio": "q27.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：これ、割引シールが貼ってありますね。\n女：はい、30％オフです。\n男：じゃあ、これを買います。\n女：わかりました。レジに行きましょう。",
+          "stem": "男性は何を買うことにしましたか？",
+          "options": [
+            "割引シールのついた商品",
+            "賞味期限切れの商品",
+            "タイムセールの終了商品",
+            "高価な商品"
+          ],
+          "answer": 0,
+          "id": 28,
+          "audio": "q28.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：この野菜、安くなっていますね。\n女：そうですね。でも、鮮度が気になります。\n男：問題ありません。すぐ使いますから。\n女：そうですか。じゃあ、これにします。",
+          "stem": "男性はその野菜をすぐ使うと言っていますか？",
+          "options": [
+            "はい、すぐ使います",
+            "いいえ、使いません",
+            "冷凍します",
+            "友達にあげます"
+          ],
+          "answer": 0,
+          "id": 29,
+          "audio": "q29.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：これ、タイムセールで安くなってる？\n女：ええ、半額シールが貼ってありますよ。\n男：じゃあ、これとこの魚も一緒に買おう。\n女：はい、レジに持って行きましょう。",
+          "stem": "男が魚屋で何と言いましたか。",
+          "options": [
+            "魚を買わないと言いました。",
+            "タイムセールを利用して安く買うつもりです。",
+            "割引シールを剥がすと言っています。",
+            "魚屋を出ると言っています。"
+          ],
+          "answer": 1,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：この野菜、賞味期限は何日までですか？\n女：明日の午後3時までです。\n男：そうですか、ではもう少しで期限が切れるので、今日中に食べきります。",
+          "stem": "男が野菜の賞味期限を確認した理由は何か。",
+          "options": [
+            "野菜の値段を知りたかったからです。",
+            "今日中に食べるつもりだからです。",
+            "明日の料理を計画しているからです。",
+            "野菜を返したいからです。"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：このお肉、割引シールはついていますか？\n女：いいえ、ついていません。\n男：じゃあ、他のお肉を探しましょう。",
+          "stem": "男と女の会話で、お肉について確認していることは何か。",
+          "options": [
+            "賞味期限が切れているかどうか。",
+            "割引シールが貼ってあるかどうか。",
+            "お肉の産地がどこか。",
+            "お肉の量が十分かどうか。"
+          ],
+          "answer": 1,
+          "id": 32,
+          "audio": "q32.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "女：レジ袋は必要ですか？\n男：いいえ、結構です。手提げ袋を使います。\n女：では、お会計を始めます。",
+          "stem": "男がレジ袋を断った理由は何か。",
+          "options": [
+            "割引が適用されないからです。",
+            "手提げ袋を使いたいからです。",
+            "袋代を払いたくないからです。",
+            "商品が少ないからです。"
+          ],
+          "answer": 1,
+          "id": 33,
+          "audio": "q33.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：これ、タイムセールになってるけど、賞味期限は明日までだな。\n女：えー、それならすぐに食べないと。まあ、買っておこうか。\n男：そうだね。でも、シールはどこに貼ろうか。",
+          "stem": "男は女性の提案に対して、どのような行動をとる可能性が高いですか。",
+          "options": [
+            "賞味期限が切れるまで待つ",
+            "すぐに商品を返す",
+            "商品を購入する",
+            "店員に相談する"
+          ],
+          "answer": 2,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：これ、値引きシールが貼ってあるけど、本当に大丈夫？\n女：んー、見た感じ問題なさそう。鮮度も良さそうだし。\n男：そうかな。じゃあ、レジに持っていくか。",
+          "stem": "男性は女性の意見に対して、どのように同意していますか。",
+          "options": [
+            "全く同意しない",
+            "少し疑っている",
+            "同意している",
+            "詳しく調べたい"
+          ],
+          "answer": 2,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：この魚、賞味期限が今日までなんだよね。\n女：そうなの？じゃあ、朝一番に食べるようにしよう。\n男：そうだね。冷蔵庫でしっかり保存する。",
+          "stem": "男性は女性の提案に対して、どのように考えをまとめていますか。",
+          "options": [
+            "明日に食べる",
+            "すぐに捨てる",
+            "朝一番に食べる",
+            "冷凍保存する"
+          ],
+          "answer": 2,
+          "id": 36,
+          "audio": "q36.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "女：この野菜、値引きされてるけど、量が多すぎない？\n男：うーん、そうだね。二人で食べきれるかな。\n女：じゃあ、半分にしておいて、残りは明日使おう。",
+          "stem": "女性は野菜の量について、どのような提案をしていますか。",
+          "options": [
+            "全部買って帰る",
+            "量を増やす",
+            "半分にしておく",
+            "別の野菜を選ぶ"
+          ],
+          "answer": 2,
+          "id": 37,
+          "audio": "q37.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "本日はタイムセール実施中！ 魚屋ではマグロが半額になっています。野菜は八百屋で半額シールが貼られています。",
+          "stem": "本日のタイムセールで、魚屋のマグロはいくらになりますか？",
+          "options": [
+            "全額",
+            "半額",
+            "一割引",
+            "無料"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "賞味期限が近い商品にはシールが貼られています。今すぐ食べるものを選びましょう。",
+          "stem": "賞味期限が近い商品にはどのようなシールが貼られていますか？",
+          "options": [
+            "半額シール",
+            "ポイントシール",
+            "新品シール",
+            "送料無料シール"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "野菜は八百屋でお得に買えます。玉ねぎとじゃがいもは特別価格です。",
+          "stem": "八百屋で玉ねぎとじゃがいもは特別価格ですか？",
+          "options": [
+            "いいえ、高価です",
+            "いいえ、数量限定です",
+            "はい、特別価格です",
+            "いいえ、品切れです"
+          ],
+          "answer": 2,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "魚屋ではマグロが半額です。野菜は八百屋で半額シールが貼られています。",
+          "stem": "魚屋のマグロと八百屋の野菜、どちらが半額ですか？",
+          "options": [
+            "魚屋のマグロ",
+            "八百屋の野菜",
+            "どちらも半額です",
+            "どちらも半額ではありません"
+          ],
+          "answer": 2,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店頭にタイムセールのお知らせが出ています。お得に買い物をしたいです。",
+          "stem": "タイムセールはいつ行われますか。",
+          "options": [
+            "朝の9時から",
+            "夕方の5時から",
+            "夜の9時から",
+            "昼の12時から"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "野菜コーナーに割引シールが貼られています。安くなっています。",
+          "stem": "どのコーナーに割引シールが貼られていますか。",
+          "options": [
+            "魚コーナー",
+            "野菜コーナー",
+            "肉コーナー",
+            "菓子コーナー"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "魚屋で買い物をします。賞味期限を確認します。",
+          "stem": "賞味期限を確認するのは何のためですか。",
+          "options": [
+            "値段を確認するため",
+            "鮮度を確認するため",
+            "量を確認するため",
+            "名前を確認するため"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "スーパーで買い物をしました。お得に買えました。",
+          "stem": "どのようなお得感がありましたか。",
+          "options": [
+            "安く買えた",
+            "早く買えた",
+            "たくさんもらえた",
+            "綺麗に買えた"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "本日はタイムセールです。魚屋では、マグロが半額になっています。野菜は賞味期限を確認してください。",
+          "stem": "魚屋で何が半額になっていますか。",
+          "options": [
+            "マグロ",
+            "野菜",
+            "果物",
+            "お肉"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "八百屋では、野菜が50%オフです。時間帯によって値引きされます。お得に買い物ができます。",
+          "stem": "八百屋の野菜は何%オフですか。",
+          "options": [
+            "30%",
+            "50%",
+            "70%",
+            "10%"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "スーパーのタイムセールは午後3時からです。賞味期限が近い商品が安くなります。早めに行くことをおすすめします。",
+          "stem": "スーパーのタイムセールは何時から始まりますか。",
+          "options": [
+            "午前9時",
+            "午後1時",
+            "午後3時",
+            "午後5時"
+          ],
+          "answer": 2,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "魚屋では、賞味期限を確認してください。鮮度が良いものを選んでください。シールが貼られています。",
+          "stem": "魚屋で確認する必要があるのは何ですか。",
+          "options": [
+            "価格",
+            "賞味期限",
+            "産地",
+            "重さ"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "タイムセールのシールは赤色です。割引率が書かれています。お得に買い物ができます。",
+          "stem": "タイムセールのシールの色は何色ですか。",
+          "options": [
+            "青",
+            "黄",
+            "赤",
+            "緑"
+          ],
+          "answer": 2,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
