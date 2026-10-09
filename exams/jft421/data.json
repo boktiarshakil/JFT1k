@@ -1,0 +1,813 @@
+{
+  "id": "jft421",
+  "title": "JFT-Basic Simulation Exam 421",
+  "description": "Simulation Exam 421 focusing on 日本の四季と年中行事（春のお花見、夏の盆踊り・花火、秋の紅葉・防災訓練、冬のお正月・初詣）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい言葉を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of cherry blossoms falling, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "桜",
+            "雪",
+            "松",
+            "紅葉"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい言葉を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of people dancing in a circle with drums, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "花火",
+            "盆踊り",
+            "お正月",
+            "紅葉"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい言葉を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of colorful autumn leaves, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "桜",
+            "花火",
+            "紅葉",
+            "雪"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい言葉を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a shrine gate and people in traditional clothing, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "初詣",
+            "お花見",
+            "花火",
+            "盆踊り"
+          ],
+          "answer": 3,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "春は桜の花が咲きます。( )",
+          "options": [
+            "桜",
+            "花火",
+            "紅葉",
+            "お正月"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "夏は川で( )をします。",
+          "options": [
+            "花火",
+            "お花見",
+            "水泳",
+            "紅葉"
+          ],
+          "answer": 2,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "秋は公園で( )をします。",
+          "options": [
+            "お花見",
+            "紅葉",
+            "盆踊り",
+            "初詣"
+          ],
+          "answer": 1,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "冬は( )にお参りします。",
+          "options": [
+            "お花見",
+            "盆踊り",
+            "初詣",
+            "花火"
+          ],
+          "answer": 2,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "春のお花見の季節です。みんなで公園で ( ) を楽しみました。",
+          "options": [
+            "お弁当",
+            "紅葉",
+            "雪だるま",
+            "花火"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "夏の暑い日に、近所で ( ) が始まりました。",
+          "options": [
+            "お花見",
+            "盆踊り",
+            "紅葉",
+            "クリスマス"
+          ],
+          "answer": 1,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "秋は空が高く、美しい ( ) が見られます。",
+          "options": [
+            "桜",
+            "紅葉",
+            "雪",
+            "花火"
+          ],
+          "answer": 1,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "冬のお正月に、家族で近所の神社へ ( ) に行きました。",
+          "options": [
+            "お花見",
+            "初詣",
+            "花火",
+            "水泳"
+          ],
+          "answer": 1,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "花見の季節になりましたね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "雨が降るといいですね。",
+            "お花見に行きましょう。",
+            "寒いので家にいます。",
+            "冬の準備をします。"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "夏の盆踊りに行く予定です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "どこでやりますか？",
+            "寒いので行きたくないです。",
+            "花火を見に行きます。",
+            "お正月になりますね。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "秋は紅葉が綺麗ですね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "防災訓練をします。",
+            "冬の準備をします。",
+            "お正月に行きます。",
+            "行きましょう。"
+          ],
+          "answer": 3,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お正月に初詣に行きます。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "夏の行事です。",
+            "春の行事です。",
+            "冬の行事ですね。",
+            "秋の行事です。"
+          ],
+          "answer": 2,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "桜が咲いてきれいですね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "花見に行きませんか？",
+            "花は苦手です。",
+            "明日は雨です。",
+            "冬が好きです。"
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "夏のお盆に実家に帰る予定です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お墓参りに行きますか？",
+            "プールに行きますか？",
+            "雪遊びをしますか？",
+            "クリスマスを楽しみにしています。"
+          ],
+          "answer": 0,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "紅葉が綺麗ですね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "山に登りますか？",
+            "食べ物が好きですか？",
+            "お出かけしましょう。",
+            "冬服を買いますか？"
+          ],
+          "answer": 2,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お正月に初詣に行く予定です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "初詣は何月に行きますか？",
+            "お正月は過ぎましたか？",
+            "クリスマスプレゼントはもらいましたか？",
+            "新年明けましておめでとうございます。"
+          ],
+          "answer": 3,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "春のお花見に行きませんか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、行きたくありません。",
+            "いいですね、楽しみです。",
+            "夏が好きです。",
+            "明日は雨です。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "夏の盆踊りに行きましたか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、去年行きました。",
+            "いいえ、行きませんでした。",
+            "いいえ、来年は行きます。",
+            "いいえ、行きました。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "秋の紅葉を見に行きますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、行きたくありません。",
+            "ええ、行きましょう。",
+            "いいえ、行きました。",
+            "ええ、行きました。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "冬のお正月に何をしますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お正月に初詣に行きます。",
+            "夏に初詣に行きます。",
+            "お正月に花見に行きます。",
+            "冬に花火を見ます。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "防災訓練に参加しませんか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、参加しません。",
+            "ええ、参加します。",
+            "いいえ、参加しました。",
+            "ええ、参加しました。"
+          ],
+          "answer": 1,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：春はお花見が好きですね。どこか行きますか？\n女：はい、渋谷の公園に行きたいです。桜が咲いている季節です。",
+          "stem": "女性はどこに行きたいですか？",
+          "options": [
+            "渋谷の公園に行きたい",
+            "新宿のショッピングモールに行きたい",
+            "浅草寺にお参りしたい",
+            "横浜の海でバーベキューをしたい"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：夏は盆踊りと花火が楽しみです。去年は川で見ました。\n女：私も去年は川で花火を見ました。今年はどこで見ますか？",
+          "stem": "男性は去年、花火をどこで見ましたか？",
+          "options": [
+            "川で",
+            "公園で",
+            "屋内のホールで",
+            "ビルの屋上で"
+          ],
+          "answer": 0,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：秋は紅葉狩りと防災訓練があります。来月訓練があります。\n女：そうですか。私は紅葉を見に行く予定です。",
+          "stem": "男性はいつ防災訓練をしますか？",
+          "options": [
+            "来月",
+            "今月",
+            "去年",
+            "来年"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：冬はお正月と初詣が楽しみです。初詣は何時に行きますか？\n女：朝一番、8時に行くつもりです。",
+          "stem": "女性は初詣に何時に行きますか？",
+          "options": [
+            "朝一番の8時",
+            "正午の12時",
+            "夕方の6時",
+            "夜の10時"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：明日はお花見に行きますか？\n女：天気が良ければ行きたいです。でも、準備が必要です。\n男：そうですね。桜の木の下で食べるランチは楽しみです。",
+          "stem": "男性は明日の天気についてどう思っていますか？",
+          "options": [
+            "雨が降ると思っている",
+            "雪が降ると思っている",
+            "晴れると思っている",
+            "曇っていると思う"
+          ],
+          "answer": 2,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：夏の行事で何が好きですか？\n女：私は盆踊りと花火が好きです。家族で見に行きます。\n男：花火は遠くで見るんですか？",
+          "stem": "女性は夏の行事で何を楽しみにしていますか？",
+          "options": [
+            "お祭りの屋台",
+            "盆踊りと花火",
+            "水風船遊び",
+            "浴衣を着ること"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：秋は何が好きですか？\n女：紅葉を見に行くのが好きです。山へ行きます。\n男：災害には気をつけないといけませんね。",
+          "stem": "女性は秋に何をするのが好きですか？",
+          "options": [
+            "紅葉を見に行く",
+            "栗を拾う",
+            "ハロウィンパーティー",
+            "運動会を見る"
+          ],
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：年末に何をしますか？\n女：お正月や初詣に行きます。家族で過ごします。\n男：新しい靴を買う予定ですか？",
+          "stem": "女性は年末に何をする予定ですか？",
+          "options": [
+            "大掃除をする",
+            "初詣に行く",
+            "年越しそばを食べる",
+            "プレゼントを買う"
+          ],
+          "answer": 1,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：夏の盆踊りに行きますか？\n女：行きたいです。何時に集合しましょう？",
+          "stem": "男は女に何について聞いていますか？",
+          "options": [
+            "盆踊りの場所",
+            "盆踊りの時間",
+            "花火の準備",
+            "初詣の計画"
+          ],
+          "answer": 1,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：明日の天気はどうですか？\n女：雨が降るみたいです。",
+          "stem": "女は明日の天気について何と言っていますか？",
+          "options": [
+            "晴れると思います",
+            "雨が降ると言っています",
+            "雪が降ると思います",
+            "風が強いと言っています"
+          ],
+          "answer": 1,
+          "id": 35,
+          "audio": "q35.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：紅葉の時期に山へ行きますか？\n女：いいえ、防災訓練があります。",
+          "stem": "女は紅葉の時期に何をする予定ですか？",
+          "options": [
+            "山へハイキング",
+            "防災訓練に参加",
+            "お花見",
+            "初詣"
+          ],
+          "answer": 1,
+          "id": 36,
+          "audio": "q36.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：お正月に実家に帰る予定ですか？\n女：いいえ、初詣に行くだけです。",
+          "stem": "女はお正月に何をする予定ですか？",
+          "options": [
+            "実家に帰る",
+            "初詣に行く",
+            "お花見",
+            "盆踊り"
+          ],
+          "answer": 1,
+          "id": 37,
+          "audio": "q37.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "春はお花見の季節です。公園では桜が咲いて、多くの人がベンチでピクニックを楽しんでいます。天気が良く、桜の下でのんびり過ごすのが人気です。",
+          "stem": "春のお花見で人気の活動は何ですか。",
+          "options": "公園でピクニックをする、雪遊びをする、海で泳ぐ、紅葉を見に行く",
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夏は盆踊りと花火が楽しみです。地域の広場で盆踊りが開かれ、みんなで踊ります。夜には花火が上がり、子供たちははしゃいで見上げています。",
+          "stem": "夏の行事で花火が上がるのはどのようなときですか。",
+          "options": "冬のクリスマス、夏の盆踊りの後、春のお花見の後、秋の運動会の後",
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "秋は紅葉の季節です。山や公園の木が赤や黄色に色づき、とてもきれいです。防災訓練もこの時期に行われ、地域の安全を確認します。",
+          "stem": "秋に行われる主な活動は何ですか。",
+          "options": "紅葉を見る、雪をかく、海水浴をする、桜を観る",
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "冬はお正月と初詣の季節です。多くの人が神社に行ってお参りし、一年の無事を感謝します。おみくじを引いたり、初売りでお買い物をしたりする人もいます。",
+          "stem": "冬の初詣で人々は何をしますか。",
+          "options": "神社にお参りする、プールに泳ぐ、花火を見る、お花見をする",
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "春のお花見は、公園で桜を見ながらお弁当を食べる行事です。天気が良い日には多くの人が集まります。お花見の準備には、シートと食べ物が必要です。",
+          "stem": "お花見で必要なものは何ですか。",
+          "options": [
+            "花びら",
+            "お弁当とシート",
+            "風船",
+            "浴衣"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夏の盆踊りは、地域の広場で行われます。子供からお年寄りまで楽しめる行事です。踊り方を教える人もいます。",
+          "stem": "夏の盆踊りはどこで行われますか。",
+          "options": [
+            "家の中",
+            "学校の教室",
+            "地域の広場",
+            "ショッピングモール"
+          ],
+          "answer": 2,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "秋の紅葉は、山や公園の木が赤や黄色に色づくことです。防災訓練もこの時期に行われます。非常時の避難経路を確認します。",
+          "stem": "秋に行われる防災訓練の目的は何ですか。",
+          "options": [
+            "紅葉を見るため",
+            "非常時の避難経路を確認するため",
+            "新しい服を買うため",
+            "お花見をするため"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "冬のお正月は、家族で集まって過ごします。おせち料理を食べたり、初詣に行ったりします。お正月の準備には掃除も含まれます。",
+          "stem": "お正月に家族ですることは何ですか。",
+          "options": [
+            "おせち料理を食べる",
+            "花火を見る",
+            "プールに行く",
+            "お花見をする"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "春のお花見は、公園や川のほとりで桜の木の下でお弁当を食べる行事です。友達や家族と一緒に参加します。天気が良いと、とても楽しいです。",
+          "stem": "春のお花見はどのような行事ですか。",
+          "options": [
+            "桜を見ながら食事をする行事",
+            "お正月の挨拶をする行事",
+            "夏の花火を見る行事",
+            "紅葉を見る行事"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夏の盆踊りは、地域の広場で行います。浴衣を着て、円になって踊ります。最後に花火が上がります。",
+          "stem": "夏の盆踊りで最後に何が上がりますか。",
+          "options": [
+            "花火",
+            "歌",
+            "踊り",
+            "お弁当"
+          ],
+          "answer": 0,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "秋は紅葉の季節です。山や公園の木が赤や黄色に色づきます。防災訓練もこの時期に行うことが多いです。",
+          "stem": "秋に山や公園の木はどのような色になりますか。",
+          "options": [
+            "赤や黄色に色づく",
+            "緑のままです",
+            "白く雪が降ります",
+            "茶色くなります"
+          ],
+          "answer": 0,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "冬のお正月は、家族で集まって過ごします。おせち料理を食べたり、お寺にお参りに行ったりします。初詣に行く人も多いです。",
+          "stem": "冬のお正月に家族で何をしますか。",
+          "options": [
+            "おせち料理を食べたり、お寺にお参りに行ったりします",
+            "プールに行って泳ぎます",
+            "花見をします",
+            "盆踊りをします"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "四季の行事を楽しむことは、日本の文化を知る良い機会です。それぞれの季節には特有の行事があります。",
+          "stem": "四季の行事を楽しむことは何が良い機会ですか。",
+          "options": [
+            "日本の文化を知る",
+            "スポーツをする",
+            "料理を作る",
+            "旅行に行く"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
