@@ -1,0 +1,836 @@
+{
+  "id": "jft410",
+  "title": "JFT-Basic Simulation Exam 410",
+  "description": "Simulation Exam 410 focusing on アパート・寮での生活ルール・騒音マナー・共用スペースの清掃・エアコン管理.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A Japanese-style apartment room with people talking loudly, minimal cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "静か",
+            "うるさい",
+            "片付ける",
+            "掃除する"
+          ],
+          "answer": 1,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A shared living room with a messy table and clothes on the floor, minimal cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "掃除する",
+            "片付ける",
+            "うるさい",
+            "静か"
+          ],
+          "answer": 2,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "An air condition remote control on a table in a room, minimal cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "つける",
+            "消す",
+            "設定",
+            "温度"
+          ],
+          "answer": 3,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A cleaning woman pushing a vacuum cleaner in a hallway, minimal cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "掃除する",
+            "片付ける",
+            "うるさい",
+            "静か"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "アパートのルールとして、部屋で大きな音を出すのは（ ）なります。",
+          "options": [
+            "いけません",
+            "できます",
+            "なります",
+            "なりました"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "リビングのエアコンは、誰でも自由に（ ）できます。",
+          "options": [
+            "つけます",
+            "つけられます",
+            "つけられました",
+            "つけました"
+          ],
+          "answer": 1,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "共用のトイレを使った後は、必ず（ ）を流してください。",
+          "options": [
+            "おしえ",
+            "か",
+            "かん",
+            "おしり"
+          ],
+          "answer": 2,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "夜10時以降は、隣の部屋に音が漏れないように（ ）してください。",
+          "options": [
+            "音量を下げてください",
+            "音量を下げられてください",
+            "音量を下げました",
+            "音量を下げられました"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "部屋で音楽を聞く時、隣の部屋に迷惑をかけないように（ ）にします。",
+          "options": [
+            "大きく",
+            "静かに",
+            "早く",
+            "遠くに"
+          ],
+          "answer": 1,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "共用のリビングで食事をした後は、必ず（ ）をします。",
+          "options": [
+            "片付け",
+            "買い物",
+            "寝る",
+            "出かける"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "エアコンをつけっぱなしにすると、電気代が（ ）になります。",
+          "options": [
+            "安く",
+            "高く",
+            "早く",
+            "遅く"
+          ],
+          "answer": 1,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "ゴミを捨てる時は、決められたルールに従って（ )。",
+          "options": [
+            "分別",
+            "放置",
+            "買う",
+            "捨てない"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "部屋のエアコンの温度設定を24度にしてください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "わかりました。24度にします。",
+            "いいえ、22度にします。",
+            "エアコンはつけっぱなしにします。",
+            "部屋の温度は関係ありません。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ゴミ捨ての時間は何時までですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ゴミは午前9時までに出してください。",
+            "ゴミは午後9時までに出してください。",
+            "ゴミは午後8時までに出してください。",
+            "ゴミは午前8時までに出してください。"
+          ],
+          "answer": 2,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "共用のリビングで大きな音を出さないでください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "すみません、静かにします。",
+            "大きな音を出します。",
+            "リビングで音楽を聴きます。",
+            "静かにしてください。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "掃除当番は誰ですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "田中さんが掃除当番です。",
+            "田中さんは掃除当番ではありません。",
+            "掃除当番は誰でもいいです。",
+            "掃除当番は明日の朝です。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "部屋のエアコンの温度設定は何度にしますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "24度にします",
+            "24度にしますか",
+            "24度します",
+            "24度しますか"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ゴミの分別はどうやって覚えましたか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "チラシを見ました",
+            "チラシを見ましたか",
+            "チラシを読みました",
+            "チラシを読みましたか"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "共用のリビングで大きな音を出してしまってすみません。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "気にしないでください",
+            "気にしないでくださいます",
+            "気にしないでくださいました",
+            "気にしないでくださいませ"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "洗濯物を干す時間は何時までにしますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "午後9時までにします",
+            "午後9時までにしますか",
+            "午後9時します",
+            "午後9時しますか"
+          ],
+          "answer": 1,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "エアコンの温度を下げてもいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいですよ。",
+            "やめてください。",
+            "大丈夫です。",
+            "もう少し高くしてください。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "リビングで大きな音を出してもいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、やめてください。",
+            "すみません、お願いします。",
+            "いいですよ。",
+            "ありがとうございます。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "共用スペースを掃除してもいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、構いません。",
+            "遠慮なくしてください。",
+            "ごめんなさい、まだです。",
+            "どうぞ、手伝ってください。"
+          ],
+          "answer": 2,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ゴミ出しの時間は何時ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "朝の8時です。",
+            "夜の10時です。",
+            "昼の12時です。",
+            "朝の6時です。"
+          ],
+          "answer": 1,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "エアコンが壊れています。どうしようもないです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "直しますね。",
+            "そうですか。",
+            "ありがとうございます。",
+            "いいえ、大丈夫です。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：明日の部屋の掃除は誰がやる？\n女：前回は私がやったから、今度はあなたがやって。\n男：わかりました。では、いつやりますか？\n女：朝一番にやりましょう。",
+          "stem": "男が部屋の掃除について決めたことは？",
+          "options": [
+            "明日の掃除は女がやると決めた",
+            "明日の掃除は男がやると決めた",
+            "明日の掃除は朝一番にやることにした",
+            "明日の掃除はやらないことにした"
+          ],
+          "answer": 2,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：エアコンの温度、低すぎない？\n女：寒いからもう少し上げてもいいと思うけど。\n男：そうだね。24度に設定しよう。",
+          "stem": "男と女はエアコンの温度についてどうしたか？",
+          "options": [
+            "温度を下げることにした",
+            "温度を上げることにした",
+            "温度を24度に下げることにした",
+            "温度を24度に上げることにした"
+          ],
+          "answer": 3,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：今夜は静かにしないと、隣の部屋に迷惑がかかるよ。\n女：すみません。音楽はオフにします。",
+          "stem": "女が音楽をオフにする理由は？",
+          "options": [
+            "音楽がうるさかったから",
+            "隣の部屋に迷惑をかけたくないから",
+            "エアコンの音がうるさかったから",
+            "男に言われたから"
+          ],
+          "answer": 1,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：ゴミの分別、ルール通りにしないといけないね。\n女：そうですか。では、ビンはどこに捨てればいいですか？\n男：ゴミ置き場の一番奥です。",
+          "stem": "ビンを捨てる場所はどこか？",
+          "options": [
+            "ゴミ置き場の一番手前",
+            "ゴミ置き場の真ん中",
+            "ゴミ置き場の一番奥",
+            "ゴミ置き場の外"
+          ],
+          "answer": 2,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：掃除の時間は何時ですか？\n女：朝の8時から10時までです。\n男：わかりました。では、8時に始めましょう。\n女：はい、よろしくお願いします。",
+          "stem": "男が女性に尋ねた掃除の時間は何時ですか？",
+          "options": [
+            "朝の6時から8時まで",
+            "朝の8時から10時まで",
+            "昼の12時から14時まで",
+            "夜の18時から20時まで"
+          ],
+          "answer": 1,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：エアコンはつけっぱなしにしていませんか？\n女：いいえ、部屋を出るときは必ず消しています。\n男：ありがとうございます。電気代が節約できますね。",
+          "stem": "女性がエアコンについて言及したことは何ですか？",
+          "options": [
+            "つけっぱなしにしている",
+            "部屋を出るときは必ず消している",
+            "リモコンが見つからない",
+            "冷房のみで運転している"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：このアパートの共用スペースは清潔に保たなければなりませんね。\n女：そうですね。ゴミは決められた場所に捨てましょう。\n男：はい、ルールを守って快適に過ごしたいです。",
+          "stem": "男と女性が共用スペースについて話している主な目的は何ですか？",
+          "options": [
+            "清潔に保つこと",
+            "騒音を抑えること",
+            "エアコンの管理",
+            "荷物の整理整頓"
+          ],
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：騒音は夜9時以降は控えましょう。\n女：わかりました。音楽を大きくかけないようにします。\n男：ありがとうございます。お互いに気を使って過ごしましょう。",
+          "stem": "男が騒音について提案した時間帯は何時以降ですか？",
+          "options": [
+            "朝の6時以降",
+            "正午の12時以降",
+            "夜の9時以降",
+            "早朝の5時以降"
+          ],
+          "answer": 2,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：明日の朝、8時に起きるので、エアコンは消さないでください。\n女：わかりました。静かに過ごします。",
+          "stem": "男が頼んだことは何ですか。",
+          "options": [
+            "エアコンをつけておくこと",
+            "エアコンを消すこと",
+            "窓を開けること",
+            "明るい電気をつけること"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：ゴミを出すのは朝8時までにしてくださいね。\n女：はい、わかりました。朝早く出します。",
+          "stem": "女が同意したことは何ですか。",
+          "options": [
+            "夜にゴミを出すこと",
+            "朝8時までにゴミを出すこと",
+            "ゴミを部屋に置くこと",
+            "ゴミをリサイクルすること"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "女：廊下で大きな声を出さないでください。他の人の迷惑になります。\n男：すみません、気をつけます。",
+          "stem": "女が注意したことは何ですか。",
+          "options": [
+            "廊下での大きな声出し",
+            "部屋での掃除",
+            "エアコンの温度調整",
+            "共有スペースの片付け"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：エアコンのリモコンは共用スペースに置いてください。\n女：はい、リモコンを持っていきます。",
+          "stem": "男が言ったことは何ですか。",
+          "options": [
+            "リモコンを捨てること",
+            "リモコンを共用スペースに置くこと",
+            "リモコンを部屋に持っていくこと",
+            "リモコンを壊すこと"
+          ],
+          "answer": 1,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "本日からエアコンの掃除をします。共用スペースの埃を取ってください。",
+          "stem": "本日からエアコンの掃除をするのは誰ですか。",
+          "options": [
+            "管理人",
+            "入居者全員",
+            "新入生のみ",
+            "オーナー"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夜10時以降は音楽を大きくしないでください。隣の部屋に迷惑がかかります。",
+          "stem": "夜10時以降にしてはいけないことは何ですか。",
+          "options": [
+            "音楽を大きくすること",
+            "掃除をすること",
+            "食事をすること",
+            "寝ること"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ゴミは分別して捨ててください。リサイクルボックスは1階にあります。",
+          "stem": "ゴミを捨てるときに気を付けることは何ですか。",
+          "options": [
+            "分別すること",
+            "すぐに捨てること",
+            "袋を結ぶこと",
+            "名前を書くこと"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "共用スペースは毎日掃除をします。使った後は片付けてください。",
+          "stem": "共用スペースの掃除は誰がしますか。",
+          "options": [
+            "管理人",
+            "入居者全員",
+            "毎日誰か",
+            "毎朝"
+          ],
+          "answer": 2,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "リビングのエアコンは24時間つけっぱなしにしないでください。",
+          "stem": "エアコンは何時間つけっぱなしにしてはいけないとのことですか。",
+          "options": [
+            "1時間",
+            "6時間",
+            "12時間",
+            "24時間"
+          ],
+          "answer": 3,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ゴミ捨ては毎週月曜日と木曜日の午後5時までにお願いいたします。",
+          "stem": "ゴミ捨ての期限は毎週何曜日までですか。",
+          "options": [
+            "月曜日",
+            "水曜日",
+            "木曜日",
+            "金曜日"
+          ],
+          "answer": 2,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "共用スペースの掃除は毎日朝の8時から始まります。",
+          "stem": "共用スペースの掃除はいつから始まりますか。",
+          "options": [
+            "7時",
+            "8時",
+            "9時",
+            "10時"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夜10時以降は騒音にご注意ください。",
+          "stem": "夜10時以降に気をつけなければならないことは何ですか。",
+          "options": [
+            "音楽を聞くこと",
+            "明るい光を使うこと",
+            "大きな声を出すこと",
+            "エアコンをつけること"
+          ],
+          "answer": 2,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "10時以降は騒音を控えてください。共用部の掃除は毎週土曜日にお願いします。",
+          "stem": "共用部の掃除は何曜日にお願いしますか。",
+          "options": [
+            "月曜",
+            "火曜",
+            "土曜",
+            "日曜"
+          ],
+          "answer": 2,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "エアコンは24度に設定してください。暖房は18時まで使用できます。",
+          "stem": "エアコンの設定温度は何度ですか。",
+          "options": [
+            "18度",
+            "20度",
+            "22度",
+            "24度"
+          ],
+          "answer": 3,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ゴミの分別は朝8時までに出してください。リサイクルゴミは別の袋に入れてください。",
+          "stem": "ゴミは何時までに出す必要がありますか。",
+          "options": [
+            "7時",
+            "8時",
+            "9時",
+            "10時"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "バルコニーでの大きな音の出しすぎはご遠慮ください。隣の部屋への配慮をお願いします。",
+          "stem": "バルコニーで控えるべき音はどのような音ですか。",
+          "options": [
+            "大きな音",
+            "小さな音",
+            "テレビの音",
+            "話し声"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "エアコンのフィルター掃除は月に一度行ってください。汚れたまま使用すると故障の原因になります。",
+          "stem": "エアコンのフィルター掃除はどのくらいの頻度で行う必要がありますか。",
+          "options": [
+            "毎日",
+            "週に一度",
+            "月に一度",
+            "年に一度"
+          ],
+          "answer": 2,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
