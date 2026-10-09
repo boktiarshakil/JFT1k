@@ -1,7 +1,7 @@
 {
   "id": "jft301",
   "title": "JFT-Basic Simulation Exam 301",
-  "description": "Simulation Exam 301 focusing on exploring Japanese history, visiting World Heritage sites in Kyoto and Nara, and understanding traditional architecture.",
+  "description": "Simulation Exam 301 focusing on travel, hotel stays, and sightseeing.",
   "duration": 3600,
   "sections": [
     {
@@ -11,11 +11,11 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q1.jpeg",
-          "imagePrompt": "A person admiring the Golden Pavilion (Kinkaku-ji) in Kyoto. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A person checking in at a hotel reception desk. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "金閣寺の観光",
-            "掃除",
-            "洗濯"
+            "ホテルの受付",
+            "駅の窓口",
+            "銀行の窓口"
           ],
           "answer": 0
         },
@@ -23,11 +23,11 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q2.jpeg",
-          "imagePrompt": "A person taking a photo of a large wooden temple gate (Mon). Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A person looking at a sightseeing map in front of a famous monument. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "歴史的建造物",
-            "買い物",
-            "食事"
+            "観光",
+            "仕事",
+            "勉強"
           ],
           "answer": 0
         },
@@ -35,11 +35,11 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q3.jpeg",
-          "imagePrompt": "A person looking at a historical scroll painting in a museum. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A suitcase packed with clothes and essentials for a trip. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "展示品の見学",
-            "勉強",
-            "散歩"
+            "荷物",
+            "お土産",
+            "ゴミ"
           ],
           "answer": 0
         },
@@ -47,20 +47,9 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q4.jpeg",
-          "imagePrompt": "A person buying a good luck charm (Omamori) at a famous shrine in Nara. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A beautiful view from a hotel window overlooking a historic Japanese town. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "お守りの購入",
-            "時計",
-            "鞄"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "5. (______)を訪ねました。",
-          "options": [
-            "世界遺産",
+            "景色",
             "天気",
             "時間"
           ],
@@ -69,66 +58,88 @@
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "6. (______)に圧倒されました。",
+          "stem": "5. 来週の旅行の(______)をしました。",
           "options": [
-            "歴史の重み",
-            "勉強",
-            "料理"
+            "予約",
+            "返事",
+            "掃除"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "7. (______)が美しいです。",
+          "stem": "6. ホテルに(______)してから、観光に行きます。",
           "options": [
-            "伝統美",
-            "雨",
-            "風"
+            "チェックイン",
+            "チェックアウト",
+            "キャンセル"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "8. (______)を巡ります。",
+          "stem": "7. (______)は北海道に旅行に行きたいです。",
           "options": [
-            "古都",
-            "携帯",
-            "本"
+            "今度",
+            "最近",
+            "多分"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "8. 家族に(______)を買って帰ります。",
+          "options": [
+            "お土産",
+            "手紙",
+            "写真"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "9. (保存)状態が良いです。",
+          "stem": "9. (旅行)に行きます。",
           "options": [
-            "ほぞん",
-            "ぜんぞん",
-            "てんぞん"
+            "りょこう",
+            "りょうこう",
+            "りょごう"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "10. (時代)を感じます。",
+          "stem": "10. (景色)が綺麗ですね。",
           "options": [
-            "じだい",
-            "ぜだい",
-            "てだい"
+            "けしき",
+            "げしき",
+            "けいき"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "11. (価値)があります。",
+          "stem": "11. (有名)な場所です。",
           "options": [
-            "かち",
-            "じち",
-            "きち"
+            "ゆうめい",
+            "ゆめい",
+            "ゆうめ"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the kanji word that fits in ( ) most.",
+          "stem": "12. 初めて作った本格的なカレーを家族に(______)ことができて満足です。",
+          "options": [
+            "振る舞う",
+            "捨てる",
+            "こぼす"
           ],
           "answer": 0
         }
@@ -143,17 +154,17 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "京都の(______)でおすすめはどこですか。"
+              "speech": "すみません、チェックインを(______)。"
             },
             {
               "speaker": "B",
-              "speech": "やはり、清水寺ですね。舞台からの眺めは本当に素晴らしいですよ。"
+              "speech": "はい。お名前をお願いします。"
             }
           ],
           "options": [
-            "観光スポット",
-            "名前",
-            "天気"
+            "お願いします",
+            "できました",
+            "ありますか"
           ],
           "answer": 0
         },
@@ -163,17 +174,17 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "奈良の公園には(______)がたくさんいるそうですね。"
+              "speech": "この近くに、(______)いい場所はありますか。"
             },
             {
               "speaker": "B",
-              "speech": "ええ。鹿せんべいをあげると近寄ってき。てかわいいですよ。"
+              "speech": "ええ、歩いて10分のところに綺麗な公園がありますよ。"
             }
           ],
           "options": [
-            "鹿",
-            "どこ",
-            "だれ"
+            "どこか",
+            "だれか",
+            "何か"
           ],
           "answer": 0
         },
@@ -183,225 +194,17 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "すみません、この荷物を大阪まで送りたいんですが、伝票の書き方を教えてもらえますか。"
+              "speech": "荷物を(______)もらえますか。"
             },
             {
               "speaker": "B",
-              "speech": "はい、こちらの伝票にお名前と住所と電話番号を書いて、______にご記入ください。"
+              "speech": "はい。3時までお預かりします。"
             }
           ],
           "options": [
-            "差出人の欄",
-            "配達希望時間の欄",
-            "宛先の欄",
-            "料金の欄"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "すみません、B定食をお願いします。あと、卵アレルギーがあるんですが、この料理に卵は入っていますか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "少々お待ちください。アレルギー表示はあちらの______に貼ってありますので、ご確認ください。"
-            }
-          ],
-          "options": [
-            "返却口",
-            "食券売り場",
-            "メニュー表",
-            "掲示板"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "工場の作業が終わったので、使った工具を返してから帰ります。"
-            },
-            {
-              "speaker": "B",
-              "speech": "はい、工具は必ず______に戻して、安全靴とヘルメットも点検してくださいね。"
-            }
-          ],
-          "options": [
-            "事務所の机",
-            "指定の工具棚",
-            "自分のロッカー",
-            "非常口の横"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "台風が近づいているので、避難の準備をしておいたほうがいいですよね。"
-            },
-            {
-              "speaker": "B",
-              "speech": "そうですね。非常用持ち出し袋を用意して、避難するときは______を忘れずに切ってください。"
-            }
-          ],
-          "options": [
-            "ガス",
-            "ブレーカー",
-            "エアコン",
-            "水道"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "引っ越してきたので、転入届を出しに来たんですが、どこで手続きをすればいいですか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "市民課の窓口です。転入届と______を持って、番号札を取ってお待ちください。"
-            }
-          ],
-          "options": [
-            "在留カード",
-            "マイナンバーカード",
-            "運転免許証",
-            "国民健康保険証"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "すみません、電車が遅れているんですが、遅延証明書をもらえますか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "はい、______で配っていますので、駅員にお申し付けください。"
-            }
-          ],
-          "options": [
-            "自動券売機",
-            "みどりの窓口",
-            "ホーム",
-            "改札口"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "引越しの挨拶に行きたいんですが、粗大ゴミの処分はどうすればいいですか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "粗大ゴミは、まず市役所に______をしてから、指定の場所に出してください。"
-            }
-          ],
-          "options": [
-            "近所への相談",
-            "事前申し込み",
-            "電話連絡",
-            "直接持ち込み"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "このアパートのゴミ出しのルールを教えてください。"
-            },
-            {
-              "speaker": "B",
-              "speech": "燃えるゴミは月曜と木曜の朝8時までに出してください。資源ゴミは______に分けて出してくださいね。"
-            }
-          ],
-          "options": [
-            "指定の袋",
-            "透明な袋",
-            "燃えるゴミと一緒",
-            "分別して"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "この建物は、どのくらい(______)ですか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "約400年前に建てられました。とても歴史があるんですよ。"
-            }
-          ],
-          "options": [
-            "古い",
-            "高い",
-            "新しい"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "ガイドさんの説明、分かりやすかったですね。"
-            },
-            {
-              "speaker": "B",
-              "speech": "ええ、(______)。日本の歴史に詳しくなれました。"
-            }
-          ],
-          "options": [
-            "勉強になりました",
-            "お疲れ様でした",
-            "よかったです"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "館内は撮影禁止ですよ。"
-            },
-            {
-              "speaker": "B",
-              "speech": "あ、(______)。すみませんでした。"
-            }
-          ],
-          "options": [
-            "気をつけます",
-            "分かりません",
-            "大丈夫です"
+            "預けて",
+            "持って",
+            "見て"
           ],
           "answer": 0
         },
@@ -411,17 +214,203 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "また来たいですね。"
+              "speech": "部屋に(______)を忘れました。"
             },
             {
               "speaker": "B",
-              "speech": "そうですね。(______)に来ましょう。"
+              "speech": "すぐにお調べします。少々お待ちください。"
             }
           ],
           "options": [
-            "今度",
-            "どこ",
-            "だれ"
+            "鍵",
+            "財布",
+            "スマホ"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "(______)観光しましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "昨日はお寺や神社を回りました。"
+            }
+          ],
+          "options": [
+            "どこを",
+            "いつ",
+            "だれと"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "あ、落とし物ですよ。"
+            },
+            {
+              "speaker": "B",
+              "speech": "本当だ。(______)、ありがとうございます。"
+            }
+          ],
+          "options": [
+            "教えてくれて",
+            "話してくれて",
+            "見てくれて"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この書類、ホチキスで留めてからクリアファイルに（______）おいてください（jft141-c6）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "了解しました。日付順に整理して挟んでおきます。"
+            }
+          ],
+          "options": [
+            "挟んで",
+            "挟む",
+            "挟んだ",
+            "挟めば"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "いつも何で会社に来ますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)で来ますよ. 健康のためです。"
+            }
+          ],
+          "options": [
+            "自転車",
+            "走って",
+            "車"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "明日の全体朝礼で、新しい安全目標を（______）ことになっています（jft141-c8）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "各自がスローガンを唱和できるように準備しておきますね。"
+            }
+          ],
+          "options": [
+            "周知する",
+            "周知して",
+            "周知した",
+            "周知される"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "薬品の容器は、フタをしっかり（______）から棚に戻してください（jft141-c9）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、薬品の蒸発や液漏れを防ぐため確認します。"
+            }
+          ],
+          "options": [
+            "閉めて",
+            "閉める",
+            "閉めた",
+            "閉めれば"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "地域の防災訓練に毎年（______）のはとても良い経験になります（jft141-c10）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "いざという時の避難経路や消火器の使い方を覚えられるからね。"
+            }
+          ],
+          "options": [
+            "参加する",
+            "参加して",
+            "参加した",
+            "参加すれば"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業中に少しでも体調に異変を感じたら、（______）リーダーに報告してください（jft141-c11）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "我慢せずに早めに休憩を取るようにします。"
+            }
+          ],
+          "options": [
+            "遠慮なく",
+            "遠慮して",
+            "遠慮な",
+            "遠慮だ"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この作業靴は靴底が滑りにくい設計になっていて（______）です（jft141-c12）。"
+            },
+            {
+              "speaker": "B",
+              "speech": "油や水滴がある床でも安心して作業ができますね。"
+            }
+          ],
+          "options": [
+            "安全",
+            "危険",
+            "不安",
+            "迷惑"
           ],
           "answer": 0
         }
@@ -434,111 +423,111 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q26.mp3",
-          "audioTranscript": "男：あ、桜の木の枝、折っちゃだめだよ。女：え、でも写真を撮るのに邪魔だったから。男：それでもだめ。花見のマナーとして、木に触っちゃいけないんだよ。",
-          "stem": "男の人はなぜ女の人を止めましたか。",
+          "audioTranscript": "男：すみません、新横浜駅へ行くにはどの電車に乗れば一番早いですか。\n女：中央線の快速で横浜まで行って、そこから横浜線に乗り換えると早いですよ。\n男：横浜駅で乗り換えですね。ありがとうございます（jft141-l0）。",
+          "stem": "新横浜駅へ行くために乗り換える駅はどこですか（jft141-l0）。",
           "options": [
-            "写真を撮ってはいけないから",
-            "ここにいてはいけないから",
-            "桜の木の枝を折ってはいけないから",
-            "花見をしてはいけないから"
+            "横浜駅",
+            "東京駅",
+            "新宿駅",
+            "品川駅"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q27.mp3",
-          "audioTranscript": "図書館の館内放送：ご利用の皆様にお知らせします。閉館後は、正面玄関横の返却ポストをご利用ください。なお、DVDやCDなどの視聴覚資料は、返却ポストに入れず、翌開館日にカウンターへお持ちください。",
-          "stem": "閉館後、DVDを返すにはどうすればいいですか。",
+          "audioTranscript": "アナウンス：明日の社内防災訓練の集合時間についてお知らせします。当初は9時半を予定していましたが、準備の都合により9時15分に変更となります。時間厳守でお集まりください。\n社員：9時15分に集合場所へ行けばいいんだね（jft141-l1）。",
+          "stem": "防災訓練の変更後の集合時間は何時ですか（jft141-l1）。",
           "options": [
-            "返却しないで家に持って帰る",
-            "翌開館日にカウンターへ持って行く",
-            "正面玄関横の返却ポストに入れる",
-            "館内のカウンターに置いて帰る"
+            "9時15分",
+            "9時30分",
+            "9時00分",
+            "10時00分"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q28.mp3",
-          "audioTranscript": "店員：いらっしゃいませ。夕方6時から、お惣菜が全品半額になりますよ。お客様：本当ですか。じゃあ、6時まで待ってから買います。",
-          "stem": "お客様はどうしますか。",
+          "audioTranscript": "男：もしもし、田中ですが、けんさんいますか. 母：けんは今、お風呂に入っているのよ. あと20分くらいで出てくると思うわ. 男：そうですか. じゃあ、また後でかけます。",
+          "stem": "28. けんさんは今何をしていますか。",
           "options": [
-            "お惣菜を買わない",
-            "別の店に行く",
-            "6時まで待ってから買う",
-            "今すぐお惣菜を買う"
+            "お風呂に入っている",
+            "勉強している",
+            "ご飯を食べている",
+            "寝ている"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q29.mp3",
-          "audioTranscript": "受付：明日の健康診断ですが、前日の夜9時以降は、水以外の飲み物や食べ物を取らないでください。お茶やコーヒーもだめです。",
-          "stem": "健康診断の前日、夜9時以降に飲んでもいいものは何ですか。",
+          "audioTranscript": "女：社員食堂の今日の日替わりランチ、鯖の塩焼き定食と豚肉の生姜焼きがあるよ。どっちにする？\n男：最近肉料理が多かったから、今日は魚にしようかな。鯖の塩焼き定食にするよ。\n女：じゃあ、私も同じ定食にしようっと（jft141-l3）。",
+          "stem": "二人は食堂で何を注文しますか（jft141-l3）。",
           "options": [
-            "お茶",
-            "コーヒー",
-            "ジュース",
-            "水"
+            "鯖の塩焼き定食",
+            "豚肉の生姜焼き定食",
+            "カレーライス",
+            "天ぷらうどん"
           ],
-          "answer": 3
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q30.mp3",
-          "audioTranscript": "大家さん：このアパートでは、燃えるゴミは月曜日と木曜日の朝8時までに出してください。燃えないゴミは、第2水曜日だけです。資源ゴミは金曜日です。",
-          "stem": "燃えないゴミはいつ出しますか。",
+          "audioTranscript": "男：使い終わったボタン電池はどうやって捨てればいいですか。\n女：電極の両面にセロハンテープを貼って絶縁してから、市役所や電器店の回収缶に入れてください。燃えないゴミには絶対混ぜないでね。\n男：テープを貼って専用回収缶ですね。わかりました（jft141-l4）。",
+          "stem": "ボタン電池を捨てる前の正しい手順は何ですか（jft141-l4）。",
           "options": [
-            "毎週水曜日",
-            "第2水曜日",
-            "金曜日",
-            "月曜日と木曜日"
+            "両面にテープを貼って絶縁する",
+            "水に浸して濡らす",
+            "金づちで叩いて潰す",
+            "燃えるゴミの袋に入れる"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q31.mp3",
-          "audioTranscript": "市役所の職員：転入届は、引越しから14日以内にしてください。必要なものは、転出証明書と身分証明書です。マイナンバーカードをお持ちの方は、カードも持ってきてください。",
-          "stem": "転入届に必要なものは何ですか。",
+          "audioTranscript": "女：すみません、予備のホワイトボード用マーカーはどこにありますか。\n男：事務室の入口横にあるスチール棚の、一番上の引き出しに入っていますよ。\n女：一番上の引き出しですね。見てみます（jft141-l5）。",
+          "stem": "マーカーはどこに置いてありますか（jft141-l5）。",
           "options": [
-            "パスポートと写真",
-            "住民票と印鑑",
-            "転出証明書と身分証明書",
-            "保険証と年金手帳"
+            "スチール棚の一番上の引き出し",
+            "机の下の段ボール",
+            "受付のカウンターの上",
+            "会議室の床"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q32.mp3",
-          "audioTranscript": "警察官：雨の日は、傘を差しながら自転車に乗ってはいけません。危ないですから。それから、夜は必ずライトをつけてください。",
-          "stem": "雨の日に自転車に乗るとき、してはいけないことは何ですか。",
+          "audioTranscript": "指導員：回転機械のメンテナンス時は、巻き込まれ防止のため手袋の着用は禁止です。素手で作業を行い、袖口もしっかり留めてください。\n実習生：はい、手袋を外して袖口を留めます（jft141-l6）。",
+          "stem": "巻き込まれ防止のために禁止されていることは何ですか（jft141-l6）。",
           "options": [
-            "ゆっくり乗る",
-            "傘を差して乗る",
-            "反射材をつける",
-            "ライトをつける"
+            "手袋の着用",
+            "安全靴の着用",
+            "保護メガネの着用",
+            "作業服の着用"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q33.mp3",
-          "audioTranscript": "上司：今日はとても暑いから、外で作業する人は、こまめに水分と塩分を取ってください。熱中症にならないように、気をつけて。",
-          "stem": "上司は何に気をつけるように言っていますか。",
+          "audioTranscript": "女：あのう、この本を借りたいんですが。男：はい。利用者カードをお持ちですか. あ、期限切れですね. こちらの書類に記入をお願いします. 女：わかりました。",
+          "stem": "33. 女の人はまず何をしなければなりませんか。",
           "options": [
-            "熱中症",
-            "風邪",
-            "インフルエンザ",
-            "花粉症"
+            "書類に記入する",
+            "本を返す",
+            "カードを捨てる",
+            "お金を払う"
           ],
           "answer": 0
         },
@@ -546,57 +535,57 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q34.mp3",
-          "audioTranscript": "社員：課長、明日の会議室の予約ですが、第1会議室が取れました。来客があるので、お茶とスリッパも準備しておきます。課長：ありがとう。お願いします。",
-          "stem": "社員は何を準備しますか。",
+          "audioTranscript": "男：すみません、この近くに処方箋を受け付ける薬局はありますか。\n女：駅前の信号を渡って、スーパーの角を右に曲がったところにドラッグストアがありますよ。\n男：スーパーの角を右ですね。ありがとうございます（jft141-l8）。",
+          "stem": "薬局はどこにありますか（jft141-l8）。",
           "options": [
-            "資料と筆記用具",
-            "お茶とスリッパ",
-            "パソコンとプロジェクター",
-            "お弁当と飲み物"
+            "スーパーの角を右に曲がったところ",
+            "駅の構内地下",
+            "病院の屋上",
+            "交番の真裏"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q35.mp3",
-          "audioTranscript": "郵便局の職員：不在連絡票をお持ちですね。再配達をご希望ですか。それとも、宅配ボックスに入れてもいいですか。暗証番号を教えていただければ、ボックスに入れますよ。",
-          "stem": "宅配ボックスを利用するために、何が必要ですか。",
+          "audioTranscript": "女：あ、財布がない！どこかに置いてきたのかも. 男：え？いつまであったの？女：朝、家を出る時はあったの. そのあと、カフェに行って、そのあと映画館に行ったわ. 男：じゃあ、カフェか映画館のどっちかだね.",
+          "stem": "35. 女の人は財布をどこに忘れた可能性がありますか。",
           "options": [
-            "現金",
-            "免許証",
-            "署名と印鑑",
-            "暗証番号"
+            "カフェか映画館",
+            "家かカフェ",
+            "映画館か駅",
+            "家か映画館"
           ],
-          "answer": 3
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q36.mp3",
-          "audioTranscript": "住民：来月引越すので、粗大ゴミを出したいんですが。市役所：粗大ゴミは、事前に電話かインターネットで申し込みが必要です。申し込みがないと収集できません。",
-          "stem": "粗大ゴミを出すために、まず何をしなければなりませんか。",
+          "audioTranscript": "男：マリアさん、週末は何をして過ごしましたか. 女：土曜日は一日中家で掃除をしていました. 日曜日は友達と映画を見に行きました. 男：充実していましたね. 女：ええ、楽しかったです.",
+          "stem": "36. 女の人は日曜日に何をしましたか。",
           "options": [
-            "市役所に申し込む",
-            "電話かインターネットで申し込む",
-            "大家さんに渡す",
-            "直接ゴミ置き場に持って行く"
+            "映画を見る",
+            "掃除",
+            "散歩",
+            "料理"
           ],
-          "answer": 1
+          "answer": 0
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q37.mp3",
-          "audioTranscript": "テレビのニュース：台風が近づいています。大雨で川が氾濫するおそれがあります。避難指示が出たら、すぐに避難してください。非常用持ち出し袋を準備し、ブレーカーを遮断してから避難しましょう。",
-          "stem": "避難する前に、何をしなければなりませんか。",
+          "audioTranscript": "女：あのう、すみません。新宿駅までいくらですか。男：210円ですよ. あちらの自販機で切ップを買ってください. 女：わかりました. ありがとうございます。",
+          "stem": "37. 新宿駅までの運賃はいくらですか。",
           "options": [
-            "車を運転する",
-            "ブレーカーを遮断する",
-            "窓を開ける",
-            "テレビを見る"
+            "210円",
+            "170円",
+            "190円",
+            "230円"
           ],
-          "answer": 1
+          "answer": 0
         }
       ]
     },
@@ -604,173 +593,186 @@
       "name": "Reading Comprehension",
       "questions": [
         {
+          "id": "jft141-q38",
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "引越しのご挨拶に伺いましたが、お留守のようでしたので、ご挨拶状をポストに入れさせていただきました。来週の土曜日の午後、改めてご挨拶に伺います。粗大ゴミは、市役所に事前に申し込みをしないと出せませんので、ご注意ください。",
-          "stem": "粗大ゴミを出すためには、どうしなければなりませんか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【アスファルト舗装安全基準：ダンプ誘導と接触防止】\nアスファルト合材（約160度）を積んだダンプトラックがアスファルトフィニッシャーへ後退接近する際は、\n必ず専任の交通誘導員（合図者）がダンプの側方安全位置から笛と誘導棒で合図を行ってください。\nダンプの真後ろやフィニッシャーのホッパーの間に作業員が立ち入ることは挟まれ死傷事故になるため厳禁です。",
+          "stem": "合材ダンプの後退時、作業員が立ち入ってはいけない場所はどこですか。",
           "options": [
-            "ご挨拶に伺う",
-            "土曜日の午後に出す",
-            "ポストに挨拶状を入れる",
-            "市役所に事前に申し込む"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "町内会では、来月の第2日曜日に盆踊り大会を行います。当日は、午後6時から公園で開催します。また、翌週の土曜日には、町内会の清掃活動がありますので、皆さんぜひご参加ください。なお、市民マラソン大会の参加申し込みは、今月末までです。",
-          "stem": "盆踊り大会はいつ行われますか。",
-          "options": [
-            "今月末",
-            "来月の第2日曜日",
-            "来月の第1土曜日",
-            "翌週の土曜日"
+            "歩道の上",
+            "ダンプの真後ろやフィニッシャーのホッパーの間",
+            "誘導員の横",
+            "工事看板の前"
           ],
           "answer": 1
         },
         {
+          "id": "jft141-q39",
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "郵便局で宅配便を発送する際は、送り状に住所と氏名を記入してください。もしお客様がご不在でお荷物をお届けできなかった場合は、不在連絡票をポストに入れます。再配達をご希望の際は、インターネットまたはお電話でご依頼ください。宅配ボックスをご利用の場合は、暗証番号が必要です。",
-          "stem": "再配達を依頼するには、どうすればいいですか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【敷均し作業（フィニッシャー）：合材の温度管理】\nアスファルト合材の品質を確保するため、敷均し開始時の合材温度は「140度以上」を維持してください。\nサーモグラフィまたは非接触赤外線放射温度計を用いて、フィニッシャーのスクリード通過直後の温度を測定・記録します。\n温度が110度以下に低下すると締め固め密度が不足し、早期のポットホール（舗装の穴）やひび割れの原因になります。",
+          "stem": "敷均し時の合材温度が低すぎるとどんな問題が起きますか。",
           "options": [
-            "不在連絡票を捨てる",
-            "宅配ボックスに入れる",
-            "インターネットか電話で依頼する",
-            "郵便局に行く"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "text",
-          "instruction": "Read the sign and answer the question.",
-          "context": "電車の遅延により、ご迷惑をおかけしております。現在、中央線は信号故障のため、上下線とも20分ほど遅れています。お急ぎの方は、地下鉄に乗り換えることをお勧めします。遅延証明書は、駅の改札口でお受け取りいただけます。ICカードをご利用の方は、そのまま改札を通れます。",
-          "stem": "遅延証明書はどこで受け取れますか。",
-          "options": [
-            "地下鉄の窓口",
-            "駅の改札口",
-            "インターネット",
-            "電車の中"
+            "舗装が白くなる",
+            "締め固め密度が不足し穴やひび割れの原因になる",
+            "アスファルトが固まらなくなる",
+            "機械が速く動く"
           ],
           "answer": 1
         },
         {
+          "id": "jft141-q40",
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "社員食堂では、完全キャッシュレス決済を導入しています。お支払いは、社員証のICカードのみとなりますので、現金はご利用いただけません。アレルギーをお持ちの方は、メニューのアレルギー表示を必ずご確認ください。なお、注文は、入口の券売機で食券を購入する方式です。",
-          "stem": "社員食堂で支払いに使えるものは何ですか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【転圧作業：ロードローラーとタイヤローラー】\n敷き均した合材は、初転圧（マカダムローラー・約110〜140度）、二次転圧（タイヤローラー・約80〜100度）、仕上げ転圧の順で締め固めます。\nローラーのドラムにアスファルトが付着（ピックアップ）しないよう、散水ノズルから適量の水を噴射しながら走行してください。\n急発進・急ブレーキ・急ハンドルは舗装面に段差やシワを作るため禁止です。",
+          "stem": "ローラー転圧時にアスファルトが車輪に付着しないように何を行いますか。",
           "options": [
-            "社員証のICカード",
-            "現金",
-            "クレジットカード",
-            "スマートフォン"
+            "油を大量に塗る",
+            "ドラムに適量の水を散水しながら走行する",
+            "最高速度で走る",
+            "砂を撒く"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q41",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【手引き・レーキ作業の安全心得：熱傷防止】\n機械が入れない端部やマンホール周辺のアスファルトレーキ（トンボ）作業では、\n靴底が断熱された「舗装用安全靴（耐熱底ブーツ）」を必ず着用してください。\n普通のスニーカーや一般の安全靴では靴底のゴムが熱で溶け、足裏に重度の熱傷（やけど）を負います。レーキの柄は両手でしっかり保持して腰を落として作業します。",
+          "stem": "舗装工事で履く専用靴の特徴は何ですか。",
+          "options": [
+            "軽くて薄い布靴",
+            "靴底が高温に耐える断熱・耐熱底安全靴",
+            "サンダル",
+            "長靴"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q42",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【道路規制・交通開放基準：路面温度の測定】\n施工完了後に一般車両の交通を開放（規制解除）する際は、必ず路面温度計で舗装の表面温度を測定します。\n基準：路面温度が「50度以下」まで低下していること。\n路面がまだ熱い状態で車両を通すと、タイヤの重みでワダチ掘れ（車の跡）やアスファルトの剥ぎ取り事故が発生します。散水車で強制冷却する場合もあります。",
+          "stem": "工事後の道路を一般車に開放できる路面温度の基準は何度以下ですか。",
+          "options": [
+            "100度以下",
+            "50度以下",
+            "20度以下",
+            "何度でもよい"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q43",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【スーパー案内：セルフレジでのバーコードのない商品の会計】\n野菜や果物、店内の焼き立てパンなど、バーコードが付いていない商品をセルフレジでお会計する際は、\n画面の「バーコードのない商品」ボタンを押し、品目カテゴリー（野菜・果物・パン）から該当のイラスト・商品名をタッチしてください。",
+          "stem": "バーコードのない野菜などをセルフレジで会計するときはどうしますか。",
+          "options": [
+            "店員に買い取ってもらう",
+            "画面の「バーコードのない商品」ボタンから商品名を選ぶ",
+            "バーコードのある商品のシールを貼る",
+            "タダで持ち帰る"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q44",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【電車案内：ICカードの残額履歴の確認】\nスマートフォンに専用の交通系IC残高確認アプリをインストールすると、スマートフォンの背面にカードをかざすだけで、\nいつでも瞬時に残高や直近の利用履歴（利用駅・引落額）を確認できます。駅の券売機に行かずに残高を確認できるため便利です。",
+          "stem": "スマホアプリでICカードの残高を確認する方法は何ですか。",
+          "options": [
+            "カードの番号を手入力する",
+            "スマホの背面にカードをかざす",
+            "カードの写真を撮る",
+            "駅員に電話する"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q45",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【調剤薬局案内：頓服薬（とんぷくやく）の保管上の注意】\n解熱鎮痛剤や発作止めの頓服薬は、すぐに使えるように常備されることが多いお薬です。\n直射日光・高温多湿を避けて保管し、処方された時の袋（薬袋）に入れたまま保管してください。\n他の家族が誤って飲まないよう、薬袋に記載された氏名と症状を必ず確認して使用してください。",
+          "stem": "頓服薬を保管する際の正しい方法はどれですか。",
+          "options": [
+            "袋から出して裸で机の上に置く",
+            "氏名と症状が書かれた薬袋に入れたまま直射日光を避けて保管する",
+            "車の中にずっと放置する",
+            "冷蔵庫の冷凍室に凍らせる"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "jft141-q46",
+          "type": "text",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【生活知識：大雨時のマンホールや側溝の危険性】\n集中豪雨で道路が冠水すると、水の濁りで足元が見えなくなります。\n水圧でマンホールの蓋が外れていたり側溝の境目が分からなくなり、転落する死亡事故が起きます。\n冠水した道路を歩く際は、傘や杖で足元の安全を確認しながら歩くか、不用意な外出を控えましょう（jft141-r8）。",
+          "stem": "冠水した道路を歩く際の危険と対策は何ですか（jft141-r8）。",
+          "options": [
+            "マンホールや側溝への転落を防ぐため、杖などで足元を確認する",
+            "走って一気に通り抜ける",
+            "目を閉じて感覚で進む",
+            "自転車で全速力で進む"
           ],
           "answer": 0
         },
         {
+          "id": "jft141-q47",
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "台風が接近しています。大雨や暴風が予想されるため、不要不急の外出は控えてください。市から避難指示が出た場合は、速やかに避難してください。非常用持ち出し袋を準備し、停電に備えてブレーカーを遮断することをお勧めします。",
-          "stem": "避難指示が出た場合、どうしなければなりませんか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【暮らしの知恵：夏のエアコンと扇風機の併用】\nエアコンの冷気は部屋の下部に溜まりやすい性質があります。\n扇風機やサーキュレーターを併用して風を上に向けて循環させることで、部屋全体の温度ムラがなくなり、エアコンの設定温度を過度に下げずに涼しく快適に過ごせます（jft141-r9）。",
+          "stem": "エアコンと扇風機を併用する利点は何ですか（jft141-r9）。",
           "options": [
-            "ブレーカーを遮断する",
-            "速やかに避難する",
-            "非常用持ち出し袋を準備する",
-            "外出を控える"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the email and answer the question.",
-          "context": "自転車の交通安全マナーを守りましょう。雨の日は、傘を差しての運転は禁止です。レインコートを着用してください。夜間は、必ずライトを点灯し、反射材を付けてください。また、ヘルメットの着用に努めましょう。",
-          "stem": "雨の日に自転車に乗るときは、どうしなければなりませんか。",
-          "options": [
-            "傘を差して運転する",
-            "レインコートを着用する",
-            "ライトを点灯する",
-            "ヘルメットをかぶる"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "図書館の本を返却する際は、開館時間内にカウンターへお持ちください。閉館後は、入口横の返却ポストをご利用いただけます。また、市民体育館の利用には、室内シューズの着用が必要です。忘れずにお持ちください。",
-          "stem": "図書館の本を閉館後に返すには、どうすればいいですか。",
-          "options": [
-            "返却ポストに入れる",
-            "カウンターに返す",
-            "室内シューズを履いて返す",
-            "市民体育館に返す"
+            "空気を循環させて部屋の温度ムラをなくし省エネになる",
+            "部屋が急速に暖まる",
+            "電気代が3倍に跳ね上がる",
+            "部屋が真っ暗になる"
           ],
           "answer": 0
         },
         {
+          "id": "jft141-q48",
           "type": "text",
-          "instruction": "Read the notice and answer the question.",
-          "context": "スーパーでは、セルフレジが導入されています。お会計は、ご自身でバーコードをスキャンしてお支払いください。夕方5時からは、タイムセールとして、お惣菜が20%引きになります。なお、コンビニでも同様にセルフレジが使えます。",
-          "stem": "タイムセールはいつからですか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【メッセージ：乳剤散布機のスプレイヤ詰まり】\n舗装現場代理人様\n舗装工のチェンです。お疲れ様です。\nタックコート（アスファルト乳剤）を散布するアスファルトディストリビューターの散布ノズル3箇所が乳剤の固着で詰まり、均一に散布できません。\n軽油洗浄でノズルの詰まりを除去したいので、作業前の立ち会いをお願いできますでしょうか。",
+          "stem": "チェンさんはどんな機械トラブルを報告していますか。",
           "options": [
-            "朝から",
-            "昼から",
-            "夜7時から",
-            "夕方5時から"
+            "トラックのタイヤがパンクしたこと",
+            "乳剤散布機のノズルが固着して詰まったこと",
+            "合材の温度が冷めたこと",
+            "雨が降ってきたこと"
           ],
-          "answer": 3
+          "answer": 1
         },
         {
+          "id": "jft141-q49",
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "工場現場では、5S活動（整理・整頓・清掃・清潔・躾）を徹底しています。使用した工具は、必ず所定の場所に返却してください。作業前には、保護具（安全靴・ヘルメット）の点検を行ってください。安全第一で作業しましょう。",
-          "stem": "作業前に何をしなければなりませんか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【市役所案内：住民票の写しのコンビニ交付サービス】\nマイナンバーカードをお持ちの方は、全国のコンビニエンスストアに設置されているマルチコピー機で「住民票の写し」を取得できます。\n市役所の窓口に行く必要がなく、夜間や土日祝日でも手数料200円で発行可能です（jft141-r11）。",
+          "stem": "コンビニで住民票の写しを取得するために必要なものは何ですか（jft141-r11）。",
           "options": [
-            "工具を返却する",
-            "5S活動をする",
-            "保護具を点検する",
-            "清掃する"
+            "マイナンバーカード",
+            "運転免許証のみ",
+            "保険証のみ",
+            "学生証"
           ],
-          "answer": 2
+          "answer": 0
         },
         {
+          "id": "jft141-q50",
           "type": "text",
-          "instruction": "Read the email and answer the question.",
-          "context": "市役所で転入届の手続きをする際は、マイナンバーカードと国民健康保険証をお持ちください。手続きは、平日の午前8時30分から午後5時までです。なお、転出の際は、転出証明書が必要です。",
-          "stem": "転入届の手続きに必要なものは何ですか。",
+          "instruction": "質問を読んで、もっともよいものを1つ選んでください。",
+          "context": "【日本文化：お中元（おちゅうげん）とお歳暮の習慣】\n日本では日頃お世話になっている上司や取引先、親戚へ感謝の気持ちを込めて贈り物を届ける文化があります。\n夏の7月〜8月上旬に贈るものを「お中元」、年末の12月に贈るものを「お歳暮」と呼びます。ビールや食品、商品券などが好まれます（jft141-r12）。",
+          "stem": "夏の日頃の感謝を込めて贈る伝統的なギフトは何と呼ばれますか（jft141-r12）。",
           "options": [
-            "運転免許証",
-            "転出証明書",
-            "マイナンバーカードと国民健康保険証",
-            "パスポート"
+            "お中元",
+            "お歳暮",
+            "お年玉",
+            "お見舞い"
           ],
-          "answer": 2
-        },
-        {
-          "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "アパートのゴミは、燃えるゴミ、燃えないゴミ、資源ゴミに分別してください。燃えるゴミは、月曜日と木曜日の朝8時までに集積所に出してください。収集時間を過ぎたゴミは収集できませんので、ご注意ください。",
-          "stem": "燃えるゴミはいつ出しますか。",
-          "options": [
-            "毎日の朝",
-            "火曜日と金曜日の朝",
-            "水曜日の夜",
-            "月曜日と木曜日の朝8時まで"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "text",
-          "instruction": "Read the notice and answer the question.",
-          "context": "職場では、熱中症予防のため、こまめに水分と塩分を補給してください。また、インフルエンザ予防接種は、希望者を対象に来月実施します。接種を希望する場合は、今週中に申し込んでください。",
-          "stem": "インフルエンザ予防接種を希望する場合、いつまでに申し込みますか。",
-          "options": [
-            "今日中",
-            "来週中",
-            "今週中",
-            "来月"
-          ],
-          "answer": 2
+          "answer": 0
         }
       ]
     }

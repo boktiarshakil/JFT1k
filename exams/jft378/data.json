@@ -1,7 +1,7 @@
 {
   "id": "jft378",
   "title": "JFT-Basic Simulation Exam 378",
-  "description": "Simulation Exam 378 focusing on Hobbies and Leisure in Japan, including movies, music, sports, and weekend activities.",
+  "description": "Simulation Exam 378 focusing on gardening, plants, and flowers.",
   "duration": 3600,
   "sections": [
     {
@@ -11,11 +11,11 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q1.jpeg",
-          "imagePrompt": "A person watching a movie (Eiga) with popcorn. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A person trimming a bonsai tree with small pruning scissors. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "映画",
-            "掃除",
-            "洗濯"
+            "盆栽の手入れ",
+            "掃除機がけ",
+            "アイロンがけ"
           ],
           "answer": 0
         },
@@ -23,9 +23,9 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q2.jpeg",
-          "imagePrompt": "A person listening to music (Ongaku) with headphones. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A pair of gardening shears and a trowel on a wooden bench. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "音楽",
+            "園芸道具",
             "買い物",
             "食事"
           ],
@@ -35,9 +35,9 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q3.jpeg",
-          "imagePrompt": "A person playing tennis (Tenisu). Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A person planting a small sapling in a pot. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "テニス",
+            "植え替え",
             "勉強",
             "散歩"
           ],
@@ -47,31 +47,20 @@
           "type": "image",
           "instruction": "Look at the illustration and choose the correct word.",
           "image": "q4.jpeg",
-          "imagePrompt": "A person reading a book (Dokusho). Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
+          "imagePrompt": "A vibrant yellow sunflower blooming brightly under the blue summer sky. Simple flat Japanese illustration. Minimal cartoon style, white background, no text.",
           "options": [
-            "読書",
-            "時計",
-            "鞄"
+            "ひまわり",
+            "チューリップ",
+            "あじさい"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "5. (______)はギターを弾くことです。",
+          "stem": "5. (______)の手入れをします。",
           "options": [
-            "趣味",
-            "食べ",
-            "寝"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "6. 週末は(______)を見ます。",
-          "options": [
-            "アニメ",
+            "庭",
             "天気",
             "時間"
           ],
@@ -80,9 +69,20 @@
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "7. (______)へ泳ぎに行きます。",
+          "stem": "6. 春になると(______)が咲きます。",
           "options": [
-            "プール",
+            "花",
+            "勉強",
+            "料理"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "7. (______)はとても綺麗ですね。",
+          "options": [
+            "景色",
             "雨",
             "風"
           ],
@@ -91,9 +91,9 @@
         {
           "type": "text",
           "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "8. (______)をするのが好きです。",
+          "stem": "8. (______)を買ってきました。",
           "options": [
-            "料理",
+            "苗",
             "携帯",
             "本"
           ],
@@ -102,77 +102,44 @@
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "9. (漫画)を読みます。",
+          "stem": "9. (満開)の桜です。",
           "options": [
-            "まんが",
-            "ぜんが",
-            "てんが"
+            "まんかい",
+            "ぜんかい",
+            "てんかい"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "10. (試合)を見に行きます。",
+          "stem": "10. (植物)を育てます。",
           "options": [
-            "しあい",
-            "ぜんあい",
-            "てんあい"
+            "しょくぶつ",
+            "そくぶつ",
+            "じょくぶつ"
           ],
           "answer": 0
         },
         {
           "type": "text",
           "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "11. (歌)をうたいます。",
+          "stem": "11. (自然)を大切にします。",
           "options": [
-            "うた",
-            "じゅん",
-            "きゅん"
+            "しぜん",
+            "じぜん",
+            "きぜん"
           ],
           "answer": 0
         },
         {
           "type": "text",
-          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "12. (______)はとても綺麗です。",
+          "instruction": "Read the sentence and choose the kanji word that fits in ( ) most.",
+          "stem": "12. 毎日の日本語学習を地道に(______)ことで、スムーズに会話できるようになりました。",
           "options": [
-            "景色",
-            "弁当",
-            "靴"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
-          "stem": "13. (______)に行きましょう。",
-          "options": [
-            "カラオケ",
-            "掃除し",
-            "勉強し"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "14. (楽器)を練習します。",
-          "options": [
-            "がっき",
-            "しきき",
-            "めきき"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "How do you write the underlined kanji word in hiragana? Choose the correct one.",
-          "stem": "15. (休日)を過ごします。",
-          "options": [
-            "きゅうじつ",
-            "ちょう",
-            "しょう"
+            "続ける",
+            "止める",
+            "諦める"
           ],
           "answer": 0
         }
@@ -187,77 +154,17 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "趣味は(______)ですか。"
+              "speech": "この庭、(______)に手入れしているんですか。"
             },
             {
               "speaker": "B",
-              "speech": "写真を撮ることです。"
+              "speech": "私が週末に少しずつやっているんですよ。"
             }
           ],
           "options": [
-            "何",
-            "食べ",
-            "寝"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "どんな(______)が好きですか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "アクション映画が好きです。"
-            }
-          ],
-          "options": [
-            "映画",
-            "買い物",
-            "練習"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "(______)にスポーツをしますか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "はい、週に 2 回くらいジムへ行きます。"
-            }
-          ],
-          "options": [
-            "よく",
-            "掃除",
-            "遊び"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the phrase that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "今度(______)に行きませんか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "いいですね。楽しそうです。"
-            }
-          ],
-          "options": [
-            "ドライブ",
             "だれ",
-            "どこ"
+            "どこ",
+            "いつ"
           ],
           "answer": 0
         },
@@ -267,17 +174,121 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "最近(______)にハマっています。"
+              "speech": "おすすめの(______)はありますか。"
             },
             {
               "speaker": "B",
-              "speech": "いいですね。健康に良さそうです。"
+              "speech": "今の季節なら、チューリップが綺麗ですよ。"
             }
           ],
           "options": [
-            "ヨガ",
-            "天気",
-            "時間"
+            "花",
+            "名前",
+            "場所"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "毎日(______)をしていますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい、朝早く起きて水をあげています。"
+            }
+          ],
+          "options": [
+            "水やり",
+            "買い物",
+            "掃除"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、この電車は東京駅に行きますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "いいえ、この電車は東京駅には行きません。______電車に乗り換えてください。"
+            }
+          ],
+          "options": [
+            "快速の",
+            "次の",
+            "新幹線の",
+            "各駅停車の"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お花見のとき、桜の枝を折ってもいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "いいえ、______。みんなで花を見るので、枝を折ったり、ゴミを捨てたりしないでください。"
+            }
+          ],
+          "options": [
+            "折りたいです",
+            "折らなくてもいいです",
+            "折ってもいいです",
+            "折ってはいけません"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the phrase that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "引っ越しの届けは、どこでしますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "市役所の窓口で______。14日以内に手続きをしてください。"
+            }
+          ],
+          "options": [
+            "転居届を出します",
+            "転出届を出します",
+            "転職届を出します",
+            "転入届を出します"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "会議室を予約したいのですが、どうすればいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "インターネットで予約できますが、急ぎの場合は______。"
+            }
+          ],
+          "options": [
+            "電話で予約してもいいです",
+            "電話で予約してはいけません",
+            "電話で予約しなくてもいいです",
+            "電話で予約しないでください"
           ],
           "answer": 0
         },
@@ -287,17 +298,39 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "週末は何を(______)いましたか。"
+              "speech": "宅配便を送りたいのですが、伝票はどこにありますか。"
             },
             {
               "speaker": "B",
-              "speech": "家でゆっくりしていました。"
+              "speech": "あちらのカウンターにあります。______、この機械で番号を取ってください。"
             }
           ],
           "options": [
-            "して",
-            "いってらっしゃい",
-            "おやすみなさい"
+            "でも",
+            "しかし",
+            "それから",
+            "それでは"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialog and choose the expression that fits the most.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "雨の日に自転車に乗るとき、気をつけることはありますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "はい。______運転は危ないですから、雨が強い日は自転車に乗らないでください。"
+            }
+          ],
+          "options": [
+            "傘をさして",
+            "ヘルメットをかぶって",
+            "反射材をつけて",
+            "ライトをつけて"
           ],
           "answer": 0
         },
@@ -307,19 +340,20 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "あの(______)、面白いですよ。見ましたか。"
+              "speech": "作業が終わったら、工具はどうすればいいですか。"
             },
             {
               "speaker": "B",
-              "speech": "いえ、まだです。今度見てみます。"
+              "speech": "使った工具は______。整理整頓が大切です。"
             }
           ],
           "options": [
-            "ドラマ",
-            "ご飯",
-            "遊び"
+            "決められた場所に置いてはいけません",
+            "決められた場所に持って帰ります",
+            "決められた場所に返します",
+            "決められた場所に捨てます"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "text",
@@ -327,59 +361,20 @@
           "dialogue": [
             {
               "speaker": "A",
-              "speech": "ピアノが(______)るんですね。すごいです。"
+              "speech": "社員食堂で昼ごはんを食べたいんですが、現金で払えますか。"
             },
             {
               "speaker": "B",
-              "speech": "いえいえまだ練習中です。"
+              "speech": "いいえ、______。社員証のICカードで払ってください。"
             }
           ],
           "options": [
-            "弾け",
-            "宇宙",
-            "海底"
+            "現金で払わなくてもいいです",
+            "現金で払ってもいいです",
+            "現金で払えます",
+            "現金では払えません"
           ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "休日は(______)。過ごすのが好きですか。"
-            },
-            {
-              "speaker": "B",
-              "speech": "公園を散歩するのが好きです。"
-            }
-          ],
-          "options": [
-            "どう",
-            "食べて",
-            "寝て"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the dialog and choose the expression that fits the most.",
-          "dialogue": [
-            {
-              "speaker": "A",
-              "speech": "(______)。遊びに行きましょう。"
-            },
-            {
-              "speaker": "B",
-              "speech": "はい。楽しみにしています。"
-            }
-          ],
-          "options": [
-            "今度",
-            "食べて",
-            "寝て"
-          ],
-          "answer": 0
+          "answer": 3
         }
       ]
     },
@@ -390,55 +385,55 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q26.mp3",
-          "audioTranscript": "明日の打ち合わせですが、会議室は3階の第2会議室を予約しました。資料は10部コピーしておいてください。",
-          "stem": "明日の打ち合わせで、何を準備しなければなりませんか。",
+          "audioTranscript": "社員食堂のスタッフ：「ご注文は、こちらのタッチパネルでお願いします。完全キャッシュレスですので、現金は使えません。アレルギーがある方は、注文前にボタンを押してください。」",
+          "stem": "社員食堂で食事を注文するとき、正しい方法はどれですか。",
           "options": [
-            "プロジェクターを予約する",
-            "資料を10部コピーする",
-            "お茶を10人分用意する",
-            "会議室の鍵を借りる"
+            "現金を払って注文する",
+            "カウンターで店員に声をかける",
+            "タッチパネルで注文し、キャッシュレスで支払う",
+            "アレルギーの有無にかかわらず、ボタンは押さない"
           ],
-          "answer": 1
+          "answer": 2
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q27.mp3",
-          "audioTranscript": "お客様がいらっしゃいますので、お茶とおしぼりをお願いします。あ、それと、スリッパも入口に準備してください。",
-          "stem": "何を準備しなければなりませんか。",
+          "audioTranscript": "アパートの掲示：「燃えるゴミは火曜日と金曜日の朝8時までに出してください。ペットボトルは資源ゴミです。燃えないゴミは月に一度、第2水曜日です。夜に出さないでください。」",
+          "stem": "燃えるゴミはいつ、どのように出しますか。",
           "options": [
-            "お茶とおしぼりとスリッパ",
-            "お茶とお菓子と靴",
-            "お茶とスリッパと傘",
-            "コーヒーとおしぼりと上履き"
+            "ペットボトルと一緒に夜に出す",
+            "月に一度、好きな日に出す",
+            "火曜日と金曜日の朝8時までに出す",
+            "第2水曜日の夜に出す"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q28.mp3",
-          "audioTranscript": "このアパートでは、燃えるゴミは月曜日と木曜日の朝8時までに出してください。ペットボトルは資源ゴミで、第2水曜日です。",
-          "stem": "燃えるゴミはいつ出しますか。",
+          "audioTranscript": "先輩社員：「明日の3時から会議室Aを予約してあるから、資料を20部コピーしておいて。あと、10時に来客があるので、お茶とスリッパを準備してね。」",
+          "stem": "この社員は、明日何をしなければなりませんか。",
           "options": [
-            "月曜日と木曜日の朝8時まで",
-            "火曜日と金曜日の夜",
-            "毎日の朝",
-            "第2水曜日の朝"
+            "10時に会議室Aで会議をする",
+            "会議室Aを予約する",
+            "3時に来客にお茶を出す",
+            "資料を20部コピーして、来客のためにお茶とスリッパを準備する"
           ],
-          "answer": 0
+          "answer": 3
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q29.mp3",
-          "audioTranscript": "今日はとても暑いですから、こまめに水分と塩分をとってください。外での作業は30分ごとに休憩しましょう。",
-          "stem": "何に気をつけなければなりませんか。",
+          "audioTranscript": "病院の受付：「明日の健康診断は、朝9時からです。前日の夜9時以降は、水以外、何も食べないでください。お薬を飲んでいる方は、受付でお知らせください。」",
+          "stem": "健康診断の前日、何をしなければなりませんか。",
           "options": [
-            "冷たい物を食べない",
-            "外で長く作業する",
-            "水分と塩分をとって休憩する",
-            "厚着をして作業する"
+            "薬を飲まないようにする",
+            "水も飲まない",
+            "夜9時以降は何も食べない",
+            "朝9時までに食事をすませる"
           ],
           "answer": 2
         },
@@ -446,27 +441,27 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q30.mp3",
-          "audioTranscript": "台風が近づいています。大雨で避難指示が出たら、すぐに避難してください。非常用持ち出し袋を持って、電気のブレーカーを切るのを忘れないでください。",
-          "stem": "避難するとき、何をしなければなりませんか。",
+          "audioTranscript": "警察官：「自転車は車道の左側を走ってください。夜は必ずライトをつけて、反射材をつけましょう。雨の日に傘をさして運転するのは危険ですから、やめてください。」",
+          "stem": "自転車に乗るとき、してはいけないことは何ですか。",
           "options": [
-            "ブレーカーを切る",
-            "エアコンをつける",
-            "テレビをつけたままにする",
-            "窓を全部開ける"
+            "夜にライトをつける",
+            "反射材をつける",
+            "車道の左側を走る",
+            "雨の日に傘をさして運転する"
           ],
-          "answer": 0
+          "answer": 3
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q31.mp3",
-          "audioTranscript": "引っ越しのときは、隣の人にあいさつに行きましょう。粗大ゴミは市役所に電話で申し込んでから出してください。",
-          "stem": "粗大ゴミはどうやって出しますか。",
+          "audioTranscript": "郵便局員：「不在連絡票が入っていたら、電話かインターネットで再配達を依頼してください。宅配ボックスを使う場合は、暗証番号を入力して荷物を受け取れます。」",
+          "stem": "不在だったとき、どうすれば荷物を受け取れますか。",
           "options": [
-            "市役所に電話で申し込む",
-            "そのままゴミ置き場に置く",
-            "隣の人に渡す",
-            "燃えるゴミと一緒に出す"
+            "電話かインターネットで再配達を依頼する",
+            "郵便局に取りに行くしかない",
+            "宅配ボックスの鍵を郵便局でもらう",
+            "暗証番号を郵便局に電話して聞く"
           ],
           "answer": 0
         },
@@ -474,13 +469,13 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q32.mp3",
-          "audioTranscript": "いらっしゃいませ。夕方5時からタイムセールで、お惣菜が全部半額になります。セルフレジもご利用いただけます。",
-          "stem": "何が半額になりますか。",
+          "audioTranscript": "引越し業者：「粗大ゴミを出すときは、事前に市役所に申し込みが必要です。それから、冬は水道の水抜きをして、凍結防止をしてくださいね。」",
+          "stem": "粗大ゴミを出すとき、まず何をしなければなりませんか。",
           "options": [
-            "飲み物",
-            "果物",
-            "お惣菜",
-            "お弁当"
+            "水道の水抜きをする",
+            "引越し業者に頼む",
+            "市役所に申し込む",
+            "凍結防止をする"
           ],
           "answer": 2
         },
@@ -488,13 +483,13 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q33.mp3",
-          "audioTranscript": "図書館の本は、開いていないときは入口の返却ポストに入れてください。市民体育館では、室内シューズを必ず履いてください。",
-          "stem": "市民体育館では、何をしなければなりませんか。",
+          "audioTranscript": "図書館の館内放送：「本の返却は、開館時間外でも入口横の返却ポストをご利用ください。体育館を利用する方は、室内シューズを持参してください。貸出はできません。」",
+          "stem": "図書館の本を返すとき、開館時間外はどうしますか。",
           "options": [
-            "室内シューズを履く",
-            "水筒を持つ",
-            "タオルを借りる",
-            "本を返す"
+            "入口横の返却ポストに入れる",
+            "体育館に返す",
+            "翌日まで待つ",
+            "室内シューズと一緒に返す"
           ],
           "answer": 0
         },
@@ -502,57 +497,57 @@
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q34.mp3",
-          "audioTranscript": "雨の日は、傘をさして自転車に乗ってはいけません。夜は必ずライトをつけて、反射材をつけましょう。",
-          "stem": "雨の日に自転車に乗るとき、何をしてはいけませんか。",
+          "audioTranscript": "市の防災放送：「台風の接近に伴い、避難指示が出ました。非常用持ち出し袋を持って、早めに避難してください。地震のときは、ブレーカーを遮断してください。」",
+          "stem": "台風で避難するとき、何を持って行きますか。",
           "options": [
-            "ゆっくり走る",
-            "傘をさす",
-            "反射材をつける",
-            "ライトをつける"
+            "避難指示の紙",
+            "ブレーカー",
+            "テレビ",
+            "非常用持ち出し袋"
           ],
-          "answer": 1
+          "answer": 3
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
           "audio": "q35.mp3",
-          "audioTranscript": "工場では、作業の前に安全靴とヘルメットを点検してください。工具を使ったら、必ず元の場所に返してください。",
-          "stem": "作業の前に何を点検しますか。",
+          "audioTranscript": "町内会の案内：「来週の日曜日、午前8時から公園で清掃活動を行います。軍手とゴミ袋は用意しますので、動きやすい服で来てください。終わったら、盆踊りの練習もあります。」",
+          "stem": "清掃活動に参加するとき、何を持って行きますか。",
           "options": [
-            "機械の音",
-            "床の汚れ",
-            "工具の数",
-            "安全靴とヘルメット"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "audio",
-          "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q36.mp3",
-          "audioTranscript": "宅配便を送りたいのですが、伝票の書き方を教えてください。それから、不在のときは宅配ボックスの暗証番号を入力してください。",
-          "stem": "不在のとき、どうしますか。",
-          "options": [
-            "郵便局に取りに行く",
-            "宅配ボックスに暗証番号を入力する",
-            "隣の人に預ける",
-            "再配達を頼む"
+            "軍手とゴミ袋",
+            "動きやすい服",
+            "飲み物とお弁当",
+            "盆踊りの道具"
           ],
           "answer": 1
         },
         {
           "type": "audio",
           "instruction": "Listen to the conversation and choose the best answer.",
-          "audio": "q37.mp3",
-          "audioTranscript": "社員食堂では、完全キャッシュレスです。現金は使えません。注文の前に、アレルギー表示を確認してください。",
-          "stem": "社員食堂で、何を確認しなければなりませんか。",
+          "audio": "q36.mp3",
+          "audioTranscript": "スーパーの店内放送：「本日、午後6時からタイムセールを行います。お惣菜とお寿司が半額になります。セルフレジをご利用の際は、バーコードをスキャンしてください。」",
+          "stem": "タイムセールで安くなるものは何ですか。",
           "options": [
-            "メニューの値段",
-            "営業時間",
-            "席の番号",
-            "アレルギー表示"
+            "お惣菜とお寿司",
+            "飲み物とお菓子",
+            "セルフレジ",
+            "野菜と果物"
           ],
-          "answer": 3
+          "answer": 0
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and choose the best answer.",
+          "audio": "q37.mp3",
+          "audioTranscript": "薬局の薬剤師：「この薬は、1日3回、食後に飲んでください。眠くなる成分が入っていますので、車の運転はしないでください。飲み忘れた場合は、次の食事のときに1回分だけ飲んでください。」",
+          "stem": "この薬を飲むとき、してはいけないことは何ですか。",
+          "options": [
+            "車の運転をする",
+            "飲み忘れたら次の食事のときに飲む",
+            "食後に飲む",
+            "1日3回飲む"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -561,117 +556,91 @@
       "questions": [
         {
           "type": "text",
-          "instruction": "Read the hobby group notice and answer the question.",
-          "context": "宅配便の不在連絡票が入っていました。「お荷物のお届けにあがりましたが、ご不在でした。下記の番号までお電話いただくか、インターネットで再配達のお申し込みができます。なお、宅配ボックスをご利用の場合は、暗証番号を入力して受け取ることができます。保管期限は一週間です。」",
-          "stem": "この連絡票によると、荷物をどうやって受け取ることができませんか。",
-          "options": [
-            "電話で再配達を申し込む",
-            "インターネットで再配達を申し込む",
-            "宅配ボックスに暗証番号を入力する",
-            "一週間後に自動的に受け取る"
-          ],
-          "answer": 3
-        },
-        {
-          "type": "text",
           "instruction": "Read the text and answer the question.",
-          "context": "社員食堂の入口に次の案内があります。「当食堂は完全キャッシュレスです。現金はご利用いただけません。お支払いは社員証またはスマートフォン決済のみです。アレルギーをお持ちの方は、メニュー横のアレルギー表示をご確認ください。表示のないお料理は、お気軽にスタッフにお尋ねください。」",
-          "stem": "社員食堂で使えない支払い方法はどれですか。",
+          "context": "【ごみ分別のお知らせ】燃えるごみは月曜日と木曜日の朝8時までに出してください。燃えないごみは第2金曜日です。ペットボトルやかんなどの資源ごみは水曜日です。ごみは必ず指定の袋に入れて、収集時間を守ってください。",
+          "stem": "燃えるごみはいつ出さなければなりませんか。",
           "options": [
-            "アレルギー表示",
-            "現金",
-            "スマートフォン決済",
-            "社員証"
+            "水曜日の夜",
+            "月曜日と木曜日の朝8時まで",
+            "第2金曜日の朝8時まで",
+            "毎日の夕方5時ごろ"
           ],
           "answer": 1
         },
         {
           "type": "text",
           "instruction": "Read the text and answer the question.",
-          "context": "アパートの掲示板にゴミの分別についてのお知らせがあります。「燃えるゴミは月曜日と木曜日の朝8時までに出してください。燃えないゴミは第2土曜日です。資源ゴミは水曜日です。指定の袋を使い、収集時間を守ってください。時間外に出すと、近所の迷惑になりますのでご注意ください。」",
-          "stem": "このお知らせによると、燃えるゴミはいつ出しますか。",
+          "context": "台風が近づいています。大雨で川が増水するおそれがあります。避難指示が出たら、すぐに避難してください。非常用持ち出し袋を用意して、電気のブレーカーを切ってから避難しましょう。",
+          "stem": "避難する前に何をしなければなりませんか。",
           "options": [
-            "毎日の夜",
-            "水曜日",
-            "第2土曜日",
-            "月曜日と木曜日の朝8時まで"
+            "テレビをつけたままにする",
+            "電気のブレーカーを切る",
+            "川の様子を見に行く",
+            "持ち出し袋を家に置いていく"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引越しのご挨拶についてご案内します。引越しの前日までに、両隣と上の階、下の階の部屋へ挨拶に行きましょう。タンスなどの粗大ごみは、事前に市役所へ申し込みが必要です。冬は水道の水抜きをして、凍結を防いでください。",
+          "stem": "粗大ごみを出すとき、まず何をしなければなりませんか。",
+          "options": [
+            "水道の水抜きをする",
+            "ごみをそのまま捨てる",
+            "両隣の部屋へ挨拶に行く",
+            "市役所へ事前に申し込む"
           ],
           "answer": 3
         },
         {
           "type": "text",
           "instruction": "Read the sign and answer the question.",
-          "context": "町内会の回覧板が回ってきました。「今度の日曜日、午前9時から公園の清掃活動を行います。軍手とゴミ袋は町内会で用意します。参加できる方は、当日直接公園にお集まりください。なお、午後から盆踊り大会もあります。皆さまのご参加をお待ちしています。」",
-          "stem": "この回覧板によると、清掃活動に必要なものは何ですか。",
+          "context": "【区役所からのお知らせ】引越しをしたら、14日以内に転入届を出してください。マイナンバーカードと在留カードを持ってきてください。国民健康保険に入る人は、保険証の手続きも必要です。受付は平日の午前8時30分から午後5時までです。",
+          "stem": "転入届を出すとき、何を持って行かなければなりませんか。",
           "options": [
-            "盆踊りの衣装",
-            "軍手とゴミ袋を自分で持ってくる",
-            "特に何も持ってこなくてよい",
-            "お弁当を持ってくる"
+            "保険証と印鑑",
+            "運転免許証とパスポート",
+            "写真とお金",
+            "マイナンバーカードと在留カード"
           ],
-          "answer": 2
+          "answer": 3
         },
         {
           "type": "text",
           "instruction": "Read the text and answer the question.",
-          "context": "駅のアナウンスです。「お客様にお知らせいたします。中央線は、先ほどの人身事故の影響で、上下線とも遅れております。お急ぎの方は、各駅停車をご利用ください。なお、遅延証明書は改札口で配布しております。ICカードの残高不足にもご注意ください。」",
-          "stem": "このアナウンスによると、遅延証明書はどこでもらえますか。",
+          "context": "【スーパーのご案内】お会計はセルフレジでもできます。画面の案内にしたがって、バーコードを読んでください。午後6時から、お惣菜が20パーセント引きになります。割引シールのついた商品だけが安くなります。",
+          "stem": "午後6時から安くなるのはどれですか。",
           "options": [
-            "駅のトイレ",
-            "改札口",
-            "電車の中",
-            "バスの中"
+            "お菓子",
+            "すべての野菜",
+            "飲み物",
+            "お惣菜"
+          ],
+          "answer": 3
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "【郵便局からのお知らせ】宅配便を送るときは、送り状に住所と名前を書いてください。荷物を受け取れなかった場合は、不在連絡票が入っています。再配達を頼むときは、電話かインターネットでお願いします。宅配ボックスを使うときは、暗証番号が必要です。",
+          "stem": "荷物を受け取れなかったとき、どうすればいいですか。",
+          "options": [
+            "郵便局に荷物を取りに行く",
+            "電話かインターネットで再配達を頼む",
+            "不在連絡票を捨てる",
+            "宅配ボックスの暗証番号を変える"
           ],
           "answer": 1
         },
         {
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "引越しの案内メールです。「新居への引越しが決まりました。来週の土曜日に引越し業者が来ます。粗大ゴミは事前に市役所に申し込みが必要です。また、冬は水道管が凍らないように、水抜きの準備をお願いします。ご近所への挨拶も忘れずに。」",
-          "stem": "このメールによると、粗大ゴミを出すにはどうすればいいですか。",
-          "options": [
-            "そのままゴミ捨て場に出す",
-            "引越し業者に頼む",
-            "市役所に事前に申し込む",
-            "水道局に連絡する"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "text",
           "instruction": "Read the email and answer the question.",
-          "context": "市役所からの手紙です。「転入届の手続きは、引越し後14日以内に市役所で行ってください。必要なものは、転出証明書、本人確認書類（マイナンバーカードや運転免許証）、印鑑です。国民健康保険証もこの機会に切り替えが必要です。受付時間は平日の8時30分から17時までです。」",
-          "stem": "転入届の手続きに必要ないものはどれですか。",
+          "context": "【自転車の交通安全について】雨の日は、傘をさして自転車に乗ってはいけません。夜は必ずライトをつけてください。反射材をつけると、もっと安全です。ヘルメットをかぶりましょう。",
+          "stem": "雨の日に自転車に乗るとき、してはいけないことは何ですか。",
           "options": [
-            "転出証明書",
-            "マイナンバーカード",
-            "国民健康保険証",
-            "印鑑"
-          ],
-          "answer": 2
-        },
-        {
-          "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "クリニックの受付に貼り紙があります。「健康診断を受ける方は、前日の夜9時以降は絶食してください。水やお茶は飲んでもかまいません。当日は、保険証と診察券を受付に出してください。薬を飲んでいる方は、お薬手帳もお持ちください。」",
-          "stem": "健康診断の前日、何時から食べてはいけませんか。",
-          "options": [
-            "午後9時",
-            "午後8時",
-            "午後6時",
-            "午後10時"
-          ],
-          "answer": 0
-        },
-        {
-          "type": "text",
-          "instruction": "Read the notice and answer the question.",
-          "context": "自転車安全教室のお知らせです。「雨の日の傘差し運転は危険ですので、禁止されています。夜間は必ずライトを点灯し、反射材を付けてください。また、ヘルメットの着用に努めましょう。交通ルールを守って、安全に自転車を利用しましょう。」",
-          "stem": "このお知らせによると、雨の日にしてはいけないことは何ですか。",
-          "options": [
-            "反射材を付ける",
-            "ライトを点灯する",
-            "傘を差して運転する",
+            "ライトをつける",
+            "反射材をつける",
+            "傘をさして乗る",
             "ヘルメットをかぶる"
           ],
           "answer": 2
@@ -679,54 +648,80 @@
         {
           "type": "text",
           "instruction": "Read the text and answer the question.",
-          "context": "スーパーの店内放送です。「毎週水曜日はタイムセールを行います。夕方5時から7時まで、お惣菜とお寿司が半額になります。セルフレジでは、バーコードをスキャンしてからお支払いください。エコバッグのご利用にご協力ください。」",
-          "stem": "タイムセールはいつ行われますか。",
+          "context": "【図書館と体育館のご案内】図書館の本は、返却ポストに入れてもいいです。でも、CDやDVDはカウンターに返してください。市民体育館では、室内シューズをはいてください。土足では入れません。",
+          "stem": "市民体育館でしなければならないことは何ですか。",
           "options": [
-            "毎週月曜日の朝",
-            "毎週水曜日の夕方5時から7時まで",
-            "毎週金曜日の夜",
-            "毎日夕方5時から"
-          ],
-          "answer": 1
-        },
-        {
-          "type": "text",
-          "instruction": "Read the email and answer the question.",
-          "context": "台風接近に伴う市からの避難指示です。「大型で強い台風が接近しています。危険な場合は、ただちに避難所へ避難してください。非常用持ち出し袋を準備し、停電に備えてブレーカーを遮断してください。外出は控え、安全を確保してください。」",
-          "stem": "この指示によると、停電に備えて何をしますか。",
-          "options": [
-            "ブレーカーを遮断する",
-            "非常用持ち出し袋を準備する",
-            "外出する",
-            "避難所へ行く"
+            "室内シューズをはく",
+            "カウンターにCDを返す",
+            "返却ポストに本を入れる",
+            "ライトをつける"
           ],
           "answer": 0
         },
         {
           "type": "text",
-          "instruction": "Read the text and answer the question.",
-          "context": "工場の朝礼での連絡です。「今日も安全作業でお願いします。作業前に保護具（安全靴・ヘルメット）の点検を必ず行ってください。工具を使ったら、決められた場所に返却してください。整理整頓（5S）を心がけ、通路に物を置かないでください。」",
-          "stem": "この連絡によると、工具を使った後はどうしますか。",
+          "instruction": "Read the notice and answer the question.",
+          "context": "【社員食堂のご案内】注文は券売機でお願いします。お金は使えません。完全キャッシュレス決済です。食券をカウンターに出してください。アレルギーがある人は、食べる前に表示を確認してください。",
+          "stem": "社員食堂で、どうやって注文しますか。",
           "options": [
-            "そのままにしておく",
-            "通路に置く",
-            "自分のロッカーにしまう",
-            "決められた場所に返却する"
+            "店の人に直接言う",
+            "券売機で食券を買う",
+            "電話で予約する",
+            "現金で払う"
           ],
-          "answer": 3
+          "answer": 1
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "【健康管理のお知らせ】暑い日は、こまめに水分と塩分をとってください。職場では、熱中症に気をつけましょう。冬はインフルエンザの予防接種を受けましょう。手洗いとうがいも大切です。",
+          "stem": "暑い日に気をつけることは何ですか。",
+          "options": [
+            "インフルエンザの予防接種",
+            "手洗いとうがい",
+            "熱中症",
+            "予防接種の予約"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "text",
+          "instruction": "Read the email and answer the question.",
+          "context": "【日本の年中行事】春はお花見をします。場所を取るときは、他の人の迷惑にならないようにしましょう。12月には大掃除をします。2月の節分には、豆まきをします。8月のお盆休みには、家族で集まります。",
+          "stem": "12月にする行事は何ですか。",
+          "options": [
+            "お花見",
+            "お盆休み",
+            "大掃除",
+            "豆まき"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "【職場からの連絡】明日の会議は、3階の会議室で行います。会議室を予約しておきました。お客様が来たら、お茶とスリッパを準備してください。会議の資料は、前日までにメールで送ってください。",
+          "stem": "お客様が来たら、何を準備しなければなりませんか。",
+          "options": [
+            "会議室の予約",
+            "会議の資料",
+            "お茶とスリッパ",
+            "メール"
+          ],
+          "answer": 2
         },
         {
           "type": "text",
           "instruction": "Read the notice and answer the question.",
-          "context": "職場のメールです。「明日の午後2時から会議室で打ち合わせがあります。会議室の予約は済んでいます。来客があるので、お茶とスリッパを準備してください。資料は事前に配布します。遅刻しないようにお願いします。」",
-          "stem": "このメールによると、何を準備しなければなりませんか。",
+          "context": "【工場での安全ルール】作業場では、整理整頓をしましょう。使った工具は、必ず元の場所に返してください。安全靴とヘルメットを着用してください。作業の前に、保護具を点検しましょう。",
+          "stem": "作業場でしなければならないことは何ですか。",
           "options": [
-            "資料の配布",
-            "打ち合わせの時間変更",
-            "会議室の予約",
-            "お茶とスリッパ"
+            "整理整頓をしない",
+            "保護具を点検しない",
+            "安全靴とヘルメットを着用する",
+            "工具を家に持ち帰る"
           ],
-          "answer": 3
+          "answer": 2
         }
       ]
     }
