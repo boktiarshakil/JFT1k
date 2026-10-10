@@ -1,0 +1,832 @@
+{
+  "id": "jft541",
+  "title": "JFT-Basic Simulation Exam 541",
+  "description": "Simulation Exam 541 focusing on 市役所・区役所での各種手続き（転入届、マイナンバー、国民健康保険、税金相談）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A person submitting a paper at a counter with a stamp, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A digital card with a number printed on it, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A person receiving a medical check-up badge at a desk, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A person speaking with a government employee at a desk, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 3,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "市役所で（ ）を出しました。",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "（ ）の手続きに行きましたか？",
+          "options": [
+            "転入届",
+            "マイナンバー",
+            "国民健康保険",
+            "税金相談"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "国民健康保険の（ ）を聞きました。",
+          "options": [
+            "証書",
+            "手続き",
+            "相談",
+            "番号"
+          ],
+          "answer": 1,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "税金について（ ）しました。",
+          "options": [
+            "相談",
+            "届出",
+            "転入",
+            "番号"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "新しい家に引っ越したので、市役所に（______）を出しに行きます。",
+          "options": [
+            "卒業証書",
+            "転入届",
+            "運転免許証",
+            "健康診断書"
+          ],
+          "answer": 1,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "（______）は、国民一人一人に番号が与えられます。",
+          "options": [
+            "電話番号",
+            "郵便番号",
+            "マイナンバー",
+            "部屋番号"
+          ],
+          "answer": 2,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "国民健康保険の（______）は、毎月決まった日に払う必要があります。",
+          "options": [
+            "賞金",
+            "家賃",
+            "保険料",
+            "給料"
+          ],
+          "answer": 2,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "税金のことは、区役所の（______）で相談できます。",
+          "options": [
+            "郵便局",
+            "銀行",
+            "図書館",
+            "窓口"
+          ],
+          "answer": 3,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "市役所へ転入届を提出しに来ました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "転入されましたか、おめでとうございます。",
+            "どちらからお越しですか？お住まいの地域はどこですか？",
+            "ご自由にお座りください。すぐに済ませます。",
+            "お名前と生年月日をお伺いしてもよろしいでしょうか。"
+          ],
+          "answer": 3,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "マイナンバーカードはお持ちですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、まだ作っていません。",
+            "マイナンバーは必要ないです。",
+            "免許証を見せます。",
+            "いいえ、カードは持っていますが、番号はわかりません。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "国民健康保険への加入手続きをしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、結構です。",
+            "お住まいの区によって手続きが異なります。ご住所と生年月日をお伺いします。",
+            "税金の相談ですか？",
+            "パスポートをご提示ください。"
+          ],
+          "answer": 1,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "昨年の確定申告で困っています。相談に乗ってもらえますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "申告書はお済みですか？",
+            "いいえ、税金は関係ありません。",
+            "来年またお越しください。",
+            "申告は税務署でのみ可能です。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、引越ししてきたのですが、転入届はどこで出せばいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、そのとおりです",
+            "２階の市民課で受け付けています",
+            "いいえ、それはできません",
+            "ありがとうございます"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "マイナンバーカードを申請したいのですが、何が必要ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、お支払いはお願いします",
+            "運転免許証か健康保険証など、顔写真つきの身分証明書が必要です",
+            "それはわかりません",
+            "はい、こちらどうぞ"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "国民健康保険の保険料が支払えなくて困っています"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、保険証をどうぞ",
+            "大丈夫です",
+            "減額認定の申請ができますので、申請書をお渡しします",
+            "それは問題ありません"
+          ],
+          "answer": 2,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "住民税の申告をしたいのですが、いつまでに済ませればいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "すみません、それはわかりません",
+            "はい、お名前を教えてください",
+            "それはお金の問題ではありません",
+            "２月１６日から３月１５日までが申告期間です"
+          ],
+          "answer": 3,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "来週、新しいアパートに引っ越す予定です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "冷蔵庫を買いに行きましょう。",
+            "友達に電話しましょう。",
+            "市役所で転入届をしましょう。",
+            "旅行の計画を立てましょう。"
+          ],
+          "answer": 2,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "市役所に行ったら、マイナンバーカードを発行してもらえますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、申請書を書いていただければ発行できます。",
+            "いいえ、それは学校でやります。",
+            "はい、スーパーで売っています。",
+            "いいえ、それはインターネットで買えます。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "会社を辞めて、国民健康保険の保険証をなくしました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "大丈夫ですよ、気にしないでください。",
+            "区役所の保険課で再発行の申請ができますよ。",
+            "薬局で新しい保険証を買いましょう。",
+            "病院で先生に相談しましょう。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "去年の所得税の払い方がわかりません。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "旅行に行きましょう。",
+            "友達に連絡しましょう。",
+            "テレビを見ましょう。",
+            "市役所の税務課で相談できますよ。"
+          ],
+          "answer": 3,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "住民票が必要なんですが、どこで取れますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "スーパーのレジで言ってみましょう。",
+            "学校のカバンの中を探しましょう。",
+            "市役所の窓口で申請できますよ。",
+            "銀行で預金しましょう。"
+          ],
+          "answer": 2,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "聞き流して質問に答えてください。",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：窓口で手続きをします。\n女：マイナンバーの手続きをします。",
+          "stem": "男はどの手続きをするでしょうか。",
+          "options": [
+            "転入届をする",
+            "マイナンバーの手続きをする",
+            "国民健康保険の手続きをする",
+            "税金の相談をする"
+          ],
+          "answer": 1,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き流して質問に答えてください。",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：国民健康保険に入ることになりました。\n女：税金について相談したいです。",
+          "stem": "女性は何を相談したいと言いましたか。",
+          "options": [
+            "国民健康保険",
+            "税金",
+            "転入届",
+            "マイナンバー"
+          ],
+          "answer": 1,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：転入届を出しに来ました。\n女：マイナンバーはお持ちですか。",
+          "stem": "男は何のために来ましたか。",
+          "options": [
+            "税金の相談",
+            "国民健康保険の手続き",
+            "転入届の提出",
+            "マイナンバーの申請"
+          ],
+          "answer": 2,
+          "id": 28,
+          "audio": "q28.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き流して質問に答えてください。",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：税金の相談に来ました。\n女：はい、どのようなことでしょうか。",
+          "stem": "男はどこに来ましたか。",
+          "options": [
+            "市役所",
+            "銀行",
+            "病院",
+            "郵便局"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：市役所に行くんだけど、初めての転入届で。どこに行けばいいかな？\n女：転入届は住民課で手続きするのが基本だけど、マイナンバーの手続きも一緒に済ませたいんだ。\n男：そうなんだ。じゃあ、住民課で転入届とマイナンバーの手続きをすることになった。",
+          "stem": "男性は市役所で何をすることになったか。",
+          "options": [
+            "転入届とマイナンバーの手続きをする",
+            "税金の相談をする",
+            "国民健康保険の手続きをする",
+            "住民票の写しをもらう"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：国民健康保険の手続きは済ませた？\n女：いいえ、まだです。手続きに行く時間が取れなくて…。\n男：じゃあ、一緒に国民健康保険の窓口へ行きましょうか。",
+          "stem": "女性は国民健康保険の手続きをしていない理由は何か。",
+          "options": [
+            "時間が取れなかったから",
+            "窓口が閉まっていたから",
+            "マイナンバーが必要だったから",
+            "税金の相談を優先したから"
+          ],
+          "answer": 0,
+          "id": 31,
+          "audio": "q31.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：税金の相談をしたいんだけど、予約は必要ですか？\n女：いいえ、税金の相談は予約なしでいつでもできます。ただし、混雑している時間帯は避けた方が良いです。",
+          "stem": "税金の相談について、女性が言ったことは何か。",
+          "options": [
+            "予約が必要です",
+            "予約なしでできます",
+            "時間帯を指定する必要があります",
+            "窓口が混雑するのでできません"
+          ],
+          "answer": 1,
+          "id": 32,
+          "audio": "q32.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：マイナンバーカードは受け取りましたか？\n女：いいえ、まだ受け取っていません。明日、市役所に行って受け取り手続きをします。\n男：それなら、転入届と一緒に済ませると効率的ですよ。",
+          "stem": "女性は明日、市役所で何をする予定か。",
+          "options": [
+            "転入届の手続きをする",
+            "マイナンバーカードを受け取る",
+            "国民健康保険の手続きをする",
+            "税金の相談をする"
+          ],
+          "answer": 1,
+          "id": 33,
+          "audio": "q33.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：すみません、転入届をしたいのですが。\n女：はい、お名前と新しい住所を教えていただけますか。\n男：田中太郎と申します。住所は桜町２丁目です。\n女：わかりました。この書類に記入してください。あと、身分証明書をお持ちですか。\n男：はい、運転免許証があります。\n女：ありがとうございます。それでは、転入手続きをさせていただきます。",
+          "stem": "男はどの手続きに来たか、正しいものを一つ選びなさい。",
+          "options": [
+            "転入届",
+            "マイナンバーカードの申請",
+            "国民健康保険の加入",
+            "税金の相談"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "女：マイナンバーカードの申請をしたいのですが。\n男：はい、お名前と現在の住所を教えていただけますか。\n女：鈴木花子と申します。住所は中央町５丁目です。\n男：ありがとうございます。この申請書に記入してください。身分証明書も必要です。\n女：はい、健康保険証を持ってきました。\n男：ありがとうございます。申請書と身分証明書を提出してください。",
+          "stem": "女が持ってきたものは何ですか。",
+          "options": [
+            "運転免許証",
+            "健康保険証",
+            "パスポート",
+            "学生証"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：国民健康保険の加入手続きをしたいのですが。\n女：はい、お名前と生年月日をお願いします。\n男：佐藤一郎、１９９０年３月１５日生まれです。\n女：わかりました。この加入申請書に記入してください。マイナンバーカードをお持ちですか。\n男：はい、マイナンバーカードを持っています。\n女：ありがとうございます。それでは、加入手続きをさせていただきます。",
+          "stem": "男はどの手続きに来たか、正しいものを一つ選びなさい。",
+          "options": [
+            "転入届",
+            "マイナンバーカードの申請",
+            "国民健康保険の加入",
+            "税金の相談"
+          ],
+          "answer": 2,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：税金の相談をしたいのですが。\n男：はい、お名前と住所をお願いします。\n女：高橋美咲、緑町３丁目です。\n男：ありがとうございます。どのような相談ですか。\n女：今年の確定申告のことで、わからないところがあります。\n男：わかりました。この相談書に記入してください。あと、マイナンバーカードをお持ちですか。\n女：はい、マイナンバーカードを持ってきました。\n男：ありがとうございます。それでは、相談に乗ります。",
+          "stem": "女の相談の内容はどれか、正しいものを一つ選びなさい。",
+          "options": [
+            "転入届",
+            "マイナンバーカードの申請",
+            "国民健康保険の加入",
+            "確定申告の相談"
+          ],
+          "answer": 3,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "市役所の窓口で、転入届を提出する手順について説明しています。",
+          "stem": "転入届を提出する際、何に住所を証明する書類が必要ですか。",
+          "options": [
+            "パスポート",
+            "運転免許証",
+            "住民票",
+            "健康保険証"
+          ],
+          "answer": 2,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "マイナンバーのカード受け取りの案内が書かれています。",
+          "stem": "マイナンバーのカードは、どこで受け取ることができますか。",
+          "options": [
+            "郵便受けに届く",
+            "市役所の窓口で受け取る",
+            "コンビニで受け取る",
+            "オンラインでダウンロードする"
+          ],
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "国民健康保険の加入手続きに関する注意事項が書かれています。",
+          "stem": "国民健康保険に加入する際、加入の手続きをいつまでに行う必要がありますか。",
+          "options": [
+            "転入日から14日以内",
+            "転入日から30日以内",
+            "転入日から60日以内",
+            "転入日から90日以内"
+          ],
+          "answer": 1,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "税金相談の予約受付時間についての案内です。",
+          "stem": "税金相談の予約は、いつから受け付けていますか。",
+          "options": [
+            "月曜日",
+            "火曜日から金曜日",
+            "平日の午前9時から",
+            "土曜日と日曜日"
+          ],
+          "answer": 2,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "市役所 転入届について\nお引越しをされた方は、引越しから14日以内に市役所窓口で転入届をしてください。届出には、本人確認書類（マイナンバーカードなど）と、住居の賃貸契約書が必要です。窓口の受付時間は午前8時30分から午後5時までです。",
+          "stem": "この文書は誰に向けて書かれているか。",
+          "options": [
+            "引越しをした人",
+            "市役所の職員",
+            "賃貸業者",
+            "税務署の職員"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "区役所 マイナンバー通知カードについて\n通知カードを紛失した方は、区役所のマイナンバー窓口で再交付の申請をすることができます。申請には、本人確認書類と、顔写真付きの証明書が必要です。再交付までに約2週間かかりますので、お早めにお手続きください。",
+          "stem": "通知カードを再交付してもらうには、何をしないといけないか。",
+          "options": [
+            "警察に届ける",
+            "区役所窓口で申請する",
+            "インターネットで登録する",
+            "郵便局で届出する"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "国民健康保険 加入案内\n会社や学校の健康保険を辞めた人は、住んでいる市区町村の国民健康保険に加入しなければなりません。加入の届出は、市役所の保険課窓口で行えます。加入後、保険証が届くまで約1週間かかります。",
+          "stem": "国民健康保険に加入する届出はどこでするか。",
+          "options": [
+            "警察署",
+            "市役所の保険課窓口",
+            "近所の病院",
+            "会社の人事部"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "区役所 税金相談のお知らせ\n住民税や所得税の支払いについて困っている方は、区役所の税務相談コーナーをご利用ください。相談は毎週火曜日と木曜日の午後1時から午後4時まで行っています。予約は不要です。",
+          "stem": "税金相談はいつ行っているか。",
+          "options": [
+            "毎日午前8時から午後5時まで",
+            "毎週月曜日と水曜日の午前中",
+            "毎週火曜日と木曜日の午後1時から4時まで",
+            "毎週土曜日の午前9時から11時まで"
+          ],
+          "answer": 2,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "市役所の窓口で、転入届を提出する人の案内です。",
+          "stem": "窓口の人は、転入届を出す人のことを何と呼んでいますか。",
+          "options": [
+            "申請者",
+            "住民",
+            "職員",
+            "相談者"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "マイナンバーのカードの受け取りに関する短いメモです。",
+          "stem": "マイナンバーのカードは、どこで受け取ることができますか。",
+          "options": [
+            "市役所の窓口",
+            "郵送",
+            "コンビニ",
+            "オンライン"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "国民健康保険の加入手続きに関する注意書きです。",
+          "stem": "国民健康保険に加入する際、必要なものは何ですか。",
+          "options": [
+            "パスポート",
+            "住民票",
+            "学生証",
+            "運転免許証"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "税金の相談についての短い案内です。",
+          "stem": "税金の相談は、予約が必要ですか。",
+          "options": [
+            "はい、予約が必要です",
+            "いいえ、予約は不要です",
+            "時間帯によって異なります",
+            "電話でのみ可能です"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "市役所で転入届を提出しました。受付の方に「マイナンバーの手続きも同時にできますか？」と聞くと、「窓口で手続きができます」と答えられました。",
+          "stem": "マイナンバーの手続きはどこでできますか。",
+          "options": [
+            "市役所の窓口で",
+            "郵便局で",
+            "警察署で",
+            "病院で"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
