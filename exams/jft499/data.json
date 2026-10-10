@@ -1,0 +1,835 @@
+{
+  "id": "jft499",
+  "title": "JFT-Basic Simulation Exam 499",
+  "description": "Simulation Exam 499 focusing on 電車・地下鉄・バスの利用（ICカードチャージ、定期券、乗り換え、優先席マナー）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "図を見て正しい単語を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a person buying a ticket at a ticket machine, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "切符",
+            "パスポート",
+            "地図",
+            "時刻表"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい単語を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a person tapping an IC card on a ticket gate, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "バス",
+            "電車",
+            "ICカード",
+            "切符"
+          ],
+          "answer": 2,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい単語を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a priority seat sign with a person sitting, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "優先席",
+            "窓側席",
+            "運転席",
+            "自由席"
+          ],
+          "answer": 0,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい単語を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a bus stop sign with a timetable, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "バス停",
+            "駅",
+            "コンビニ",
+            "トイレ"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "駅までの切符は、この自動券売機で買いました。",
+          "options": [
+            "乗り換え",
+            "定期券",
+            "片道切符",
+            "ICカード"
+          ],
+          "answer": 2,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "毎月、東京への（ ）券を買っています。",
+          "options": [
+            "定期",
+            "通学",
+            "往復",
+            "往復乗車"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "バスに乗る前に、ICカードに（ ）しておきました。",
+          "options": [
+            "充電",
+            "購入",
+            "交換",
+            "降車"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "優先席は、（ ）の方が座られても問題ありません。",
+          "options": [
+            "妊婦",
+            "学生",
+            "観光客",
+            "外国人"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "( ) で東京駅まで行きますか。",
+          "options": [
+            "電車",
+            "地下鉄",
+            "バス",
+            "タクシー"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "月曜日から金曜日までの( )は、この電車に乗れません。",
+          "options": [
+            "定期券",
+            "片道券",
+            "回数券",
+            "自由席"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "混雑している電車では、前方の( )に座ってください。",
+          "options": [
+            "優先席",
+            "運転席",
+            "展望席",
+            "自由席"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "バスに乗る前に、ICカードを( ) してください。",
+          "options": [
+            "チャージ",
+            "買い替え",
+            "登録",
+            "解約"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、このICカードにいくらチャージすればいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "("
+            }
+          ],
+          "options": [
+            "1000円でお願いします。",
+            "電車に乗るのは初めてです。",
+            "駅まで5分ほど歩きます。",
+            "改札は右側です。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "定期券はどこで買えますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "("
+            }
+          ],
+          "options": [
+            "バス停の前にあります。",
+            "駅の窓口や自動販売機で買えます。",
+            "電車は30分に一本来ます。",
+            "次の駅で降りてください。"
+          ],
+          "answer": 1,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ここから新宿まで乗り換えは必要ですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "("
+            }
+          ],
+          "options": [
+            "いいえ、直通電車です。",
+            "左側のドアから降りてください。",
+            "切符を買うのを忘れました。",
+            "混雑していますのでお静かにしてください。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "優先席に座ってもいいですか。足が痛いのです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "("
+            }
+          ],
+          "options": [
+            "遠くから来たので疲れました。",
+            "はい、どうぞ。お年寄りや妊婦の方が座れる席です。",
+            "ここが終点ですので降りてください。",
+            "電車は遅れていますのでお待ちください。"
+          ],
+          "answer": 1,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "東京駅から品川駅までの切符、お願いします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "Suicaでチャージしますか。",
+            "片道1,200円です。",
+            "定期券はこちらになります。",
+            "品川まで乗り換えです。"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ここから渋谷まで、何駅ですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ICカードはSuicaです。",
+            "渋谷までは2駅です。",
+            "優先席はこちらです。",
+            "定期券を購入します。"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "座ってもいいですか。ここは空いていますね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ここは優先席です。",
+            "Suicaで乗車券を買います。",
+            "東京まで乗り換えです。",
+            "定期券は1ヶ月です。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "バスのICカード、チャージしたいんですけど。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "東京駅まで2駅です。",
+            "こちらでチャージできます。",
+            "定期券は更新しました。",
+            "優先席は後ろです。"
+          ],
+          "answer": 1,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "東京駅まで行きますが、どこで降りればいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "渋谷駅で降りてください。",
+            "お元気ですか。",
+            "切符を買いました。",
+            "いいえ、構いません。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、Suicaにチャージしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、月額券はこちらです。",
+            "1,000円からチャージできます。",
+            "バスは左側です。",
+            "ありがとうございます。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "定期券を更新したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "駅のホームはこちらです。",
+            "定期券は1ヶ月券と yearly です。",
+            "お先に失礼します。",
+            "雨が降っていますね。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "このバスは空いていますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、空いていません。",
+            "いいえ、空いています。",
+            "いいえ、空いていますよ。",
+            "いいえ、空いていないです。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "優先席は空いていますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、空いていません。",
+            "いいえ、空いています。",
+            "いいえ、空いていますよ。",
+            "いいえ、空いていないです。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：この電車は新宿までですか？\n女：いいえ、池袋までです。\n男：そうですか。じゃあ、どこで降りればいいですか？",
+          "stem": "男性はどこで降りると言っていますか？",
+          "options": [
+            "池袋で降りる",
+            "新宿で降りる",
+            "東京で降りる",
+            "品川で降りる"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：これ、Suicaにチャージしてもいいですか？\n女：はい、大丈夫ですよ。残高が足りていますから。",
+          "stem": "女性はSuicaの残高についてどう言っていますか？",
+          "options": [
+            "残高が足りていない",
+            "残高が足りている",
+            "チャージが必要",
+            "使えない"
+          ],
+          "answer": 1,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：これ、優先席ですけど座ってもいいですか？\n女：ごめんなさい、高齢の方や妊娠されている方が座りやすくするために、空けておいてください。",
+          "stem": "女性が男性に席を譲ってほしい理由は何ですか？",
+          "options": [
+            "席が狭いから",
+            "高齢の方や妊娠されている方が座りやすくするため",
+            "混雑しているから",
+            "ルールで禁止されているから"
+          ],
+          "answer": 1,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：次は東京駅です。ここで降りますか？\n女：いいえ、私は品川まで行きます。",
+          "stem": "女性はどこまで行きますか？",
+          "options": [
+            "東京駅で降りる",
+            "品川まで行く",
+            "新宿まで行く",
+            "池袋まで行く"
+          ],
+          "answer": 1,
+          "id": 29,
+          "audio": "q29.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：これ、Suicaのチャージをしようと思って。\n女：私も今、チャージしようとしてたんだ。どっちにする？",
+          "stem": "二人は何をしようとしていますか。",
+          "options": [
+            "Suicaの残高を確認する",
+            "Suicaにチャージをする",
+            "切符を買う",
+            "バスに乗る"
+          ],
+          "answer": 1,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：すみません、こちらの席は空いていますか？\n女：ええ、空いていますが、優先席ですので、お年寄りや妊婦の方が座る場合は譲ってくださいね。",
+          "stem": "男は女性に何について尋ねましたか。",
+          "options": [
+            "トイレの場所",
+            "空いている席があるか",
+            "次の停車駅",
+            "料金の支払い方"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "女：定期券を忘れちゃって。明日からまた買わなきゃ。\n男：そっか。 monthly Passはコンビニでも買えますよ。",
+          "stem": "女性は定期券をどうしたのでしょうか。",
+          "options": [
+            "なくした",
+            "買った",
+            "紛失届けを出した",
+            "なくしたことを友達に話した"
+          ],
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：バスに乗るときは、後から乗ってもいいですか？\n女：前のドアから乗ってくださいね。後ろのドアから降ります。",
+          "stem": "男はバスで何をしていいか聞いていますか。",
+          "options": [
+            "前から乗る",
+            "後から乗る",
+            "降りるときどこから降りるか",
+            "バスの運転手に話しかける"
+          ],
+          "answer": 1,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：東京駅まで行きますが、急行は混んでいますか？\n女：いいえ、空いていますよ。",
+          "stem": "男性はどこに行きますか？",
+          "options": [
+            "東京駅",
+            "新宿駅",
+            "品川駅",
+            "横浜駅"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：ICカードの残高が少なくなりました。チャージしたいです。\n女：私もそうです。一緒に機械に行きましょう。",
+          "stem": "二人は何をしたいですか？",
+          "options": [
+            "切符を買う",
+            "ICカードをチャージする",
+            "バスに乗る",
+            "定期券を買う"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：すみません、こちらの席は空いていますか？\n女：いいえ、ここは優先席です。妊婦の方が座っています。",
+          "stem": "男はどの席に座ることができますか？",
+          "options": [
+            "空いている席",
+            "優先席",
+            "後ろの席",
+            "窓側の席"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：バスに乗る前に、後ろから降りる人を待ってくださいね。\n女：はい、わかりました。",
+          "stem": "バスに乗る前に何をするべきですか？",
+          "options": [
+            "前から乗る",
+            "後ろから降りる人を待つ",
+            "運転手に話しかける",
+            "ICカードを忘れる"
+          ],
+          "answer": 1,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "定期券を購入する際、Suicaカードをお忘れなく。",
+          "stem": "このテキストは何を伝えていますか。",
+          "options": [
+            "Suicaカードのチャージ方法",
+            "定期券を買う時にSuicaカードが必要",
+            "定期券の有効期限",
+            "Suicaカードの残高確認"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "混雑している電車では、優先席に座らないでください。",
+          "stem": "このテキストは誰に向けていますか。",
+          "options": [
+            "すべての乗客",
+            "優先席を必要とする人",
+            "座席を譲る人",
+            "電車の運転手"
+          ],
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "バス停で降りる前にお知らせボタンを押してください。",
+          "stem": "バスを降りる時のマナーは何ですか。",
+          "options": [
+            "降りる前にボタンを押す",
+            "降りる時に声をかける",
+            "降りる時に運転手に挨拶する",
+            "降りる時にSuicaをタッチする"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "電車を乗り換える時は、案内看板に従ってください。",
+          "stem": "乗り換えの際の注意点は何ですか。",
+          "options": [
+            "案内看板を見る",
+            "すぐ次の電車に乗る",
+            "周りの人に聞く",
+            "スマホで調べる"
+          ],
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "電車を利用する際、優先席は妊娠中の人や高齢者などに譲ってください。混雑している時間帯は特に注意が必要です。",
+          "stem": "このテキストの主旨として、最も適切なものはどれですか。",
+          "options": [
+            "電車の運転士に座席を譲るべきです。",
+            "優先席は妊娠中の人や高齢者などに譲ってください。",
+            "混雑していない時間帯にのみ優先席を使ってください。",
+            "優先席は常に空けておくべきです。"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "毎月、電車定期券を購入しています。定期券は駅の窓口で買うことができます。",
+          "stem": "このテキストから、定期券について正しいことはどれですか。",
+          "options": [
+            "毎週、電車定期券を購入しています。",
+            "定期券はネットでしか買えません。",
+            "定期券は駅の窓口で買うことができます。",
+            "定期券は1日券のことです。"
+          ],
+          "answer": 2,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "バスを利用する際、ICカードをチャージしておくと便利です。チャージ機はバス車内にあります。",
+          "stem": "このテキストから、ICカードについて正しいことはどれですか。",
+          "options": [
+            "ICカードのチャージは駅のみで行えます。",
+            "バス車内にチャージ機があります。",
+            "ICカードはチャージできません。",
+            "バス車内でICカードを購入できます。"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "電車とバスで乗り換えをする場合、ICカードが便利です。ICカードがあれば、別券を買う必要がありません。",
+          "stem": "このテキストから、ICカードと乗り換えについて正しいことはどれですか。",
+          "options": [
+            "ICカードを使うと乗り換え時に別券が必要です。",
+            "ICカードがあれば、別券を買う必要がありません。",
+            "ICカードは乗り換えに使えません。",
+            "乗り換えには現金のみが必要です。"
+          ],
+          "answer": 1,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "新宿駅でICカードをチャージしました。チャージ完了の表示が出たので、改札を通ってホームへ向かいます。",
+          "stem": "ICカードのチャージが完了したことを示す表示はどこに出ますか。",
+          "options": [
+            "改札口の表示",
+            "ホームのベンチ",
+            "チャージ機の画面",
+            "駅のトイレ"
+          ],
+          "answer": 2,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "毎月、東京都から職場までの定期券を購入しています。来月から価格が上がるそうなので、今月中に買い替えました。",
+          "stem": "定期券の価格改正があった場合、今のうちに買い替える人は多いですか。",
+          "options": [
+            "価格改正後すぐに買う",
+            "価格改正前に買う",
+            "価格改正後に安くなるまで待つ",
+            "定期券は買わない"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "バスに乗るときは、後部のドアから降ります。前の方から降りると、運転手さんが困ってしまいます。",
+          "stem": "バスで降りる時、前の方から降りるとどうなりますか。",
+          "options": [
+            "すぐに降りられます",
+            "運転手さんが困ってしまいます",
+            "バスが動き出してしまいます",
+            "他の乗客が怒ります"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "電車で優先席に座っていると、高齢の方が立ち上がってくださいました。すぐに席を譲りました。",
+          "stem": "電車で優先席に座っている人がいたら、高齢の方はどうしますか。",
+          "options": [
+            "すぐに席を譲ります",
+            "座ったままにします",
+            "大きな声を出します",
+            "別の席を探します"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "新宿から渋谷へ行くときは、山手線に乗り換えました。渋谷駅で降りて、改札を出ました。",
+          "stem": "新宿から渋谷へ行く時に、山手線に乗り換える人は多いですか。",
+          "options": [
+            "とても多い",
+            "たまにしかいない",
+            "いない",
+            "逆方向だけ"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
