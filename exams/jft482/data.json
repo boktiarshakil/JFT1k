@@ -1,0 +1,837 @@
+{
+  "id": "jft482",
+  "title": "JFT-Basic Simulation Exam 482",
+  "description": "Simulation Exam 482 focusing on 自然災害への備え（地震発生時の初動、台風接近前の対策、避難場所・ハザードマップの確認）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a family gathering emergency supplies (flashlight, radio), minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "非常用",
+            "日常",
+            "遊び",
+            "勉強"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a hazard map with lines and symbols, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "ハザードマップ",
+            "天気予報",
+            "地図帳",
+            "路線図"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a house with shutters closed and people checking supplies, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "台風",
+            "地震",
+            "雪",
+            "花火"
+          ],
+          "answer": 0,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "絵を見て正しい単語を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a person evacuating with a backpack, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "避難",
+            "観光",
+            "散歩",
+            "運動"
+          ],
+          "answer": 2,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "地震が起きたとき、机の下に隠れて頭を( )。",
+          "options": [
+            "見る",
+            "守る",
+            "買う",
+            "作る"
+          ],
+          "answer": 1,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "台風が来る前に、家の中の物をしっかり( )ておきましょう。",
+          "options": [
+            "片付ける",
+            "食べる",
+            "歌う",
+            "寝る"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "地震のときは、高い建物から遠ざかって、安全な( )へ逃げましょう。",
+          "options": [
+            "レストラン",
+            "学校",
+            "映画館",
+            "ショッピングセンター"
+          ],
+          "answer": 1,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "災害に備えて、近所の( )の場所を事前に知っておきましょう。",
+          "options": [
+            "銀行",
+            "薬局",
+            "映画館",
+            "避難所"
+          ],
+          "answer": 3,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "大きな地震が起きたとき、( )を守るために机の下に隠れましょう。",
+          "options": [
+            "家族",
+            "家具",
+            "窓",
+            "電気"
+          ],
+          "answer": 1,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "台風が近づいているので、窓の( )を閉めておきましょう。",
+          "options": [
+            "カーテン",
+            "網戸",
+            "ガラス",
+            "ブラインド"
+          ],
+          "answer": 2,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "避難場所はハザードマップで確認して、( )へ行きましょう。",
+          "options": [
+            "遠く",
+            "近く",
+            "上の階",
+            "下の階"
+          ],
+          "answer": 1,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "地震の後は、( )に注意して、火の元を確認しましょう。",
+          "options": [
+            "ガラス",
+            "水",
+            "火事",
+            "倒れた家具"
+          ],
+          "answer": 2,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "地震が来る前に、家具が倒れないようにしなければなりません。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "窓を開けておきます",
+            "家具の固定を確認します",
+            "すぐに外に出ます",
+            "ニュースを見ます"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "台風が接近しています。明日の朝までに準備をしておきましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "明日の天気予報を確認します",
+            "非常用持ち出し袋を準備します",
+            "明日の予定をキャンセルします",
+            "友達に電話をします"
+          ],
+          "answer": 1,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ハザードマップを見て、避難場所を確認しておきましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "避難経路を確認します",
+            "スーパーに買い物に行きます",
+            "友達の家に電話をします",
+            "明日の服を準備します"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "地震が起きました。まずは下に身を守るところから始めましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "本を読み始めます",
+            "机の下に隠れます",
+            "窓を開けます",
+            "靴を履きます"
+          ],
+          "answer": 1,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "地震が起きたら、まずどうしたらいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "まず、机の下に隠れて頭を守りましょう。",
+            "まず、外に出て走って逃げましょう。",
+            "まず、エレベーターに乗って下に行きましょう。",
+            "まず、窓を大きく開けて換気しましょう。"
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "明日、台風が接近するらしいですね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、窓を閉めて、雨戸をしっかりしめておきます。",
+            "はい、明日は旅行に行こうと思います。",
+            "はい、コンビニで買い物をします。",
+            "はい、エアコンの掃除をします。"
+          ],
+          "answer": 0,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "地震の避難場所、知っていますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、区役所が避難所になっているそうです。",
+            "はい、友達の家に行きます。",
+            "はい、コンビニで買い物をします。",
+            "はい、映画館で映画をみます。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ハザードマップを一度見ておいたほうがいいよ。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "そうですか。今晩、市のホームページで調べます。",
+            "いいえ、天気予報は必要ありません。",
+            "いいえ、電気を消す必要はありません。",
+            "いいえ、鍵をかける必要はありません。"
+          ],
+          "answer": 0,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "さっき地震が起きたよ。大丈夫？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "うん、大丈夫だよ。まず机の下に隠れたよ",
+            "ええ、明日の予定は空いてます",
+            "はい、お茶をどうぞ",
+            "すみません、切符を買いたい"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "明日の夜、台風が来るらしいよ。準備はした？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            },
+            {
+              "speaker": "A",
+              "speech": "よかったね。窓もちゃんと閉めてね。"
+            }
+          ],
+          "options": [
+            "はい、窓を閉めて、ベランダのものを全部入れたよ",
+            "いいえ、天気は関係ありません",
+            "はい、地震のことは心配です",
+            "ええ、映画を借りてきました"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "避難場所ってどこだっけ？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "この前のハザードマップを見たら、近所の小学校だよ",
+            "ええ、明日は休みにします",
+            "はい、お湯を沸かします",
+            "すみません、道を教えてください"
+          ],
+          "answer": 0,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ハザードマップって何ですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "地震や洪水の危険な場所が書いてある地図だよ",
+            "ええ、明日は雨です",
+            "はい、お弁当をください",
+            "すみません、駅はどちらですか"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "非常用の準備はしたの？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "うん、水と食料と懐中電灯を買っておいたよ",
+            "ええ、音楽が好きです",
+            "はい、日本語を勉強しています",
+            "すみません、お名前を教えてください"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：最近、地震のニュースをよく見るよね。何か対策してる？\n女：そうね。まずはハザードマップを見て、近くの避難場所を確認したんだ。それから、非常用の持ち出し袋の中身もチェックしたよ。\n男：そうだね。水と非常食は最低3日分は揃えておきたいね。",
+          "stem": "女性は地震に備えて何をしましたか。",
+          "options": [
+            "ハザードマップを確認した",
+            "新しい家を探した",
+            "旅行の計画を立てた",
+            "ペットの世話をした"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：台風が接近しているみたいだから、明日からお店はお休みにするよ。\n女：ええ、それも大切だけど、窓のガラスが割れないようにテープで補強したほうがいいんじゃない？\n男：そうだね。それと、ベランダの物を片付けるのを忘れないでね。",
+          "stem": "男性は台風前に何をする予定ですか。",
+          "options": [
+            "お店を閉める",
+            "窓をテープで補強する",
+            "旅行に行く",
+            "車を買う"
+          ],
+          "answer": 1,
+          "id": 27,
+          "audio": "q27.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "女：避難所は混むから、早めに出かけるのがいいと思うよ。\n男：そうだね。ハザードマップを見ながら、一番近い避難場所を確認しておこう。\n女：そうすれば、いざという時も慌てずに済むね。",
+          "stem": "二人は避難場所について何を確認する予定ですか。",
+          "options": [
+            "一番近い避難場所",
+            "一番遠い避難場所",
+            "新しい避難所",
+            "海岸沿いの場所"
+          ],
+          "answer": 0,
+          "id": 28,
+          "audio": "q28.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：非常持ち出し袋の中身はチェックした？\n女：ええ、水と非常食、それから懐中電灯は入っているよ。\n男：電池は入っているか確認しないと。電池切れだと意味がないからね。",
+          "stem": "男性は非常用持ち出し袋について何を確認したいですか。",
+          "options": [
+            "電池",
+            "テレビ",
+            "本",
+            "服"
+          ],
+          "answer": 0,
+          "id": 29,
+          "audio": "q29.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：もし地震が来たら、まずどこに避難する？\n女：ハザードマップを見て、近くの公園に行くつもりです。",
+          "stem": "男さんは地震の時にまず何をしますか。",
+          "options": [
+            "ハザードマップを確認する",
+            "すぐに寝る",
+            "スーパーに買い物に行く",
+            "友達に電話する"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：台風が来るみたいですね。窓は閉めておきますか？\n女：ええ、強風で飛んでいくのを防ぐためにしっかりと閉めます。",
+          "stem": "女さんは台風前に窓をどうするつもりですか。",
+          "options": [
+            "開けておく",
+            "テープで止める",
+            "しっかりと閉める",
+            "外す"
+          ],
+          "answer": 2,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：明日の避難訓練、時間は何時？\n女：午前9時に集合場所に集まるそうです。",
+          "stem": "避難訓練の集合時間は何時ですか。",
+          "options": [
+            "午前8時",
+            "午前9時",
+            "午前10時",
+            "午後1時"
+          ],
+          "answer": 1,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "女：ハザードマップを確認して、自分の家の安全な場所を知っておきます。\n男：そうだね、非常用持ち出し袋も準備しましょう。",
+          "stem": "女さんはハザードマップを確認して何をしますか。",
+          "options": [
+            "自分の家の安全な場所を知る",
+            "料理をする",
+            "掃除をする",
+            "買い物に行く"
+          ],
+          "answer": 0,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：明日の台風、すごく心配だな。女：そうだね。明日の朝一番にハザードマップを確認して、避難場所を把握しておくべきだよ。男：そうだね。明日の朝、起きたらすぐにチェックするよ。",
+          "stem": "男が台風の対策として明日の朝にすることは何ですか。",
+          "options": [
+            "ハザードマップを確認する",
+            "避難場所へ行く",
+            "窓を開ける",
+            "ニュースを見る"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：明日の台風、すごく心配だな。女：そうだね。明日の朝一番にハザードマップを確認して、避難場所を把握しておくべきだよ。男：そうだね。明日の朝、起きたらすぐにチェックするよ。",
+          "stem": "女は男に何をするように勧めていますか。",
+          "options": [
+            "ハザードマップを確認する",
+            "避難場所へ行く",
+            "窓を開ける",
+            "ニュースを見る"
+          ],
+          "answer": 0,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：明日の台風、すごく心配だな。女：そうだね。明日の朝一番にハザードマップを確認して、避難場所を把握しておくべきだよ。男：そうだね。明日の朝、起きたらすぐにチェックするよ。",
+          "stem": "会話の最後に男が何と言いましたか。",
+          "options": [
+            "明日の朝、起きたらすぐにチェックするよ",
+            "明日の朝一番にハザードマップを確認する",
+            "台風が来るのは心配だ",
+            "避難場所を把握しておくべきだよ"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：明日の台風、すごく心配だな。女：そうだね。明日の朝一番にハザードマップを確認して、避難場所を把握しておくべきだよ。男：そうだね。明日の朝、起きたらすぐにチェックするよ。",
+          "stem": "女性が男性に対して提案したことは何ですか。",
+          "options": [
+            "ハザードマップを確認する",
+            "避難場所へ行く",
+            "窓を開ける",
+            "ニュースを見る"
+          ],
+          "answer": 0,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "地震が発生したら、まず慌てないでください。机の下に隠れて、頭を守ってください。揺れが収まったら、窓ガラスやガラス製品から離れてください。その後、家族の安否を確認してください。",
+          "stem": "地震が発生した時、まず何をしますか。",
+          "options": [
+            "机の下に隠れる",
+            "窓ガラスを壊す",
+            "外に出る",
+            "家族に電話する"
+          ],
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "台風が近づいてきました。外出を控えて、窓をしっかり閉めてください。ベランダにあるものは部屋の中に移動してください。また、非常持ち出し袋を用意してください。",
+          "stem": "台風が近づく前に、何をする必要がありますか。",
+          "options": [
+            "外出する",
+            "窓を閉める",
+            "テレビを見る",
+            "友達を呼ぶ"
+          ],
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "避難場所についてお知らせします。本町の避難場所は、中央公園と第一小学校です。避難するときは、事前に準備した持ち物を持って、指定された避難場所へ集まってください。",
+          "stem": "本町の避難場所はどこですか。",
+          "options": [
+            "銀行とスーパー",
+            "中央公園と第一小学校",
+            "駅と病院",
+            "役所と商店"
+          ],
+          "answer": 1,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "市役所よりお知らせです。ハザードマップには、洪水や土砂災害の危険な場所が書かれています。自分の住んでいる場所が危険かどうか、必ず確認してください。ハザードマップは市役所やインターネットで入手できます。",
+          "stem": "ハザードマップで何を知ることができますか。",
+          "options": [
+            "気象の予報",
+            "危険な場所",
+            "避難所の料金",
+            "電車時刻"
+          ],
+          "answer": 1,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "地震が発生したときの初動について\n\n地震が起きたら、まず落ち着いて行動してください。まず、机の下に隠れて頭を守ってください。火を使っていたら、すぐに消してください。テレビやラジオで情報収集をして、避難の指示を待ってください。慌てて外に出ないでください。",
+          "stem": "地震が起きたとき、まず何をしたらいいですか。",
+          "options": [
+            "机の下に隠れて頭を守る",
+            "すぐに外に出る",
+            "窓を閉める",
+            "友達に電話する"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "【お知らせ】台風接近について\n\n現在、台風が近づいています。風が強くなりますので、窓を閉めてください。ベランダにある物は、室内に移動してください。外出は控えてください。新聞やインターネットで台風の情報をチェックしてください。",
+          "stem": "台風のとき、ベランダにある物はどうしたらいいですか。",
+          "options": [
+            "そのままにしておく",
+            "室内に移動する",
+            "捨てる",
+            "近所の人にあげる"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "避難場所について\n\n災害が起きたら、避難場所に行ってください。この地域の避難場所は、市立小学校と市民体育館です。避難するときは、靴とマスクを履いて行ってください。大きな荷物を持ってはいけないので、軽いバッグを持って行きます。",
+          "stem": "避難するときに、何を持って行きますか。",
+          "options": [
+            "大きな荷物",
+            "軽いバッグ",
+            "自転車",
+            "パソコン"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ハザードマップについて\n\nハザードマップは、災害の危険な場所を知るための地図です。ハザードマップは、市役所でもらえます。インターネットでも見られます。ハザードマップで、自分の家から避難場所までの道を確認してください。日頃から準備しておいてください。",
+          "stem": "ハザードマップで何を確認しますか。",
+          "options": [
+            "家の値段",
+            "避難場所までの道",
+            "近所の人の名前",
+            "店の営業時間"
+          ],
+          "answer": 1,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "地震が発生したら、まずは身の安全を確保してください。家具の下に隠れたり、戸を開けて避難経路を確保したりします。その後、ハザードマップで避難場所を確認します。",
+          "stem": "地震の後にやるべきこととして、正しいのはどれですか？",
+          "options": [
+            "すぐに外に出る",
+            "家具の下に隠れる",
+            "ハザードマップを確認する",
+            "電話をかける"
+          ],
+          "answer": 2,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "台風が近づいているときは、窓やドアをしっかり閉めてください。バルコニーの物を片付け、強風で飛ばされないようにします。ハザードマップで避難場所を確認しましょう。",
+          "stem": "台風接近前にすることとして、正しいのはどれですか？",
+          "options": [
+            "窓を開けておく",
+            "バルコニーに物を置く",
+            "ハザードマップを確認する",
+            "外出する"
+          ],
+          "answer": 2,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "避難する前に、ハザードマップで自分の家の危険な箇所を確認してください。川の近くや低い場所は避けましょう。家族と集合場所を決めておくと安心です。",
+          "stem": "避難する前に確認すべきことはどれですか？",
+          "options": [
+            "天気予報",
+            "ハザードマップ",
+            "スーパーの場所",
+            "友達の家"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ハザードマップを確認すると、自分の家が洪水になる可能性があることがわかりました。そのため、高い場所への避難経路を確認しました。非常持ち出し袋も準備しておきます。",
+          "stem": "ハザードマップを見て何を確認しましたか？",
+          "options": [
+            "自分の家の危険箇所",
+            "学校の場所",
+            "コンビニの場所",
+            "天気"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "大きな地震がありました。まずは揺れがおさまるのを待ちましょう。その後、消火器で火災を消します。家族の安全確認をします。",
+          "stem": "地震の後にまず何をしますか。",
+          "options": [
+            "火事の確認をする",
+            "すぐに避難する",
+            "揺れがおさまるのを待つ",
+            "電話をかける"
+          ],
+          "answer": 2,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
