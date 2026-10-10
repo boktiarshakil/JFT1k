@@ -1,0 +1,833 @@
+{
+  "id": "jft520",
+  "title": "JFT-Basic Simulation Exam 520",
+  "description": "Simulation Exam 520 focusing on 社員食堂・ファミレス・定食屋での注文（食券機、日替わり定食、水・お茶のセルフサービス）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a Japanese ticket vending machine with colorful buttons and a display screen, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "食券機",
+            "お皿",
+            "箸",
+            "湯呑み"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a Japanese teacup with steam rising, placed on a small saucer, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "水",
+            "お茶",
+            "コーヒー",
+            "ジュース"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a Japanese set meal on a tray with rice, fish, pickles, and soup, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "弁当",
+            "丼",
+            "定食",
+            "サラダ"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a person standing at a counter speaking to a staff member while holding a menu, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "食べる",
+            "飲む",
+            "払う",
+            "注文する"
+          ],
+          "answer": 3,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "食券を（ ）で買いました。",
+          "options": [
+            "現金",
+            "カード",
+            "ポイント",
+            "クレジット"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "本日は（ ）メニューです。",
+          "options": [
+            "日替わり",
+            "おすすめ",
+            "セット",
+            "期間限定"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "水は（ ）で取ってください。",
+          "options": [
+            "セルフ",
+            "店員",
+            "タブレット",
+            "メニュー"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お茶は（ )からお取りください。",
+          "options": [
+            "ポット",
+            "レジ",
+            "厨房",
+            "入り口"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "食事の時間になりました。それでは、( )お願いいたします。",
+          "options": [
+            "お会計",
+            "おしぼり",
+            "お品書き",
+            "お支度"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "本日は日替わりの( )定食が二種類ございます。",
+          "options": [
+            "メニュー",
+            "セット",
+            "味",
+            "価格"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "水とお茶は( )で自由に取ってください。",
+          "options": [
+            "自動販売機",
+            "食券機",
+            "ドリンクバー",
+            "レジカウンター"
+          ],
+          "answer": 2,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "注文は食券機で( )、出来上がりましたらお呼びします。",
+          "options": [
+            "お会計",
+            "お渡し",
+            "お申し込み",
+            "お支払い"
+          ],
+          "answer": 3,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、日替わり定食はお済みですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、注文します。",
+            "いいえ、まだです。",
+            "いいえ、食べられません。",
+            "いいえ、高いです。"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お飲み物は何にしますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "水をください。",
+            "水をくださいますか。",
+            "水をくださいました。",
+            "水をくださいましたか。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "レジはこちらです。お会計は500円です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ありがとうございます。",
+            "すみません、お釣りです。",
+            "お願いします、500円です。",
+            "ありがとうございます、お釣りです。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お席はこちらになります。お待ちください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、お願いします。",
+            "いいえ、結構です。",
+            "すみません、トイレはどこですか？",
+            "いいえ、高いです。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、メニューを見せてください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "こちらがメニューです。",
+            "お水はどこですか。",
+            "注文は終わりましたか。",
+            "ありがとうございます。"
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "日替わり定食にします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お会計は500円です。",
+            "トッピングは何にしますか。",
+            "ご飯大盛りに変更できます。",
+            "お待ちください。"
+          ],
+          "answer": 3,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お水とお茶、どちらにしますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "定食にします。",
+            "お水とお茶でお願いします。",
+            "お会計お願いします。",
+            "ご飯は大盛りにします。"
+          ],
+          "answer": 1,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "食券を購入しました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お席へご案内します。",
+            "ありがとうございました。",
+            "お水はセルフサービスです。",
+            "メニューをお持ちします。"
+          ],
+          "answer": 2,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "社員食堂で、日替わり定食を一つください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. すみません、メニューはこちらです。",
+            "2. はい、お待ちください。",
+            "3. ありがとうございます、お会計はこちらです。",
+            "4. いいえ、他の定食があります。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ファミレスで、コーヒーをください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、ソースはどうされますか。",
+            "2. はい、お水はセルフサービスです。",
+            "3. はい、トッピングは無料です。",
+            "4. はい、お時間は15分です。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "定食屋で、お茶をください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、ご飯は大盛りにしますか。",
+            "2. はい、お冷水はこちらです。",
+            "3. はい、メニューはこちらです。",
+            "4. はい、お箸は使い捨てです。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "社員食堂で、水をいただけますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、お水はセルフサービスです。",
+            "2. はい、定食は一番人気です。",
+            "3. はい、お会計は500円です。",
+            "4. はい、お待ちください。お席へご案内します。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ファミレスで、お水をください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、お水はセルフサービスです。",
+            "2. はい、トッピングは無料です。",
+            "3. はい、お箸は使い捨てです。",
+            "4. はい、お待ちください。お席へご案内します。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：すみません、日替わり定食をお願いします。\n女：はい、本日の日替わりは魚の煮付けとお味噌汁です。ご飯は大盛りにしますか？\n男：いいえ、普通でお願いします。",
+          "stem": "男の人は何を注文しますか。",
+          "options": [
+            "日替わり定食（ご飯は普通）",
+            "日替わり定食（ご飯は大盛り）",
+            "魚の煮付けだけ",
+            "お味噌汁だけ"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "女：お待たせしました。水とお茶、どちらになさいますか？\n男：冷たいお茶をください。\n女：かしこまりました。カウンターの横のボトルからご自身でお注ぎください。",
+          "stem": "男の人はどの飲み物を注文しますか。",
+          "options": [
+            "お茶",
+            "水",
+            "コーヒー",
+            "ジュース"
+          ],
+          "answer": 0,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：すみません、両替はできますか？この千円札だけなんです。\n女：えっと、この機械は千円札しか入れられません。お札をお取り替えしてからご利用ください。\n男：わかりました。近くに両替機はありますか？\n女：はい、入口の近くにありますよ。",
+          "stem": "男の人は次に何をしますか。",
+          "options": [
+            "入口の近くの両替機でお札を替える",
+            "この食券機で千円札を入れる",
+            "女の人にお金を借りる",
+            "店の外で両替する"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "女：お客様、お預り的一千円から、五百円と百円玉をお返しします。\n男：ありがとうございます。あ、すみません。お箸は自分で取っていけばいいですか？\n女：はい、入口の近くのカウンターに置いてあります。",
+          "stem": "お箸はどこにありますか。",
+          "options": [
+            "入口の近くのカウンター",
+            "男の人の前のテーブル",
+            "レジの横",
+            "お茶を注文する場所"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：注文は何にしますか？\n女：日替わり定食にします。\n男：では、ご飯と味噌汁はどうしますか？\n女：ご飯は大盛りにします。",
+          "stem": "女はご飯をどうしますか。",
+          "options": [
+            "大盛りにします",
+            "小盛りにします",
+            "おかわりします",
+            "つけません"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：お水はセルフサービスです。\n女：じゃあ、お水とりに行きましょう。\n男：私はお茶でいいです。",
+          "stem": "男はお茶についていますか。",
+          "options": [
+            "はい、とりに行きます",
+            "いいえ、水だけです",
+            "いいえ、お水は要りません",
+            "いいえ、お茶は要りません"
+          ],
+          "answer": 1,
+          "id": 31,
+          "audio": "q31.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：この定食は美味しいですね。\n女：そうですね。お肉が柔らかいです。\n男：何の定食にしますか？",
+          "stem": "男が注文しようとしているのは何ですか。",
+          "options": [
+            "日替わり定食",
+            "からあげ定食",
+            "焼肉定食",
+            "パスタ定食"
+          ],
+          "answer": 1,
+          "id": 32,
+          "audio": "q32.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：すみません、お会計をお願いします。\n女：はい、食券を機械に入れてください。",
+          "stem": "会計のために何をしますか。",
+          "options": [
+            "食券を機械に入れます",
+            "ウェイターに声をかけます",
+            "お水をとりに行きます",
+            "メニューを選び直します"
+          ],
+          "answer": 0,
+          "id": 33,
+          "audio": "q33.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：すみません、食券で頼みたいんですが、日替わりの定食はいくらですか？\n女：日替わり定食は８５０円です。お飲み物はセルフサービスで無料ですよ。\n男：わかりました、日替わり定食を一枚ください。\n女：ありがとうございます。お水はあちらのサーバーからどうぞ。\n男：ありがとうございます。",
+          "stem": "男は日替わり定食をいくつ買うつもりですか。",
+          "options": [
+            "一枚",
+            "二枚",
+            "三枚",
+            "四枚"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "女：あのう、お茶を注文したいんだけど、お金がかかるの？\n男：大丈夫ですよ。ここは社員食堂なので、お茶も水もセルフサービスで無料です。\n女：そうなんだ、ありがとう。じゃあ、私は日替わり定食と、友人にも日替わり定食を頼むわ。\n男：わかりました。食券機で二枚買って、カウンターに持ってきてください。\n女：了解したわ。",
+          "stem": "女は合計で日替わり定食を何枚頼むつもりですか。",
+          "options": [
+            "一枚",
+            "二枚",
+            "三枚",
+            "四枚"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：すみません、食券機で頼みたいんだけど、日替わりの定食が売切れって書いてあるんですが。\n女：はい、日替わり定食は売り切れました。代わりに、カレー定食が９００円でありますよ。\n男：じゃあ、カレー定食を二枚ください。友人と二人で食べる予定です。\n女：かしこまりました。お水はお持ち帰りできませんので、店内でお飲みください。\n男：わかりました。",
+          "stem": "男は何を注文するつもりですか。",
+          "options": [
+            "日替わり定食",
+            "カレー定食",
+            "水",
+            "お茶"
+          ],
+          "answer": 1,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：ごめんね、遅くなって。お腹すいたよ。\n男：私もだよ。今日は社員食堂で日替わり定食を食べようか。\n女：いいね。でも、水とか自分で取りに行くの？\n男：そう、セルフサービスだから、カウンターで食券を買ったら、飲み物は自分でサーバーから注ぐよ。\n女：わかった。じゃあ、私はお茶が飲みたいな。\n男：お茶もセルフサービスで飲めるよ。",
+          "stem": "女の飲み物は何ですか。",
+          "options": [
+            "水",
+            "お茶",
+            "ジュース",
+            "コーヒー"
+          ],
+          "answer": 1,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ファミレスの食券機で、ハンバーグセットとドリンクバーを購入しました。",
+          "stem": "この人は何を注文しましたか。",
+          "options": [
+            "ハンバーグセットとドリンクバー",
+            "から揚げ定食とお茶",
+            "日替わり定食とスープ",
+            "パスタとデザート"
+          ],
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員食堂では、本日の日替わり定食はから揚げです。",
+          "stem": "本日の日替わり定食は何ですか。",
+          "options": [
+            "から揚げ",
+            "ハンバーグ",
+            "焼き魚",
+            "カレー"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "定食屋で食事をした後、水とお茶はセルフサービスのコーナーで取りました。",
+          "stem": "水とお茶はどこで取りましたか。",
+          "options": [
+            "セルフサービスのコーナー",
+            "テーブルに運ばれてきた",
+            "注文時に聞いた",
+            "外の自動販売機で買った"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "食券を買った後、席に戻ってハンバーグセットを待ちました。",
+          "stem": "食券を買った後、何をしましたか。",
+          "options": [
+            "席に戻って待った",
+            "もう一度食券を買った",
+            "料理を作った",
+            "店を出た"
+          ],
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員食堂で食券を買いました。日替わり定食は800円です。水とお茶はセルフサービスです。",
+          "stem": "水とお茶はどこで自由に取れますか。",
+          "options": [
+            "食券機の前",
+            "テーブルの上",
+            "カウンターの横",
+            "セルフサービスコーナー"
+          ],
+          "answer": 3,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ファミレスのメニュー表を見ました。日替わり定食は10時から注文できます。",
+          "stem": "日替わり定食はいつから注文できますか。",
+          "options": [
+            "朝一番",
+            "10時から",
+            "昼過ぎ",
+            "閉店時間"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "定食屋で注文しました。800円のセットには味噌汁と漬物がつきます。",
+          "stem": "800円のセットに何がついていますか。",
+          "options": [
+            "ご飯と味噌汁",
+            "味噌汁と漬物",
+            "サラダとスープ",
+            "デザートとコーヒー"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員食堂の掲示板に短い注意書きが貼ってあります。水・お茶はセルフサービスです。",
+          "stem": "水とお茶は誰が注ぐ必要がありますか。",
+          "options": [
+            "店員",
+            "お客様",
+            "管理者",
+            "誰も必要ない"
+          ],
+          "answer": 1,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員食堂の利用についてお知らせします。水とお茶はセルフサービスです。カウンター横のポットからお取りください。飲み物の補充は毎日12:00に行います。ご協力よろしくお願いします。",
+          "stem": "飲み物の補充は何時に行われますか？",
+          "options": [
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00"
+          ],
+          "answer": 1,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "本日より社員食堂の食券機が新しくなります。新しい食券機は食堂入口の左側にあります。操作方法は食券機の横に説明書きがありますので、ご確認ください。ご不明な点は給食室までお問い合わせください。",
+          "stem": "新しい食券機はどこにありますか？",
+          "options": [
+            "食堂入口の右側",
+            "食堂入口の左側",
+            "カウンターの後ろ",
+            "給食室の前"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "定食屋「ほっとキッチン」にて、毎日日替わり定食をご用意しております。日替わり定食は1日100食限定です。お昼は11:00から15:00まで営業しております。満杯になり次第、終了とさせていただきます。",
+          "stem": "日替わり定食は何食限定ですか？",
+          "options": [
+            "50食",
+            "80食",
+            "100食",
+            "150食"
+          ],
+          "answer": 2,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ファミレス「グランドカフェ」でのご注文の仕方について、ご案内いたします。お席についてから、カウンターで食券をお買い求めください。食券をカウンターに置くと、料理が運ばれてきます。水とお茶はカウンターで自由に飲んでください。",
+          "stem": "料理はどのようにして運ばれてきますか？",
+          "options": [
+            "食券を買ってから自分で取りに行く",
+            "食券をカウンターに置くと運ばれてくる",
+            "店員に電話で頼む",
+            "予約してから届く"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員食堂の食券機についてのお知らせです。食券は1枚250円です。食券機は食堂の入口にあります。カードでも現金でも買えます。お昼は11時から13時まで営業しています。",
+          "stem": "食券はどれくらいですか。",
+          "options": [
+            "250円",
+            "200円",
+            "300円",
+            "350円"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}

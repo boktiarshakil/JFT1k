@@ -1,0 +1,824 @@
+{
+  "id": "jft514",
+  "title": "JFT-Basic Simulation Exam 514",
+  "description": "Simulation Exam 514 focusing on 病院・クリニックの受診（保険証の提示、問診票の記入、症状の説明、薬局での処方箋）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a health insurance card, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "診察券",
+            "保険証",
+            "パスポート",
+            "学生証"
+          ],
+          "answer": 1,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a questionnaire form, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "問診票",
+            "診断書",
+            "処方箋",
+            "同意書"
+          ],
+          "answer": 0,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a patient describing a sore throat, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "症状",
+            "治療",
+            "検査",
+            "予防"
+          ],
+          "answer": 0,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a pharmacy counter with a prescription paper, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "処方箋",
+            "診療報酬",
+            "レセプト",
+            "薬価"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "( )を出しますか？",
+          "options": [
+            "保険証",
+            "診察券",
+            "レシート",
+            "処方箋"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "少し( )お体が悪くて、病院に行きました。",
+          "options": [
+            "痛い",
+            "熱",
+            "元気",
+            "治る"
+          ],
+          "answer": 1,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "症状は( )です。喉が痛いです。",
+          "options": [
+            "説明",
+            "処方",
+            "問診",
+            "診察"
+          ],
+          "answer": 2,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "先生から( )をもらいました。",
+          "options": [
+            "薬",
+            "食事",
+            "入院",
+            "手術"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "薬局で薬をもらうとき、( )を見せます。",
+          "options": [
+            "保険証",
+            "パスポート",
+            "学生証",
+            "運転免許証"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "先生に症状を説明するとき、( )が必要です。",
+          "options": [
+            "問診票",
+            "レシート",
+            "地図",
+            "メニュー"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "待合室で、( )を書きました。",
+          "options": [
+            "問診票",
+            "レポート",
+            "小説",
+            "招待状"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "薬局で医者からもらった( )を薬局の人に見せます。",
+          "options": [
+            "処方箋",
+            "領収書",
+            "診断書",
+            "届出書"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ここが初めてで、保険証を忘れました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. はい、診察券はありますか。",
+            "2. はい、お名前は何ですか。",
+            "3. はい、ご記入ください。",
+            "4. はい、お待ちください。"
+          ],
+          "answer": 2,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "喉が痛くて、熱があります。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. いつからですか。",
+            "2. どこが痛いですか。",
+            "3. どうしましたか。",
+            "4. どの薬ですか。"
+          ],
+          "answer": 1,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この薬はどうやって飲みますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. 1日3回、食後に飲んでください。",
+            "2. はい、お支払いはこちらです。",
+            "3. はい、お待ちください。",
+            "4. いいえ、飲まないでください。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "処方箋は薬局で出してもらえますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "1. いいえ、ここでは出せません。",
+            "2. いいえ、診察券はこちらです。",
+            "3. いいえ、保険証はこちらです。",
+            "4. いいえ、ここでは診察できません。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "病院に行きます。まず、受付で保険証を見せます。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、いいえ。",
+            "いいえ、大丈夫です。",
+            "いいえ、保険証を持ってきました。",
+            "いいえ、病院は遠いです。"
+          ],
+          "answer": 2,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "B",
+              "speech": "はい、肩が凝っています。"
+            }
+          ],
+          "options": [
+            "いいえ、いいえ。",
+            "いいえ、大丈夫です。",
+            "いいえ、頭が痛いです。",
+            "いいえ、足が痛いです。"
+          ],
+          "answer": 2,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "B",
+              "speech": "いいえ、飲んでいません。"
+            }
+          ],
+          "options": [
+            "いいえ、飲んでいません。",
+            "いいえ、飲みました。",
+            "いいえ、飲みます。",
+            "いいえ、飲めません。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、いいえ。",
+            "いいえ、薬局に行きます。",
+            "いいえ、薬は要りません。",
+            "いいえ、処方箋は持っています。"
+          ],
+          "answer": 1,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今日はどこが痛いですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "首が痛いです。",
+            "明日は学校です。",
+            "昨日食べました。",
+            "ここに来るのが初めてです。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "保険証はお持ちですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、持っていません。",
+            "いいえ、いいえ。",
+            "いいえ、ありがとうございました。",
+            "いいえ、わかりません。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "何曜日に来ましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "昨日来ました。",
+            "月曜日です。",
+            "朝ご飯を食べました。",
+            "電車で来ました。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "薬は飲みましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、飲んでいません。",
+            "いいえ、飲みました。",
+            "いいえ、飲みます。",
+            "いいえ、飲めません。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お薬は1日2回飲んでください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、わかりました。",
+            "いいえ、いいえ。",
+            "いいえ、ありがとうございます。",
+            "いいえ、わかりません。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "女：すみません、予約のない患者ですが、診察していただけますか。\n男：はい、大丈夫です。保険証をお持ちですか。\n女：はい、これです。\n男：ありがとうございます。それと、問診票を記入してください。この机のところにあります。\n女：わかりました。\n男：記入が終わったら、この紙を渡してください。\n女：はい、わかりました。",
+          "stem": "女性はまず何をするのか。",
+          "options": [
+            "保険証を渡す",
+            "問診票を記入する",
+            "受付に予約を入れる",
+            "医師に症状を説明する"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "女：先生、昨日から喉が痛くて、熱も38度あります。\n男：いつからそのような症状が出ましたか。\n女：昨日の朝から、咳も出始めて、昨日の夜は眠れませんでした。\n男：わかりました。喉を見せてください。はい、口を開けてください。\n女：はい。\n男：はい、扁桃が腫れていますね。風邪と思われます。",
+          "stem": "女性の症状として正しいものはどれか。",
+          "options": [
+            "頭痛がある",
+            "鼻水が出ている",
+            "喉が痛くて熱がある",
+            "お腹が痛い"
+          ],
+          "answer": 2,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：先生、お薬はどこで受け取ればいいですか。\n女：あちらの薬局で受け取ってください。処方箋をお渡ししますので、薬局のカウンターで渡してください。\n男：この薬局は何時までですか。\n女：金曜日は午後8時まで営業しています。それ以外の日は午後6時までです。\n男：わかりました。金曜日の夜に受け取りに行きます。",
+          "stem": "男はいつお薬を受け取りに行くのか。",
+          "options": [
+            "月曜日の朝",
+            "火曜日の午後",
+            "金曜日の夜",
+            "土曜日の午前"
+          ],
+          "answer": 2,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "女：すみません、この処方箋でお薬を受け取りたいのですが。\n男：はい、お名前を伺えますか。\n女：田中花子と申します。\n男：はい、保険証もお願いします。\n女：はい、これです。\n男：ありがとうございます。このお薬は1日3回、食後にお飲みください。5日分です。\n女：わかりました、ありがとうございます。",
+          "stem": "女はいくつのお薬をもらったのか。",
+          "options": [
+            "3日分",
+            "5日分",
+            "7日分",
+            "10日分"
+          ],
+          "answer": 1,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：これ、保険証を忘れました。どうしよう。\n女：私の保険証を使ってください。後で忘れた分の金額を払えばいいです。",
+          "stem": "男性は保険証を忘れたため、女性に何を頼みましたか。",
+          "options": [
+            "保険証を貸してもらう",
+            "診察をキャンセルする",
+            "薬を買う",
+            "再診をする"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：今日はどのような症状ですか。\n女：頭が痛くて、熱があります。",
+          "stem": "女性は男性に何と言って症状を説明していますか。",
+          "options": [
+            "お腹が痛いです",
+            "頭が痛くて熱があります",
+            "喉が痛いです",
+            "足が痛いです"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：処方箋はこちらです。薬局で薬をもらってください。\n女：はい、薬局に行きます。",
+          "stem": "男性は女性に何をしましたか。",
+          "options": [
+            "診察券を渡した",
+            "処方箋を渡した",
+            "支払いを済ませた",
+            "予約をした"
+          ],
+          "answer": 1,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：この薬は食後に飲んでください。\n女：はい、分かりました。ありがとうございます。",
+          "stem": "男性は女性に薬の飲み方を何と伝えましたか。",
+          "options": [
+            "空腹時に飲んでください",
+            "食後に飲んでください",
+            "就寝前に飲んでください",
+            "朝食前に飲んでください"
+          ],
+          "answer": 1,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：ここが病院ですか？\n女：いいえ、ここは薬局です。お薬をお渡しします。\n男：ありがとうございます。",
+          "stem": "病院で診察を受けた後、男性はどこへ行きますか？",
+          "options": [
+            "病院の待合室に戻る",
+            "薬局で薬をもらう",
+            "帰宅する",
+            "別の病院を探す"
+          ],
+          "answer": 1,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：痛みはどこですか？\n女：ここが痛いです。\n男：わかりました。では、この薬を飲んでください。",
+          "stem": "女性の痛みの場所はどこですか？",
+          "options": [
+            "頭",
+            "肩",
+            "腕",
+            "足"
+          ],
+          "answer": 0,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：保険証はありますか？\n女：はい、ここにあります。\n男：ありがとうございます。診察券もありますか？",
+          "stem": "女性は男性に何を渡しましたか？",
+          "options": [
+            "保険証",
+            "現金",
+            "パスポート",
+            "クレジットカード"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：この薬は食後に飲んでください。\n男：わかりました。ありがとうございます。",
+          "stem": "薬は何時に飲むべきですか？",
+          "options": [
+            "食前に",
+            "食後に",
+            "朝のみ",
+            "寝る前に"
+          ],
+          "answer": 1,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "病院へ行きました。受付で保険証を出しました。医師に症状を説明しました。薬局で薬をもらいました。",
+          "stem": "病院で最初にしたことは何ですか。",
+          "options": [
+            "医師に症状を説明した",
+            "保険証を出した",
+            "薬局で薬をもらった",
+            "問診票に記入した"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "病院で待ち時間が長かったです。順番が来ると看護師が呼びました。診察室で医師に話しました。薬局で待ちました。",
+          "stem": "看護師に呼ばれた後、何をしましたか。",
+          "options": [
+            "診察室で医師に話した",
+            "保険証を出した",
+            "問診票に記入した",
+            "薬をもらった"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "風邪で病院に行きました。医師に症状を話しました。薬をもらいました。家でゆっくり休みました。",
+          "stem": "医師に症状を話した後、何をもらいましたか。",
+          "options": [
+            "問診票",
+            "保険証",
+            "薬",
+            "診察券"
+          ],
+          "answer": 2,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "薬局で処方箋を出しました。薬をもらいました。家に帰りました。",
+          "stem": "薬局で処方箋を出した後、何をもらいましたか。",
+          "options": [
+            "診察券",
+            "保険証",
+            "薬",
+            "問診票"
+          ],
+          "answer": 2,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "診察券と保険証を持って、病院に行きました。受付で名前を呼ばれるまで待ちました。問診票に病気の症状を書いて、 doctor に話しました。",
+          "stem": "病院で受付をする時に、まず何をしますか。",
+          "options": [
+            "問診票に記入する",
+            "名前を呼ばれるのを待つ",
+            "薬をもらう",
+            "診察券を預ける"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "風邪気味で、病院へ行きました。受付で保険証を出して、問診票をもらいました。症状として「熱があり、のどが痛い」と書いて、医師に話しました。",
+          "stem": "問診票に書いた症状は何ですか。",
+          "options": [
+            "熱があり、のどが痛い",
+            "頭が痛くて目がかゆい",
+            "お腹が痛くて下痢をした",
+            "足が痛くて歩けない"
+          ],
+          "answer": 0,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "診察が終わり、処方箋をもらいました。薬局で処方箋を見せると、薬をもらうことができました。薬局の人は「お大事に」と言ってくれました。",
+          "stem": "薬局で処方箋を見せると、何がもらえますか。",
+          "options": [
+            "薬",
+            "診察券",
+            "保険証",
+            "お医者さん"
+          ],
+          "answer": 0,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "体調が優れない時は、まず病院へ行きます。受付で保険証と診察券を出して、問診票に症状を書きます。その後、医師の診察を受けます。",
+          "stem": "病院に行く時に、最初に出すものは何ですか。",
+          "options": [
+            "保険証と診察券",
+            "問診票",
+            "薬",
+            "処方箋"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "病院の受付で、スタッフが患者に話しかけています。「お名前と生年月日をお伺いしてもよろしいでしょうか」。患者は保険証を出して、「はい、山田と申します。1990年1月1日生まれです」と答えました。",
+          "stem": "スタッフが最初に患者に尋ねたのは何ですか。",
+          "options": [
+            "お名前と生年月日",
+            "現在の症状",
+            "薬のアレルギー",
+            "以前の病歴"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "問診票に記入している患者の様子です。「いつから症状がありますか」と医師が聞くと、患者は「3日前から頭が痛くて、熱も出ました」と書きました。",
+          "stem": "患者が伝えた症状の始まりはいつですか。",
+          "options": [
+            "昨日",
+            "3日前",
+            "1週間前",
+            "2週間前"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "診察室を出た後、患者は薬局へ処方箋をもらいに行きました。薬剤師が「この薬は食後に飲んでください」と説明しています。患者はうなずいて、「はい、分かりました」と言って帰りました。",
+          "stem": "薬剤師が患者に言ったのは何ですか。",
+          "options": [
+            "朝ご飯前に飲んでください",
+            "食後に飲んでください",
+            "空腹時に飲んでください",
+            "就寝前に飲んでください"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "クリニックの待合室に貼られている注意書きです。「受付は診療開始の10分前までにお済ませください。遅れます場合はお電話でご連絡ください」。患者は時間に間に合うように早めに病院に到着しました。",
+          "stem": "受付を済ませるのは診療開始の何分前までですか。",
+          "options": [
+            "5分",
+            "10分",
+            "15分",
+            "20分"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "病院に行きました。受付で保険証を出しました。医師に症状を説明しました。薬局で薬をもらいました。",
+          "stem": "保険証を出したのは誰ですか？",
+          "options": [
+            "医師",
+            "受付の人",
+            "薬剤師",
+            "看護師"
+          ],
+          "answer": 1,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}

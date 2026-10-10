@@ -1,0 +1,836 @@
+{
+  "id": "jft512",
+  "title": "JFT-Basic Simulation Exam 512",
+  "description": "Simulation Exam 512 focusing on 郵便局での手続き（手紙・小包の郵送、切手購入、不在票の再配達依頼）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A post office counter with a clerk and a customer, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "切手",
+            "はがき",
+            "ゆうパック",
+            "レターパック"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A postcard being handed over at a post office, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "切手",
+            "はがき",
+            "ゆうパック",
+            "レターパック"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A delivery package being handed over at a post office, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "切手",
+            "はがき",
+            "ゆうパック",
+            "レターパック"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A notice slip (not in box) being handed over at a post office, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "切手",
+            "はがき",
+            "ゆうパック",
+            "レターパック"
+          ],
+          "answer": 3,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "手紙を(______)に送りたいと思います。",
+          "options": [
+            "天気",
+            "海外",
+            "食べ物",
+            "音楽"
+          ],
+          "answer": 1,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "この(______)を日本に送るには、どのくらいかかりますか。",
+          "options": [
+            "公園",
+            "学校",
+            "小包",
+            "水"
+          ],
+          "answer": 2,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "昨日、(______)が届きました。もう一度配達してほしいです。",
+          "options": [
+            "不在票",
+            "本",
+            "映画",
+            "車"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "切手は(______)で買えます。",
+          "options": [
+            "映画館",
+            "銀行",
+            "図書館",
+            "郵便局"
+          ],
+          "answer": 3,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "郵便局で小包を( )します。",
+          "options": [
+            "送る",
+            "受け取る",
+            "出す",
+            "取る"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "切手は( )で買えますか。",
+          "options": [
+            "郵便局",
+            "スーパー",
+            "病院",
+            "学校"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "不在票が入っていましたので、( )に行きました。",
+          "options": [
+            "郵便局",
+            "コンビニ",
+            "銀行",
+            "公園"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "明日、( )に荷物を取りに行きます。",
+          "options": [
+            "郵便局",
+            "スーパー",
+            "レストラン",
+            "美容院"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません。昨日、不在票が届いたので、小包の再配達をお願いしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、伝票番号を教えてください。",
+            "いえ、もう届いていません。",
+            "切手を何枚買いますか。",
+            "はがきを10枚ください。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この手紙をアメリカまで送りたいのですが、どのくらい時間がかかりますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はがきは1枚85円です。",
+            "航空便なら1週間ほどです。",
+            "不在票は下の箱に入っていました。",
+            "再配達は明日の午前中です。"
+          ],
+          "answer": 1,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "はがきを5枚と、85円の切手を3枚ください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "では、在宅時間を教えてください。",
+            "荷物はどこに届きますか。",
+            "はい、全部で680円です。",
+            "荷物は船便で送れますよ。"
+          ],
+          "answer": 2,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この小包を明日の昼までに大阪へ届けたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "では、速達便で送りましょうか。",
+            "切手はお持ちですか。",
+            "再配達の伝票はここに入れてください。",
+            "はがきは1枚85円です。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "切手を30円分買いたいのですが"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "すみません、切手が見つかりません",
+            "30円切手は1枚で30円です",
+            "明日の開店時間は9時です",
+            "お手紙はどこへ送るのですか"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "不在票が入っていたので、再配達を頼みたいのですが"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "どちらへお送りすればよろしいですか",
+            "ご不在でしたので、再配達手続きをします",
+            "荷物はすぐに破棄します",
+            "切手は100円で購入できます"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この小包は海外へ送りたいのですが"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "日本国内のみの発送となります",
+            "重さはどのくらいですか",
+            "パスポートは必要ですか",
+            "郵便料金は安くなります"
+          ],
+          "answer": 1,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "荷物が届かないのですが、確認したいのですが"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お名前と追跡番号をお伺いしてもよろしいですか",
+            "すぐに再配達します",
+            "切手を買ってください",
+            "郵便局は明日まで閉まっています"
+          ],
+          "answer": 0,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "すみません、この手紙を国内に送りたいのですが、どの切手を貼ればいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、84円切手を貼ってください。",
+            "はい、郵便ポストに入れてください。",
+            "はい、こちらでお預かりします。",
+            "はい、3日後にお届けします。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "小包を宅急便で送りたいのですが、どうすればいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、まずこの申込書に記入してください。",
+            "はい、切手を買ってください。",
+            "はい、手紙と同じです。",
+            "はい、こちらで受け取ってください。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "不在票が届いたので、再配達の依頼をしたいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、不在票をお持ちですか？",
+            "はい、お宅の電話番号を教えてください。",
+            "はい、郵便料金を払ってください。",
+            "はい、切手を貼ってください。"
+          ],
+          "answer": 0,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "小包を発送したいのですが、何日くらいかかりますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、お住まいの地域によって違います。",
+            "はい、切手が必要です。",
+            "はい、申込書に記入してください。",
+            "はい、こちらでお預かりします。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "切手を買いたいのですが、100円切手はありますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、10枚で1000円です。",
+            "はい、お宅の住所を教えてください。",
+            "はい、小包を封筒に入れてください。",
+            "はい、申込書に記入してください。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、男性が次にすることを選びなさい。",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：これ、何円くらいですか？\n女：レターパックプラスで520円です。\n男：じゃあ、これにします。\n女：はい、520円になります。",
+          "stem": "男性は切手を買った後、何をしますか？",
+          "options": [
+            "切手帳を購入する",
+            "手紙を投函する",
+            "不在票の再配達を依頼する",
+            "レシートを受け取る"
+          ],
+          "answer": 3,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性が次にすることを選びなさい。",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：不在票が入っていました。\n女：すみません、再配達をお願いします。\n男：はい、承ります。どの時間帯が良いですか？",
+          "stem": "女性が郵便局で頼むのは何ですか？",
+          "options": [
+            "切手の購入",
+            "荷物の受け取り",
+            "不在票の再配達依頼",
+            "住所変更の手続き"
+          ],
+          "answer": 2,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、男性が手紙を出すためにすることを選びなさい。",
+          "audio": "q28.mp3",
+          "audioTranscript": "女：手紙、出しますか？\n男：いいえ、郵便局に寄ってから帰ります。\n女：わかりました。",
+          "stem": "男性が郵便局に寄る理由は何ですか？",
+          "options": [
+            "切手を買うため",
+            "荷物を預けるため",
+            "不在票をもらうため",
+            "住所変更のため"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性が男性に尋ねていることを選びなさい。",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：これ、ゆうびんやさんで出せますか？\n女：はい、大丈夫です。差出人と宛先が書いてあれば。",
+          "stem": "女性は男性に何と尋ねましたか？",
+          "options": [
+            "切手の値段",
+            "住所の書き方",
+            "手紙を出せるか",
+            "再配達の時間"
+          ],
+          "answer": 2,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "女：すみません、この小包を東京まで送りたいのですが。\n男：はい、お預かりします。追跡付きの簡易書留でよろしいですか。\n女：はい、お願いします。料金はどれくらいですか。\n男：720円になります。はい、こちらが控えです。",
+          "stem": "女が東京に送るものは何ですか。",
+          "options": [
+            "小包",
+            "手紙",
+            "切手",
+            "封筒"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：すみません、切手を買いたいのですが。\n女：はい、どの切手をお求めですか。80円のレターパック用でよろしいですか。\n男：いいえ、110円の普通切手が10枚ください。\n女：かしこまりました。合計1100円です。はい、こちらお預かりします。",
+          "stem": "男は切手を何枚買いましたか。",
+          "options": [
+            "1枚",
+            "8枚",
+            "10枚",
+            "11枚"
+          ],
+          "answer": 2,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "女：おはようございます。今朝不在だった小包の再配達をお願いしたいのですが。\n男：はい、確認しますね。お名前は。\n女：田中美咲です。\n男：はい、田中様ですね。明日の午前10時から正午の間にいかがですか。\n女：はい、その時間で大丈夫です。",
+          "stem": "女はいつの再配達を希望していますか。",
+          "options": [
+            "明日の午前10時から正午",
+            "明日の午後から夕方",
+            "土曜の午前中",
+            "金曜の夜間"
+          ],
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：すみません、この手紙を海外に送りたいのですが。\n女：はい、どこの国にお送りになりますか。\n男：アメリカです。\n女：かしこまりました。航空便で210円になります。窓口で送れますので、こちらにお預けください。\n男：ありがとうございます。",
+          "stem": "男は手紙をどこに送りますか。",
+          "options": [
+            "アメリカ",
+            "イギリス",
+            "中国",
+            "韓国"
+          ],
+          "answer": 0,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：これ、お手紙を出すのに切手が必要ですけど。\n女：ええ、いくらの切手が必要か知っていますか？\n男：えーと、たしか一番安いのは84円です。\n女：じゃあ、84円の切手を3枚買います。",
+          "stem": "男は切手を何枚買うと言いましたか。",
+          "options": [
+            "1枚",
+            "2枚",
+            "3枚",
+            "4枚"
+          ],
+          "answer": 2,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：これ、届け先が遠いので、小包で送りたいです。\n女：そうですか、では、サイズと重さを測りますね。\n男：はい、お願いします。\n女：では、これだと送料がいくらかかりますか？",
+          "stem": "男は何をしたいと言いましたか。",
+          "options": [
+            "手紙を出す",
+            "小包を送る",
+            "切手を買う",
+            "不在票をもらう"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：不在票が入っていました。再配達を依頼したいです。\n女：では、再配達の手続きをします。どの時間帯が良いですか？\n男：午前中なら大丈夫です。",
+          "stem": "男は再配達を依頼する時間帯はどれですか。",
+          "options": [
+            "午前中",
+            "午後",
+            "夕方",
+            "夜"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：お手紙、先ほど投函しました。\n男：そうですか、ありがとうございます。\n女：切手は84円のものを4枚使いました。",
+          "stem": "女は切手を何枚使いましたか。",
+          "options": [
+            "1枚",
+            "2枚",
+            "3枚",
+            "4枚"
+          ],
+          "answer": 3,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "読んで質問に答えてください。",
+          "context": "郵便局の窓口で、店員が次のように言っています。「お手紙は定形サイズで110円、小包は重さによって料金が変わります。ご不明な点はお気軽にお尋ねください。」",
+          "stem": "お手紙を送るときの定形サイズの料金はいくらですか。",
+          "options": [
+            "110円",
+            "220円",
+            "330円",
+            "440円"
+          ],
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "読んで質問に答えてください。",
+          "context": "小包を郵送する際、店員が「重さによって料金が変わります」と言っています。小包の料金は何によって決まりますか。",
+          "stem": "小包の料金は何によって決まりますか。",
+          "options": [
+            "大きさ",
+            "重さ",
+            "色",
+            "形"
+          ],
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "読んで質問に答えてください。",
+          "context": "郵便局から不在票が入っていました。再配達を依頼するには、窓口で「再配達希望」と伝えるほか、Webサイトからも申請できます。",
+          "stem": "不在票の再配達を依頼する方法として、Webサイトからの申請ができますか。",
+          "options": [
+            "できます",
+            "できません",
+            "郵便局のみ",
+            "電話のみ"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "読んで質問に答えてください。",
+          "context": "切手を購入する際、店員は「定形サイズのお手紙は110円です」と案内しています。この案内はどのような場面で役立ちますか。",
+          "stem": "店員の案内はどのような場面で役立ちますか。",
+          "options": [
+            "お手紙を送るとき",
+            "荷物を受け取るとき",
+            "切手を貼り替えるとき",
+            "郵便局を出るとき"
+          ],
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ゆうびんきょくの窓口で、切手を買いました。店員に「どこへ送りますか？」と聞かれ、「東京へ」と答えました。",
+          "stem": "店員は切手を買った人のどこへ送るかを聞きましたか？",
+          "options": [
+            "東京へ送るか",
+            "切手の値段",
+            "手紙の内容",
+            "窓口の場所"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "母から不在票が入っていました。不在票に書いてあった電話番号にかけて、再配達を依頼しました。",
+          "stem": "母は不在票に何が書いてありましたか？",
+          "options": [
+            "再配達の依頼方法",
+            "電話番号",
+            "荷物の大きさ",
+            "配達時間"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "友達への手紙をゆうびんに出そうとして、切手が足りないことに気づきました。窓口で切手を一枚足して送りました。",
+          "stem": "なぜ窓口で切手を足したのですか？",
+          "options": [
+            "切手が足りなかったから",
+            "切手のデザインが好きだったから",
+            "友達にプレゼントしたから",
+            "切手を集めていたから"
+          ],
+          "answer": 0,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "郵便局の前に「不在票が入っています」という看板が出ていました。郵便局員が不在の人に荷物を受け取ってもらおうと貼っています。",
+          "stem": "なぜ郵便局にその看板が出ていますか？",
+          "options": [
+            "不在の人に荷物を受け取ってもらうため",
+            "切手を売るため",
+            "郵便物の整理のため",
+            "郵便局の営業時間を知らせるため"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "不在票が入っていました。ご不在のため、本日はお届けできませんでした。ご不在の際は、再配達のお手続きをお願いいたします。",
+          "stem": "本日はお届けできなかった理由は何ですか。",
+          "options": [
+            "① 切手が不足していたから",
+            "② ご不在のため",
+            "③ 住所が間違っていたから",
+            "④ 郵便局が閉まっていたから"
+          ],
+          "answer": 1,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "小包を郵送する際、窓口で手続きをしました。重さと大きさを測定し、適切な切手を購入しました。",
+          "stem": "小包を郵送する際、窓口で何を測定しましたか。",
+          "options": [
+            "① 重さと大きさ",
+            "② 郵便料金",
+            "③ 発送先の住所",
+            "④ 切手の種類"
+          ],
+          "answer": 0,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "切手を購入しました。種類によって値段が異なります。手紙を送るのに適した切手を選びました。",
+          "stem": "切手の値段は何が違いますか。",
+          "options": [
+            "① 切手の色",
+            "② 切手の種類",
+            "③ 切手の大きさ",
+            "④ 切手のデザイン"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "再配達の依頼をしました。不在票に記載されている番号に電話をかけました。担当者が対応してくれました。",
+          "stem": "再配達の依頼をする際、不在票に何がありますか。",
+          "options": [
+            "① 番号",
+            "② 住所",
+            "③ 切手の値段",
+            "④ 郵便料金"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "【お知らせ】手紙を送る場合、封筒に宛先と住所・名前を書きます。切手は右上に貼ってください。切手の代金は、国内は82円です。郵便ポストに入れてください。",
+          "stem": "手紙の切手代金はいくらですか。",
+          "options": [
+            "82円",
+            "100円",
+            "820円",
+            "182円"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
