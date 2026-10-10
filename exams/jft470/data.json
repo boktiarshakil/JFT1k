@@ -1,0 +1,791 @@
+{
+  "id": "jft470",
+  "title": "JFT-Basic Simulation Exam 470",
+  "description": "Simulation Exam 470 focusing on 工場・作業現場の安全衛生（ヘルメット・安全靴・保護メガネの着用、5S活動、指差し確認）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a worker wearing a helmet, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "作業着",
+            "ヘルメット",
+            "マスク",
+            "手袋"
+          ],
+          "answer": 1,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a worker wearing safety shoes, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "サンダル",
+            "運動靴",
+            "安全靴",
+            "ローファー"
+          ],
+          "answer": 2,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a worker wearing protective glasses, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "サングラス",
+            "遠近両用メガネ",
+            "保護メガネ",
+            "メガネ"
+          ],
+          "answer": 3,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "図を見て正しい言葉を選んでください。",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a 5S activity (Seiri/Sort) with sorted tools and items, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "5S活動",
+            "掃除活動",
+            "片付け活動",
+            "整理整頓"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "作業前に必ず ( ) を確認してください。",
+          "options": [
+            "指差し",
+            "安全靴",
+            "工場",
+            "ヘルメット"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "危険な箇所には ( ) をかぶってください。",
+          "options": [
+            "安全靴",
+            "保護メガネ",
+            "ヘルメット",
+            "手袋"
+          ],
+          "answer": 2,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "作業現場では常に ( ) を履いてください。",
+          "options": [
+            "安全靴",
+            "スリッパ",
+            "革靴",
+            "サンダル"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "5S活動の一環として、作業場を ( ) に保ちましょう。",
+          "options": [
+            "整理整頓",
+            "清潔",
+            "静か",
+            "明るい"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "工場では安全のために（ ）を着用しなければなりません。",
+          "options": [
+            "安全靴",
+            "長袖",
+            "マスク",
+            "ネクタイ"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "作業開始前に、必ず（ ）を行ってください。",
+          "options": [
+            "5S活動",
+            "朝礼",
+            "掃除",
+            "点呼"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "現場では常に（ ）を着用してください。",
+          "options": [
+            "保護メガネ",
+            "サングラス",
+            "眼鏡",
+            "双眼鏡"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "作業前には、必ず（ ）で確認してください。",
+          "options": [
+            "指差し確認",
+            "書類チェック",
+            "機械点検",
+            "天気予報"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業前にヘルメットを確認しに行きましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、お願いします。",
+            "いいえ、結構です。",
+            "明日にしましょう。",
+            "すみません、飲み物をください。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "安全靴を履いていないので、履き替えてください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "かしこまりました。",
+            "それでは失礼します。",
+            "ありがとうございます。",
+            "すみません、トイレはどこですか。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "5S活動の一環で、作業場を整理整頓しましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "了解しました。",
+            "結構です。",
+            "やめてください。",
+            "明日のことです。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業前の指差し確認、お願いします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、確認します。",
+            "いいえ、結構です。",
+            "また後で確認しましょう。",
+            "すみません、休憩時間です。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業を始める前に、必ずヘルメットと安全靴を着用してください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "Yes, I will.",
+            "I forgot my helmet.",
+            "It is hot today.",
+            "I like safety shoes."
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業現場では、常に5S活動を心がけましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "Understood. I will sort and organize.",
+            "I am tired of working.",
+            "The machine is broken.",
+            "I want to go home."
+          ],
+          "answer": 0,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業前に、必ず道具の点検と指差し確認をしてください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "Yes, I will check carefully.",
+            "The weather is nice.",
+            "I have no tools.",
+            "I am hungry."
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "保護メガネをかけて作業してください。危険です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "Yes, I understand. I will wear them.",
+            "I do not like glasses.",
+            "The work is easy.",
+            "I am not tired."
+          ],
+          "answer": 0,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業前に、ヘルメットと安全靴を着用してくださいね。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、着けません。",
+            "承知しました。",
+            "明日にします。",
+            "別にいりません。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業エリアでは、保護メガネをお忘れなく。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "メガネ、持ってきました。",
+            "メガネ、いりません。",
+            "メガネ、買います。",
+            "メガネ、壊しました。"
+          ],
+          "answer": 0,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "5S活動、きちんとしていますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、していません。",
+            "はい、毎日やっています。",
+            "5S、わかりません。",
+            "5S、やりたくありません。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "作業前には、必ず指差し確認をしてください。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "承知いたしました。",
+            "いいえ、確認しません。",
+            "明日の確認です。",
+            "確認は不要です。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "現場では常に安全第一です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "安全第一で頑張ります。",
+            "安全は二の次です。",
+            "安全第一、いいえ。",
+            "安全、わかりません。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、男性がすることを答えなさい。",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：すみません、ここでは安全靴を履いていない人がいます。すぐ片付けるように注意します。\n女：はい、よろしくお願いします。",
+          "stem": "男性は安全靴を履いていない人について、どのようなことをするでしょうか。",
+          "options": [
+            "安全靴を履かせる",
+            "注意して片付けるように指示する",
+            "作業を中止する",
+            "上司に報告する"
+          ],
+          "answer": 1,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性がすることを答えなさい。",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：このエリアはヘルメットの着用が義務付けられています。\n女：いいえ、私は持ってきていません。",
+          "stem": "女性はヘルメットについて、どのようなことを言ったでしょうか。",
+          "options": [
+            "ヘルメットを持っている",
+            "ヘルメットを持ってきていない",
+            "ヘルメットは必要ないと言う",
+            "ヘルメットを貸してくれる"
+          ],
+          "answer": 1,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、男性がすることを答えなさい。",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：作業前には必ず指差し確認をします。\n女：そうですね、安全に作業しましょう。",
+          "stem": "男性は作業前に何をしますか。",
+          "options": [
+            "指差し確認をする",
+            "ヘルメットを確認する",
+            "安全靴を履く",
+            "5S活動を行う"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性がすることを答えなさい。",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：5S活動で大切なのは整理整頓です。\n女：はい、作業場を清潔に保つことが重要ですね。",
+          "stem": "女性は5S活動について、どのようなことを同意していますか。",
+          "options": [
+            "整理整頓が大切だ",
+            "掃除が大切だ",
+            "整頓だけが大切だ",
+            "片付けは不要だ"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：作業を始める前に、安全靴を履いているか確認します。\n女：ええ、履いています。それから、ヘルメットも忘れずに着けましょう。",
+          "stem": "男が確認しているのは何ですか。",
+          "options": "安全靴の着用, ヘルメットの着用, 5S活動, 指差し確認",
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：資材を運ぶときは、必ず保護メガネを着用してください。\n女：はい、承知しました。作業中はメガネを外さないようにします。",
+          "stem": "女は男の指示に従って何をすると言いましたか。",
+          "options": "作業中はメガネを外さない, ヘルメットを着用する, 5S活動を行う, 指差し確認をする",
+          "answer": 0,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：作業場のゴミはすぐに片付けましょう。整理整頓が大切です。\n女：はい、5S活動を徹底して安全な職場にします。",
+          "stem": "女は職場を安全にするために何をすると言っていますか。",
+          "options": "5S活動を徹底する, ヘルメットを新しくする, 安全靴を買う, 指差し確認をやめる",
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：作業前には必ず指差し確認をしましょう。\n女：ええ、確認してから作業を始めます。",
+          "stem": "男と女は作業を始める前に何をすることに同意していますか。",
+          "options": "指差し確認をする, ヘルメットを着ける, 安全靴を履く, 5S活動を行う",
+          "answer": 0,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：資材置き場に行く前に、ヘルメットと安全靴を着けてくださいね。\n女：はい、承知しました。作業開始前に5S活動も確認します。",
+          "stem": "男が女性に頼んだことは何ですか。",
+          "options": "ヘルメットを忘れること；安全靴を着用すること；5S活動をしないこと；資材置き場を掃除すること",
+          "answer": 1,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：作業前には必ず指差し確認をしましょう。\n女：はい、左側の機械と右側の機械、両方確認します。",
+          "stem": "男が提案した確認事項は何ですか。",
+          "options": "作業服の色確認；指差し確認；休憩時間の確認；飲み物の確認",
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q36.mp3",
+          "audioTranscript": "女：作業中は保護メガネを外さないでください。\n男：はい、目の保護はとても重要です。作業が終わるまで外しません。",
+          "stem": "女性が男性に注意したことは何ですか。",
+          "options": "作業服を脱ぐこと；保護メガネを外さないこと；ヘルメットを置くこと；靴を脱ぐこと",
+          "answer": 1,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：作業場所は常に5S活動をして整理整頓しましょう。\n女：はい、ゴミはその場で分別して捨てるようにしています。",
+          "stem": "男が提案した活動は何ですか。",
+          "options": "5S活動；資材の運搬；作業服の交換；飲み物の準備",
+          "answer": 0,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場の安全点検表に、ヘルメットを着用していない従業員の名前が記載されていました。監督者は即座にその従業員にヘルメットの着用を指示しました。",
+          "stem": "監督者は従業員に何を指示しましたか。",
+          "options": [
+            "安全靴を履くこと",
+            "ヘルメットを着用すること",
+            "5S活動を行うこと",
+            "指差し確認をすること"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "作業現場の掲示板には「5S活動：整理整頓を行いましょう」と書かれていました。作業員は道具を指定された場所に片付けました。",
+          "stem": "作業員は道具をどこに片付けましたか。",
+          "options": [
+            "適当な場所",
+            "床の上",
+            "指定された場所",
+            "更衣室"
+          ],
+          "answer": 2,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "作業前に行う指差し確認で、作業員は危険箇所を指差して周囲の作業員に注意を促しました。",
+          "stem": "指差し確認で作業員は何をしましたか。",
+          "options": [
+            "危険箇所を指差した",
+            "作業を始めた",
+            "休憩をとった",
+            "上司に報告した"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場へ入る際、作業員はヘルメット、安全靴、保護メガネを着用してから入室しました。安全衛生のルールを守っています。",
+          "stem": "工場へ入る際、作業員はどのような安全装備を着用しましたか。",
+          "options": [
+            "制服のみ",
+            "ヘルメットと安全靴のみ",
+            "ヘルメット、安全靴、保護メガネ",
+            "自由な服装"
+          ],
+          "answer": 2,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場の作業員は、作業開始前に必ずヘルメットと安全靴を着用します。また、作業中は保護メガネを着用して目の保護を行います。作業前には必ず指差し確認を行います。",
+          "stem": "作業員は作業開始前に何を着用しますか。",
+          "options": [
+            "ヘルメットと安全靴",
+            "作業服と手袋",
+            "保護メガネとマスク",
+            "ヘルメットと保護メガネ"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場では5S活動を行っています。まず、作業場を整理整頓します。次に、必要なものだけを残し、不要なものは片付けます。常に清潔な状態を保ちます。",
+          "stem": "5S活動の最初のステップは何ですか。",
+          "options": [
+            "整理整頓",
+            "清潔な状態を保つ",
+            "必要なものだけを残す",
+            "不要なものを片付ける"
+          ],
+          "answer": 0,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "作業現場の安全点検の際、指差し確認をします。まず、危険箇所を指差して確認します。次に、作業員が安全装備を着用しているか確認します。最後に、作業手順書に従って作業を行います。",
+          "stem": "指差し確認の最後に何を確認しますか。",
+          "options": [
+            "危険箇所",
+            "安全装備の着用",
+            "作業手順書",
+            "作業員の姿勢"
+          ],
+          "answer": 2,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "安全衛生のルールを守りましょう。作業現場ではヘルメットを着用することが義務付けられています。安全靴を履かない作業は禁止されています。保護メガネも作業中は必ず着用してください。",
+          "stem": "安全靴を履かない作業はどうなりますか。",
+          "options": [
+            "許可される",
+            "禁止される",
+            "任意になる",
+            "推奨される"
+          ],
+          "answer": 1,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場の安全管理者より：すべての作業員はヘルメットと安全靴の着用を必須とします。5S活動の一環として、作業場の整理整頓を毎日行ってください。作業前には必ず指差し確認を実施してください。",
+          "stem": "作業員はヘルメットと安全靴を着用しなければなりませんか。",
+          "options": [
+            "はい、必ず着用します。",
+            "いいえ、任意です。",
+            "天候によって着用を変えます。",
+            "上司が着用していれば大丈夫です。"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場の掲示板に貼られている注意喚起：5S活動として、作業道具は常に指定の場所に戻してください。作業前には必ず指差し確認を行ってから作業を開始してください。",
+          "stem": "作業道具はどこに戻す必要がありますか。",
+          "options": [
+            "作業台の上",
+            "指定の場所",
+            "ロッカーの中",
+            "作業場の隅"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "作業開始前に確認すること：ヘルメットの着用、安全靴の着用、保護メガネの着用。作業中は常に5S活動を心がけてください。作業前には指差し確認を行ってください。",
+          "stem": "作業開始前に確認することは何ですか。",
+          "options": [
+            "ヘルメットと安全靴のみ",
+            "ヘルメット、安全靴、保護メガネ",
+            "作業服の色",
+            "作業工具の数"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場非常時の避難訓練：避難経路は常に明るく保ってください。非常口の前に物を置かないでください。作業前には指差し確認を行い、安全に避難してください。",
+          "stem": "非常口の前に物を置いてはいけませんか。",
+          "options": "はい、置いてはいけません。いいえ、問題ありません。",
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "工場の朝礼にて：5S活動の一環として、作業場の清掃を毎日行ってください。作業前には必ず指差し確認を行ってから作業を開始してください。ヘルメットと安全靴の着用も確認してください。",
+          "stem": "作業前には何を確認してから作業を開始する必要がありますか。",
+          "options": [
+            "ヘルメットの色",
+            "指差し確認",
+            "作業工具の数",
+            "天候"
+          ],
+          "answer": 1,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}

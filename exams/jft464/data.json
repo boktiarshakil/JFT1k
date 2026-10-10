@@ -1,0 +1,831 @@
+{
+  "id": "jft464",
+  "title": "JFT-Basic Simulation Exam 464",
+  "description": "Simulation Exam 464 focusing on 同僚・近所の人とのコミュニケーション（引越しの挨拶、手土産、感謝やお礼の伝え方）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A cartoon person handing over a small wrapped box to another person, minimal Japanese style, square 1:1, white background, no text.",
+          "options": [
+            "お礼",
+            "土産",
+            "挨拶",
+            "感謝"
+          ],
+          "answer": 1,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A cartoon person saying thank you with both hands on chest, minimal Japanese style, square 1:1, white background, no text.",
+          "options": [
+            "すみません",
+            "ありがとうございます",
+            "ごめんなさい",
+            "こんにちは"
+          ],
+          "answer": 1,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A cartoon person bowing slightly while holding a bag, minimal Japanese style, square 1:1, white background, no text.",
+          "options": [
+            "お疲れ様です",
+            "おめでとう",
+            "ありがとうございました",
+            "お先にどうぞ"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A cartoon person knocking on a door and smiling, minimal Japanese style, square 1:1, white background, no text.",
+          "options": [
+            "お邪魔します",
+            "お疲れ様",
+            "おめでとう",
+            "ごめんなさい"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "引っ越しのあいさつに行きました。隣の( )に挨拶をしました。",
+          "options": [
+            "隣人",
+            "同僚",
+            "先生",
+            "家族"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "新しい( )を持っていきました。お礼を言われました。",
+          "options": [
+            "手土産",
+            "荷物",
+            "ペン",
+            "本"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お世話になっています。ありがとうございました。( )と言っておきました。",
+          "options": [
+            "感謝",
+            "ごめんなさい",
+            "おはよう",
+            "さようなら"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お邪魔します。ありがとうございました。( )と言って帰りました。",
+          "options": [
+            "お疲れ様です",
+            "お世話になりました",
+            "おめでとう",
+            "お大事に"
+          ],
+          "answer": 1,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "引っ越しの挨拶に、近所の人に ( ) と挨拶をしました。",
+          "options": [
+            "おはよう",
+            "すみません",
+            "はじめまして",
+            "お疲れ様"
+          ],
+          "answer": 2,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お世話になった同僚に、引っ越しの ( ) を渡しました。",
+          "options": [
+            "手土産",
+            "プレゼント",
+            "荷物",
+            "お礼"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "お世話になりました。心から ( ) を申し上げます。",
+          "options": [
+            "感謝",
+            " apologize",
+            "ごめんなさい",
+            "すみません"
+          ],
+          "answer": 0,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "新しい職場で、皆さんに ( ) を言ってもらいました。",
+          "options": [
+            "歓迎",
+            "さようなら",
+            "お疲れ様",
+            "ありがとうございました"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "引っ越しました。お邪魔します。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: どこにお住まいですか。",
+            "B: どうぞお入りください。",
+            "C: おめでとうございます。",
+            "D: いつ帰りますか。"
+          ],
+          "answer": 1,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これ、お土産です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: ありがとうございます。",
+            "B: これいくらですか。",
+            "C: どこで買いましたか。",
+            "D: 返します。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "手伝ってくれてありがとう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: どういたしまして。",
+            "B: すみません。",
+            "C: いいえ、いいです。",
+            "D: また明日にします。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: ありがとうございます。",
+            "B: お先に失礼します。",
+            "C: どこへ行きますか。",
+            "D: 明日は休みです。"
+          ],
+          "answer": 1,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お疲れ様です。最近、引っ越しされたんですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、まだです。",
+            "はい、先月引っ越しました。",
+            "すみません、何分か話せますか？",
+            "いいえ、引っ越しはしません。"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "これは少しお高いので、お土産にどうでしょう？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ありがとうございます。嬉しいです。",
+            "いいえ、結構です。",
+            "そうですか、じゃあいただきます。",
+            "すみません、これはいくらですか？"
+          ],
+          "answer": 0,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "引っ越しのお手伝いをしてくれて、本当にありがとうございました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、どういたしまして。",
+            "いいえ、構いませんよ。",
+            "いいえ、すみませんでした。",
+            "いいえ、また今度にします。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ご近所さんで、よろしくお願いします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、結構です。",
+            "はい、私もよろしくお願いします。",
+            "いいえ、すみません。",
+            "はい、私は結構です。"
+          ],
+          "answer": 1,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "引っ越しをしたので、近所の人に挨拶に行きました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "こちらこそありがとうございます。",
+            "初めてお目にかかれて光栄です。",
+            "お邪魔します。新しい家に招待してください。",
+            "おめでとうございます。お祝いしてください。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この土産は、お世話になった方への感謝の気持ちです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "ありがとうございます。とても美味しいです。",
+            "いつかこの分を返しますね。",
+            "どうぞお受け取りください。",
+            "どういたしまして。お礼申し上げます。"
+          ],
+          "answer": 2,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お邪魔してすみません。お茶を入れてもいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、結構です。",
+            "いいえ、遠慮なくお入りください。",
+            "いいえ、私の家は片付いていません。",
+            "いいえ、お茶は苦手です。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "ご飯を作ってくれてありがとう。とても美味しかったです。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、とんでもないです。",
+            "いいえ、また作りますね。",
+            "いいえ、私が作ります。",
+            "いいえ、ごめんなさい。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "お疲れ様です。今日は遅くまでありがとうございました。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、お疲れ様でした。",
+            "いいえ、お世話になりました。",
+            "いいえ、また明日にしましょう。",
+            "いいえ、ありがとうございました。"
+          ],
+          "answer": 3,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：すみません、こっちはこっちで荷物が多くて大変です。\n女：ああ、そうですか。じゃあ、こっちはこっちで手伝いましょうか？",
+          "stem": "男性は女性に何を提案されましたか？",
+          "options": [
+            "手伝ってもらう",
+            "挨拶をする",
+            "手土産を渡す",
+            "荷物を運ぶ"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：これ、新しいお隣さんへの挨拶です。\n女：ありがとうございます。何かお返しは必要ですか？",
+          "stem": "男性はこの品物について何と言っていますか？",
+          "options": "opt4",
+          "answer": 0,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "女：お疲れ様です。引っ越し、おめでとうございます！\n男：ありがとうございます。どうぞ、お菓子です。",
+          "stem": "男性は女性に何を渡しましたか？",
+          "options": [
+            "お菓子",
+            "手土産",
+            "挨拶",
+            "荷物"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：すみません、荷物を運んでいただいてありがとうございます。\n女：どういたしまして。",
+          "stem": "男性は女性に何と言って感謝していますか？",
+          "options": [
+            "ありがとうございます",
+            "すみません",
+            "おめでとう",
+            "ごめんなさい"
+          ],
+          "answer": 1,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き取り対話を聞いて、男性が何と言おうと考えられるか答えなさい。",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：引っ越しをしました。\n女：へえー、どこに行きましたか？",
+          "stem": "男性は引っ越しのあいさつをする相手に何と言いますか。",
+          "options": [
+            "お邪魔します",
+            "ありがとうございました",
+            "お世話になっております",
+            "こんにちは"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き取り対話を聞いて、女性が男性に何と言っているか答えなさい。",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：これ、引っ越しのお礼です。\n女：ありがとうございます。",
+          "stem": "女性は男性からもらったものに対して何と言いますか。",
+          "options": [
+            "すみません",
+            "いただきます",
+            "ありがとうございます",
+            "おめでとう"
+          ],
+          "answer": 2,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き取り対話を聞いて、男性が近所の人に何と言おうと考えられますか。",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：これ、お菓子です。お母さん、どうぞ。\n女：ありがとうございます。",
+          "stem": "男性は近所の人にお菓子を渡すときに何と言いますか。",
+          "options": [
+            "失礼します",
+            "いただきます",
+            "お先にします",
+            "ごちそうさま"
+          ],
+          "answer": 0,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "聞き取り対話を聞いて、女性が感謝の意を表している場面を選びなさい。",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：すみません、荷物を運んでもらって。\n女：いいえ、こちらこそありがとうございました。",
+          "stem": "会話の中で女性が感謝を伝えているのはどの場面ですか。",
+          "options": [
+            "男が荷物を運んでもらったとき",
+            "女が荷物を運んでもらったとき",
+            "男がお礼を言ったとき",
+            "女がお礼を言ったとき"
+          ],
+          "answer": 3,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて問題に答えてください。",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：引っ越しました。お邪魔します。\n女：あら、おめでとう！ 何かお持たせはあるの？",
+          "stem": "男は次、何をしますか？",
+          "options": [
+            "近所の人に挨拶に行く",
+            "お礼を言う",
+            "手土産を買う",
+            "引っ越しの手伝いをする"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて問題に答えてください。",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：これ、お土産です。東京のお菓子です。\n女：ありがとうございます。嬉しいです。",
+          "stem": "男は女性に何を渡しますか？",
+          "options": [
+            "挨拶",
+            "お土産",
+            "感謝",
+            "連絡先"
+          ],
+          "answer": 1,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて問題に答えてください。",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：引っ越しのお手伝いをしました。\n女：ありがとうございました。何か飲み物を用意しますね。",
+          "stem": "男は女性に対して何をしましたか？",
+          "options": [
+            "お礼を言った",
+            "手土産を持った",
+            "引っ越しの手伝いをした",
+            "挨拶をした"
+          ],
+          "answer": 2,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて問題に答えてください。",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：引っ越しの挨拶に行きました。\n男：ありがとうございます。お菓子もいただいて、とても嬉しいです。",
+          "stem": "男は女性に対してどう感じていますか？",
+          "options": [
+            "お礼を言う",
+            "お菓子をもらった",
+            "挨拶をした",
+            "手土産を渡した"
+          ],
+          "answer": 1,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越しの挨拶に行きました。隣の奥さんに「お邪魔します」と言いました。奥さんは手土産をくださいました。",
+          "stem": "奥さんは何をくれましたか。",
+          "options": [
+            "手土産",
+            "お礼",
+            "挨拶",
+            "お飲み物"
+          ],
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "近所の人からお菓子をもらいました。ありがとうございますと伝えました。",
+          "stem": "相手に何と言いましたか。",
+          "options": [
+            "ありがとうございます",
+            "すみません",
+            "お邪魔します",
+            "おめでとう"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越し屋さんが荷物を運びました。お礼を言いました。",
+          "stem": "お礼を何と言いましたか。",
+          "options": [
+            "ありがとうございます",
+            "お疲れ様です",
+            "お邪魔します",
+            "こんばんは"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "手土産を持って伺いました。喜んでもらえてうれしいです。",
+          "stem": "何を持って行きましたか。",
+          "options": [
+            "手土産",
+            "荷物",
+            "本",
+            "お弁当"
+          ],
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越しの挨拶：隣の部屋に住む佐藤さんに、「おはようございます。私は田中と申します。本日からお世話になります。」と挨拶しました。",
+          "stem": "田中さんは佐藤さんに何と言いましたか。",
+          "options": [
+            "田中さんは佐藤さんに挨拶をしました",
+            "佐藤さんは田中さんに挨拶をしました",
+            "田中さんは佐藤さんにプレゼントを渡しました",
+            "佐藤さんは田中さんにプレゼントを渡しました"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "手土産：新しい職場への挨拶回りに、お菓子の詰め合わせを持っていきました。渡す時に「これ、お土産です」と言いました。",
+          "stem": "手土産として何を持っていきましたか。",
+          "options": [
+            "お菓子の詰め合わせ",
+            "花束",
+            "本",
+            "ハンカチ"
+          ],
+          "answer": 0,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "感謝・お礼：近所の人に道を教えてもらったとき、「ありがとうございます。とても助かりました」と言いました。",
+          "stem": "道を教えてもらったとき、何と言いましたか。",
+          "options": [
+            "ありがとうございます。とても助かりました",
+            "すみません。わかりません",
+            "いいえ、とんです",
+            "また後でお願いします"
+          ],
+          "answer": 0,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "近所の人の紹介：引っ越し祝いとして、隣の住人の山田さんからお花をいただきました。嬉しくて、すぐに家族に見せました。",
+          "stem": "山田さんから何をもらいましたか。",
+          "options": [
+            "お花",
+            "お菓子",
+            "本",
+            "文具"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越しの挨拶で隣の部屋の人にお土産を渡しました。",
+          "stem": "どのようなお土産を渡しましたか。",
+          "options": [
+            "お菓子",
+            "ハンカチ",
+            "洗剤",
+            "文具"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "近所の人に手土産をもらいました。お礼を言いました。",
+          "stem": "お礼を何と言いましたか。",
+          "options": [
+            "ありがとうございます",
+            "すみません",
+            "いただきます",
+            "おめでとう"
+          ],
+          "answer": 0,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越し屋さんが運び終わった後に、感謝の言葉を言いました。",
+          "stem": "引っ越し屋さんに何と言いましたか。",
+          "options": [
+            "お疲れ様です",
+            "ありがとうございました",
+            "すみません",
+            "こんばんは"
+          ],
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "新しい職場の同僚に挨拶回りをしました。お菓子を持っていきました。",
+          "stem": "同僚に持っていったものは何ですか。",
+          "options": [
+            "お菓子",
+            "本",
+            "花",
+            "メモ"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "引っ越しが終わり、近所の人に挨拶をしました。",
+          "stem": "挨拶をした相手はだれですか。",
+          "options": [
+            "上司",
+            "同僚",
+            "近所の人",
+            "先生"
+          ],
+          "answer": 2,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
