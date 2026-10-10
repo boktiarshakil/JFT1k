@@ -1,0 +1,836 @@
+{
+  "id": "jft475",
+  "title": "JFT-Basic Simulation Exam 475",
+  "description": "Simulation Exam 475 focusing on 日本の職場マナー・挨拶（お疲れ様です、失礼します、お先に失礼します）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A Japanese office worker bowing with a smile, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "お疲れ様です",
+            "おはようございます",
+            "こんばんは",
+            "失礼します"
+          ],
+          "answer": 0,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A person standing up and leaving a desk, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "こんばんは"
+          ],
+          "answer": 2,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A person entering a room and saying hello, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "おはようございます",
+            "失礼します",
+            "お疲れ様です",
+            "お先に失礼します"
+          ],
+          "answer": 1,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A person leaving the office after work, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "お疲れ様です",
+            "お先に失礼します",
+            "こんにちは",
+            "さようなら"
+          ],
+          "answer": 1,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "明日は会議があります。皆さん、( )してください。",
+          "options": [
+            "お疲れ様です",
+            "お疲れ様でした",
+            "お疲れ様になられます",
+            "お疲れ様になります"
+          ],
+          "answer": 1,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "田中さんが帰るときに、「( )」と言います。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "こんにちは"
+          ],
+          "answer": 1,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "定時です。本日はもう帰ります。皆さん、( )。",
+          "options": [
+            "お疲れ様です",
+            "お疲れ様でした",
+            "お先に失礼します",
+            "失礼します"
+          ],
+          "answer": 2,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "上司が帰る前に、「( )」と言って先に帰ります。",
+          "options": [
+            "お疲れ様です",
+            "お疲れ様でした",
+            "お先に失礼します",
+            "失礼します"
+          ],
+          "answer": 2,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "仕事が終わった後、同僚に言う言葉として最も適切なものはどれですか。",
+          "options": [
+            "お疲れ様です",
+            "おはようございます",
+            "こんにちは",
+            "こんばんは"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "上司に遅れて出勤する時に使う言葉として最も適切なものはどれですか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "ありがとうございます"
+          ],
+          "answer": 1,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "後から出勤する同僚が先に帰る時に使う言葉として最も適切なものはどれですか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "おめでとうございます"
+          ],
+          "answer": 2,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "同僚の机を立つ時に使う言葉として最も適切なものはどれですか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "ごめんなさい"
+          ],
+          "answer": 1,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: 皆さん、お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: お疲れ様です。",
+            "B: 失礼します。",
+            "C: お先に失礼します。",
+            "D: こんにちは"
+          ],
+          "answer": 2,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: 失礼します。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: お疲れ様です。",
+            "B: 失礼します。",
+            "C: お先に失礼します。",
+            "D: こんばんは"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: お先に失礼します。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: お疲れ様です。",
+            "B: 失礼します。",
+            "C: お先に失礼します。",
+            "D: ありがとうございました"
+          ],
+          "answer": 1,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: 明日の会議、お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A: 失礼します。",
+            "B: お疲れ様です。",
+            "C: お先に失礼します。",
+            "D: ありがとうございました"
+          ],
+          "answer": 1,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "会議が終わりました。お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "こんにちは"
+          ],
+          "answer": 2,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "事務所を出ます。お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お疲れ様です",
+            "お先に失礼します",
+            "失礼します",
+            "ありがとうございました"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "先に帰ります。お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "お元気ですか"
+          ],
+          "answer": 2,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "定時です。お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "お疲れ様でした"
+          ],
+          "answer": 3,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: すみません、この書類をコピーしてもいいですか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "B: いいえ、今はやめてください。",
+            "B: はい、どうぞお使いください。",
+            "B: すみません、明日にします。",
+            "B: いいえ、結構です。"
+          ],
+          "answer": 1,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: お疲れ様です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "B: 失礼します。",
+            "B: お疲れ様です。",
+            "B: お先に失礼します。",
+            "B: こんにちは。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: そろそろ帰るので、お先に失礼します。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "B: お疲れ様です。",
+            "B: 失礼します。",
+            "B: ありがとうございます。",
+            "B: いいえ、どうぞ。"
+          ],
+          "answer": 0,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: 明日の会議の資料、お願いします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "B: 承知しました。",
+            "B: すみません、明日にします。",
+            "B: いいえ、結構です。",
+            "B: 失礼します。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "A: これ、私の分のお弁当です。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "B: ありがとうございます。",
+            "B: 失礼します。",
+            "B: お疲れ様です。",
+            "B: いいえ、結構です。"
+          ],
+          "answer": 0,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、男性の行動を答えなさい。",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：お疲れ様です。\n女：お疲れ様です。あとで資料をまとめますね。\n男：じゃあ、私は先に失礼します。",
+          "stem": "男性はこれから何をしますか。",
+          "options": [
+            "資料をまとめる",
+            "先に失礼する",
+            "コーヒーを淹れる",
+            "会議に出席する"
+          ],
+          "answer": 1,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性の行動を答えなさい。",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：すみません、これ資料に入れていただけますか。\n女：ええ、承知しました。お疲れ様です。",
+          "stem": "女性は男性の頼みをどう受け止めましたか。",
+          "options": [
+            "断る",
+            "了承する",
+            "聞き直す",
+            "放置する"
+          ],
+          "answer": 1,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、状況に合う言葉を選びなさい。",
+          "audio": "q28.mp3",
+          "audioTranscript": "女：お疲れ様です。明日の準備は終わりましたか。\n男：いいえ、まだです。お先に失礼します。",
+          "stem": "男性が最後に言った言葉の意味は何ですか。",
+          "options": [
+            "早く帰る",
+            "先に失礼する",
+            "遅くまで働く",
+            "休む"
+          ],
+          "answer": 1,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて、女性の発言の意図を答えなさい。",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：お疲れ様です。\n女：お疲れ様です。明日の会議の準備、お疲れ様です。",
+          "stem": "女性は男性に何を伝えようとしていますか。",
+          "options": [
+            "頑張っていることを認める",
+            "休むよう促す",
+            "早退を申し出る",
+            "文句を言う"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：お疲れ様です。明日のプレゼンの資料、準備できましたか？\n女：いいえ、まだ間に合いません。今からスーパーに買い物に行きます。\n男：そうですか。では、資料を作っている間、事務室の掃除をしておきますね。",
+          "stem": "男は資料を作っている間、何をしますか？",
+          "options": [
+            "事務室の掃除をする",
+            "スーパーに買い物に行く",
+            "プレゼンの練習をする",
+            "資料を印刷する"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q31.mp3",
+          "audioTranscript": "男：失礼します。\n女：お疲れ様です。どうぞお入りください。",
+          "stem": "男が「失礼します」と言った状況は？",
+          "options": [
+            "会議の開始",
+            "トイレに行く時",
+            "食事をする時",
+            "プレゼンを始める時"
+          ],
+          "answer": 1,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：お先に失礼します。\n女：お疲れ様です。明日の会議も頑張ってくださいね。",
+          "stem": "男はどこに行くと言いましたか？",
+          "options": [
+            "会議室",
+            "帰宅",
+            "スーパー",
+            "トイレ"
+          ],
+          "answer": 1,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えなさい。",
+          "audio": "q33.mp3",
+          "audioTranscript": "男：お疲れ様です。明日の資料、お願いします。\n女：はい、承知しました。お先に失礼します。",
+          "stem": "女はその後、何をしますか？",
+          "options": [
+            "資料を作る",
+            "スーパーに行く",
+            "事務室を出る",
+            "男の話を聞く"
+          ],
+          "answer": 2,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えてください。",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：お疲れ様です。資料は終わりましたか？\n女：いいえ、まだです。明日の朝までに仕上げます。\n男：では、私は先に失礼します。",
+          "stem": "男性はその後、何をしますか？",
+          "options": [
+            "資料を作り続ける",
+            "先に帰る",
+            "女性に手伝わせる",
+            "上司に報告する"
+          ],
+          "answer": 1,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えてください。",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：失礼します。\n女：お疲れ様です。何かお手伝いしましょうか？\n男：いいえ、結構です。お先に失礼します。",
+          "stem": "男性は女性に何と言いましたか？",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "ありがとうございます"
+          ],
+          "answer": 2,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えてください。",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：お疲れ様です。明日は早いので、お先に失礼します。\n女：ええ、お疲れ様です。明日の準備はお任せします。",
+          "stem": "男性が明日の準備を誰に任せると発言しましたか？",
+          "options": [
+            "女に",
+            "上司に",
+            "自分に",
+            "いいえ、準備しません"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "会話を聞いて質問に答えてください。",
+          "audio": "q37.mp3",
+          "audioTranscript": "男：お疲れ様です。明日は会議があるので、お先に失礼します。\n女：承知しました。お疲れ様です。",
+          "stem": "男性が先に失礼する理由は何ですか？",
+          "options": [
+            "明日の会議があるから",
+            "資料を作らなければならないから",
+            "女性と話したいから",
+            "早く家に帰りたいから"
+          ],
+          "answer": 0,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "明日の会議に参加します。お疲れ様です。",
+          "stem": "この文の「お疲れ様です」は、どのような場面で使われますか。",
+          "options": [
+            "挨拶の終わりに使う",
+            "仕事が終わった時に使う",
+            "会議の始めに使う",
+            "上司にだけ使う"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "トイレに行きます。失礼します。",
+          "stem": "「失礼します」は、どのような意味で使われていますか。",
+          "options": [
+            "道を譲る時",
+            "部屋を出る時",
+            "食事を始める時",
+            "電話をかける時"
+          ],
+          "answer": 1,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "明日のプレゼン資料を作成しました。お先に失礼します。",
+          "stem": "「お先に失礼します」は、どのような場面で使われますか。",
+          "options": [
+            "早く帰る時",
+            "遅刻する時",
+            "会議に参加する時",
+            "休みを取る時"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "先輩が帰りました。お疲れ様です。",
+          "stem": "この場面で使われる「お疲れ様です」の意味は、何ですか。",
+          "options": [
+            "仕事が終わっていない時",
+            "仕事が終わった後に感謝する時",
+            "挨拶としてのみ使う時",
+            "上司が話しかける時"
+          ],
+          "answer": 1,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "明日は遠征があります。7時に集合です。お疲れ様です。",
+          "stem": "集合時間はいつですか。",
+          "options": [
+            "午前6時",
+            "午前7時",
+            "午前8時",
+            "午前9時"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "上司が帰るとき、「失礼します」と言って出ていきました。",
+          "stem": "上司が部屋を出るとき、何と言いましたか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "こんばんは"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "業務が終わり、後輩に「お先に失礼します」と言って先に帰りました。",
+          "stem": "部下が上司に先に帰るとき、何と言いますか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "ありがとうございます"
+          ],
+          "answer": 2,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "朝、職場に到着して挨拶をしました。",
+          "stem": "職場に到着したとき、何と言いますか。",
+          "options": [
+            "お疲れ様です",
+            "失礼します",
+            "お先に失礼します",
+            "おはようございます"
+          ],
+          "answer": 3,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "田中さんは定時に退社しました。上司が「お疲れ様です」と言いました。",
+          "stem": "上司が田中さんに言った言葉の意味は何ですか。",
+          "options": [
+            "帰る準備をしてください",
+            "お疲れ様でした",
+            "明日に来てください",
+            "遅くまで働いてください"
+          ],
+          "answer": 1,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "会議の前に、鈴木さんが部屋に入りました。鈴木さんは「失礼します」と言いました。",
+          "stem": "鈴木さんが部屋に入る前に言った言葉の意味は何ですか。",
+          "options": [
+            "すみません、ここにいます",
+            "失礼します、入らせてください",
+            "帰ります",
+            "待ち合わせです"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "佐藤さんは早めに家に帰らなければなりません。佐藤さんは「お先に失礼します」と言いました。",
+          "stem": "佐藤さんが言った「お先に失礼します」の意味は何ですか。",
+          "options": [
+            "先に帰らせていただきます",
+            "最後に帰ります",
+            "一緒に帰ります",
+            "遅くまで働きます"
+          ],
+          "answer": 0,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "新人の山田さんが先輩に挨拶しました。山田さんは「お疲れ様です」と言いました。",
+          "stem": "山田さんが先輩に言った言葉の意味は何ですか。",
+          "options": [
+            "お疲れ様です",
+            "こんにちは",
+            "さようなら",
+            "お願いします"
+          ],
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "会議が終わり、皆が部屋を出る時、司会者が「失礼します」と言いました。",
+          "stem": "司会者が言った言葉の意味は何ですか。",
+          "options": [
+            "部屋を出る許可をもらいます",
+            "失礼します、失礼します",
+            "会議を始めます",
+            "今日はお疲れ様です"
+          ],
+          "answer": 1,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}

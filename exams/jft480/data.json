@@ -1,0 +1,836 @@
+{
+  "id": "jft480",
+  "title": "JFT-Basic Simulation Exam 480",
+  "description": "Simulation Exam 480 focusing on 日常の健康管理（職場の熱中症予防・水分塩分補給、インフルエンザ予防、手洗い・うがい）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "A clear illustration of a thermometer measuring temperature, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "血圧",
+            "体温",
+            "脈拍",
+            "身長"
+          ],
+          "answer": 1,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "A clear illustration of a person washing hands at a sink, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "手洗い",
+            "うがい",
+            "シャワー",
+            "入浴"
+          ],
+          "answer": 0,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "A clear illustration of a person drinking water from a bottle, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "水分補給",
+            "食事",
+            "休憩",
+            "運動"
+          ],
+          "answer": 0,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "A clear illustration of a person receiving a flu vaccination at a clinic, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "インフルエンザ予防",
+            "風邪予防",
+            "花粉症対策",
+            "健康診断"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "夏場の職場では、熱中症予防のためにこまめに ( ) しましょう。",
+          "options": [
+            "水分補給",
+            "トイレ",
+            "休憩",
+            "服の準備"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "インフルエンザを予防するために、毎朝（ ）をします。",
+          "options": [
+            "手洗い",
+            "うがい",
+            "部屋の掃除",
+            "歯磨き"
+          ],
+          "answer": 1,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "健康管理のために、バランスの良い食事と十分な（ ）が大切です。",
+          "options": [
+            "睡眠",
+            "運動",
+            "入浴",
+            "読書"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "脱水症状を防ぐために、こまめに水分と（ ）を補給する必要があります。",
+          "options": [
+            "塩分",
+            "砂糖",
+            "ビタミン",
+            "タンパク質"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "夏場の職場では、熱中症にならないように（ ）をこまめにとりましょう。",
+          "options": [
+            "水分",
+            "塩分",
+            "栄養",
+            "睡眠"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "インフルエンザを予防するために、毎日（ ）をしましょう。",
+          "options": [
+            "手洗い",
+            "掃除",
+            "洗濯",
+            "片付け"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "喉が渇いたら、すぐに（ ）を飲んで水分補給をしましょう。",
+          "options": [
+            "お茶",
+            "ジュース",
+            "水",
+            "コーヒー"
+          ],
+          "answer": 2,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "インフルエンザの予防策として、手（ ）と（ ）を忘れずに行いましょう。",
+          "options": [
+            "洗い",
+            "うがい",
+            "拭き",
+            "温め"
+          ],
+          "answer": 1,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "職場で熱中症対策として、こまめに水分補給をしましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. そうだね、スポーツドリンクを飲む。",
+            "B. そうだね、コーヒーを飲む。",
+            "C. そうだね、食事を抜く。",
+            "D. そうだね、寝る。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "インフルエンザの季節なので、マスクを着けましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. そうだね、手を洗う。",
+            "B. そうだね、マスクをする。",
+            "C. そうだね、外出する。",
+            "D. そうだね、食べる。"
+          ],
+          "answer": 1,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "毎日うがいと手洗いをして、ウイルスを防ぎましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. そうだね、歯を磨く。",
+            "B. そうだね、うがいと手洗いをする。",
+            "C. そうだね、寝る。",
+            "D. そうだね、遊ぶ。"
+          ],
+          "answer": 1,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "体調が優れない時は、早めに病院に行きましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "A. そうだね、放置する。",
+            "B. そうだね、病院に行く。",
+            "C. いいえ、スポーツする。",
+            "D. いいえ、休む。"
+          ],
+          "answer": 1,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "夏場の職場では、こまめに水分と塩分を取るようにしていますか？"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、全く飲みません。",
+            "はい、こまめに水分と塩分を取ります。",
+            "いいえ、ただ座っています。",
+            "はい、毎日ビールを飲みます。"
+          ],
+          "answer": 1,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "インフルエンザの季節ですので、マスクの着用と手洗いを心がけています。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、マスクはしないでいます。",
+            "はい、手洗いとうがいをしっかりします。",
+            "いいえ、外出ばかりしています。",
+            "はい、毎日温泉に行きます。"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "職場での熱中症予防に、こまめな水分補給が大切ですよ。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、喉が渇くまで待ちます。",
+            "はい、こまめに水を飲みます。",
+            "いいえ、水は飲みません。",
+            "はい、コーヒーを大量に飲みます。"
+          ],
+          "answer": 1,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "インフルエンザ予防のために、毎日手洗いとうがいをしています。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、風邪気味です。",
+            "はい、健康に気を付けています。",
+            "いいえ、仕事ばかりしています。",
+            "はい、毎日運動しています。"
+          ],
+          "answer": 1,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "水分補給を忘れないでください。夏場はすぐに脱水症状になりますよ。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "はい、気をつけます。",
+            "いいえ、やめときます。",
+            "ありがとうございます。すぐ飲みます。",
+            "いいえ、大丈夫です。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "インフルエンザが流行っていますね。マスクをして手洗いうがいをしましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、しません。",
+            "はい、気を付けます。",
+            "そうですか、困ります。",
+            "いいえ、結構です。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "喉が痛いです。病院に行きましょうか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、大丈夫です。",
+            "はい、お願いします。",
+            "いいえ、行きたくありません。",
+            "はい、明日にします。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "暑いので、塩飴を舐めて水分を取りましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、結構です。",
+            "はい、ありがとうございます。",
+            "いいえ、太ります。",
+            "はい、明日にします。"
+          ],
+          "answer": 1,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "風邪をひかないように、十分に休息をとりましょう。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、疲れています。",
+            "はい、ありがとうございます。",
+            "いいえ、明日は働きます。",
+            "はい、ゆっくり休みます。"
+          ],
+          "answer": 1,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：暑いから水分補給をしよう。\n女：そうだね。スポーツドリンクと水を買ってくる。",
+          "stem": "男は何をするか。",
+          "options": [
+            "スポーツドリンクを買う",
+            "冷房をつける",
+            "本を読む",
+            "コーヒーを飲む"
+          ],
+          "answer": 0,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q27.mp3",
+          "audioTranscript": "男：インフルエンザが流行っているらしい。\n女：マスクをして手洗いうがいをする。",
+          "stem": "女は何をするか。",
+          "options": [
+            "マスクをする",
+            "病院に行く",
+            "旅行に行く",
+            "買い物をする"
+          ],
+          "answer": 0,
+          "id": 27
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q28.mp3",
+          "audioTranscript": "男：熱中症にならないように気をつけないと。\n女：こまめに水分と塩分をとるようにしている。",
+          "stem": "女は何をしているか。",
+          "options": [
+            "こまめに水分と塩分をとる",
+            "エアコンの温度を下げる",
+            "夜更かしをする",
+            "甘いものを食べる"
+          ],
+          "answer": 0,
+          "id": 28
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q29.mp3",
+          "audioTranscript": "男：風邪を引かないようにうがいをする。\n女：それと手洗いも大事だね。",
+          "stem": "女は何が大事だと言うか。",
+          "options": [
+            "手洗い",
+            "マスク",
+            "注射",
+            "運動"
+          ],
+          "answer": 0,
+          "id": 29
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：午後はかなり暑いらしいですね。仕事のとき、何か対策をしていますか。\n女：ええ、水分をこまめに飲むことにしています。暑い日は塩分もとったほうがいいですよ。\n男：そうですね。きょうはスポーツドリンクを持ってきました。\n女：それなら安心です。",
+          "stem": "男の人はきょう、何をしますか。",
+          "options": [
+            "スポーツドリンクを飲む",
+            "水を一日飲まない",
+            "屋外でずっと立ち続ける",
+            "塩を一切とらない"
+          ],
+          "answer": 0,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q31.mp3",
+          "audioTranscript": "女：あしたの会議、欠席してもいいですか。今朝、熱があるんです。\n男：そうですか。無理をしないでください。まず病院に行ったほうがいいですよ。\n女：はい、そうします。マスクをして来ればいいですか。\n男：いいえ、熱があるときは来ないでください。",
+          "stem": "女の人はあした、何をしますか。",
+          "options": [
+            "会議に参加する",
+            "マスクをして会議に行く",
+            "病院に行く",
+            "水を飲んで仕事をする"
+          ],
+          "answer": 2,
+          "id": 31
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q32.mp3",
+          "audioTranscript": "男：風邪が流行っているそうですね。\n女：ええ、私は帰宅したらすぐに手を洗うようにしています。\n男：僕はうがいもしています。\n女：それもいいですね。あ、きょうは手洗いの講習がありますよ。参加しますか。\n男：えっ、時間があるなら、参加したほうがいいですか。",
+          "stem": "男の人はこれから何をしますか。",
+          "options": [
+            "うがいをやめる",
+            "手洗いの講習に参加する",
+            "手袋をつけて作業する",
+            "薬を飲みます"
+          ],
+          "answer": 1,
+          "id": 32
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q33.mp3",
+          "audioTranscript": "女：すみません、頭が痛くて…。きょうは本当に暑かったですね。\n男：それは熱中症かもしれないですよ。まず涼しいところで休みましょう。\n女：はい。では、何を飲んだらいいですか。\n男：塩分の入った飲み物がいいですね。ここにスポーツドリンクがあります。",
+          "stem": "男の人は女の人に何をすすめますか。",
+          "options": [
+            "たっぷり水だけを飲む",
+            "冷たいコーヒーを飲む",
+            "何も飲まないで休む",
+            "スポーツドリンクを飲む"
+          ],
+          "answer": 3,
+          "id": 33
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：夏場の仕事は暑くて大変だね。こまめに水分補給をしないと倒れちゃうよ。\n女：そうですね。会社の健康管理のルールでは、こまめな水分塩分補給が推奨されています。\n男：そうだね。特に外での作業の後は、スポーツドリンクを飲んで塩分も補給するようにしています。",
+          "stem": "男性は外での作業の後に何をすることを述べていますか。",
+          "options": [
+            "スポーツドリンクを飲む",
+            "昼寝をする",
+            "タバコを吸う",
+            "本を読む"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q35.mp3",
+          "audioTranscript": "男：明日はインフルエンザの予防接種に行くつもりです。\n女：ええ、去年は流行ったみたいですから、早めに対策した方がいいですよ。\n男：そうですね。周囲の人にもうつさないように、マスクの着用も心がけます。",
+          "stem": "女性はインフルエンザ予防のために何を勧めていますか。",
+          "options": [
+            "早めに対策する",
+            "病院を変える",
+            "旅行に行く",
+            "食事を控える"
+          ],
+          "answer": 0,
+          "id": 35
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q36.mp3",
+          "audioTranscript": "男：インフルエンザが流行っているので、電車での通勤は気を付けないと。\n女：手洗いうがいをこまめにして、マスクも着用していますか？\n男：はい、職場でも積極的に手洗いうがいをして、マスク着用を徹底しています。",
+          "stem": "男性は職場で何を徹底していますか。",
+          "options": [
+            "手洗いうがいをする",
+            "デスクを拭く",
+            "窓を開ける",
+            "荷物を整理する"
+          ],
+          "answer": 0,
+          "id": 36
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q37.mp3",
+          "audioTranscript": "女：夏場の熱中症対策として、職場で水分補給の時間を設けましょう。\n男：そうですね。特に暑い日には、こまめに水分と塩分を取ることが大切です。",
+          "stem": "女性は熱中症対策として何を提案していますか。",
+          "options": [
+            "水分補給の時間を設ける",
+            "エアコンの温度を下げる",
+            "早めに退社する",
+            "屋外での作業を増やす"
+          ],
+          "answer": 0,
+          "id": 37
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "社員の健康管理のため、オフィスではこまめな水分補給と手洗い・うがいを心がけてください。特に夏場は熱中症予防に注意が必要です。",
+          "stem": "夏場に注意が必要な症状はどれですか。",
+          "options": [
+            "熱中症",
+            "インフルエンザ",
+            "花粉症",
+            "風邪"
+          ],
+          "answer": 0,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "インフルエンザの流行期には、マスクの着用と手洗い・うがいを徹底しましょう。職場でも周囲の健康を気遣いましょう。",
+          "stem": "インフルエンザ予防として推奨されているのはどれですか。",
+          "options": [
+            "マスクの着用",
+            "こまめな水分補給",
+            "塩分補給",
+            "冷房の使用"
+          ],
+          "answer": 0,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "職場の掲示板に、熱中症予防のための注意書きが貼られています。水分と塩分をこまめに取ることが推奨されています。",
+          "stem": "熱中症予防に推奨されているのはどれですか。",
+          "options": [
+            "水分と塩分",
+            "ビタミンC",
+            "カフェイン",
+            "甘い飲み物"
+          ],
+          "answer": 0,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "毎日朝、職場の入り口で手洗いうがいの確認を行っています。健康な職場を維持するために協力お願いします。",
+          "stem": "職場で毎朝行われているのはどれですか。",
+          "options": [
+            "手洗いうがいの確認",
+            "体温測定",
+            "健康相談",
+            "作業開始"
+          ],
+          "answer": 0,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "職場では夏場の熱中症予防として、こまめな水分補給と塩分補給が推奨されています。インフルエンザの流行期にはマスクの着用と手洗い・うがいを徹底しています。毎日健康チェックシートに体温を記入しています。",
+          "stem": "職場で推奨されている熱中症予防の対策はどれですか。",
+          "options": [
+            "マスクの着用",
+            "こまめな水分補給と塩分補給",
+            "手洗いのみ",
+            "体温測定のみ"
+          ],
+          "answer": 1,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "インフルエンザを予防するために、職員は毎日手洗いとうがいをしています。また、可能な限りマスクを着用し、混雖を避けるようにしています。体調が優れない場合は早めに休むことも大切です。",
+          "stem": "インフルエンザ予防のために毎日していることは何ですか。",
+          "options": [
+            "マスクの着用のみ",
+            "手洗いとうがい",
+            "人混みへの積極的な参加",
+            "体調に関わらず出勤する"
+          ],
+          "answer": 1,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "職場の掲示板には、水分塩分補給の重要性が書かれています。夏場はこまめに水を飲み、塩分も意識して取るよう呼びかけています。熱中症になると体調が悪くなるため注意が必要です。",
+          "stem": "職場の掲示板で呼びかけられているのは何ですか。",
+          "options": [
+            "マスクの着用",
+            "水と塩分を意識した補給",
+            "早めの休暇取得",
+            "体温測定の徹底"
+          ],
+          "answer": 1,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "毎日朝、職員は健康チェックを行っています。体温測定と体調の確認をし、問題があれば上司に報告します。健康な状態で業務にあたることが大切です。",
+          "stem": "毎朝職員が行っている健康チェックは何ですか。",
+          "options": [
+            "体温測定と体調の確認",
+            "血圧測定のみ",
+            "尿検査のみ",
+            "身長と体重の測定"
+          ],
+          "answer": 0,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "職場では夏場の熱中症予防として、水分補給をこまめにするよう呼びかけています。",
+          "stem": "職場で水分補給をする理由は何ですか。",
+          "options": [
+            "夏場の熱中症予防",
+            "インフルエンザ予防",
+            "手洗い・うがい",
+            "マスクの着用"
+          ],
+          "answer": 0,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "インフルエンザが流行る季節には、手洗いとうがいを徹底するよう注意喚起されました。",
+          "stem": "インフルエンザ予防のために推奨されているのは何ですか。",
+          "options": [
+            "水分補給",
+            "手洗いとうがい",
+            "マスクの着用",
+            "十分な睡眠"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "職場の掲示板に、こまめな水分塩分補給の重要性が書かれたポスターが貼られています。",
+          "stem": "掲示板に貼ってあるポスターの内容は何ですか。",
+          "options": [
+            "インフルエンザ予防",
+            "手洗いとうがい",
+            "水分塩分補給の重要性",
+            "マスクの着用方法"
+          ],
+          "answer": 2,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "毎日朝と帰る前に、職員同士で手洗いとうがいをする習慣が定着しています。",
+          "stem": "職員が毎日行っている習慣は何ですか。",
+          "options": [
+            "水分補給",
+            "手洗いとうがい",
+            "マスクの着用",
+            "体温測定"
+          ],
+          "answer": 1,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "夏場はこまめな水分補給と塩分補給が熱中症予防につながります。",
+          "stem": "夏場に熱中症予防のために大切なことは何ですか。",
+          "options": [
+            "こまめな水分補給と塩分補給",
+            "十分な睡眠",
+            "バランスの良い食事",
+            "適度な運動"
+          ],
+          "answer": 0,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
