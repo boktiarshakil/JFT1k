@@ -1,0 +1,807 @@
+{
+  "id": "jft502",
+  "title": "JFT-Basic Simulation Exam 502",
+  "description": "Simulation Exam 502 focusing on 銀行・ATMの利用（口座開設、入出金、振込、暗証番号管理、通帳記入）.",
+  "duration": 3600,
+  "sections": [
+    {
+      "name": "Script and Vocabulary",
+      "questions": [
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q1.jpeg",
+          "imagePrompt": "An illustration of a person inserting a card into an ATM machine, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "口座",
+            "暗証番号",
+            "残高",
+            "振込"
+          ],
+          "answer": 3,
+          "id": 1
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q2.jpeg",
+          "imagePrompt": "An illustration of a passbook being stamped at a bank counter, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "通帳",
+            "振り込み",
+            "引き出し",
+            "預金"
+          ],
+          "answer": 0,
+          "id": 2
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q3.jpeg",
+          "imagePrompt": "An illustration of a person checking numbers on a card or keypad, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "パスワード",
+            "口座番号",
+            "暗証番号",
+            "振り込み"
+          ],
+          "answer": 2,
+          "id": 3
+        },
+        {
+          "type": "image",
+          "instruction": "Look at the illustration and choose the correct word.",
+          "image": "q4.jpeg",
+          "imagePrompt": "An illustration of money being transferred or a receipt, minimal Japanese cartoon style, square 1:1, white background, no text.",
+          "options": [
+            "振込",
+            "引き出し",
+            "預金",
+            "両替"
+          ],
+          "answer": 0,
+          "id": 4
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "口座を開設するために、銀行へ行きました。",
+          "options": [
+            "開設",
+            "閉鎖",
+            "移転",
+            "解約"
+          ],
+          "answer": 0,
+          "id": 5
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "ATMでお金を（ ）ました。",
+          "options": [
+            "おろす",
+            "おめる",
+            "おく",
+            "かえる"
+          ],
+          "answer": 0,
+          "id": 6
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "父に1000円を（ ）ました。",
+          "options": [
+            "振込む",
+            "借りる",
+            "貸す",
+            "払う"
+          ],
+          "answer": 0,
+          "id": 7
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "暗証番号は6けたです。",
+          "options": [
+            "6けた",
+            "5けた",
+            "4けた",
+            "7けた"
+          ],
+          "answer": 0,
+          "id": 8
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "ATMでお金を引き出すとき、まず（ ）を入力します。",
+          "options": [
+            "暗証番号",
+            "口座番号",
+            "パスワード",
+            "住所"
+          ],
+          "answer": 0,
+          "id": 9
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "新しい銀行口座を（ )します。",
+          "options": [
+            "開設",
+            "閉鎖",
+            "変更",
+            "確認"
+          ],
+          "answer": 0,
+          "id": 10
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "父が毎月、（ )します。",
+          "options": [
+            "給料",
+            "振込",
+            "引出",
+            "入金"
+          ],
+          "answer": 1,
+          "id": 11
+        },
+        {
+          "type": "text",
+          "instruction": "Read the sentence and choose the word that fits in ( ) most.",
+          "stem": "通帳に取引内容を（ )します。",
+          "options": [
+            "記入",
+            "引出",
+            "振込",
+            "開設"
+          ],
+          "answer": 0,
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Conversation and Expression",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "口座を開設したいのですが、何か必要なものはありますか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "パスポートと在留カードが必要です。",
+            "クレジットカードを作りたいです。",
+            "外貨両替はこちらです。",
+            "ATMは1階にあります。"
+          ],
+          "answer": 0,
+          "id": 13
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "この通りに振込みをお願いします。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "承りました。手数料は100円です。",
+            "パスポートをご提示ください。",
+            "暗証番号は4桁でよろしいですか。",
+            "残高不足ですので、お預け入れをお願いします。"
+          ],
+          "answer": 0,
+          "id": 14
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "暗証番号を忘れてしまいました。再設定したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "口座番号と印鑑が必要です。",
+            "パスポート番号をお伺いします。",
+            "通帳の残高を確認します。",
+            "ATMの利用時間外です。"
+          ],
+          "answer": 0,
+          "id": 15
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今月の残高を確認したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "通帳に記入しますので、ご印鑑をお願いします。",
+            "海外送金の手続きをしますか。",
+            "クレジットカードの利用限度額は？",
+            "ATMでお預け入れをお願いします。"
+          ],
+          "answer": 0,
+          "id": 16
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "口座を作りたいのですが、何を持っていけばいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "パスポートと学生証が必要です。",
+            "暗証番号は4桁でお願いします。",
+            "お金を下ろしますか。",
+            "通帳は後で記入します。"
+          ],
+          "answer": 0,
+          "id": 17
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今月、東京から大阪へお金を送金したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "パスポートの番号を教えてください。",
+            "口座番号と金額をお知らせください。",
+            "ATMは2階にあります。",
+            "通帳の残高は確認できます。"
+          ],
+          "answer": 1,
+          "id": 18
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "暗証番号を忘れてしまいました。何回か間違えましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、3回までです。",
+            "いいえ、4回までです。",
+            "いいえ、5回までです。",
+            "いいえ、6回までです。"
+          ],
+          "answer": 0,
+          "id": 19
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今日、いくらお金を下ろしましたか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "いいえ、下ろしていません。",
+            "いいえ、下ろしません。",
+            "いいえ、下ろせません。",
+            "いいえ、下ろしませんでした。"
+          ],
+          "answer": 3,
+          "id": 20
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "口座を作りたいのですが、何から始めればいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "まずは身分証明書をご持参ください。",
+            "パスワードは数字4桁で設定します。",
+            "明日は銀行が休みです。",
+            "ATMは2階にあります。"
+          ],
+          "answer": 0,
+          "id": 21
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今月、海外へお金を送金したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "パスワードは変更できます。",
+            "窓口で手続きをお願いいたします。",
+            "通帳の記入は不要です。",
+            "ATMでは24時間利用できます。"
+          ],
+          "answer": 1,
+          "id": 22
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "暗証番号を忘れてしまいました。再設定したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "口座残高は確認できます。",
+            "暗証番号は再設定できます。",
+            "明日は定休日です。",
+            "ATMは混雑しています。"
+          ],
+          "answer": 1,
+          "id": 23
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "今日、給料が口座に入りました。確認したいのですが。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "通帳に記入しましょう。",
+            "パスワードを教えてください。",
+            "明日は銀行が開いています。",
+            "ATMは使えません。"
+          ],
+          "answer": 0,
+          "id": 24
+        },
+        {
+          "type": "text",
+          "instruction": "Read the dialogue and choose the best reply.",
+          "dialogue": [
+            {
+              "speaker": "A",
+              "speech": "残高不足で引き出せませんでした。どうすればいいですか。"
+            },
+            {
+              "speaker": "B",
+              "speech": "(______)"
+            }
+          ],
+          "options": [
+            "パスワードを変更してください。",
+            "入金後に再度お試しください。",
+            "ATMは24時間利用できます。",
+            "通帳は捨てても構いません。"
+          ],
+          "answer": 1,
+          "id": 25
+        }
+      ]
+    },
+    {
+      "name": "Listening Comprehension",
+      "questions": [
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q26.mp3",
+          "audioTranscript": "男：こんにちは。口座を開設したいのですが、何か必要なものはありますか。\n女：はい、パスポートと住所が確認できるものが必要です。",
+          "stem": "男性は何をしますか。",
+          "options": [
+            "口座を解約する",
+            "口座を開設する",
+            "ATMでお金を引き出す",
+            "振込をする"
+          ],
+          "answer": 1,
+          "id": 26
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：このATMで振込みをしたいのですが、口座番号はわかりますか。\n女：いいえ、わかりません。通帳を持ってきました。",
+          "stem": "女性は何を持ってきましたか。",
+          "options": [
+            "パスポート",
+            "通帳",
+            "印鑑",
+            "身分証明書"
+          ],
+          "answer": 1,
+          "id": 27,
+          "audio": "q27.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：暗証番号を忘れてしまいました。もう一度教えてもらえますか。\n女：申し訳ありませんが、セキュリティの観点からお伝えすることができません。",
+          "stem": "男性は何ができませんか。",
+          "options": [
+            "お金を引き出す",
+            "暗証番号を思い出す",
+            "ATMを使う",
+            "口座を開設する"
+          ],
+          "answer": 2,
+          "id": 28,
+          "audio": "q28.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：今日は給料を家族に送金したいのですが、手続きはどうすればいいですか。\n女：ネットバンキングなら24時間いつでもできますよ。",
+          "stem": "男性は家族に何を送金したいですか。",
+          "options": [
+            "プレゼント",
+            "荷物",
+            "給料",
+            "領収書"
+          ],
+          "answer": 2,
+          "id": 29,
+          "audio": "q29.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q30.mp3",
+          "audioTranscript": "男：明日の朝、銀行に行きます。\n女：どこでお金を下ろしますか？",
+          "stem": "男が明日銀行に行く理由は何ですか？",
+          "options": [
+            "口座開設をする",
+            "お金を下ろす",
+            "振込をする",
+            "通帳を作る"
+          ],
+          "answer": 1,
+          "id": 30
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：暗証番号は四桁の数字です。\n女：暗証番号を間違えるとどうなりますか？",
+          "stem": "暗証番号を間違えるとどうなりますか？",
+          "options": [
+            "すぐに使えるようになる",
+            "口座が凍結される",
+            "すぐに変えられる",
+            "何も起きない"
+          ],
+          "answer": 1,
+          "id": 31,
+          "audio": "q31.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：この通帳に入金しました。\n女：残高は確認しましたか？",
+          "stem": "男がしたことは何ですか？",
+          "options": [
+            "出金した",
+            "振込した",
+            "入金した",
+            "暗証番号を変えた"
+          ],
+          "answer": 2,
+          "id": 32,
+          "audio": "q32.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：明日から海外に行きます。\n女：両替は銀行でしますか？",
+          "stem": "男が海外に行く前にすることは何ですか？",
+          "options": [
+            "両替をする",
+            "口座を閉じる",
+            "通帳をなくす",
+            "ATMを買う"
+          ],
+          "answer": 0,
+          "id": 33,
+          "audio": "q33.mp3"
+        },
+        {
+          "type": "audio",
+          "instruction": "Listen to the conversation and answer the question.",
+          "audio": "q34.mp3",
+          "audioTranscript": "男：三井住友銀行の口座を開設したいのですが、何か必要なものはありますか。\n女：はい、パスポートと在留カード、それと住民票の写しが必要です。",
+          "stem": "男性は銀行で何をしますか。",
+          "options": [
+            "口座開設",
+            "現金の引き出し",
+            "為替手続き",
+            "貸金庫の利用"
+          ],
+          "answer": 0,
+          "id": 34
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：ATMでお金を下ろそうとしたら、画面にエラーが出て困っています。\n女：暗証番号を間違えすぎないように気をつけてください。3回間違えると口座が凍結されますよ。",
+          "stem": "女性は男性に何とアドバイスしていますか。",
+          "options": [
+            "暗証番号をメモしておくこと",
+            "3回間違えると口座が凍結されること",
+            "毎回違う番号にすること",
+            "番号は人に教えないこと"
+          ],
+          "answer": 1,
+          "id": 35,
+          "audio": "q35.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：母に海外へお金を送金したいんです。手続きは銀行の窓口でしかできないのでしょうか。\n女：いいえ、ネットバンキングやATMでもできます。手数料が安い順に並べると、ネットバンキング、ATM、窓口の順になります。",
+          "stem": "海外への送金で、手数料が最も安い方法はどれですか。",
+          "options": "ネットバンキング, ATM, 銀行の窓口",
+          "answer": 0,
+          "id": 36,
+          "audio": "q36.mp3"
+        },
+        {
+          "type": "audio",
+          "audioTranscript": "男：通帳の残高が合いません。何か取引漏れがないか確認したいのですが。\n女：通帳の記入漏れか、ATMでの取引で印字されていない可能性があります。最近はレシートをもらうことをおすすめします。",
+          "stem": "女性は通帳の残高が合わない理由として、どのような可能性を述べていますか。",
+          "options": [
+            "取引漏れ",
+            "ATMでの印字漏れ",
+            "両方の可能性",
+            "銀行のシステムエラー"
+          ],
+          "answer": 2,
+          "id": 37,
+          "audio": "q37.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Reading Comprehension",
+      "questions": [
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "店の掲示板に貼られているお知らせです。\n「平日午後3時以降の窓口業務は、予約の方のみとさせていただきます。ご了承ください。」",
+          "stem": "平日午後3時以降の窓口業務はどうなりますか。",
+          "options": [
+            "誰でも利用できます",
+            "予約が必要です",
+            "閉店時間になります",
+            "混雑して利用できません"
+          ],
+          "answer": 1,
+          "id": 38
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATMの利用案内に書かれています。\n「暗証番号を3回間違えると、カードがロックされます。ご注意ください。」",
+          "stem": "暗証番号を3回間違えるとどうなりますか。",
+          "options": [
+            "すぐに再発行されます",
+            "口座が凍結されます",
+            "カードがロックされます",
+            "利用限度額が減ります"
+          ],
+          "answer": 2,
+          "id": 39
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "銀行のウェブサイトに掲載されているメールマガジンの内容です。\n「毎月20日は振込手数料が無料になります。この機会にぜひご利用ください。」",
+          "stem": "毎月20日はどのような特典がありますか。",
+          "options": [
+            "預金利子が上がります",
+            "振込手数料が無料になります",
+            "口座開設費用が免除されます",
+            "ATM利用時間が延長されます"
+          ],
+          "answer": 1,
+          "id": 40
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATMの操作説明書に書かれています。\n「通帳の記入が終わったら、必ず通帳とカードを取り出してください。」",
+          "stem": "通帳の記入が終わった後にすることは何ですか。",
+          "options": [
+            "そのまま放置します",
+            "通帳とカードを取り出します",
+            "再度暗証番号を入力します",
+            "画面を消します"
+          ],
+          "answer": 1,
+          "id": 41
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "銀行で口座開設の手続きをしました。必要な書類はパスポートと住民票です。窓口の方に説明していただきました。",
+          "stem": "口座開設に必要な書類はどれですか。",
+          "options": [
+            "パスポートと住民票",
+            "運転免許証とクレジットカード",
+            "学生証と健康保険証",
+            "パスポートとクレジットカード"
+          ],
+          "answer": 0,
+          "id": 42
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATMで現金を引き出しました。まずはカードを挿入し、暗証番号を入力します。次に金額を選択してボタンを押します。",
+          "stem": "ATMで現金を引き出す際、最初に何をしますか。",
+          "options": [
+            "暗証番号を入力する",
+            "金額を選択する",
+            "カードを挿入する",
+            "領収書をもらう"
+          ],
+          "answer": 2,
+          "id": 43
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "友達に海外へお金を送りました。銀行の窓口で振込みの手続きをしました。手数料は500円かかります。",
+          "stem": "海外へお金を送る際、手数料はいくらかかりますか。",
+          "options": [
+            "無料",
+            "100円",
+            "500円",
+            "1000円"
+          ],
+          "answer": 2,
+          "id": 44
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "銀行の通帳に入出金の記録がつきました。新しい金額と取引日が記録されています。確認のために署名をします。",
+          "stem": "通帳の記録を確認するために何をしますか。",
+          "options": [
+            "残高を確認する",
+            "署名をする",
+            "暗証番号を変更する",
+            "窓口を出る"
+          ],
+          "answer": 1,
+          "id": 45
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "ATM利用時間のお知らせです。銀行は平日9時から15時までです。土日はお休みです。祝日は9時から12時まで利用できます。",
+          "stem": "土日にATMを利用したい場合、何時から何時まで利用できますか。",
+          "options": [
+            "9時から15時まで",
+            "9時から12時まで",
+            "お休みです",
+            "24時間利用可能です"
+          ],
+          "answer": 2,
+          "id": 46
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "口座開設の手続きに関するお知らせです。必要なものは、パスポートと在留カードです。手続きには約30分かかります。事前に予約することをおすすめします。",
+          "stem": "口座開設に必要なものは何ですか。",
+          "options": [
+            "現金と印鑑",
+            "パスポートと在留カード",
+            "通帳とカード",
+            "学生証と住所証明"
+          ],
+          "answer": 1,
+          "id": 47
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "振込依頼書の記入例です。左上に日付を書きます。中央に相手の名前と口座番号を書きます。右下に自分の署名をします。",
+          "stem": "振込依頼書の中央に何を書きますか。",
+          "options": "金額",
+          "answer": 1,
+          "id": 48
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "暗証番号の管理についての注意書きです。暗証番号は3回間違えると口座が凍結されます。誰にも教えないでください。メモに書き留める場合は、通帳と別に保管してください。",
+          "stem": "暗証番号を3回間違えるとどうなりますか。",
+          "options": "口座が閉鎖されます",
+          "answer": 0,
+          "id": 49
+        },
+        {
+          "type": "text",
+          "instruction": "Read the text and answer the question.",
+          "context": "通帳の記入例です。ATMでお金を下ろした後、通帳を挿入して記入します。記入が終わったら通帳を取り出し、残高を確認します。",
+          "stem": "通帳の記入の後、何を確認しますか。",
+          "options": "金額",
+          "answer": 1,
+          "id": 50
+        }
+      ]
+    }
+  ]
+}
